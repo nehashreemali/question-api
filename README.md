@@ -5,17 +5,28 @@ Generate quiz questions from TV show episodes using AI.
 ## 🚀 Quick Start
 
 ```bash
-# 1. Install
+# 1. Install dependencies
 bun install
 
-# 2. Add Groq API key to config.json
+# 2. Setup configuration
+cp config.example.json config.json
+# Edit config.json and add your Groq API key
 
-# 3. Scrape transcript
-bun src/scrape-tv.ts "Friends" 1 3
+# 3. Generate questions for a single episode
+bun index.ts "Friends" 1 1
 
-# 4. Generate questions
-bun src/generate-questions.ts "Friends" 1 3
+# 4. Generate questions for entire season
+bun index.ts "Friends" 1
 ```
+
+## ⚙️ Configuration
+
+1. Copy `config.example.json` to `config.json`
+2. Add your [Groq API key](https://console.groq.com/)
+3. Adjust settings:
+   - `questions_per_transcript`: 20 (recommended for rate limits)
+   - `model`: "llama-3.3-70b-versatile"
+   - `temperature`: 0.7
 
 ## 📂 Output Structure
 
