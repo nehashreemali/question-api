@@ -1,0 +1,551 @@
+{
+  "description": "Master list of all content to generate - Category > Subcategory > Topic",
+  "categories": {
+    "tv-shows": {
+      "name": "TV Shows",
+      "subcategories": {
+        "sitcoms": {
+          "name": "Sitcoms",
+          "topics": {
+            "friends": { "name": "Friends", "seasons": 10, "episodes": 236 },
+            "the-office-us": { "name": "The Office (US)", "seasons": 9, "episodes": 201 },
+            "the-big-bang-theory": { "name": "The Big Bang Theory", "seasons": 12, "episodes": 279 },
+            "how-i-met-your-mother": { "name": "How I Met Your Mother", "seasons": 9, "episodes": 208 },
+            "seinfeld": { "name": "Seinfeld", "seasons": 9, "episodes": 180 },
+            "brooklyn-nine-nine": { "name": "Brooklyn Nine-Nine", "seasons": 8, "episodes": 153 },
+            "parks-and-recreation": { "name": "Parks and Recreation", "seasons": 7, "episodes": 125 },
+            "modern-family": { "name": "Modern Family", "seasons": 11, "episodes": 250 },
+            "schitts-creek": { "name": "Schitt's Creek", "seasons": 6, "episodes": 80 },
+            "arrested-development": { "name": "Arrested Development", "seasons": 5, "episodes": 84 },
+            "the-good-place": { "name": "The Good Place", "seasons": 4, "episodes": 53 },
+            "new-girl": { "name": "New Girl", "seasons": 7, "episodes": 146 },
+            "community": { "name": "Community", "seasons": 6, "episodes": 110 },
+            "its-always-sunny": { "name": "It's Always Sunny in Philadelphia", "seasons": 16, "episodes": 172 },
+            "curb-your-enthusiasm": { "name": "Curb Your Enthusiasm", "seasons": 12, "episodes": 120 }
+          }
+        },
+        "drama": {
+          "name": "Drama",
+          "topics": {
+            "breaking-bad": { "name": "Breaking Bad", "seasons": 5, "episodes": 62 },
+            "game-of-thrones": { "name": "Game of Thrones", "seasons": 8, "episodes": 73 },
+            "the-sopranos": { "name": "The Sopranos", "seasons": 6, "episodes": 86 },
+            "the-wire": { "name": "The Wire", "seasons": 5, "episodes": 60 },
+            "mad-men": { "name": "Mad Men", "seasons": 7, "episodes": 92 },
+            "better-call-saul": { "name": "Better Call Saul", "seasons": 6, "episodes": 63 },
+            "succession": { "name": "Succession", "seasons": 4, "episodes": 39 },
+            "the-crown": { "name": "The Crown", "seasons": 6, "episodes": 60 },
+            "ozark": { "name": "Ozark", "seasons": 4, "episodes": 44 },
+            "peaky-blinders": { "name": "Peaky Blinders", "seasons": 6, "episodes": 36 },
+            "house-of-cards": { "name": "House of Cards", "seasons": 6, "episodes": 73 },
+            "downton-abbey": { "name": "Downton Abbey", "seasons": 6, "episodes": 52 },
+            "the-walking-dead": { "name": "The Walking Dead", "seasons": 11, "episodes": 177 },
+            "this-is-us": { "name": "This Is Us", "seasons": 6, "episodes": 106 },
+            "greys-anatomy": { "name": "Grey's Anatomy", "seasons": 20, "episodes": 428 }
+          }
+        },
+        "sci-fi-fantasy": {
+          "name": "Sci-Fi & Fantasy",
+          "topics": {
+            "stranger-things": { "name": "Stranger Things", "seasons": 4, "episodes": 34 },
+            "black-mirror": { "name": "Black Mirror", "seasons": 6, "episodes": 27 },
+            "the-mandalorian": { "name": "The Mandalorian", "seasons": 3, "episodes": 24 },
+            "westworld": { "name": "Westworld", "seasons": 4, "episodes": 36 },
+            "the-witcher": { "name": "The Witcher", "seasons": 3, "episodes": 24 },
+            "doctor-who": { "name": "Doctor Who", "seasons": 13, "episodes": 167 },
+            "the-expanse": { "name": "The Expanse", "seasons": 6, "episodes": 62 },
+            "star-trek-tng": { "name": "Star Trek: TNG", "seasons": 7, "episodes": 178 },
+            "house-of-the-dragon": { "name": "House of the Dragon", "seasons": 2, "episodes": 18 },
+            "the-boys": { "name": "The Boys", "seasons": 4, "episodes": 32 },
+            "loki": { "name": "Loki", "seasons": 2, "episodes": 12 },
+            "wandavision": { "name": "WandaVision", "seasons": 1, "episodes": 9 }
+          }
+        },
+        "crime-thriller": {
+          "name": "Crime & Thriller",
+          "topics": {
+            "true-detective": { "name": "True Detective", "seasons": 4, "episodes": 31 },
+            "mindhunter": { "name": "Mindhunter", "seasons": 2, "episodes": 19 },
+            "narcos": { "name": "Narcos", "seasons": 3, "episodes": 30 },
+            "dexter": { "name": "Dexter", "seasons": 8, "episodes": 96 },
+            "fargo": { "name": "Fargo", "seasons": 5, "episodes": 51 },
+            "sherlock": { "name": "Sherlock", "seasons": 4, "episodes": 15 },
+            "money-heist": { "name": "Money Heist", "seasons": 5, "episodes": 41 },
+            "prison-break": { "name": "Prison Break", "seasons": 5, "episodes": 90 },
+            "hannibal": { "name": "Hannibal", "seasons": 3, "episodes": 39 },
+            "killing-eve": { "name": "Killing Eve", "seasons": 4, "episodes": 32 }
+          }
+        },
+        "animated": {
+          "name": "Animated",
+          "topics": {
+            "the-simpsons": { "name": "The Simpsons", "seasons": 35, "episodes": 768 },
+            "south-park": { "name": "South Park", "seasons": 26, "episodes": 328 },
+            "rick-and-morty": { "name": "Rick and Morty", "seasons": 7, "episodes": 71 },
+            "family-guy": { "name": "Family Guy", "seasons": 22, "episodes": 423 },
+            "bojack-horseman": { "name": "BoJack Horseman", "seasons": 6, "episodes": 77 },
+            "avatar-the-last-airbender": { "name": "Avatar: The Last Airbender", "seasons": 3, "episodes": 61 },
+            "futurama": { "name": "Futurama", "seasons": 8, "episodes": 144 },
+            "arcane": { "name": "Arcane", "seasons": 2, "episodes": 18 },
+            "adventure-time": { "name": "Adventure Time", "seasons": 10, "episodes": 283 }
+          }
+        }
+      }
+    },
+    "movies": {
+      "name": "Movies",
+      "subcategories": {
+        "franchises": {
+          "name": "Franchises",
+          "topics": {
+            "marvel-mcu": { "name": "Marvel Cinematic Universe" },
+            "dc-extended-universe": { "name": "DC Extended Universe" },
+            "star-wars": { "name": "Star Wars" },
+            "harry-potter": { "name": "Harry Potter" },
+            "lord-of-the-rings": { "name": "Lord of the Rings" },
+            "fast-and-furious": { "name": "Fast & Furious" },
+            "james-bond": { "name": "James Bond" },
+            "jurassic-park": { "name": "Jurassic Park" },
+            "mission-impossible": { "name": "Mission: Impossible" },
+            "pirates-of-the-caribbean": { "name": "Pirates of the Caribbean" },
+            "the-matrix": { "name": "The Matrix" },
+            "indiana-jones": { "name": "Indiana Jones" }
+          }
+        },
+        "genres": {
+          "name": "By Genre",
+          "topics": {
+            "classic-hollywood": { "name": "Classic Hollywood (Pre-1970)" },
+            "80s-classics": { "name": "80s Classics" },
+            "90s-classics": { "name": "90s Classics" },
+            "oscar-winners": { "name": "Oscar Best Pictures" },
+            "horror-classics": { "name": "Horror Classics" },
+            "romantic-comedies": { "name": "Romantic Comedies" },
+            "action-blockbusters": { "name": "Action Blockbusters" },
+            "animated-movies": { "name": "Animated Movies" },
+            "documentary-films": { "name": "Documentary Films" }
+          }
+        },
+        "studios": {
+          "name": "Studios",
+          "topics": {
+            "pixar": { "name": "Pixar" },
+            "disney-animation": { "name": "Disney Animation" },
+            "studio-ghibli": { "name": "Studio Ghibli" },
+            "dreamworks": { "name": "DreamWorks Animation" }
+          }
+        }
+      }
+    },
+    "science": {
+      "name": "Science",
+      "subcategories": {
+        "physics": {
+          "name": "Physics",
+          "topics": {
+            "mechanics": { "name": "Classical Mechanics" },
+            "thermodynamics": { "name": "Thermodynamics" },
+            "electromagnetism": { "name": "Electromagnetism" },
+            "optics": { "name": "Optics" },
+            "waves-and-sound": { "name": "Waves & Sound" },
+            "quantum-physics": { "name": "Quantum Physics" },
+            "nuclear-physics": { "name": "Nuclear Physics" },
+            "relativity": { "name": "Relativity" },
+            "fluid-dynamics": { "name": "Fluid Dynamics" }
+          }
+        },
+        "chemistry": {
+          "name": "Chemistry",
+          "topics": {
+            "organic-chemistry": { "name": "Organic Chemistry" },
+            "inorganic-chemistry": { "name": "Inorganic Chemistry" },
+            "physical-chemistry": { "name": "Physical Chemistry" },
+            "biochemistry": { "name": "Biochemistry" },
+            "periodic-table": { "name": "Periodic Table & Elements" },
+            "chemical-reactions": { "name": "Chemical Reactions" },
+            "atomic-structure": { "name": "Atomic Structure" }
+          }
+        },
+        "biology": {
+          "name": "Biology",
+          "topics": {
+            "genetics": { "name": "Genetics & DNA" },
+            "cell-biology": { "name": "Cell Biology" },
+            "evolution": { "name": "Evolution" },
+            "ecology": { "name": "Ecology" },
+            "human-anatomy": { "name": "Human Anatomy" },
+            "human-physiology": { "name": "Human Physiology" },
+            "microbiology": { "name": "Microbiology" },
+            "botany": { "name": "Botany (Plants)" },
+            "zoology": { "name": "Zoology (Animals)" },
+            "marine-biology": { "name": "Marine Biology" }
+          }
+        },
+        "astronomy": {
+          "name": "Astronomy",
+          "topics": {
+            "solar-system": { "name": "Solar System" },
+            "stars-and-galaxies": { "name": "Stars & Galaxies" },
+            "cosmology": { "name": "Cosmology & Big Bang" },
+            "space-exploration": { "name": "Space Exploration" },
+            "black-holes": { "name": "Black Holes" },
+            "exoplanets": { "name": "Exoplanets" }
+          }
+        },
+        "earth-science": {
+          "name": "Earth Science",
+          "topics": {
+            "geology": { "name": "Geology" },
+            "meteorology": { "name": "Meteorology & Weather" },
+            "oceanography": { "name": "Oceanography" },
+            "climate-science": { "name": "Climate Science" },
+            "volcanoes-earthquakes": { "name": "Volcanoes & Earthquakes" }
+          }
+        }
+      }
+    },
+    "mathematics": {
+      "name": "Mathematics",
+      "subcategories": {
+        "fundamentals": {
+          "name": "Fundamentals",
+          "topics": {
+            "arithmetic": { "name": "Arithmetic" },
+            "algebra": { "name": "Algebra" },
+            "geometry": { "name": "Geometry" },
+            "trigonometry": { "name": "Trigonometry" }
+          }
+        },
+        "advanced": {
+          "name": "Advanced",
+          "topics": {
+            "calculus": { "name": "Calculus" },
+            "statistics": { "name": "Statistics & Probability" },
+            "linear-algebra": { "name": "Linear Algebra" },
+            "number-theory": { "name": "Number Theory" },
+            "discrete-math": { "name": "Discrete Mathematics" }
+          }
+        },
+        "applied": {
+          "name": "Applied",
+          "topics": {
+            "mathematical-puzzles": { "name": "Mathematical Puzzles" },
+            "famous-theorems": { "name": "Famous Theorems" },
+            "famous-mathematicians": { "name": "Famous Mathematicians" }
+          }
+        }
+      }
+    },
+    "history": {
+      "name": "History",
+      "subcategories": {
+        "ancient": {
+          "name": "Ancient History",
+          "topics": {
+            "ancient-egypt": { "name": "Ancient Egypt" },
+            "ancient-greece": { "name": "Ancient Greece" },
+            "roman-empire": { "name": "Roman Empire" },
+            "ancient-india": { "name": "Ancient India" },
+            "ancient-china": { "name": "Ancient China" },
+            "mesopotamia": { "name": "Mesopotamia" },
+            "ancient-persia": { "name": "Ancient Persia" }
+          }
+        },
+        "medieval": {
+          "name": "Medieval History",
+          "topics": {
+            "medieval-europe": { "name": "Medieval Europe" },
+            "crusades": { "name": "The Crusades" },
+            "viking-age": { "name": "Viking Age" },
+            "byzantine-empire": { "name": "Byzantine Empire" },
+            "islamic-golden-age": { "name": "Islamic Golden Age" },
+            "mongol-empire": { "name": "Mongol Empire" }
+          }
+        },
+        "modern": {
+          "name": "Modern History",
+          "topics": {
+            "renaissance": { "name": "Renaissance" },
+            "age-of-exploration": { "name": "Age of Exploration" },
+            "american-revolution": { "name": "American Revolution" },
+            "french-revolution": { "name": "French Revolution" },
+            "industrial-revolution": { "name": "Industrial Revolution" },
+            "world-war-1": { "name": "World War I" },
+            "world-war-2": { "name": "World War II" },
+            "cold-war": { "name": "Cold War" },
+            "civil-rights-movement": { "name": "Civil Rights Movement" }
+          }
+        },
+        "regional": {
+          "name": "Regional History",
+          "topics": {
+            "indian-history": { "name": "Indian History" },
+            "chinese-history": { "name": "Chinese History" },
+            "british-history": { "name": "British History" },
+            "american-history": { "name": "American History" },
+            "african-history": { "name": "African History" },
+            "japanese-history": { "name": "Japanese History" }
+          }
+        }
+      }
+    },
+    "geography": {
+      "name": "Geography",
+      "subcategories": {
+        "political": {
+          "name": "Political Geography",
+          "topics": {
+            "countries-and-capitals": { "name": "Countries & Capitals" },
+            "flags-of-the-world": { "name": "Flags of the World" },
+            "world-borders": { "name": "World Borders" },
+            "continents": { "name": "Continents" }
+          }
+        },
+        "physical": {
+          "name": "Physical Geography",
+          "topics": {
+            "mountains": { "name": "Mountains & Peaks" },
+            "rivers-and-lakes": { "name": "Rivers & Lakes" },
+            "oceans-and-seas": { "name": "Oceans & Seas" },
+            "deserts": { "name": "Deserts" },
+            "islands": { "name": "Islands" },
+            "climate-zones": { "name": "Climate Zones" }
+          }
+        },
+        "landmarks": {
+          "name": "Landmarks",
+          "topics": {
+            "world-wonders": { "name": "World Wonders" },
+            "famous-landmarks": { "name": "Famous Landmarks" },
+            "unesco-sites": { "name": "UNESCO World Heritage Sites" },
+            "natural-wonders": { "name": "Natural Wonders" }
+          }
+        }
+      }
+    },
+    "sports": {
+      "name": "Sports",
+      "subcategories": {
+        "cricket": {
+          "name": "Cricket",
+          "topics": {
+            "cricket-world-cups": { "name": "Cricket World Cups" },
+            "ipl": { "name": "Indian Premier League" },
+            "test-cricket": { "name": "Test Cricket Records" },
+            "odi-cricket": { "name": "ODI Records" },
+            "t20-cricket": { "name": "T20 Records" },
+            "cricket-legends": { "name": "Cricket Legends" },
+            "ashes": { "name": "The Ashes" }
+          }
+        },
+        "football": {
+          "name": "Football (Soccer)",
+          "topics": {
+            "fifa-world-cup": { "name": "FIFA World Cup" },
+            "premier-league": { "name": "Premier League" },
+            "champions-league": { "name": "UEFA Champions League" },
+            "la-liga": { "name": "La Liga" },
+            "bundesliga": { "name": "Bundesliga" },
+            "serie-a": { "name": "Serie A" },
+            "football-legends": { "name": "Football Legends" },
+            "euros": { "name": "UEFA European Championship" }
+          }
+        },
+        "american-sports": {
+          "name": "American Sports",
+          "topics": {
+            "nfl": { "name": "NFL (American Football)" },
+            "nba": { "name": "NBA (Basketball)" },
+            "mlb": { "name": "MLB (Baseball)" },
+            "nhl": { "name": "NHL (Hockey)" },
+            "super-bowl": { "name": "Super Bowl" }
+          }
+        },
+        "tennis": {
+          "name": "Tennis",
+          "topics": {
+            "grand-slams": { "name": "Grand Slam Tournaments" },
+            "tennis-legends": { "name": "Tennis Legends" },
+            "wimbledon": { "name": "Wimbledon" },
+            "us-open": { "name": "US Open" }
+          }
+        },
+        "olympics": {
+          "name": "Olympics",
+          "topics": {
+            "summer-olympics": { "name": "Summer Olympics" },
+            "winter-olympics": { "name": "Winter Olympics" },
+            "olympic-records": { "name": "Olympic Records" },
+            "olympic-legends": { "name": "Olympic Legends" }
+          }
+        },
+        "motorsport": {
+          "name": "Motorsport",
+          "topics": {
+            "formula-1": { "name": "Formula 1" },
+            "motogp": { "name": "MotoGP" },
+            "nascar": { "name": "NASCAR" },
+            "rally": { "name": "Rally Racing" }
+          }
+        },
+        "combat-sports": {
+          "name": "Combat Sports",
+          "topics": {
+            "wwe": { "name": "WWE (Wrestling)" },
+            "wwe-wrestlemania": { "name": "WWE WrestleMania" },
+            "wwe-royal-rumble": { "name": "WWE Royal Rumble" },
+            "boxing": { "name": "Boxing" },
+            "ufc-mma": { "name": "UFC / MMA" }
+          }
+        },
+        "other-sports": {
+          "name": "Other Sports",
+          "topics": {
+            "golf": { "name": "Golf" },
+            "athletics": { "name": "Athletics (Track & Field)" },
+            "swimming": { "name": "Swimming" },
+            "cycling": { "name": "Cycling" },
+            "badminton": { "name": "Badminton" },
+            "table-tennis": { "name": "Table Tennis" }
+          }
+        }
+      }
+    },
+    "entertainment": {
+      "name": "Entertainment",
+      "subcategories": {
+        "music": {
+          "name": "Music",
+          "topics": {
+            "rock-music": { "name": "Rock Music" },
+            "pop-music": { "name": "Pop Music" },
+            "hip-hop": { "name": "Hip Hop & Rap" },
+            "classical-music": { "name": "Classical Music" },
+            "music-legends": { "name": "Music Legends" },
+            "grammy-awards": { "name": "Grammy Awards" },
+            "billboard-charts": { "name": "Billboard Charts" },
+            "music-instruments": { "name": "Musical Instruments" },
+            "bollywood-music": { "name": "Bollywood Music" }
+          }
+        },
+        "literature": {
+          "name": "Literature",
+          "topics": {
+            "classic-literature": { "name": "Classic Literature" },
+            "famous-authors": { "name": "Famous Authors" },
+            "nobel-literature": { "name": "Nobel Prize in Literature" },
+            "poetry": { "name": "Poetry" },
+            "mythology": { "name": "Mythology" },
+            "shakespeare": { "name": "Shakespeare" },
+            "bestsellers": { "name": "Bestselling Books" }
+          }
+        },
+        "gaming": {
+          "name": "Gaming",
+          "topics": {
+            "video-game-history": { "name": "Video Game History" },
+            "nintendo": { "name": "Nintendo Games" },
+            "playstation": { "name": "PlayStation Games" },
+            "pc-gaming": { "name": "PC Gaming" },
+            "esports": { "name": "Esports" },
+            "retro-gaming": { "name": "Retro Gaming" }
+          }
+        },
+        "awards": {
+          "name": "Awards",
+          "topics": {
+            "oscar-awards": { "name": "Academy Awards (Oscars)" },
+            "emmy-awards": { "name": "Emmy Awards" },
+            "golden-globes": { "name": "Golden Globe Awards" },
+            "bafta": { "name": "BAFTA Awards" }
+          }
+        }
+      }
+    },
+    "technology": {
+      "name": "Technology",
+      "subcategories": {
+        "computing": {
+          "name": "Computing",
+          "topics": {
+            "computer-history": { "name": "Computer History" },
+            "programming-languages": { "name": "Programming Languages" },
+            "operating-systems": { "name": "Operating Systems" },
+            "internet-history": { "name": "Internet History" },
+            "cybersecurity": { "name": "Cybersecurity" },
+            "artificial-intelligence": { "name": "Artificial Intelligence" }
+          }
+        },
+        "tech-companies": {
+          "name": "Tech Companies",
+          "topics": {
+            "apple": { "name": "Apple Inc." },
+            "google": { "name": "Google" },
+            "microsoft": { "name": "Microsoft" },
+            "amazon": { "name": "Amazon" },
+            "tech-founders": { "name": "Tech Founders & CEOs" }
+          }
+        },
+        "innovations": {
+          "name": "Innovations",
+          "topics": {
+            "inventions": { "name": "Famous Inventions" },
+            "inventors": { "name": "Famous Inventors" },
+            "smartphones": { "name": "Smartphones" },
+            "social-media": { "name": "Social Media" }
+          }
+        }
+      }
+    },
+    "general-knowledge": {
+      "name": "General Knowledge",
+      "subcategories": {
+        "miscellaneous": {
+          "name": "Miscellaneous",
+          "topics": {
+            "world-leaders": { "name": "World Leaders" },
+            "famous-quotes": { "name": "Famous Quotes" },
+            "currencies": { "name": "World Currencies" },
+            "languages": { "name": "World Languages" },
+            "religions": { "name": "World Religions" },
+            "food-and-cuisine": { "name": "Food & Cuisine" },
+            "fashion": { "name": "Fashion" },
+            "architecture": { "name": "Architecture" }
+          }
+        },
+        "current-affairs": {
+          "name": "Current Affairs",
+          "topics": {
+            "world-events": { "name": "World Events" },
+            "international-organizations": { "name": "International Organizations" },
+            "nobel-prizes": { "name": "Nobel Prizes" }
+          }
+        },
+        "india": {
+          "name": "India",
+          "topics": {
+            "indian-politics": { "name": "Indian Politics" },
+            "indian-geography": { "name": "Indian Geography" },
+            "indian-culture": { "name": "Indian Culture" },
+            "indian-economy": { "name": "Indian Economy" },
+            "indian-freedom-movement": { "name": "Indian Freedom Movement" },
+            "indian-constitution": { "name": "Indian Constitution" }
+          }
+        },
+        "indian-epics": {
+          "name": "Indian Epics & Scriptures",
+          "topics": {
+            "mahabharata": { "name": "Mahabharata" },
+            "ramayana": { "name": "Ramayana" },
+            "bhagavad-gita": { "name": "Bhagavad Gita" },
+            "vedas": { "name": "Vedas" },
+            "upanishads": { "name": "Upanishads" },
+            "puranas": { "name": "Puranas" },
+            "panchatantra": { "name": "Panchatantra" },
+            "jataka-tales": { "name": "Jataka Tales" }
+          }
+        }
+      }
+    }
+  }
+}
