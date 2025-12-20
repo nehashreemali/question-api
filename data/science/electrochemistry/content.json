@@ -1,0 +1,37 @@
+{
+  "title": "Electrochemistry (NCERT Class 12)",
+  "content": "**NCERT Curriculum: Class 12 Chemistry**\n\n\n---\n\n## Electrochemistry\n\nElectrochemistry is the branch of physical chemistry concerned with the relationship between electrical potential difference and identifiable chemical change. These reactions involve electrons moving via an electronically conducting phase between electrodes separated by an ionically conducting and electronically insulating electrolyte.\n\n---\n\n## Electrochemical cell\n\nAn electrochemical cell is a device that either generates electrical energy from chemical reactions in a so-called galvanic or voltaic cell, or induces chemical reactions (electrolysis) by applying external electrical energy in an electrolytic cell.\n\n---\n\n## Electrolysis\n\nIn chemistry and manufacturing, electrolysis is a technique that uses direct electric current (DC) to drive an otherwise non-spontaneous chemical reaction. Electrolysis is commercially important as a stage in the separation of elements from naturally occurring sources such as ores using an electrolytic cell. The voltage that is needed for electrolysis to occur is called the decomposition potential. The word \"lysis\" means to separate or break, so in terms, electrolysis would mean \"breakdown via electricity.\"\n\n---\n\n## Nernst equation\n\nIn electrochemistry, the Nernst equation is a chemical thermodynamical relationship that permits the calculation of the reduction potential of a reaction from the standard electrode potential, absolute temperature, the number of electrons involved in the redox reaction, and activities of the chemical species undergoing reduction and oxidation respectively. It was named after Walther Nernst, a German physical chemist who formulated the equation.",
+  "source": "NCERT Class 12 Chemistry (via Wikipedia)",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Electrochemistry",
+  "fetchedAt": "2025-12-20T12:38:11.782Z",
+  "citations": [
+    {
+      "text": "Electrochemistry",
+      "source": "Wikipedia (NCERT-aligned)",
+      "url": "https://en.wikipedia.org/wiki/Electrochemistry"
+    },
+    {
+      "text": "Electrochemical cell",
+      "source": "Wikipedia (NCERT-aligned)",
+      "url": "https://en.wikipedia.org/wiki/Electrochemical_cell"
+    },
+    {
+      "text": "Electrolysis",
+      "source": "Wikipedia (NCERT-aligned)",
+      "url": "https://en.wikipedia.org/wiki/Electrolysis"
+    },
+    {
+      "text": "Nernst equation",
+      "source": "Wikipedia (NCERT-aligned)",
+      "url": "https://en.wikipedia.org/wiki/Nernst_equation"
+    }
+  ],
+  "metadata": {
+    "category": "science",
+    "subcategory": "chemistry",
+    "topic": "electrochemistry",
+    "ncertClass": "12",
+    "ncertSubject": "Chemistry",
+    "articleCount": 4
+  }
+}
