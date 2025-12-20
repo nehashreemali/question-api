@@ -5,3 +5,4 @@ bun.lockb
 config.json
 logs/
 cache/
+.env

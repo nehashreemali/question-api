@@ -238,7 +238,7 @@
 
     <!-- Generate Modal -->
     <div id="generate-modal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
-      <div class="bg-gray-800 rounded-2xl border border-gray-700 w-full max-w-lg slide-in">
+      <div class="bg-gray-800 rounded-2xl border border-gray-700 w-full max-w-lg slide-in max-h-[80vh] flex flex-col">
         <div class="px-6 py-4 border-b border-gray-700 flex items-center justify-between">
           <h3 class="text-lg font-semibold text-white">Generate Questions</h3>
           <button onclick="closeModal()" class="text-gray-400 hover:text-white">
@@ -246,7 +246,7 @@
           </button>
         </div>
 
-        <div id="modal-form" class="p-6 space-y-4">
+        <div id="modal-form" class="p-6 space-y-4 overflow-y-auto flex-1 scrollbar-thin">
           <div>
             <label class="block text-sm font-medium text-gray-300 mb-2">Category</label>
             <select id="modal-category" onchange="onCategoryChange()" class="w-full px-4 py-2.5 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-primary-500">
@@ -273,15 +273,11 @@
             <div class="grid grid-cols-2 gap-4">
               <div>
                 <label class="block text-sm font-medium text-gray-300 mb-2">Season</label>
-                <select id="modal-season" onchange="onSeasonChange()" class="w-full px-4 py-2.5 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-primary-500">
-                  <option value="">Select season...</option>
-                </select>
+                <input type="number" id="modal-season" min="1" max="50" placeholder="e.g. 1" onchange="onSeasonChange()" oninput="onSeasonChange()" class="w-full px-4 py-2.5 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-primary-500 placeholder-gray-500">
               </div>
               <div>
                 <label class="block text-sm font-medium text-gray-300 mb-2">Episode</label>
-                <select id="modal-episode" onchange="onEpisodeChange()" disabled class="w-full px-4 py-2.5 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-primary-500 disabled:opacity-50">
-                  <option value="">Select episode...</option>
-                </select>
+                <input type="number" id="modal-episode" min="1" max="50" placeholder="e.g. 1" onchange="onEpisodeChange()" oninput="onEpisodeChange()" class="w-full px-4 py-2.5 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-primary-500 placeholder-gray-500">
               </div>
             </div>
 
@@ -344,7 +340,7 @@
         </div>
 
         <!-- Progress View -->
-        <div id="modal-progress" class="p-6 hidden">
+        <div id="modal-progress" class="p-6 hidden overflow-y-auto flex-1">
           <div class="text-center mb-6">
             <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary-500/20 flex items-center justify-center">
               <svg id="progress-spinner" class="w-8 h-8 text-primary-500 animate-spin" fill="none" viewBox="0 0 24 24">
@@ -401,7 +397,7 @@
 
     <!-- Bulk Generate Modal -->
     <div id="bulk-modal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
-      <div class="bg-gray-800 rounded-2xl border border-gray-700 w-full max-w-2xl slide-in">
+      <div class="bg-gray-800 rounded-2xl border border-gray-700 w-full max-w-2xl slide-in max-h-[80vh] flex flex-col">
         <div class="px-6 py-4 border-b border-gray-700 flex items-center justify-between">
           <h3 class="text-lg font-semibold text-white">Bulk Generate Questions</h3>
           <button onclick="closeBulkModal()" class="text-gray-400 hover:text-white">
@@ -409,7 +405,7 @@
           </button>
         </div>
 
-        <div id="bulk-form" class="p-6 space-y-4">
+        <div id="bulk-form" class="p-6 space-y-4 overflow-y-auto flex-1 scrollbar-thin">
           <div class="grid grid-cols-2 gap-4">
             <div>
               <label class="block text-sm font-medium text-gray-300 mb-2">Category</label>
@@ -452,7 +448,7 @@
         </div>
 
         <!-- Bulk Progress -->
-        <div id="bulk-progress" class="p-6 hidden">
+        <div id="bulk-progress" class="p-6 hidden overflow-y-auto flex-1 scrollbar-thin">
           <div class="mb-4">
             <div class="flex justify-between text-sm mb-2">
               <span class="text-gray-400">Progress</span>
@@ -730,9 +726,10 @@
       // Reset TV show options
       document.getElementById('tv-show-options').classList.add('hidden');
       document.getElementById('transcript-status').classList.add('hidden');
+      document.getElementById('transcript-missing').classList.add('hidden');
+      document.getElementById('transcript-exists').classList.add('hidden');
       document.getElementById('modal-season').value = '';
       document.getElementById('modal-episode').value = '';
-      document.getElementById('modal-episode').disabled = true;
       currentTVShow = null;
       transcriptAvailable = false;
     }
@@ -826,17 +823,9 @@
         if (currentTVShow) {
           document.getElementById('tv-show-options').classList.remove('hidden');
 
-          // Populate seasons (allow manual entry for new shows)
-          const seasonSelect = document.getElementById('modal-season');
-          const existingSeasons = currentTVShow.seasons || [];
-
-          // If no seasons exist, show 1-10 as options for new shows
-          const seasonsToShow = existingSeasons.length > 0 ? existingSeasons : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-          seasonSelect.innerHTML = '<option value="">Select season...</option>' +
-            seasonsToShow.map(s => `<option value="${s}">Season ${s}</option>`).join('');
-
-          document.getElementById('modal-episode').innerHTML = '<option value="">Select episode...</option>';
-          document.getElementById('modal-episode').disabled = true;
+          // Clear season/episode inputs
+          document.getElementById('modal-season').value = '';
+          document.getElementById('modal-episode').value = '';
 
           // Don't enable generate button until episode is selected
           document.getElementById('generate-btn').disabled = true;
@@ -849,37 +838,15 @@
 
     async function onSeasonChange() {
       const season = document.getElementById('modal-season').value;
-      const episodeSelect = document.getElementById('modal-episode');
+      const episode = document.getElementById('modal-episode').value;
 
       document.getElementById('transcript-status').classList.add('hidden');
       document.getElementById('generate-btn').disabled = true;
       transcriptAvailable = false;
 
-      if (!season || !currentTVShow) {
-        episodeSelect.disabled = true;
-        episodeSelect.innerHTML = '<option value="">Select episode...</option>';
-        return;
-      }
-
-      episodeSelect.disabled = false;
-
-      // Fetch episodes for this season
-      try {
-        const res = await fetch(`/api/tv-shows/${currentTVShow.slug}/seasons/${season}/episodes`);
-        const episodes = await res.json();
-
-        if (episodes.length > 0) {
-          episodeSelect.innerHTML = '<option value="">Select episode...</option>' +
-            episodes.map(e => `<option value="${e.episode}">${e.episode}. ${e.title}${e.hasTranscript ? ' ✓' : ''}</option>`).join('');
-        } else {
-          // No episodes yet, show 1-24 as options
-          episodeSelect.innerHTML = '<option value="">Select episode...</option>' +
-            Array.from({length: 24}, (_, i) => i + 1).map(n => `<option value="${n}">Episode ${n}</option>`).join('');
-        }
-      } catch (e) {
-        // Fallback to manual episode numbers
-        episodeSelect.innerHTML = '<option value="">Select episode...</option>' +
-          Array.from({length: 24}, (_, i) => i + 1).map(n => `<option value="${n}">Episode ${n}</option>`).join('');
+      // If both season and episode are filled, check transcript
+      if (season && episode && currentTVShow) {
+        await checkTranscriptStatus();
       }
     }
 
@@ -888,16 +855,25 @@
       const episode = document.getElementById('modal-episode').value;
 
       document.getElementById('transcript-status').classList.add('hidden');
-      document.getElementById('transcript-missing').classList.add('hidden');
-      document.getElementById('transcript-exists').classList.add('hidden');
       document.getElementById('generate-btn').disabled = true;
       transcriptAvailable = false;
 
-      if (!season || !episode || !currentTVShow) {
-        return;
+      // If both season and episode are filled, check transcript
+      if (season && episode && currentTVShow) {
+        await checkTranscriptStatus();
       }
+    }
 
-      // Check transcript status
+    async function checkTranscriptStatus() {
+      const season = document.getElementById('modal-season').value;
+      const episode = document.getElementById('modal-episode').value;
+
+      if (!season || !episode || !currentTVShow) return;
+
+      document.getElementById('transcript-status').classList.add('hidden');
+      document.getElementById('transcript-missing').classList.add('hidden');
+      document.getElementById('transcript-exists').classList.add('hidden');
+
       try {
         const res = await fetch(`/api/transcript-status?show=${currentTVShow.slug}&season=${season}&episode=${episode}`);
         const status = await res.json();
