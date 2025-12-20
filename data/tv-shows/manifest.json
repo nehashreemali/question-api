@@ -1,0 +1,58 @@
+{
+  "tvShows": {
+    "totalSeries": 2,
+    "seriesCompleted": 0,
+    "seriesInProgress": 2,
+    "seriesPending": 0,
+    "totalEpisodes": 515,
+    "episodesCompleted": 91,
+    "completionPercentage": 17.66990291262136
+  },
+  "statistics": {
+    "totalQuestions": 2389,
+    "totalTranscriptWords": 844486,
+    "averageQuestionsPerEpisode": 26,
+    "totalTokensUsed": 0,
+    "totalCostUSD": 0,
+    "projectedTotalQuestions": 15450,
+    "projectedTotalCostUSD": 257.5
+  },
+  "series": [
+    {
+      "name": "Friends",
+      "slug": "friends",
+      "totalSeasons": 10,
+      "totalEpisodes": 236,
+      "episodesCompleted": 90,
+      "questionsGenerated": 2352,
+      "status": "in_progress",
+      "priority": "high",
+      "tier": 1,
+      "phase": 1,
+      "completionPercentage": 38.13559322033898,
+      "lastUpdated": "2025-12-20T06:19:26.636Z"
+    },
+    {
+      "name": "The Big Bang Theory",
+      "slug": "the-big-bang-theory",
+      "totalSeasons": 12,
+      "totalEpisodes": 279,
+      "episodesCompleted": 1,
+      "questionsGenerated": 37,
+      "status": "in_progress",
+      "priority": "high",
+      "tier": 1,
+      "phase": 1,
+      "completionPercentage": 0.35842293906810035,
+      "lastUpdated": "2025-12-16T17:11:17.919Z"
+    }
+  ],
+  "phases": {},
+  "sources": {},
+  "metadata": {
+    "createdAt": "2025-12-16T17:11:17.907Z",
+    "updatedAt": "2025-12-20T06:19:26.636Z",
+    "version": "1.0",
+    "schemaVersion": "1.0"
+  }
+}

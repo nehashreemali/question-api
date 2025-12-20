@@ -1,0 +1,35 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 8,
+    "episode": 23,
+    "title": "The One Where Rachel Has A Baby"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0823.html",
+    "scrapedAt": "2025-12-17T14:32:59.982Z",
+    "wordCount": 6799,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "pending"
+  },
+  "files": {
+    "transcript": "transcript.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": false,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:32:59.691Z",
+    "updatedAt": "2025-12-17T14:32:59.982Z",
+    "version": "1.0"
+  }
+}

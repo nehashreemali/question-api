@@ -1,0 +1,395 @@
+{
+  "show": "Friends",
+  "season": 2,
+  "episode": 10,
+  "title": "The One With Russ",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-17T16:15:34.466Z",
+  "questionCount": 32,
+  "questions": [
+    {
+      "question": "What does Joey say is the reason he wanted to be a veterinarian when he was little?",
+      "options": [
+        "He wanted to help animals",
+        "He found out he had to put his hands into cows and stuff",
+        "He loved animals and wanted to work with them",
+        "He thought it would be an easy job"
+      ],
+      "correct_answer": "He found out he had to put his hands into cows and stuff",
+      "difficulty": "easy",
+      "explanation": "Joey mentions that when he was little, he wanted to be a veterinarian, but then he found out you had to put your hands into cows and stuff."
+    },
+    {
+      "question": "What is the name of the talent agency where Joey has an audition?",
+      "options": [
+        "Estelle Leonard Talent Agency",
+        "Joey Tribbiani Talent Agency",
+        "Days of Our Lives Talent Agency",
+        "Central Perk Talent Agency"
+      ],
+      "correct_answer": "Estelle Leonard Talent Agency",
+      "difficulty": "easy",
+      "explanation": "The scene takes place at the Estelle Leonard Talent Agency, where Joey has an audition."
+    },
+    {
+      "question": "What is the name of the woman Ross mentions who is the curator of moths and other winged things?",
+      "options": [
+        "Julie",
+        "Phoebe",
+        "Monica",
+        "Not mentioned by name"
+      ],
+      "correct_answer": "Not mentioned by name",
+      "difficulty": "medium",
+      "explanation": "Ross mentions a woman at the museum who is the curator of moths and other winged things, but does not mention her name."
+    },
+    {
+      "question": "What does Rachel say she will not be doing with Ross?",
+      "options": [
+        "Dating",
+        "Getting married",
+        "Having kids",
+        "Living together"
+      ],
+      "correct_answer": "Dating",
+      "difficulty": "easy",
+      "explanation": "Rachel tells Ross that she will not be dating him."
+    },
+    {
+      "question": "What does Russ do for a living?",
+      "options": [
+        "He is a paleontologist",
+        "He is a periodontist",
+        "He is an actor",
+        "He is a chef"
+      ],
+      "correct_answer": "He is a periodontist",
+      "difficulty": "easy",
+      "explanation": "Russ tells the gang that he is a periodontist, which is a doctor of gums."
+    },
+    {
+      "question": "What is the name of the character Joey plays on Days of Our Lives?",
+      "options": [
+        "Dr. Drake Ramore",
+        "Dr. Joey Tribbiani",
+        "Dr. Ross Geller",
+        "Dr. Russ"
+      ],
+      "correct_answer": "Dr. Drake Ramore",
+      "difficulty": "easy",
+      "explanation": "Joey tells the gang that he will be playing the role of Dr. Drake Ramore, a neurosurgeon, on Days of Our Lives."
+    },
+    {
+      "question": "Why does Fun Bobby break up with Monica?",
+      "options": [
+        "Because she is drinking too much",
+        "Because he is not strong enough to be in a codependent relationship",
+        "Because he fell off the wagon",
+        "Because she is not fun enough"
+      ],
+      "correct_answer": "Because he is not strong enough to be in a codependent relationship",
+      "difficulty": "medium",
+      "explanation": "Fun Bobby breaks up with Monica because he is not strong enough to be in a codependent relationship, implying that Monica has a drinking problem."
+    },
+    {
+      "question": "What does Phoebe think Rachel sees in Russ?",
+      "options": [
+        "That he is handsome",
+        "That he is funny",
+        "That he is smart",
+        "That he reminds her of Ross"
+      ],
+      "correct_answer": "That he reminds her of Ross",
+      "difficulty": "medium",
+      "explanation": "Phoebe thinks that Rachel sees in Russ a reminder of Ross, which is why she is dating him."
+    },
+    {
+      "question": "What does Joey decide to do about the casting lady's offer?",
+      "options": [
+        "He decides to sleep with her to get the part",
+        "He decides not to sleep with her and to audition fairly",
+        "He decides to report her to the authorities",
+        "He decides to quit acting"
+      ],
+      "correct_answer": "He decides not to sleep with her and to audition fairly",
+      "difficulty": "easy",
+      "explanation": "Joey decides that he does not want to sleep with the casting lady to get the part, and instead wants to audition fairly."
+    },
+    {
+      "question": "What is the name of the bar where the gang hangs out?",
+      "options": [
+        "Central Perk",
+        "The Coffee Shop",
+        "The Bar",
+        "The Pub"
+      ],
+      "correct_answer": "Central Perk",
+      "difficulty": "easy",
+      "explanation": "The gang hangs out at Central Perk, which is their favorite coffee shop."
+    },
+    {
+      "question": "What does Chandler compare Ross's problem with Russ to?",
+      "options": [
+        "A card game",
+        "A sports game",
+        "A board game",
+        "A puzzle"
+      ],
+      "correct_answer": "A card game",
+      "difficulty": "medium",
+      "explanation": "Chandler compares Ross's problem with Russ to a card game, saying that Ross is like a card sharp, while Russ is like a card shark."
+    },
+    {
+      "question": "What does Monica use to make Fun Bobby's stories more amusing?",
+      "options": [
+        "Wine",
+        "Liquor",
+        "Beer",
+        "Coffee"
+      ],
+      "correct_answer": "Liquor",
+      "difficulty": "easy",
+      "explanation": "Monica uses liquor to make Fun Bobby's stories more amusing, as she finds them boring when he is sober."
+    },
+    {
+      "question": "What does Joey's agent tell him about the audition?",
+      "options": [
+        "That he got the part",
+        "That he needs to sleep with the casting lady to get the part",
+        "That he needs to audition again",
+        "That he is not right for the part"
+      ],
+      "correct_answer": "That he needs to sleep with the casting lady to get the part",
+      "difficulty": "medium",
+      "explanation": "Joey's agent tells him that he needs to sleep with the casting lady to get the part, which Joey is not comfortable with."
+    },
+    {
+      "question": "What does Rachel say to Ross when he asks her about her date with Russ?",
+      "options": [
+        "That she is in love with Russ",
+        "That she is just having fun with Russ",
+        "That she is not interested in Ross",
+        "That she is not really anything at Ross anymore"
+      ],
+      "correct_answer": "That she is not really anything at Ross anymore",
+      "difficulty": "medium",
+      "explanation": "Rachel tells Ross that she is not really anything at him anymore, implying that she has moved on from her feelings for him."
+    },
+    {
+      "question": "What does Phoebe think is the reason why Rachel is dating Russ?",
+      "options": [
+        "Because he is handsome",
+        "Because he is funny",
+        "Because he reminds her of Ross",
+        "Because he is smart"
+      ],
+      "correct_answer": "Because he reminds her of Ross",
+      "difficulty": "medium",
+      "explanation": "Phoebe thinks that Rachel is dating Russ because he reminds her of Ross, which is why she is attracted to him."
+    },
+    {
+      "question": "What does Joey decide to do after the casting lady offers him a bigger part?",
+      "options": [
+        "He decides to sleep with her to get the part",
+        "He decides not to sleep with her and to audition fairly",
+        "He decides to report her to the authorities",
+        "He decides to quit acting"
+      ],
+      "correct_answer": "He decides not to sleep with her and to audition fairly",
+      "difficulty": "easy",
+      "explanation": "Joey decides that he does not want to sleep with the casting lady to get the part, and instead wants to audition fairly."
+    },
+    {
+      "question": "What is the name of the museum where Ross works?",
+      "options": [
+        "The Museum of Natural History",
+        "The Museum of Art",
+        "The Museum of Science",
+        "Not mentioned by name"
+      ],
+      "correct_answer": "The Museum of Natural History",
+      "difficulty": "medium",
+      "explanation": "Ross mentions that he works at the Museum of Natural History, where a stegosaurus fell over and trapped a kid."
+    },
+    {
+      "question": "What does Chandler say is the reason why Ross is jealous of Russ?",
+      "options": [
+        "Because Russ is a better paleontologist",
+        "Because Russ is a doctor of gums",
+        "Because Russ is dating Rachel",
+        "Because Russ is more handsome"
+      ],
+      "correct_answer": "Because Russ is dating Rachel",
+      "difficulty": "medium",
+      "explanation": "Chandler implies that Ross is jealous of Russ because he is dating Rachel, which is why Ross is being competitive with him."
+    },
+    {
+      "question": "What does Monica tell Fun Bobby when he says he thinks she has a drinking problem?",
+      "options": [
+        "That she does not have a drinking problem",
+        "That she will try to cut back on her drinking",
+        "That she will go to rehab",
+        "That the bottles of liquor are for cuts and scrapes"
+      ],
+      "correct_answer": "That the bottles of liquor are for cuts and scrapes",
+      "difficulty": "easy",
+      "explanation": "Monica tells Fun Bobby that the bottles of liquor are for cuts and scrapes, which is not true."
+    },
+    {
+      "question": "What does Russ say to Rachel when she breaks up with him?",
+      "options": [
+        "That he is sad to see her go",
+        "That he understands why she broke up with him",
+        "That he thinks she is making a mistake",
+        "That he does not know why she broke up with him"
+      ],
+      "correct_answer": "That he does not know why she broke up with him",
+      "difficulty": "medium",
+      "explanation": "Russ tells Rachel that he does not know why she broke up with him, implying that he is confused and does not understand her reasons."
+    },
+    {
+      "question": "What does Joey's agent tell him about the casting lady?",
+      "options": [
+        "That she is very professional",
+        "That she is very kind",
+        "That she is willing to sleep with him to get the part",
+        "That she is not interested in him"
+      ],
+      "correct_answer": "That she is willing to sleep with him to get the part",
+      "difficulty": "medium",
+      "explanation": "Joey's agent tells him that the casting lady is willing to sleep with him to get the part, which Joey is not comfortable with."
+    },
+    {
+      "question": "What does Rachel say to Phoebe when Phoebe asks her if she sees the resemblance between Russ and Ross?",
+      "options": [
+        "That she sees the resemblance",
+        "That she does not see the resemblance",
+        "That she is not sure",
+        "That she does not care"
+      ],
+      "correct_answer": "That she does not see the resemblance",
+      "difficulty": "medium",
+      "explanation": "Rachel tells Phoebe that she does not see the resemblance between Russ and Ross, which Phoebe finds surprising."
+    },
+    {
+      "question": "What does Chandler compare the situation between Ross and Russ to?",
+      "options": [
+        "A card game",
+        "A sports game",
+        "A board game",
+        "A puzzle"
+      ],
+      "correct_answer": "A card game",
+      "difficulty": "medium",
+      "explanation": "Chandler compares the situation between Ross and Russ to a card game, saying that Ross is like a card sharp, while Russ is like a card shark."
+    },
+    {
+      "question": "What does Monica tell the gang when Fun Bobby breaks up with her?",
+      "options": [
+        "That she is sad",
+        "That she is relieved",
+        "That she is angry",
+        "That they broke up because he was not strong enough to be in a codependent relationship"
+      ],
+      "correct_answer": "That they broke up because he was not strong enough to be in a codependent relationship",
+      "difficulty": "medium",
+      "explanation": "Monica tells the gang that she and Fun Bobby broke up because he was not strong enough to be in a codependent relationship, implying that she has a drinking problem."
+    },
+    {
+      "question": "What does Joey decide to do after the casting lady offers him a bigger part?",
+      "options": [
+        "He decides to sleep with her to get the part",
+        "He decides not to sleep with her and to audition fairly",
+        "He decides to report her to the authorities",
+        "He decides to quit acting"
+      ],
+      "correct_answer": "He decides not to sleep with her and to audition fairly",
+      "difficulty": "easy",
+      "explanation": "Joey decides that he does not want to sleep with the casting lady to get the part, and instead wants to audition fairly."
+    },
+    {
+      "question": "What does Ross say to Rachel when she breaks up with Russ?",
+      "options": [
+        "That he is happy to see her single again",
+        "That he is sad to see her single again",
+        "That he does not care about her relationship with Russ",
+        "That he is jealous of Russ"
+      ],
+      "correct_answer": "That he is jealous of Russ",
+      "difficulty": "medium",
+      "explanation": "Ross implies that he is jealous of Russ when Rachel breaks up with him, which Rachel does not appreciate."
+    },
+    {
+      "question": "What does Phoebe think is the reason why Rachel is not interested in Ross?",
+      "options": [
+        "Because he is not handsome",
+        "Because he is not funny",
+        "Because she is not really anything at him anymore",
+        "Because he is not smart"
+      ],
+      "correct_answer": "Because she is not really anything at him anymore",
+      "difficulty": "medium",
+      "explanation": "Phoebe thinks that Rachel is not interested in Ross because she is not really anything at him anymore, implying that she has moved on from her feelings for him."
+    },
+    {
+      "question": "What does Monica use to make Fun Bobby's stories more amusing when he is sober?",
+      "options": [
+        "Wine",
+        "Liquor",
+        "Beer",
+        "Coffee"
+      ],
+      "correct_answer": "Liquor",
+      "difficulty": "easy",
+      "explanation": "Monica uses liquor to make Fun Bobby's stories more amusing when he is sober, as she finds them boring without it."
+    },
+    {
+      "question": "What does Chandler say to Joey when he decides not to sleep with the casting lady?",
+      "options": [
+        "That he is making a big mistake",
+        "That he is doing the right thing",
+        "That he should sleep with her to get the part",
+        "That he should report her to the authorities"
+      ],
+      "correct_answer": "That he is doing the right thing",
+      "difficulty": "medium",
+      "explanation": "Chandler tells Joey that he is doing the right thing by not sleeping with the casting lady to get the part, implying that he is taking the high road."
+    },
+    {
+      "question": "What does Ross say to Russ when they meet for the first time?",
+      "options": [
+        "That he is happy to meet him",
+        "That he is jealous of him",
+        "That he does not like him",
+        "That he is indifferent to him"
+      ],
+      "correct_answer": "That he is indifferent to him",
+      "difficulty": "medium",
+      "explanation": "Ross is indifferent to Russ when they meet for the first time, but later becomes jealous of him when he finds out that Russ is dating Rachel."
+    },
+    {
+      "question": "What does Phoebe think is the reason why Rachel is dating Russ?",
+      "options": [
+        "Because he is handsome",
+        "Because he is funny",
+        "Because he reminds her of Ross",
+        "Because he is smart"
+      ],
+      "correct_answer": "Because he reminds her of Ross",
+      "difficulty": "medium",
+      "explanation": "Phoebe thinks that Rachel is dating Russ because he reminds her of Ross, which is why she is attracted to him."
+    },
+    {
+      "question": "What does Joey decide to do after the casting lady offers him a bigger part?",
+      "options": [
+        "He decides to sleep with her to get the part",
+        "He decides not to sleep with her and to audition fairly",
+        "He decides to report her to the authorities",
+        "He decides to quit acting"
+      ],
+      "correct_answer": "He decides not to sleep with her and to audition fairly",
+      "difficulty": "easy",
+      "explanation": "Joey decides that he does not want to sleep with the casting lady to get the part, and instead wants to audition fairly."
+    }
+  ]
+}

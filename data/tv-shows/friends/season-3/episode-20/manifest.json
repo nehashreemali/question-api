@@ -1,0 +1,54 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 3,
+    "episode": 20,
+    "title": "The One With The Dollhouse"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0320.html",
+    "scrapedAt": "2025-12-17T14:29:08.329Z",
+    "wordCount": 3674,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "completed",
+    "generatedAt": "2025-12-19T16:55:07.362Z",
+    "totalCount": 22,
+    "distribution": {
+      "easy": 8,
+      "medium": 14,
+      "hard": 0
+    },
+    "types": {
+      "dialogue": 0,
+      "scene": 0,
+      "character": 0,
+      "plot": 0,
+      "object": 0
+    },
+    "aiModel": "llama-3.3-70b-versatile",
+    "temperature": 0.7,
+    "tokensUsed": 0
+  },
+  "files": {
+    "transcript": "transcript.json",
+    "questions": "questions.json",
+    "rawQuestions": "rawQuestions.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": true,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:29:08.028Z",
+    "updatedAt": "2025-12-19T16:55:07.362Z",
+    "version": "1.0"
+  }
+}

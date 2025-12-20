@@ -1,0 +1,35 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 5,
+    "episode": 23,
+    "title": "The One In Vegas"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0523.html",
+    "scrapedAt": "2025-12-17T14:31:46.351Z",
+    "wordCount": 8316,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "pending"
+  },
+  "files": {
+    "transcript": "transcript.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": false,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:31:46.009Z",
+    "updatedAt": "2025-12-17T14:31:46.351Z",
+    "version": "1.0"
+  }
+}

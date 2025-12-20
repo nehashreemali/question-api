@@ -1,0 +1,35 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 7,
+    "episode": 22,
+    "title": "The One With Chandler’s Dad"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0722.html",
+    "scrapedAt": "2025-12-17T14:32:59.187Z",
+    "wordCount": 3781,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "pending"
+  },
+  "files": {
+    "transcript": "transcript.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": false,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:32:58.907Z",
+    "updatedAt": "2025-12-17T14:32:59.187Z",
+    "version": "1.0"
+  }
+}

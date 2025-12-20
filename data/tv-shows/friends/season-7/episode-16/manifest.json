@@ -1,0 +1,35 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 7,
+    "episode": 16,
+    "title": "The One With The Truth About London"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0716.html",
+    "scrapedAt": "2025-12-17T14:32:54.452Z",
+    "wordCount": 4963,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "pending"
+  },
+  "files": {
+    "transcript": "transcript.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": false,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:32:54.142Z",
+    "updatedAt": "2025-12-17T14:32:54.452Z",
+    "version": "1.0"
+  }
+}

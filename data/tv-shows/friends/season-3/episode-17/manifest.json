@@ -1,0 +1,54 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 3,
+    "episode": 17,
+    "title": "The One Without The Ski Trip"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0317.html",
+    "scrapedAt": "2025-12-17T14:29:05.895Z",
+    "wordCount": 3997,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "completed",
+    "generatedAt": "2025-12-19T16:51:46.765Z",
+    "totalCount": 20,
+    "distribution": {
+      "easy": 6,
+      "medium": 10,
+      "hard": 4
+    },
+    "types": {
+      "dialogue": 0,
+      "scene": 0,
+      "character": 0,
+      "plot": 0,
+      "object": 0
+    },
+    "aiModel": "llama-3.3-70b-versatile",
+    "temperature": 0.7,
+    "tokensUsed": 0
+  },
+  "files": {
+    "transcript": "transcript.json",
+    "questions": "questions.json",
+    "rawQuestions": "rawQuestions.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": true,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:29:05.553Z",
+    "updatedAt": "2025-12-19T16:51:46.765Z",
+    "version": "1.0"
+  }
+}

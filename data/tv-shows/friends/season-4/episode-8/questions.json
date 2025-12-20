@@ -1,0 +1,239 @@
+{
+  "show": "Friends",
+  "season": 4,
+  "episode": 8,
+  "title": "The One With Chandler In A Box",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-19T17:11:23.690Z",
+  "questionCount": 19,
+  "questions": [
+    {
+      "question": "What was the reason for Joey's anger towards Chandler?",
+      "options": [
+        "Chandler borrowed his clothes without asking",
+        "Chandler kissed his girlfriend",
+        "Chandler ate his food",
+        "Chandler didn't help him move"
+      ],
+      "correct_answer": "Chandler kissed his girlfriend",
+      "difficulty": "easy",
+      "explanation": "Joey was upset because Chandler kissed his girlfriend, which was a breach of their friendship."
+    },
+    {
+      "question": "What was Phoebe's suggestion for the friends' Christmas gift exchange?",
+      "options": [
+        "Buy gifts for everyone",
+        "Do a secret Santa and each buy one gift",
+        "Not exchange gifts at all",
+        "Exchange handmade gifts"
+      ],
+      "correct_answer": "Do a secret Santa and each buy one gift",
+      "difficulty": "easy",
+      "explanation": "Phoebe suggested doing a secret Santa to make the gift-giving process more exciting and less expensive."
+    },
+    {
+      "question": "Why did Monica not want to go to the doctor when she got ice in her eye?",
+      "options": [
+        "She was afraid of doctors",
+        "She didn't have insurance",
+        "Her eye doctor was her ex-boyfriend, Richard",
+        "She was allergic to eye exams"
+      ],
+      "correct_answer": "Her eye doctor was her ex-boyfriend, Richard",
+      "explanation": "Monica didn't want to see her ex-boyfriend, Richard, which is why she was hesitant to go to the doctor.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What was the result of Monica's visit to the doctor?",
+      "options": [
+        "She needed surgery",
+        "She had a severe eye infection",
+        "She had a scratch on her cornea and needed to wear a patch",
+        "She was fine and didn't need any treatment"
+      ],
+      "correct_answer": "She had a scratch on her cornea and needed to wear a patch",
+      "difficulty": "medium",
+      "explanation": "The doctor diagnosed Monica with a scratch on her cornea and prescribed her to wear a patch for a couple of days."
+    },
+    {
+      "question": "Why did Ross want to see the necklace he gave Rachel?",
+      "options": [
+        "He wanted to borrow it",
+        "He wanted to see if she still liked it",
+        "He suspected she had exchanged it",
+        "He wanted to give it to someone else"
+      ],
+      "correct_answer": "He suspected she had exchanged it",
+      "difficulty": "medium",
+      "explanation": "Ross wanted to verify if Rachel had exchanged the necklace he gave her, which she eventually admitted to doing."
+    },
+    {
+      "question": "What was the outcome of Chandler's attempt to make amends with Joey?",
+      "options": [
+        "Joey immediately forgave him",
+        "Joey was still angry but willing to talk",
+        "Joey didn't care and wanted to move on",
+        "Joey told Chandler to get out of the apartment"
+      ],
+      "correct_answer": "Joey was still angry but willing to talk",
+      "difficulty": "easy",
+      "explanation": "Joey was still upset with Chandler, but after Chandler's efforts to make amends, including getting into a box, Joey was willing to talk and eventually forgave him."
+    },
+    {
+      "question": "Why did Kathy break up with Chandler?",
+      "options": [
+        "She didn't like his sense of humor",
+        "She was upset about his friendship with Joey",
+        "She didn't want to be the reason for their rift",
+        "She was moving away"
+      ],
+      "correct_answer": "She didn't want to be the reason for their rift",
+      "difficulty": "medium",
+      "explanation": "Kathy decided to break up with Chandler because she didn't want to be the cause of the tension between him and Joey."
+    },
+    {
+      "question": "What was the reason for Monica's hesitation to kiss Tim?",
+      "options": [
+        "She wasn't attracted to him",
+        "She was still in love with Richard",
+        "The kiss reminded her of his father, Richard",
+        "She was shy"
+      ],
+      "correct_answer": "The kiss reminded her of his father, Richard",
+      "difficulty": "medium",
+      "explanation": "Monica hesitated to kiss Tim because the kiss reminded her of his father, Richard, which made her uncomfortable."
+    },
+    {
+      "question": "What did Rachel keep in the shoe box?",
+      "options": [
+        "Mementos from her relationship with Ross",
+        "Gifts she received from her friends",
+        "Photos of her family",
+        "Her favorite shoes"
+      ],
+      "correct_answer": "Mementos from her relationship with Ross",
+      "difficulty": "easy",
+      "explanation": "Rachel kept mementos from her relationship with Ross in the shoe box, including a movie stub, an eggshell, and a bone from the museum."
+    },
+    {
+      "question": "Why did Joey tell Chandler to get out of the box?",
+      "options": [
+        "He was tired of Chandler's antics",
+        "He wanted Chandler to catch up with Kathy",
+        "He forgave Chandler and wanted to move on",
+        "He was angry with Chandler again"
+      ],
+      "correct_answer": "He wanted Chandler to catch up with Kathy",
+      "difficulty": "easy",
+      "explanation": "Joey told Chandler to get out of the box so he could catch up with Kathy, who had just broken up with him."
+    },
+    {
+      "question": "What was the threefold meaning of the box, according to Chandler?",
+      "options": [
+        "To think about what he did, to prove his friendship, and to punish himself",
+        "To apologize to Joey, to make amends, and to reflect on his actions",
+        "To give Joey space, to prove his loyalty, and to make a joke",
+        "To show Kathy he was committed, to demonstrate his love, and to make a statement"
+      ],
+      "correct_answer": "To think about what he did, to prove his friendship, and to punish himself",
+      "difficulty": "medium",
+      "explanation": "Chandler explained that the box had a threefold meaning: to give him time to think about what he did, to prove how much he cares about his friendship with Joey, and to punish himself."
+    },
+    {
+      "question": "What did Ross give Rachel for their first date?",
+      "options": [
+        "A gold necklace",
+        "A movie ticket",
+        "A bouquet of flowers",
+        "A book by her favorite author"
+      ],
+      "correct_answer": "A gold necklace",
+      "difficulty": "hard",
+      "explanation": "Ross mentioned that he gave Rachel a gold necklace on their first date, which she later exchanged for something else."
+    },
+    {
+      "question": "Why did Monica invite Tim to Thanksgiving dinner?",
+      "options": [
+        "She wanted to introduce him to her friends",
+        "She felt sorry for him because he didn't have anywhere else to go",
+        "She was attracted to him and wanted to spend more time with him",
+        "She wanted to make her ex-boyfriend, Richard, jealous"
+      ],
+      "correct_answer": "She was attracted to him and wanted to spend more time with him",
+      "difficulty": "medium",
+      "explanation": "Monica invited Tim to Thanksgiving dinner because she was attracted to him and wanted to spend more time with him."
+    },
+    {
+      "question": "What did Phoebe say about Rachel's gift-giving habits?",
+      "options": [
+        "She always returns gifts",
+        "She never returns gifts",
+        "She exchanges gifts for something she likes better",
+        "She donates gifts to charity"
+      ],
+      "correct_answer": "She exchanges gifts for something she likes better",
+      "difficulty": "easy",
+      "explanation": "Phoebe mentioned that Rachel has a habit of exchanging gifts for something she likes better."
+    },
+    {
+      "question": "What was the outcome of Monica's conversation with Tim on the balcony?",
+      "options": [
+        "They shared a romantic kiss",
+        "They decided to start a relationship",
+        "They realized they weren't compatible",
+        "They had an awkward moment when their kiss reminded Monica of Tim's father"
+      ],
+      "correct_answer": "They had an awkward moment when their kiss reminded Monica of Tim's father",
+      "difficulty": "medium",
+      "explanation": "Monica and Tim had an awkward moment when their kiss reminded her of his father, Richard, which made her uncomfortable."
+    },
+    {
+      "question": "What did Joey say to Chandler when he was in the box?",
+      "options": [
+        "Get out of the box and let's talk",
+        "I'm sorry for being angry with you",
+        "You're an idiot for getting in the box",
+        "I'm still mad at you, but I want to work things out"
+      ],
+      "correct_answer": "I'm still mad at you, but I want to work things out",
+      "difficulty": "medium",
+      "explanation": "Joey told Chandler that he was still mad at him, but he wanted to work things out and move forward."
+    },
+    {
+      "question": "What did Chandler do after getting out of the box?",
+      "options": [
+        "He apologized to Joey again",
+        "He went to find Kathy and try to win her back",
+        "He joined the others for Thanksgiving dinner",
+        "He went to his room to think some more"
+      ],
+      "correct_answer": "He went to find Kathy and try to win her back",
+      "difficulty": "easy",
+      "explanation": "After getting out of the box, Chandler went to find Kathy and try to win her back."
+    },
+    {
+      "question": "What did Ross learn about the necklace he gave Rachel?",
+      "options": [
+        "She lost it",
+        "She gave it to someone else",
+        "She exchanged it for something else",
+        "She still had it and treasured it"
+      ],
+      "correct_answer": "She exchanged it for something else",
+      "difficulty": "easy",
+      "explanation": "Ross discovered that Rachel had exchanged the necklace he gave her for something else."
+    },
+    {
+      "question": "What did Rachel show Ross to prove she had sentiment?",
+      "options": [
+        "A photo album of their time together",
+        "A box of mementos from their relationship",
+        "A letter she wrote to him",
+        "A gift she had been saving for him"
+      ],
+      "correct_answer": "A box of mementos from their relationship",
+      "difficulty": "medium",
+      "explanation": "Rachel showed Ross a box of mementos from their relationship, including a movie stub, an eggshell, and a bone, to prove she had sentiment and valued their time together."
+    }
+  ]
+}

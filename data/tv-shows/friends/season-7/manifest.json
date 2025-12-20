@@ -1,0 +1,195 @@
+{
+  "season": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "seasonNumber": 7,
+    "totalEpisodes": 24
+  },
+  "progress": {
+    "episodesCompleted": 0,
+    "episodesInProgress": 23,
+    "episodesPending": 1,
+    "episodesFailed": 0,
+    "completionPercentage": 0
+  },
+  "statistics": {
+    "totalQuestions": 0,
+    "totalTranscriptWords": 91850,
+    "averageQuestionsPerEpisode": 0,
+    "totalTokensUsed": 0,
+    "estimatedCost": 0
+  },
+  "episodes": [
+    {
+      "episode": 1,
+      "title": "The One With Monica’s Thunder",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:42.269Z"
+    },
+    {
+      "episode": 2,
+      "title": "The One With Rachel’s Book",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:43.067Z"
+    },
+    {
+      "episode": 3,
+      "title": "The One With Phoebe’s Cookies",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:43.875Z"
+    },
+    {
+      "episode": 4,
+      "title": "The One With Rachel’s Assistant",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:44.659Z"
+    },
+    {
+      "episode": 5,
+      "title": "The One With The Engagement Picture",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:45.669Z"
+    },
+    {
+      "episode": 6,
+      "title": "The One With The Nap Partners",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:46.448Z"
+    },
+    {
+      "episode": 7,
+      "title": "The One With Ross’s Book",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:47.237Z"
+    },
+    {
+      "episode": 8,
+      "title": "The One Where Chandler Doesn’t Like Dogs",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:48.021Z"
+    },
+    {
+      "episode": 9,
+      "title": "The One With All The Candy",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:48.813Z"
+    },
+    {
+      "episode": 10,
+      "title": "The One With the Holiday Armadillo",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:49.606Z"
+    },
+    {
+      "episode": 11,
+      "title": "The One With All The Cheesecake",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:50.413Z"
+    },
+    {
+      "episode": 12,
+      "title": "The One Where They’re Up All Night",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:51.226Z"
+    },
+    {
+      "episode": 13,
+      "title": "The One Where Rosita Dies",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:52.063Z"
+    },
+    {
+      "episode": 14,
+      "title": "The One Where They All Turn Thirty",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:52.844Z"
+    },
+    {
+      "episode": 15,
+      "title": "The One With Joey’s New Brain",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:53.640Z"
+    },
+    {
+      "episode": 16,
+      "title": "The One With The Truth About London",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:54.452Z"
+    },
+    {
+      "episode": 17,
+      "title": "The One With The Cheap Wedding Dress",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:55.240Z"
+    },
+    {
+      "episode": 18,
+      "title": "The One With Joey’s Award",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:56.028Z"
+    },
+    {
+      "episode": 19,
+      "title": "The One With Ross and Monica’s Cousin",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:56.830Z"
+    },
+    {
+      "episode": 20,
+      "title": "The One With Rachel’s Big Kiss",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:57.610Z"
+    },
+    {
+      "episode": 21,
+      "title": "The One With The Vows",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:58.402Z"
+    },
+    {
+      "episode": 22,
+      "title": "The One With Chandler’s Dad",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:59.187Z"
+    },
+    {
+      "episode": 23,
+      "title": "The One With Chandler and Monica’s Wedding",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:59.992Z"
+    }
+  ],
+  "sources": {
+    "primary": "Unknown",
+    "reliability": "unknown",
+    "coverage": 0
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:32:41.843Z",
+    "updatedAt": "2025-12-17T14:32:59.993Z",
+    "version": "1.0"
+  }
+}

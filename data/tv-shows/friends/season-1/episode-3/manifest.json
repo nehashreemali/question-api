@@ -1,0 +1,54 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 1,
+    "episode": 3,
+    "title": "The One With The Thumb"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0103.html",
+    "scrapedAt": "2025-12-16T17:11:17.923Z",
+    "wordCount": 3232,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "completed",
+    "generatedAt": "2025-12-16T17:11:58.769Z",
+    "totalCount": 29,
+    "distribution": {
+      "easy": 17,
+      "medium": 12,
+      "hard": 0
+    },
+    "types": {
+      "dialogue": 0,
+      "scene": 0,
+      "character": 0,
+      "plot": 0,
+      "object": 0
+    },
+    "aiModel": "llama-3.3-70b-versatile",
+    "temperature": 0.7,
+    "tokensUsed": 0
+  },
+  "files": {
+    "transcript": "transcript.json",
+    "questions": "questions.json",
+    "rawQuestions": "rawQuestions.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": true,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-16T17:11:17.922Z",
+    "updatedAt": "2025-12-16T17:11:58.769Z",
+    "version": "1.0"
+  }
+}

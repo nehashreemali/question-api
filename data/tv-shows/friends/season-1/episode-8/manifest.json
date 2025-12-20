@@ -1,0 +1,54 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 1,
+    "episode": 8,
+    "title": "The One Where Nana Dies Twice"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0108.html",
+    "scrapedAt": "2025-12-16T17:20:52.340Z",
+    "wordCount": 2920,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "completed",
+    "generatedAt": "2025-12-16T17:21:01.555Z",
+    "totalCount": 29,
+    "distribution": {
+      "easy": 7,
+      "medium": 22,
+      "hard": 0
+    },
+    "types": {
+      "dialogue": 0,
+      "scene": 0,
+      "character": 0,
+      "plot": 0,
+      "object": 0
+    },
+    "aiModel": "llama-3.3-70b-versatile",
+    "temperature": 0.7,
+    "tokensUsed": 0
+  },
+  "files": {
+    "transcript": "transcript.json",
+    "questions": "questions.json",
+    "rawQuestions": "rawQuestions.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": true,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-16T17:20:51.887Z",
+    "updatedAt": "2025-12-16T17:21:01.555Z",
+    "version": "1.0"
+  }
+}

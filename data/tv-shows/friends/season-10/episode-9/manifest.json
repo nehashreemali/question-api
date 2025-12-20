@@ -1,0 +1,35 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 10,
+    "episode": 9,
+    "title": "Friends - 10.09 - The One With The Birth Mother"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/1009.html",
+    "scrapedAt": "2025-12-17T14:34:03.674Z",
+    "wordCount": 4253,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "pending"
+  },
+  "files": {
+    "transcript": "transcript.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": false,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:34:03.290Z",
+    "updatedAt": "2025-12-17T14:34:03.674Z",
+    "version": "1.0"
+  }
+}

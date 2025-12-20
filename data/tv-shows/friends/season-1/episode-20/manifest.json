@@ -1,0 +1,35 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 1,
+    "episode": 20,
+    "title": "The One With the Evil Orthodontist"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0120.html",
+    "scrapedAt": "2025-12-16T17:27:16.811Z",
+    "wordCount": 3346,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "pending"
+  },
+  "files": {
+    "transcript": "transcript.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": false,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-16T17:27:16.409Z",
+    "updatedAt": "2025-12-16T17:27:16.811Z",
+    "version": "1.0"
+  }
+}

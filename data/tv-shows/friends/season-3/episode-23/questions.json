@@ -1,0 +1,287 @@
+{
+  "show": "Friends",
+  "season": 3,
+  "episode": 23,
+  "title": "The One With Ross's Thing",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-19T16:58:33.845Z",
+  "questionCount": 23,
+  "questions": [
+    {
+      "question": "What does Ross ask his friends to help him with?",
+      "options": [
+        "To move into a new apartment",
+        "To understand a skin abnormality on his body",
+        "To plan a birthday party",
+        "To learn how to play the guitar"
+      ],
+      "correct_answer": "To understand a skin abnormality on his body",
+      "difficulty": "easy",
+      "explanation": "Ross asks his friends to help him identify a mysterious growth on his body."
+    },
+    {
+      "question": "What is Phoebe's profession?",
+      "options": [
+        "A kindergarten teacher",
+        "A musician",
+        "A fireman",
+        "A chef"
+      ],
+      "correct_answer": "A musician",
+      "difficulty": "easy",
+      "explanation": "Phoebe is a musician who plays her music at Central Perk."
+    },
+    {
+      "question": "What is the name of Phoebe's date who is a fireman?",
+      "options": [
+        "Vince",
+        "Jason",
+        "Ross",
+        "Chandler"
+      ],
+      "correct_answer": "Vince",
+      "difficulty": "easy",
+      "explanation": "Vince is a fireman and one of Phoebe's dates."
+    },
+    {
+      "question": "What does Monica think Pete means when he says 'we need to talk'?",
+      "options": [
+        "That he wants to break up with her",
+        "That he wants to get married",
+        "That he wants to go on a trip",
+        "That he wants to discuss their relationship"
+      ],
+      "correct_answer": "That he wants to break up with her",
+      "difficulty": "medium",
+      "explanation": "Monica thinks that when someone says 'we need to talk', it usually means something bad."
+    },
+    {
+      "question": "What does Ross's doctor say about the skin abnormality?",
+      "options": [
+        "That it's a third nipple",
+        "That it's a mole",
+        "That it's a pimple",
+        "That it's a skin abnormality but can't identify it"
+      ],
+      "correct_answer": "That it's a skin abnormality but can't identify it",
+      "difficulty": "medium",
+      "explanation": "Ross's doctor can't identify the skin abnormality and is reluctant to remove it."
+    },
+    {
+      "question": "What does Phoebe decide to do about her two dates?",
+      "options": [
+        "To break up with both of them",
+        "To choose one of them",
+        "To continue dating both of them",
+        "To introduce them to each other"
+      ],
+      "correct_answer": "To choose one of them",
+      "difficulty": "medium",
+      "explanation": "Phoebe decides to choose one of her dates, Vince, because he is 'burly' and sensitive."
+    },
+    {
+      "question": "What is the name of the guru who treats Ross's skin abnormality?",
+      "options": [
+        "Guru Saj",
+        "Dr. Rhodes",
+        "Dr. Johnson",
+        "Ho Chi"
+      ],
+      "correct_answer": "Guru Saj",
+      "difficulty": "hard",
+      "explanation": "Guru Saj is the herbalist who treats Ross's skin abnormality."
+    },
+    {
+      "question": "What does Pete want to become?",
+      "options": [
+        "A millionaire",
+        "A doctor",
+        "The Ultimate Fighting Champion",
+        "A musician"
+      ],
+      "correct_answer": "The Ultimate Fighting Champion",
+      "difficulty": "hard",
+      "explanation": "Pete wants to become the Ultimate Fighting Champion as his next challenge."
+    },
+    {
+      "question": "What happens when Phoebe tries to break up with Jason?",
+      "options": [
+        "He gets angry and leaves",
+        "He cries and writes in his journal",
+        "He tries to make up with her",
+        "He doesn't care and walks away"
+      ],
+      "correct_answer": "He gets angry and leaves",
+      "difficulty": "hard",
+      "explanation": "Jason gets angry and leaves when Phoebe tries to break up with him."
+    },
+    {
+      "question": "What do Vince and Jason say to Phoebe when they find out she's been dating both of them?",
+      "options": [
+        "They get angry and fight each other",
+        "They tell her it's okay and that they never said it was exclusive",
+        "They try to make her choose between them",
+        "They walk away and never talk to her again"
+      ],
+      "correct_answer": "They tell her it's okay and that they never said it was exclusive",
+      "difficulty": "hard",
+      "explanation": "Vince and Jason tell Phoebe that they never said it was exclusive and that it's okay."
+    },
+    {
+      "question": "What does Ross's thing get caught on?",
+      "options": [
+        "A pair of scissors",
+        "A doctor's watch",
+        "A pair of tweezers",
+        "A needle"
+      ],
+      "correct_answer": "A doctor's watch",
+      "difficulty": "hard",
+      "explanation": "Ross's thing gets caught on Guru Saj's watch."
+    },
+    {
+      "question": "What is the name of the medical condition that Guru Saj claims Ross has?",
+      "options": [
+        "A koondis",
+        "A skin abnormality",
+        "A third nipple",
+        "A pimple"
+      ],
+      "correct_answer": "A koondis",
+      "difficulty": "hard",
+      "explanation": "Guru Saj claims that Ross has a koondis, but it's unclear what that means."
+    },
+    {
+      "question": "What does Monica think about Pete's decision to become the Ultimate Fighting Champion?",
+      "options": [
+        "She thinks it's a great idea",
+        "She thinks it's a bad idea",
+        "She's indifferent",
+        "She's surprised"
+      ],
+      "correct_answer": "She's surprised",
+      "difficulty": "medium",
+      "explanation": "Monica is surprised by Pete's decision to become the Ultimate Fighting Champion."
+    },
+    {
+      "question": "What does Phoebe do when she sees Jason at Central Perk?",
+      "options": [
+        "She tries to avoid him",
+        "She talks to him and explains the situation",
+        "She ignores him and continues playing her music",
+        "She gets angry and confronts him"
+      ],
+      "correct_answer": "She tries to avoid him but ends up losing her ability to pronounce words",
+      "difficulty": "hard",
+      "explanation": "Phoebe tries to avoid Jason but ends up losing her ability to pronounce words when she sees him at Central Perk."
+    },
+    {
+      "question": "What does Rachel suggest Monica do for her wedding theme?",
+      "options": [
+        "A beach theme",
+        "A fairy tale theme",
+        "A 'Look how much money we've got' theme",
+        "A rustic theme"
+      ],
+      "correct_answer": "A 'Look how much money we've got' theme",
+      "difficulty": "medium",
+      "explanation": "Rachel suggests that Monica have a 'Look how much money we've got' theme for her wedding."
+    },
+    {
+      "question": "What does Joey suggest they do to Pete's plants if he breaks up with Monica?",
+      "options": [
+        "Water them",
+        "Pee on them",
+        "Give them to Monica",
+        "Throw them away"
+      ],
+      "correct_answer": "Pee on them",
+      "difficulty": "medium",
+      "explanation": "Joey jokingly suggests that they pee on Pete's plants if he breaks up with Monica."
+    },
+    {
+      "question": "What does Chandler say about his experience with a third nipple?",
+      "options": [
+        "That it was a big deal",
+        "That it was no big deal",
+        "That it was painful",
+        "That it was embarrassing"
+      ],
+      "correct_answer": "That it was no big deal and his doctor just lopped it off",
+      "difficulty": "medium",
+      "explanation": "Chandler says that having a third nipple was no big deal and his doctor just removed it."
+    },
+    {
+      "question": "What does Phoebe say about Vince and Jason?",
+      "options": [
+        "That they're both great guys",
+        "That they're both bad guys",
+        "That Vince is burly and Jason is sensitive",
+        "That Jason is burly and Vince is sensitive"
+      ],
+      "correct_answer": "That Vince is burly and Jason is sensitive",
+      "difficulty": "easy",
+      "explanation": "Phoebe says that Vince is burly and Jason is sensitive."
+    },
+    {
+      "question": "What does Ross say about his thing?",
+      "options": [
+        "That it's a mole",
+        "That it's a pimple",
+        "That it's a skin abnormality",
+        "That it's a third nipple"
+      ],
+      "correct_answer": "That it's a skin abnormality",
+      "difficulty": "easy",
+      "explanation": "Ross says that his thing is a skin abnormality."
+    },
+    {
+      "question": "What does Monica say about Pete's decision to become the Ultimate Fighting Champion?",
+      "options": [
+        "That she's excited about it",
+        "That she's worried about it",
+        "That she's indifferent",
+        "That she thinks it's a bad idea"
+      ],
+      "correct_answer": "That she thinks it's a bad idea",
+      "difficulty": "medium",
+      "explanation": "Monica is worried about Pete's decision to become the Ultimate Fighting Champion."
+    },
+    {
+      "question": "What does Phoebe do when she breaks up with Vince?",
+      "options": [
+        "She cries",
+        "She gets angry",
+        "She feels guilty",
+        "She runs away"
+      ],
+      "correct_answer": "She feels guilty",
+      "difficulty": "medium",
+      "explanation": "Phoebe feels guilty when she breaks up with Vince."
+    },
+    {
+      "question": "What does Jason do when he finds out Phoebe has been dating Vince?",
+      "options": [
+        "He gets angry and leaves",
+        "He tries to make up with her",
+        "He tells her it's okay",
+        "He walks away"
+      ],
+      "correct_answer": "He gets angry and leaves",
+      "difficulty": "hard",
+      "explanation": "Jason gets angry and leaves when he finds out Phoebe has been dating Vince."
+    },
+    {
+      "question": "What does Guru Saj use to try and remove Ross's thing?",
+      "options": [
+        "A scalpel",
+        "A pair of tweezers",
+        "A laser",
+        "Love"
+      ],
+      "correct_answer": "Love",
+      "difficulty": "hard",
+      "explanation": "Guru Saj tries to use love to remove Ross's thing."
+    }
+  ]
+}

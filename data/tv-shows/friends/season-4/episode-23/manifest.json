@@ -1,0 +1,54 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 4,
+    "episode": 23,
+    "title": "The One With Ross's Wedding Parts I and II"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0423.html",
+    "scrapedAt": "2025-12-17T14:29:36.949Z",
+    "wordCount": 7823,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "completed",
+    "generatedAt": "2025-12-20T06:19:26.621Z",
+    "totalCount": 20,
+    "distribution": {
+      "easy": 13,
+      "medium": 7,
+      "hard": 0
+    },
+    "types": {
+      "dialogue": 0,
+      "scene": 0,
+      "character": 0,
+      "plot": 0,
+      "object": 0
+    },
+    "aiModel": "llama-3.3-70b-versatile",
+    "temperature": 0.7,
+    "tokensUsed": 0
+  },
+  "files": {
+    "transcript": "transcript.json",
+    "questions": "questions.json",
+    "rawQuestions": "rawQuestions.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": true,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:29:36.654Z",
+    "updatedAt": "2025-12-20T06:19:26.621Z",
+    "version": "1.0"
+  }
+}

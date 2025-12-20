@@ -1,0 +1,35 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 7,
+    "episode": 17,
+    "title": "The One With The Cheap Wedding Dress"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0717.html",
+    "scrapedAt": "2025-12-17T14:32:55.240Z",
+    "wordCount": 3772,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "pending"
+  },
+  "files": {
+    "transcript": "transcript.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": false,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:32:54.957Z",
+    "updatedAt": "2025-12-17T14:32:55.240Z",
+    "version": "1.0"
+  }
+}

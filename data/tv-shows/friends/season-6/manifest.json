@@ -1,0 +1,210 @@
+{
+  "season": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "seasonNumber": 6,
+    "totalEpisodes": 24
+  },
+  "progress": {
+    "episodesCompleted": 0,
+    "episodesInProgress": 22,
+    "episodesPending": 2,
+    "episodesFailed": 0,
+    "completionPercentage": 0
+  },
+  "statistics": {
+    "totalQuestions": 0,
+    "totalTranscriptWords": 87698,
+    "averageQuestionsPerEpisode": 0,
+    "totalTokensUsed": 0,
+    "estimatedCost": 0
+  },
+  "episodes": [
+    {
+      "episode": 1,
+      "title": "The One After Vegas",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:05.122Z"
+    },
+    {
+      "episode": 2,
+      "title": "The One Where Ross Hugs Rachel",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:05.924Z"
+    },
+    {
+      "episode": 3,
+      "title": "The One With Ross’s Denial",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:06.706Z"
+    },
+    {
+      "episode": 4,
+      "title": "The One Where Joey Loses His Insurance",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:07.494Z"
+    },
+    {
+      "episode": 5,
+      "title": "The One With Joey’s Porsche",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:08.281Z"
+    },
+    {
+      "episode": 6,
+      "title": "The One The Last Night",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:09.073Z"
+    },
+    {
+      "episode": 7,
+      "title": "The One Where Phoebe Runs",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:09.855Z"
+    },
+    {
+      "episode": 8,
+      "title": "The One With Ross's Teeth",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:10.636Z"
+    },
+    {
+      "episode": 9,
+      "title": "The One Where Ross Got High",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:11.463Z"
+    },
+    {
+      "episode": 10,
+      "title": "The One With The Routine",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:12.252Z"
+    },
+    {
+      "episode": 11,
+      "title": "The One With The Apothecary Table",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:13.060Z"
+    },
+    {
+      "episode": 12,
+      "title": "The One With The Joke",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:13.836Z"
+    },
+    {
+      "episode": 13,
+      "title": "The One With Rachel’s Sister",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:14.621Z"
+    },
+    {
+      "episode": 14,
+      "title": "The One Where Chandler Can’t Cry",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:15.433Z"
+    },
+    {
+      "episode": 15,
+      "title": "S6E15",
+      "status": "failed",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:15.937Z",
+      "transcript": {
+        "status": "missing",
+        "error": "Transcript not available from source (404)"
+      }
+    },
+    {
+      "episode": 16,
+      "title": "S6E16",
+      "status": "failed",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:25.520Z",
+      "transcript": {
+        "status": "missing",
+        "error": "Transcript not available from source (404)"
+      }
+    },
+    {
+      "episode": 17,
+      "title": "The One With The Unagi",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:34.941Z"
+    },
+    {
+      "episode": 18,
+      "title": "The One Where Ross Dates A Student",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:35.729Z"
+    },
+    {
+      "episode": 19,
+      "title": "The One With Joey’s Fridge",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:36.586Z"
+    },
+    {
+      "episode": 20,
+      "title": "The One With Mac and C.H.E.E.S.E.",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:37.365Z"
+    },
+    {
+      "episode": 21,
+      "title": "The One Where Ross Meets Elizabeth’s Dad",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:38.271Z"
+    },
+    {
+      "episode": 22,
+      "title": "The One Where Paul’s The Man",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:39.077Z"
+    },
+    {
+      "episode": 23,
+      "title": "The One With The Ring",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:40.168Z"
+    },
+    {
+      "episode": 24,
+      "title": "The One With The Proposal",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:32:40.968Z"
+    }
+  ],
+  "sources": {
+    "primary": "Unknown",
+    "reliability": "unknown",
+    "coverage": 0
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:32:04.701Z",
+    "updatedAt": "2025-12-17T16:22:02.500Z",
+    "version": "1.0"
+  }
+}

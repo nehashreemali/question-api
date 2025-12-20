@@ -1,0 +1,35 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 9,
+    "episode": 20,
+    "title": "Friends - 920 - The one with the soap opera party"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0920.html",
+    "scrapedAt": "2025-12-17T14:33:35.681Z",
+    "wordCount": 4042,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "pending"
+  },
+  "files": {
+    "transcript": "transcript.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": false,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:33:35.409Z",
+    "updatedAt": "2025-12-17T14:33:35.681Z",
+    "version": "1.0"
+  }
+}

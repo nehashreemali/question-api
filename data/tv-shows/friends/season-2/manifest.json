@@ -1,0 +1,202 @@
+{
+  "season": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "seasonNumber": 2,
+    "totalEpisodes": 24
+  },
+  "progress": {
+    "episodesCompleted": 22,
+    "episodesInProgress": 0,
+    "episodesPending": 2,
+    "episodesFailed": 0,
+    "completionPercentage": 91.66666666666666
+  },
+  "statistics": {
+    "totalQuestions": 656,
+    "totalTranscriptWords": 71834,
+    "averageQuestionsPerEpisode": 30,
+    "totalTokensUsed": 0,
+    "estimatedCost": 0
+  },
+  "episodes": [
+    {
+      "episode": 1,
+      "title": "The One With Ross' New Girlfriend",
+      "status": "completed",
+      "questionCount": 31,
+      "lastUpdated": "2025-12-17T14:47:54.637Z"
+    },
+    {
+      "episode": 2,
+      "title": "The One With the Breast Milk",
+      "status": "completed",
+      "questionCount": 29,
+      "lastUpdated": "2025-12-17T16:02:18.916Z"
+    },
+    {
+      "episode": 3,
+      "title": "The One Where Mr. Heckles Dies",
+      "status": "completed",
+      "questionCount": 34,
+      "lastUpdated": "2025-12-17T16:02:30.843Z"
+    },
+    {
+      "episode": 4,
+      "title": "The One With Phoebe's Husband",
+      "status": "completed",
+      "questionCount": 34,
+      "lastUpdated": "2025-12-17T16:05:50.538Z"
+    },
+    {
+      "episode": 5,
+      "title": "The One With Five Steaks and an Eggplant",
+      "status": "completed",
+      "questionCount": 30,
+      "lastUpdated": "2025-12-17T16:06:48.548Z"
+    },
+    {
+      "episode": 6,
+      "title": "The One With the Baby on the Bus",
+      "status": "completed",
+      "questionCount": 31,
+      "lastUpdated": "2025-12-17T16:06:59.668Z"
+    },
+    {
+      "episode": 7,
+      "title": "The One Where Ross Finds Out",
+      "status": "completed",
+      "questionCount": 26,
+      "lastUpdated": "2025-12-17T16:11:17.195Z"
+    },
+    {
+      "episode": 8,
+      "title": "The One With the Last",
+      "status": "completed",
+      "questionCount": 31,
+      "lastUpdated": "2025-12-17T16:11:42.300Z"
+    },
+    {
+      "episode": 9,
+      "title": "The One With Phoebe's Dad",
+      "status": "completed",
+      "questionCount": 29,
+      "lastUpdated": "2025-12-17T16:14:25.015Z"
+    },
+    {
+      "episode": 10,
+      "title": "The One With Russ",
+      "status": "completed",
+      "questionCount": 32,
+      "lastUpdated": "2025-12-17T16:15:34.468Z"
+    },
+    {
+      "episode": 11,
+      "title": "The One With the Lesbian Wedding",
+      "status": "completed",
+      "questionCount": 25,
+      "lastUpdated": "2025-12-17T16:16:42.417Z"
+    },
+    {
+      "episode": 12,
+      "title": "S2E12",
+      "status": "pending",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:26:51.552Z"
+    },
+    {
+      "episode": 13,
+      "title": "S2E13",
+      "status": "pending",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:27:01.350Z"
+    },
+    {
+      "episode": 14,
+      "title": "The One With the Prom Video",
+      "status": "completed",
+      "questionCount": 27,
+      "lastUpdated": "2025-12-17T16:18:09.774Z"
+    },
+    {
+      "episode": 15,
+      "title": "The One Where Ross and Rachel...You Know",
+      "status": "completed",
+      "questionCount": 33,
+      "lastUpdated": "2025-12-18T12:26:09.416Z"
+    },
+    {
+      "episode": 16,
+      "title": "The One Where Joey Moves Out",
+      "status": "completed",
+      "questionCount": 28,
+      "lastUpdated": "2025-12-18T12:25:37.566Z"
+    },
+    {
+      "episode": 17,
+      "title": "The One Where Eddie Moves In",
+      "status": "completed",
+      "questionCount": 27,
+      "lastUpdated": "2025-12-18T12:26:46.825Z"
+    },
+    {
+      "episode": 18,
+      "title": "The One Where Dr. Remore Dies",
+      "status": "completed",
+      "questionCount": 26,
+      "lastUpdated": "2025-12-18T12:27:24.842Z"
+    },
+    {
+      "episode": 19,
+      "title": "The One Where Eddie Won't Go",
+      "status": "completed",
+      "questionCount": 29,
+      "lastUpdated": "2025-12-18T12:28:57.278Z"
+    },
+    {
+      "episode": 20,
+      "title": "The One Where Old Yeller Dies",
+      "status": "completed",
+      "questionCount": 34,
+      "lastUpdated": "2025-12-18T12:35:17.545Z"
+    },
+    {
+      "episode": 21,
+      "title": "The One With the Two Bullies",
+      "status": "completed",
+      "questionCount": 28,
+      "lastUpdated": "2025-12-18T12:35:57.828Z"
+    },
+    {
+      "episode": 22,
+      "title": "The One With the Two Parties",
+      "status": "completed",
+      "questionCount": 33,
+      "lastUpdated": "2025-12-18T12:36:36.897Z"
+    },
+    {
+      "episode": 23,
+      "title": "The One With the Chicken Pox",
+      "status": "completed",
+      "questionCount": 29,
+      "lastUpdated": "2025-12-18T12:58:33.961Z"
+    },
+    {
+      "episode": 24,
+      "title": "The One With Barry and Mindy's Wedding",
+      "status": "completed",
+      "questionCount": 30,
+      "lastUpdated": "2025-12-18T12:59:13.072Z"
+    }
+  ],
+  "sources": {
+    "primary": "Unknown",
+    "reliability": "unknown",
+    "coverage": 0
+  },
+  "metadata": {
+    "createdAt": "2025-12-16T17:30:18.667Z",
+    "updatedAt": "2025-12-18T12:59:13.081Z",
+    "version": "1.0"
+  }
+}

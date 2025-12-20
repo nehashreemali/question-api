@@ -1,0 +1,35 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 9,
+    "episode": 7,
+    "title": "The One With Ross's Inappropriate Song"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0907.html",
+    "scrapedAt": "2025-12-17T14:33:25.327Z",
+    "wordCount": 4132,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "pending"
+  },
+  "files": {
+    "transcript": "transcript.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": false,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:33:25.039Z",
+    "updatedAt": "2025-12-17T14:33:25.327Z",
+    "version": "1.0"
+  }
+}

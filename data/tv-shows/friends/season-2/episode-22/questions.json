@@ -1,0 +1,407 @@
+{
+  "show": "Friends",
+  "season": 2,
+  "episode": 22,
+  "title": "The One With the Two Parties",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-18T12:36:36.893Z",
+  "questionCount": 33,
+  "questions": [
+    {
+      "question": "What did Monica plan to poach for Rachel's birthday party?",
+      "options": [
+        "Salmon",
+        "Shrimp",
+        "Lobster",
+        "Crab"
+      ],
+      "correct_answer": "Salmon",
+      "difficulty": "easy",
+      "explanation": "Monica tells her friends she thought she'd poach a salmon for Rachel's birthday party."
+    },
+    {
+      "question": "What type of dessert did Monica decide to have for Rachel's birthday instead of cake?",
+      "options": [
+        "Flan",
+        "Cheesecake",
+        "Tiramisu",
+        "Creme Brulee"
+      ],
+      "correct_answer": "Flan",
+      "difficulty": "easy",
+      "explanation": "Monica decided to have birthday flan, a traditional Mexican custard dessert, for Rachel's birthday."
+    },
+    {
+      "question": "Why didn't Joey want Shannon Cooper to be invited to the party?",
+      "options": [
+        "Because she steals stuff",
+        "Because she's a bad cook",
+        "Because she's a bad dancer",
+        "Because she's a bad singer"
+      ],
+      "correct_answer": "Because she steals stuff",
+      "difficulty": "medium",
+      "explanation": "Joey told the others that Shannon Cooper steals stuff, which is why he didn't want her to be invited to the party."
+    },
+    {
+      "question": "What did Ross say his job was like in comparison to Dr. Greene's job?",
+      "options": [
+        "More stressful",
+        "Less stressful",
+        "More exciting",
+        "All the dinosaurs on my table are already dead"
+      ],
+      "correct_answer": "All the dinosaurs on my table are already dead",
+      "difficulty": "medium",
+      "explanation": "Ross compared his job to Dr. Greene's, saying that all the dinosaurs on his table are already dead, implying his job is less stressful."
+    },
+    {
+      "question": "What activity did Phoebe help Gunther and two other guests escape to?",
+      "options": [
+        "A game of charades",
+        "A game of Pictionary",
+        "A party at Chandler and Joey's apartment",
+        "A game of Monopoly"
+      ],
+      "correct_answer": "A party at Chandler and Joey's apartment",
+      "difficulty": "medium",
+      "explanation": "Phoebe helped Gunther and two other guests escape from Monica's party to a party at Chandler and Joey's apartment."
+    },
+    {
+      "question": "What was Monica's instruction to the guests regarding the markers?",
+      "options": [
+        "To always leave the caps off",
+        "To always leave the caps on",
+        "To push the caps until they click",
+        "To throw the markers away"
+      ],
+      "correct_answer": "To push the caps until they click",
+      "difficulty": "easy",
+      "explanation": "Monica instructed the guests to push the caps on the markers until they click to prevent them from drying out."
+    },
+    {
+      "question": "What did Ross wear that belonged to Mr. Greene?",
+      "options": [
+        "His watch",
+        "His glasses",
+        "His jacket",
+        "His shoes"
+      ],
+      "correct_answer": "His glasses",
+      "difficulty": "medium",
+      "explanation": "Ross wore Mr. Greene's glasses, which he claimed were his own to avoid suspicion."
+    },
+    {
+      "question": "What did Chandler compare his experience of his parents' divorce to?",
+      "options": [
+        "A fairy tale",
+        "A sports game",
+        "A carefully regimented program of denial and wetting the bed",
+        "A war"
+      ],
+      "correct_answer": "A carefully regimented program of denial and wetting the bed",
+      "difficulty": "hard",
+      "explanation": "Chandler compared his experience of his parents' divorce to a carefully regimented program of denial and wetting the bed."
+    },
+    {
+      "question": "What did Rachel compare her family's dynamic to?",
+      "options": [
+        "A perfect family",
+        "A fairy tale",
+        "The fourth of July",
+        "A war"
+      ],
+      "correct_answer": "The fourth of July",
+      "difficulty": "medium",
+      "explanation": "Rachel compared her family's dynamic to the fourth of July, recalling a memory of her family's annual trip to watch the fireworks on her dad's boat."
+    },
+    {
+      "question": "What did Ross do to prevent Mr. Greene from entering Monica's apartment?",
+      "options": [
+        "He locked the door",
+        "He held onto the door knob",
+        "He told him to go home",
+        "He gave him a drink"
+      ],
+      "correct_answer": "He held onto the door knob",
+      "difficulty": "easy",
+      "explanation": "Ross held onto the door knob to prevent Mr. Greene from entering Monica's apartment."
+    },
+    {
+      "question": "What did the guys form to prevent Mrs. Greene and Mr. Greene from meeting in the hallway?",
+      "options": [
+        "A human chain",
+        "A wall",
+        "A dance party",
+        "A game of charades"
+      ],
+      "correct_answer": "A wall",
+      "difficulty": "medium",
+      "explanation": "The guys formed a wall to prevent Mrs. Greene and Mr. Greene from meeting in the hallway."
+    },
+    {
+      "question": "What did Joey do to distract Mrs. Greene while Mr. Greene left?",
+      "options": [
+        "He kissed her",
+        "He hugged her",
+        "He shook her hand",
+        "He gave her a drink"
+      ],
+      "correct_answer": "He kissed her",
+      "difficulty": "medium",
+      "explanation": "Joey kissed Mrs. Greene to distract her while Mr. Greene left."
+    },
+    {
+      "question": "What did Monica say the flan looked like?",
+      "options": [
+        "A cake",
+        "A pie",
+        "A gelatinous dessert",
+        "A type of infection"
+      ],
+      "correct_answer": "A gelatinous dessert",
+      "difficulty": "easy",
+      "explanation": "Monica said the flan looked like a gelatinous dessert."
+    },
+    {
+      "question": "What happened to the flan at the end of the episode?",
+      "options": [
+        "It was eaten by the guests",
+        "It was thrown away",
+        "A volleyball landed in it",
+        "It was left untouched"
+      ],
+      "correct_answer": "A volleyball landed in it",
+      "difficulty": "easy",
+      "explanation": "A volleyball landed in the flan at the end of the episode."
+    },
+    {
+      "question": "What type of trees did Mrs. Greene spend $1200 on?",
+      "options": [
+        "Bansai trees",
+        "Palm trees",
+        "Oak trees",
+        "Pine trees"
+      ],
+      "correct_answer": "Bansai trees",
+      "difficulty": "medium",
+      "explanation": "Mrs. Greene spent $1200 on bansai trees."
+    },
+    {
+      "question": "What did Ross say he would do to get Mr. Greene's cigarettes and glasses?",
+      "options": [
+        "He would go to the store",
+        "He would get them from his apartment",
+        "He would get them from Monica's apartment",
+        "He would get them from outside"
+      ],
+      "correct_answer": "He would get them from his apartment",
+      "difficulty": "medium",
+      "explanation": "Ross said he would get Mr. Greene's cigarettes and glasses from his apartment."
+    },
+    {
+      "question": "What did Phoebe tell the three guests who wanted to leave Monica's party?",
+      "options": [
+        "They had to stay",
+        "They could leave but had to take their coats",
+        "They could leave and go to Chandler and Joey's party",
+        "They could leave but had to come back"
+      ],
+      "correct_answer": "They could leave and go to Chandler and Joey's party",
+      "difficulty": "medium",
+      "explanation": "Phoebe told the three guests that they could leave Monica's party and go to Chandler and Joey's party."
+    },
+    {
+      "question": "What did Chandler say the party was on when Ross asked him why they had to have parties with committees?",
+      "options": [
+        "A budget",
+        "A schedule",
+        "A theme",
+        "A committee"
+      ],
+      "correct_answer": "A committee",
+      "difficulty": "hard",
+      "explanation": "Chandler said the party was on a committee when Ross asked him why they had to have parties with committees."
+    },
+    {
+      "question": "What did Monica say to Gunther when he tried to leave the party?",
+      "options": [
+        "He could leave",
+        "He had to stay",
+        "He could go to Chandler and Joey's party",
+        "He had to help with the party"
+      ],
+      "correct_answer": "He had to stay",
+      "difficulty": "medium",
+      "explanation": "Monica told Gunther that he had to stay at the party."
+    },
+    {
+      "question": "What did Rachel say her mom spent $1200 on?",
+      "options": [
+        "Bansai trees",
+        "A new car",
+        "A vacation",
+        "A piece of jewelry"
+      ],
+      "correct_answer": "Bansai trees",
+      "difficulty": "medium",
+      "explanation": "Rachel's mom spent $1200 on bansai trees."
+    },
+    {
+      "question": "What did Ross say to Mr. Greene when he asked for his scotch?",
+      "options": [
+        "He would get it for him",
+        "He would not get it for him",
+        "He would get him a different drink",
+        "He would not get him a drink"
+      ],
+      "correct_answer": "He would get it for him",
+      "difficulty": "medium",
+      "explanation": "Ross said he would get Mr. Greene's scotch for him."
+    },
+    {
+      "question": "What did Phoebe say to the guests when she was helping them escape from Monica's party?",
+      "options": [
+        "Follow me",
+        "Stay here",
+        "Go to Chandler and Joey's party",
+        "Go home"
+      ],
+      "correct_answer": "Go to Chandler and Joey's party",
+      "difficulty": "medium",
+      "explanation": "Phoebe told the guests to go to Chandler and Joey's party when she was helping them escape from Monica's party."
+    },
+    {
+      "question": "What did Monica say to the guests when they were leaving her party?",
+      "options": [
+        "Thanks for coming",
+        "Have a good night",
+        "Go to Chandler and Joey's party",
+        "Don't forget your coats"
+      ],
+      "correct_answer": "Thanks for coming",
+      "difficulty": "easy",
+      "explanation": "Monica said thanks for coming to the guests when they were leaving her party."
+    },
+    {
+      "question": "What did Chandler say to Rachel when she was sitting in the hallway after the party?",
+      "options": [
+        "How are you holding up",
+        "What's wrong",
+        "Do you want to talk",
+        "Let's go get some coffee"
+      ],
+      "correct_answer": "How are you holding up",
+      "difficulty": "medium",
+      "explanation": "Chandler asked Rachel how she was holding up when she was sitting in the hallway after the party."
+    },
+    {
+      "question": "What did Ross do when Mr. Greene tried to enter Monica's apartment?",
+      "options": [
+        "He let him in",
+        "He stopped him",
+        "He told him to go home",
+        "He gave him a drink"
+      ],
+      "correct_answer": "He stopped him",
+      "difficulty": "medium",
+      "explanation": "Ross stopped Mr. Greene from entering Monica's apartment."
+    },
+    {
+      "question": "What type of drink did Mr. Greene order from Ross?",
+      "options": [
+        "Scotch on the rocks",
+        "Scotch neat",
+        "Vodka on the rocks",
+        "Vodka neat"
+      ],
+      "correct_answer": "Scotch neat",
+      "difficulty": "medium",
+      "explanation": "Mr. Greene ordered scotch neat from Ross."
+    },
+    {
+      "question": "What did Phoebe create to help Gunther and the other guests escape from Monica's party?",
+      "options": [
+        "A diversion",
+        "A distraction",
+        "A diversion and a distraction",
+        "A plan"
+      ],
+      "correct_answer": "A diversion",
+      "difficulty": "medium",
+      "explanation": "Phoebe created a diversion to help Gunther and the other guests escape from Monica's party."
+    },
+    {
+      "question": "What did Monica say the party was when Mr. Greene asked her what was going on?",
+      "options": [
+        "A surprise party",
+        "A birthday party",
+        "Just a gathering of friends",
+        "A staging area"
+      ],
+      "correct_answer": "Just a gathering of friends",
+      "difficulty": "medium",
+      "explanation": "Monica told Mr. Greene that the party was just a gathering of friends."
+    },
+    {
+      "question": "What did Ross say to Rachel when she was talking to her mom?",
+      "options": [
+        "Stay clear of 'I'm the guy that's doing your daughter'",
+        "Don't talk to your mom",
+        "Go talk to your dad",
+        "Let's go get some coffee"
+      ],
+      "correct_answer": "Stay clear of 'I'm the guy that's doing your daughter'",
+      "difficulty": "hard",
+      "explanation": "Ross told Rachel to stay clear of saying 'I'm the guy that's doing your daughter' when talking to her mom."
+    },
+    {
+      "question": "What did Joey do when Mr. Greene was trying to get his coat from Monica's apartment?",
+      "options": [
+        "He helped him get his coat",
+        "He stopped him from getting his coat",
+        "He told him to go home",
+        "He gave him a drink"
+      ],
+      "correct_answer": "He stopped him from getting his coat",
+      "difficulty": "medium",
+      "explanation": "Joey stopped Mr. Greene from getting his coat from Monica's apartment."
+    },
+    {
+      "question": "What type of game did Monica want to start at her party?",
+      "options": [
+        "Charades",
+        "Pictionary",
+        "Boggle",
+        "Monopoly"
+      ],
+      "correct_answer": "Boggle",
+      "difficulty": "medium",
+      "explanation": "Monica wanted to start a Boggle tournament at her party."
+    },
+    {
+      "question": "What did Chandler say when Ross asked him why they had to have parties with committees?",
+      "options": [
+        "Because it's more fun",
+        "Because it's more organized",
+        "Because Monica likes it",
+        "Because Ross likes it"
+      ],
+      "correct_answer": "Because Monica likes it",
+      "difficulty": "hard",
+      "explanation": "Chandler implied that they have parties with committees because Monica likes it."
+    },
+    {
+      "question": "What did Phoebe say to the guests when she was helping them escape from Monica's party?",
+      "options": [
+        "Follow me",
+        "Stay here",
+        "Go to Chandler and Joey's party",
+        "Go home"
+      ],
+      "correct_answer": "Go to Chandler and Joey's party",
+      "difficulty": "medium",
+      "explanation": "Phoebe told the guests to go to Chandler and Joey's party when she was helping them escape from Monica's party."
+    }
+  ]
+}

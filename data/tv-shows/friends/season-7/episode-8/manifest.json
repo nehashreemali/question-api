@@ -1,0 +1,35 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 7,
+    "episode": 8,
+    "title": "The One Where Chandler Doesn’t Like Dogs"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0708.html",
+    "scrapedAt": "2025-12-17T14:32:48.021Z",
+    "wordCount": 3626,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "pending"
+  },
+  "files": {
+    "transcript": "transcript.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": false,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:32:47.740Z",
+    "updatedAt": "2025-12-17T14:32:48.021Z",
+    "version": "1.0"
+  }
+}

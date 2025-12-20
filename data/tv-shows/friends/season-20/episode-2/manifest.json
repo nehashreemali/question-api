@@ -1,0 +1,27 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 20,
+    "episode": 2,
+    "title": "S20E2"
+  },
+  "transcript": {
+    "status": "pending"
+  },
+  "questions": {
+    "status": "pending"
+  },
+  "files": {},
+  "validation": {
+    "transcriptValidated": false,
+    "questionsValidated": false,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-18T12:29:25.149Z",
+    "updatedAt": "2025-12-18T12:29:25.149Z",
+    "version": "1.0"
+  }
+}

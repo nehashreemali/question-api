@@ -3,6 +3,5 @@ node_modules
 .DS_Store
 bun.lockb
 config.json
-data/
 logs/
 cache/

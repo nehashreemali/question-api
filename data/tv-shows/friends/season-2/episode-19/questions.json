@@ -1,0 +1,359 @@
+{
+  "show": "Friends",
+  "season": 2,
+  "episode": 19,
+  "title": "The One Where Eddie Won't Go",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-18T12:28:57.276Z",
+  "questionCount": 29,
+  "questions": [
+    {
+      "question": "What does Chandler say makes Eddie a better roommate than Hannibal Lecter?",
+      "options": [
+        "Eddie doesn't eat people",
+        "Eddie is more considerate",
+        "Eddie is more peaceful",
+        "Nothing, Chandler says Hannibal Lecter is a better roommate"
+      ],
+      "correct_answer": "Nothing, Chandler says Hannibal Lecter is a better roommate",
+      "difficulty": "easy",
+      "explanation": "Chandler says 'Hannibal Lecter...better roommate than you.'"
+    },
+    {
+      "question": "Why does Eddie want Chandler to say he wants him out?",
+      "options": [
+        "Eddie wants to hear it from Chandler's lips",
+        "Eddie wants to make sure Chandler means it",
+        "Eddie wants to record it",
+        "Eddie wants to write it down"
+      ],
+      "correct_answer": "Eddie wants to hear it from Chandler's lips",
+      "difficulty": "medium",
+      "explanation": "Eddie says 'I want to hear you say it, I, I want to hear you say you want me out.'"
+    },
+    {
+      "question": "What is the name of the book that Monica, Rachel, and Phoebe are discussing?",
+      "options": [
+        "Be Your Own Windkeeper",
+        "The Windkeeper's Journey",
+        "The Goddess Guide",
+        "The Lightning Bearer's Handbook"
+      ],
+      "correct_answer": "Be Your Own Windkeeper",
+      "difficulty": "easy",
+      "explanation": "Phoebe says 'Didn't it like totally speak to you? ... Be Your Own Windkeeper.'"
+    },
+    {
+      "question": "What is the name of the character Joey used to play on Days of Our Lives?",
+      "options": [
+        "Dr. Drake Remoray",
+        "Dr. Drake Romano",
+        "Dr. Joey Tribbiani",
+        "Dr. Ross Geller"
+      ],
+      "correct_answer": "Dr. Drake Remoray",
+      "difficulty": "easy",
+      "explanation": "Joey says 'I was Dr. Drake Remoray on Days of Our Lives.'"
+    },
+    {
+      "question": "What is the reason for Joey's good mood despite losing his job?",
+      "options": [
+        "He just got a new job",
+        "He's in a relationship",
+        "He's confident in his acting abilities",
+        "He just bought a new hat"
+      ],
+      "correct_answer": "He's confident in his acting abilities",
+      "difficulty": "medium",
+      "explanation": "Joey says 'Hey, I'll be alright. I mean it's not like I'm starting from square one. I was Dr. Drake Remoray on Days of Our Lives.'"
+    },
+    {
+      "question": "What does Ross buy for Joey to cheer him up?",
+      "options": [
+        "A porcelain dog",
+        "A plastic bird",
+        "A 3D last supper",
+        "A book on acting"
+      ],
+      "correct_answer": "A porcelain dog",
+      "difficulty": "easy",
+      "explanation": "Ross says 'My gift to you man.' and hands Joey a porcelain dog."
+    },
+    {
+      "question": "Why does Chandler tell Eddie that he already has a roommate?",
+      "options": [
+        "Because Eddie is crazy",
+        "Because Chandler doesn't want to live with Eddie",
+        "Because Joey is moving back in",
+        "Because Chandler is trying to protect himself"
+      ],
+      "correct_answer": "Because Chandler is trying to protect himself",
+      "difficulty": "medium",
+      "explanation": "Chandler says 'I'm sorry... I already have a roommate.' to get rid of Eddie."
+    },
+    {
+      "question": "What does Eddie take with him when he leaves Chandler's apartment?",
+      "options": [
+        "A human head",
+        "A goldfish",
+        "A dehydrator",
+        "A porcelain dog"
+      ],
+      "correct_answer": "A goldfish",
+      "difficulty": "easy",
+      "explanation": "Eddie says 'You want some help... No help required Chico.' and takes the goldfish."
+    },
+    {
+      "question": "What is the name of the soap opera that Joey auditions for as a cab driver?",
+      "options": [
+        "Days of Our Lives",
+        "Another World",
+        "All My Children",
+        "The Young and the Restless"
+      ],
+      "correct_answer": "Another World",
+      "difficulty": "easy",
+      "explanation": "Estelle says 'I already got you an audition for Another World.'"
+    },
+    {
+      "question": "What is the reason for Rachel's argument with Ross?",
+      "options": [
+        "Ross is stealing her wind",
+        "Ross is not listening to her",
+        "Ross is being too controlling",
+        "Ross is not romantic enough"
+      ],
+      "correct_answer": "Ross is stealing her wind",
+      "difficulty": "medium",
+      "explanation": "Rachel says 'No, see this isn't about the movie theatre, this is about you stealing my wind.'"
+    },
+    {
+      "question": "What does Phoebe compare Jason Hurley to?",
+      "options": [
+        "A leaf blower",
+        "A windkeeper",
+        "A lightning bearer",
+        "A goddess"
+      ],
+      "correct_answer": "A leaf blower",
+      "difficulty": "hard",
+      "explanation": "Phoebe says 'You are such a leaf blower.'"
+    },
+    {
+      "question": "What is the object that Chandler is holding in a rather interesting position at the end of the episode?",
+      "options": [
+        "A porcelain dog",
+        "A plastic bird",
+        "A 3D last supper",
+        "A cantaloupe"
+      ],
+      "correct_answer": "A porcelain dog",
+      "difficulty": "easy",
+      "explanation": "Chandler is holding the porcelain dog by the rear in a rather interesting position."
+    },
+    {
+      "question": "Why does Joey not want to give up his porcelain dog?",
+      "options": [
+        "Because it's a family heirloom",
+        "Because it's a gift from Ross",
+        "Because it's part of his ceramic zoo",
+        "Because it's a good luck charm"
+      ],
+      "correct_answer": "Because it's part of his ceramic zoo",
+      "difficulty": "medium",
+      "explanation": "Joey says 'Well, I had a whole ceramic zoo thing goin' over there but now, without the other ones, it just looks tacky.'"
+    },
+    {
+      "question": "What does Gunther used to be on All My Children?",
+      "options": [
+        "Bryce",
+        "Dr. Drake Remoray",
+        "Joey Tribbiani",
+        "Ross Geller"
+      ],
+      "correct_answer": "Bryce",
+      "difficulty": "hard",
+      "explanation": "Gunther says 'I used to be Bryce on All My Children.'"
+    },
+    {
+      "question": "What is the reason for Eddie's behavior?",
+      "options": [
+        "He is crazy",
+        "He is trying to protect himself",
+        "He is trying to help Chandler",
+        "He is trying to drive Chandler crazy"
+      ],
+      "correct_answer": "He is crazy",
+      "difficulty": "medium",
+      "explanation": "Eddie's behavior is erratic and unpredictable, suggesting that he is not sane."
+    },
+    {
+      "question": "What does Chandler do when Eddie forces his head into the door?",
+      "options": [
+        "He calls the police",
+        "He tries to reason with Eddie",
+        "He unchains the door and opens it",
+        "He slams the door shut"
+      ],
+      "correct_answer": "He unchains the door and opens it",
+      "difficulty": "medium",
+      "explanation": "Chandler unchains the door and opens it, trying to get rid of Eddie."
+    },
+    {
+      "question": "What is the name of the agency that Estelle works for?",
+      "options": [
+        "Estelle Leonard Talent Agency",
+        "Joey Tribbiani Talent Agency",
+        "Ross Geller Talent Agency",
+        "Monica Geller Talent Agency"
+      ],
+      "correct_answer": "Estelle Leonard Talent Agency",
+      "difficulty": "easy",
+      "explanation": "The scene is set at the Estelle Leonard Talent Agency."
+    },
+    {
+      "question": "What does Joey say he could attend to if the cab crashes in the audition scene?",
+      "options": [
+        "The cab driver",
+        "The passengers",
+        "The victims",
+        "The police"
+      ],
+      "correct_answer": "The victims",
+      "difficulty": "medium",
+      "explanation": "Joey says 'I could attend to the victims 'cause I have a background in medical acting.'"
+    },
+    {
+      "question": "What is the amount that Joey owes on his VISA bill?",
+      "options": [
+        "$1100",
+        "$2300",
+        "$3500",
+        "$1200"
+      ],
+      "correct_answer": "$3500",
+      "difficulty": "hard",
+      "explanation": "Joey says 'Oh my God, how did I spend so much money?' and Ross says 'That's just the minimum amount due, that's your total due.'"
+    },
+    {
+      "question": "What is the name of the store where Eddie gets the mannequin head?",
+      "options": [
+        "Macy's",
+        "Bloomingdale's",
+        "Saks Fifth Avenue",
+        "Nordstrom"
+      ],
+      "correct_answer": "Macy's",
+      "difficulty": "medium",
+      "explanation": "Eddie says 'I got it in the junior miss department, big diff. Anyway check it out man, it's gonna make a hell of a conversation piece at our next cocktail party, huh pal?'"
+    },
+    {
+      "question": "What does Phoebe say about the book 'Be Your Own Windkeeper'?",
+      "options": [
+        "It's about how women need to become more empowered",
+        "It's about how men need to become more empowered",
+        "It's about how to make friends",
+        "It's about how to cook"
+      ],
+      "correct_answer": "It's about how women need to become more empowered",
+      "difficulty": "easy",
+      "explanation": "Phoebe says 'Yeah and oh, and but there's, there's wind and the wind can make us Goddesses.'"
+    },
+    {
+      "question": "What does Joey say he was on Days of Our Lives?",
+      "options": [
+        "A doctor",
+        "A lawyer",
+        "A cab driver",
+        "A chef"
+      ],
+      "correct_answer": "A doctor",
+      "difficulty": "easy",
+      "explanation": "Joey says 'I was Dr. Drake Remoray on Days of Our Lives.'"
+    },
+    {
+      "question": "What does Chandler say to Eddie when he finds out that Eddie is still in the apartment?",
+      "options": [
+        "Get out",
+        "Stay",
+        "I'm glad you're still here",
+        "Let's have a party"
+      ],
+      "correct_answer": "Get out",
+      "difficulty": "easy",
+      "explanation": "Chandler says 'Get out. Get out, get out, get out, get out, get out, get out.'"
+    },
+    {
+      "question": "What does Ross say to Joey about his acting career?",
+      "options": [
+        "You're a great actor",
+        "You're a terrible actor",
+        "You should give up acting",
+        "You should hold out for something bigger"
+      ],
+      "correct_answer": "You should hold out for something bigger",
+      "difficulty": "medium",
+      "explanation": "Ross says 'You should hold out for something bigger. I could never do what you do Joey.'"
+    },
+    {
+      "question": "What does Monica say about the book 'Be Your Own Windkeeper'?",
+      "options": [
+        "It's a great book",
+        "It's a terrible book",
+        "It's about cooking",
+        "It's about relationships"
+      ],
+      "correct_answer": "It's about relationships",
+      "difficulty": "medium",
+      "explanation": "Monica says 'It's like reading about every relationship I've ever had, except for Richard.'"
+    },
+    {
+      "question": "What does Phoebe say about men and wind?",
+      "options": [
+        "Men take out wind",
+        "Men make wind",
+        "Men are wind",
+        "Men don't care about wind"
+      ],
+      "correct_answer": "Men take out wind",
+      "difficulty": "medium",
+      "explanation": "Phoebe says 'Yeah and oh, and but there's, there's wind and the wind can make us Goddesses. But you know who takes out wind? Men, they just take it.'"
+    },
+    {
+      "question": "What does Joey say about his ceramic zoo?",
+      "options": [
+        "It's complete",
+        "It's incomplete",
+        "It's ugly",
+        "It's beautiful"
+      ],
+      "correct_answer": "It's incomplete",
+      "difficulty": "medium",
+      "explanation": "Joey says 'Well, I had a whole ceramic zoo thing goin' over there but now, without the other ones, it just looks tacky.'"
+    },
+    {
+      "question": "What does Chandler say about Eddie's behavior?",
+      "options": [
+        "He's crazy",
+        "He's sane",
+        "He's nice",
+        "He's mean"
+      ],
+      "correct_answer": "He's crazy",
+      "difficulty": "medium",
+      "explanation": "Chandler says 'Ding dong, the psycho's gone.'"
+    },
+    {
+      "question": "What does Ross say about Joey's acting career?",
+      "options": [
+        "You're a great actor",
+        "You're a terrible actor",
+        "You should give up acting",
+        "I have respect for you"
+      ],
+      "correct_answer": "I have respect for you",
+      "difficulty": "medium",
+      "explanation": "Ross says 'I could never do what you do Joey. I have respect for you.'"
+    }
+  ]
+}

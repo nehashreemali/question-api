@@ -1,0 +1,35 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 6,
+    "episode": 21,
+    "title": "The One Where Ross Meets Elizabeth’s Dad"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0621.html",
+    "scrapedAt": "2025-12-17T14:32:38.271Z",
+    "wordCount": 4079,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "pending"
+  },
+  "files": {
+    "transcript": "transcript.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": false,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:32:37.868Z",
+    "updatedAt": "2025-12-17T14:32:38.271Z",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "show": "Friends",
+  "season": 1,
+  "episode": 15,
+  "title": "The One With the Stoned Guy",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-17T11:14:37.838Z",
+  "questionCount": 27,
+  "questions": [
+    {
+      "question": "What does Rachel hand to Joey at Central Perk?",
+      "options": [
+        "Cappuccino",
+        "Coffee",
+        "Hot cider",
+        "Tea"
+      ],
+      "correct_answer": "Coffee",
+      "difficulty": "easy",
+      "explanation": "Rachel serves Joey his coffee."
+    },
+    {
+      "question": "What is Monica's drink of choice at Central Perk?",
+      "options": [
+        "Cappuccino",
+        "Coffee",
+        "Hot cider",
+        "Tea"
+      ],
+      "correct_answer": "Hot cider",
+      "difficulty": "easy",
+      "explanation": "Monica is served a nice hot cider by Rachel."
+    },
+    {
+      "question": "Why does Chandler quit his job?",
+      "options": [
+        "He got a better offer",
+        "He didn't like his boss",
+        "He didn't want to be a data processor",
+        "He was fired"
+      ],
+      "correct_answer": "He didn't want to be a data processor",
+      "difficulty": "medium",
+      "explanation": "Chandler quits because he doesn't want to admit data processing is his actual job."
+    },
+    {
+      "question": "What does Phoebe suggest Chandler do after quitting his job?",
+      "options": [
+        "Be a chef",
+        "Start his own business",
+        "Become a massage therapist",
+        "Work in a restaurant"
+      ],
+      "correct_answer": "Be a chef",
+      "difficulty": "medium",
+      "explanation": "Phoebe suggests Chandler become a head chef for her new client Steve's restaurant."
+    },
+    {
+      "question": "What is the name of Ross's date?",
+      "options": [
+        "Celia",
+        "Wendy",
+        "Phoebe",
+        "Rachel"
+      ],
+      "correct_answer": "Celia",
+      "difficulty": "easy",
+      "explanation": "Ross's date is Celia, the curator of insects at the museum."
+    },
+    {
+      "question": "What is Celia's profession?",
+      "options": [
+        "Teacher",
+        "Lawyer",
+        "Curator of insects",
+        "Doctor"
+      ],
+      "correct_answer": "Curator of insects",
+      "difficulty": "easy",
+      "explanation": "Celia is the curator of insects at the museum."
+    },
+    {
+      "question": "What is the name of the song playing in Ross's apartment?",
+      "options": [
+        "Girl, You'll Be A Woman Soon",
+        "I Will Always Love You",
+        "Yesterday",
+        "Stairway to Heaven"
+      ],
+      "correct_answer": "Girl, You'll Be A Woman Soon",
+      "difficulty": "medium",
+      "explanation": "The song playing in Ross's apartment is 'Girl, You'll Be A Woman Soon'."
+    },
+    {
+      "question": "What does Ross want to do to Joey?",
+      "options": [
+        "Give him a hug",
+        "Talk dirty to him",
+        "Feel his hot, soft skin with his lips",
+        "Run his tongue all over his body"
+      ],
+      "correct_answer": "Feel his hot, soft skin with his lips",
+      "difficulty": "hard",
+      "explanation": "Ross wants to feel Joey's hot, soft skin with his lips as part of a dirty talk exercise."
+    },
+    {
+      "question": "What is the result of Steve's dinner at Monica's?",
+      "options": [
+        "He loves the food and wants to hire Monica",
+        "He gets drunk and passes out",
+        "He gets stoned and causes chaos",
+        "He hates the food and leaves"
+      ],
+      "correct_answer": "He gets stoned and causes chaos",
+      "difficulty": "medium",
+      "explanation": "Steve gets stoned before dinner and causes chaos at Monica's apartment."
+    },
+    {
+      "question": "What does Phoebe do to Steve as revenge for his behavior?",
+      "options": [
+        "She yells at him",
+        "She gives him a painful massage",
+        "She refuses to cook for him",
+        "She calls the police on him"
+      ],
+      "correct_answer": "She gives him a painful massage",
+      "difficulty": "medium",
+      "explanation": "Phoebe gives Steve a painful massage as revenge for his behavior at Monica's dinner party."
+    },
+    {
+      "question": "What is the name of the system Chandler mentions at work?",
+      "options": [
+        "WENUS",
+        "WENDY",
+        "WINUS",
+        "WONUS"
+      ],
+      "correct_answer": "WENUS",
+      "difficulty": "medium",
+      "explanation": "Chandler mentions the Weekly Estimated Net Usage Systems, or WENUS, at work."
+    },
+    {
+      "question": "What does Chandler do after taking aptitude tests?",
+      "options": [
+        "He gets a new job",
+        "He quits his old job",
+        "He becomes a chef",
+        "He starts his own business"
+      ],
+      "correct_answer": "He gets a new job",
+      "difficulty": "medium",
+      "explanation": "Chandler gets a new job after taking aptitude tests, despite initially being unhappy with the results."
+    },
+    {
+      "question": "What is Monica's reaction to Steve's behavior at dinner?",
+      "options": [
+        "She is amused and laughs",
+        "She is annoyed and tells him to leave",
+        "She is concerned and tries to help him",
+        "She is indifferent and ignores him"
+      ],
+      "correct_answer": "She is annoyed and tells him to leave",
+      "difficulty": "medium",
+      "explanation": "Monica is annoyed with Steve's behavior and eventually tells him that dinner is over."
+    },
+    {
+      "question": "What does Ross want to do with Celia after dinner?",
+      "options": [
+        "He wants to go for a walk",
+        "He wants to watch a movie",
+        "He wants to introduce her to his monkey",
+        "He wants to go back to his place and talk dirty"
+      ],
+      "correct_answer": "He wants to go back to his place and talk dirty",
+      "difficulty": "medium",
+      "explanation": "Ross wants to go back to his place and talk dirty with Celia after dinner."
+    },
+    {
+      "question": "What is the name of the restaurant Steve is opening?",
+      "options": [
+        "Monica's",
+        "Central Perk",
+        "Steve's Restaurant",
+        "The Coffee Shop"
+      ],
+      "correct_answer": "None of the above, the name is not specified",
+      "difficulty": "hard",
+      "explanation": "The name of Steve's restaurant is not specified in the episode."
+    },
+    {
+      "question": "What is the outcome of Ross's attempt to talk dirty to Joey?",
+      "options": [
+        "Joey is impressed and turned on",
+        "Joey is amused and teases Ross",
+        "Joey is uncomfortable and tells Ross to stop",
+        "Joey is confused and doesn't understand what Ross is doing"
+      ],
+      "correct_answer": "Joey is amused and teases Ross",
+      "difficulty": "medium",
+      "explanation": "Joey is amused by Ross's attempt to talk dirty and teases him about it."
+    },
+    {
+      "question": "What does Chandler learn from his aptitude tests?",
+      "options": [
+        "He is ideally suited for a career in data processing",
+        "He is ideally suited for a career in cooking",
+        "He is ideally suited for a career in acting",
+        "He is ideally suited for a career in music"
+      ],
+      "correct_answer": "He is ideally suited for a career in data processing",
+      "difficulty": "medium",
+      "explanation": "Chandler learns that he is ideally suited for a career in data processing, which he is unhappy about."
+    },
+    {
+      "question": "What is the name of the woman who helps Monica with waitressing?",
+      "options": [
+        "Wendy",
+        "Phoebe",
+        "Rachel",
+        "Monica"
+      ],
+      "correct_answer": "Wendy",
+      "difficulty": "easy",
+      "explanation": "Wendy is the woman who agrees to help Monica with waitressing, but later bails on her."
+    },
+    {
+      "question": "What does Monica pay Rachel to waitress at her dinner party?",
+      "options": [
+        "10 dollars an hour",
+        "12 dollars an hour",
+        "15 dollars an hour",
+        "20 dollars an hour"
+      ],
+      "correct_answer": "20 dollars an hour",
+      "difficulty": "easy",
+      "explanation": "Monica pays Rachel 20 dollars an hour to waitress at her dinner party."
+    },
+    {
+      "question": "What is the result of Steve's actions at Monica's dinner party?",
+      "options": [
+        "Monica is impressed and offers him a job",
+        "Monica is annoyed and tells him to leave",
+        "Monica is confused and doesn't understand what is happening",
+        "Monica is amused and laughs at Steve's antics"
+      ],
+      "correct_answer": "Monica is annoyed and tells him to leave",
+      "difficulty": "medium",
+      "explanation": "Monica is annoyed with Steve's behavior and eventually tells him that dinner is over."
+    },
+    {
+      "question": "What does Phoebe do to help Monica with her dinner party?",
+      "options": [
+        "She helps with the cooking",
+        "She helps with the waitressing",
+        "She brings a guest, Steve, to the dinner party",
+        "She provides entertainment for the guests"
+      ],
+      "correct_answer": "She brings a guest, Steve, to the dinner party",
+      "difficulty": "medium",
+      "explanation": "Phoebe brings Steve, her massage client, to Monica's dinner party."
+    },
+    {
+      "question": "What is the name of the song that Ross and Celia are listening to when they are kissing?",
+      "options": [
+        "Girl, You'll Be A Woman Soon",
+        "I Will Always Love You",
+        "Yesterday",
+        "Stairway to Heaven"
+      ],
+      "correct_answer": "Girl, You'll Be A Woman Soon",
+      "difficulty": "medium",
+      "explanation": "The song playing when Ross and Celia are kissing is 'Girl, You'll Be A Woman Soon'."
+    },
+    {
+      "question": "What does Chandler say to his boss, Mr. Kostelic, on the phone?",
+      "options": [
+        "He accepts the job offer",
+        "He declines the job offer",
+        "He asks for a raise",
+        "He complains about the WENUS"
+      ],
+      "correct_answer": "He declines the job offer",
+      "difficulty": "medium",
+      "explanation": "Chandler declines the job offer from Mr. Kostelic, telling him that he is not interested in the position."
+    },
+    {
+      "question": "What is the final outcome of Chandler's job search?",
+      "options": [
+        "He gets a new job in data processing",
+        "He becomes a chef",
+        "He starts his own business",
+        "He decides to pursue a career in acting"
+      ],
+      "correct_answer": "He gets a new job in data processing",
+      "difficulty": "medium",
+      "explanation": "Chandler eventually gets a new job in data processing, despite his initial reluctance."
+    },
+    {
+      "question": "What does Ross say to Celia when she asks him to talk dirty?",
+      "options": [
+        "He says something romantic and sweet",
+        "He says something funny and joking",
+        "He says something awkward and embarrassing",
+        "He says the word 'vulva'"
+      ],
+      "correct_answer": "He says the word 'vulva'",
+      "difficulty": "medium",
+      "explanation": "Ross says the word 'vulva' when Celia asks him to talk dirty, which is an awkward and embarrassing moment."
+    },
+    {
+      "question": "What is the name of the cereal that Steve finds in Monica's kitchen?",
+      "options": [
+        "Sugar-O's",
+        "Froot Loops",
+        "Cocoa Puffs",
+        "Lucky Charms"
+      ],
+      "correct_answer": "Sugar-O's",
+      "difficulty": "easy",
+      "explanation": "Steve finds a box of Sugar-O's in Monica's kitchen."
+    },
+    {
+      "question": "What does Steve do with the Sugar-O's?",
+      "options": [
+        "He eats them all",
+        "He throws them away",
+        "He uses them to make a craft project",
+        "He throws them into the punch bowl"
+      ],
+      "correct_answer": "He throws them into the punch bowl",
+      "difficulty": "medium",
+      "explanation": "Steve throws the Sugar-O's into the punch bowl, causing chaos and mess."
+    }
+  ]
+}

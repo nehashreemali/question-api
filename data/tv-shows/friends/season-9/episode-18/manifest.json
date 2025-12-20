@@ -1,0 +1,35 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 9,
+    "episode": 18,
+    "title": "Friends - 918 - The one with the lottery"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0918.html",
+    "scrapedAt": "2025-12-17T14:33:34.086Z",
+    "wordCount": 4041,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "pending"
+  },
+  "files": {
+    "transcript": "transcript.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": false,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:33:33.803Z",
+    "updatedAt": "2025-12-17T14:33:34.086Z",
+    "version": "1.0"
+  }
+}

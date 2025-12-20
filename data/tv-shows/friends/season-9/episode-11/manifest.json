@@ -1,0 +1,35 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 9,
+    "episode": 11,
+    "title": "FRIENDS - THE ONE WHERE RACHEL GOES BACK TO WORK"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0911.html",
+    "scrapedAt": "2025-12-17T14:33:28.553Z",
+    "wordCount": 3501,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "pending"
+  },
+  "files": {
+    "transcript": "transcript.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": false,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:33:28.250Z",
+    "updatedAt": "2025-12-17T14:33:28.553Z",
+    "version": "1.0"
+  }
+}

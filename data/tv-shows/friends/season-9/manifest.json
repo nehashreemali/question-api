@@ -1,0 +1,188 @@
+{
+  "season": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "seasonNumber": 9,
+    "totalEpisodes": 24
+  },
+  "progress": {
+    "episodesCompleted": 0,
+    "episodesInProgress": 22,
+    "episodesPending": 2,
+    "episodesFailed": 0,
+    "completionPercentage": 0
+  },
+  "statistics": {
+    "totalQuestions": 0,
+    "totalTranscriptWords": 86306,
+    "averageQuestionsPerEpisode": 0,
+    "totalTokensUsed": 0,
+    "estimatedCost": 0
+  },
+  "episodes": [
+    {
+      "episode": 1,
+      "title": "The One Where No One Proposes",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:20.594Z"
+    },
+    {
+      "episode": 2,
+      "title": "The One Where Emma Cries",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:21.392Z"
+    },
+    {
+      "episode": 3,
+      "title": "903 - The One With The Pediatrician",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:22.176Z"
+    },
+    {
+      "episode": 4,
+      "title": "904 - The One With The Sharks",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:22.961Z"
+    },
+    {
+      "episode": 5,
+      "title": "905 - The One With Phoebe�s Birthday Dinner",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:23.741Z"
+    },
+    {
+      "episode": 6,
+      "title": "Untitled Document",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:24.536Z"
+    },
+    {
+      "episode": 7,
+      "title": "The One With Ross's Inappropriate Song",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:25.327Z"
+    },
+    {
+      "episode": 8,
+      "title": "908 - The One With Rachel's Other Sister",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:26.125Z"
+    },
+    {
+      "episode": 9,
+      "title": "FRIENDS",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:26.903Z"
+    },
+    {
+      "episode": 10,
+      "title": "Friends 910 - The One With Christmas In Tulsa",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:27.746Z"
+    },
+    {
+      "episode": 11,
+      "title": "FRIENDS - THE ONE WHERE RACHEL GOES BACK TO WORK",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:28.553Z"
+    },
+    {
+      "episode": 12,
+      "title": "Untitled Document",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:29.351Z"
+    },
+    {
+      "episode": 13,
+      "title": "913 - The One Where Monica Sings",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:30.135Z"
+    },
+    {
+      "episode": 14,
+      "title": "914 The One With the Blind Dates",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:30.913Z"
+    },
+    {
+      "episode": 15,
+      "title": "Friends - 915 - The One With The Mugging",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:31.720Z"
+    },
+    {
+      "episode": 16,
+      "title": "916 - The One With The Boob Job",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:32.522Z"
+    },
+    {
+      "episode": 17,
+      "title": "Friends 917 - The One With The Memorial Service",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:33.299Z"
+    },
+    {
+      "episode": 18,
+      "title": "Friends - 918 - The one with the lottery",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:34.086Z"
+    },
+    {
+      "episode": 19,
+      "title": "Friends 919 - The one with Rachel's dream",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:34.905Z"
+    },
+    {
+      "episode": 20,
+      "title": "Friends - 920 - The one with the soap opera party",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:35.681Z"
+    },
+    {
+      "episode": 21,
+      "title": "Friends - The one with the fertility test",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:36.472Z"
+    },
+    {
+      "episode": 22,
+      "title": "Friends - 922 - The one with the donor",
+      "status": "transcript_scraped",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:33:37.253Z"
+    }
+  ],
+  "sources": {
+    "primary": "Unknown",
+    "reliability": "unknown",
+    "coverage": 0
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:33:20.184Z",
+    "updatedAt": "2025-12-17T14:33:37.254Z",
+    "version": "1.0"
+  }
+}

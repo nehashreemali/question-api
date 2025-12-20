@@ -1,0 +1,35 @@
+{
+  "episode": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "season": 9,
+    "episode": 5,
+    "title": "905 - The One With Phoebe�s Birthday Dinner"
+  },
+  "transcript": {
+    "status": "completed",
+    "source": "Friends Transcripts (fangj.github.io)",
+    "sourceUrl": "https://fangj.github.io/friends/season/0905.html",
+    "scrapedAt": "2025-12-17T14:33:23.741Z",
+    "wordCount": 3629,
+    "hasCharacterNames": true,
+    "quality": "good"
+  },
+  "questions": {
+    "status": "pending"
+  },
+  "files": {
+    "transcript": "transcript.json"
+  },
+  "validation": {
+    "transcriptValidated": true,
+    "questionsValidated": false,
+    "noDuplicates": false,
+    "allAnswersValid": false
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:33:23.465Z",
+    "updatedAt": "2025-12-17T14:33:23.741Z",
+    "version": "1.0"
+  }
+}

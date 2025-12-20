@@ -1,0 +1,239 @@
+{
+  "show": "Friends",
+  "season": 4,
+  "episode": 6,
+  "title": "The One With The Dirty Girl",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-19T17:09:10.119Z",
+  "questionCount": 19,
+  "questions": [
+    {
+      "question": "What does Ross say Cheryl is, aside from a paleontology doctoral candidate?",
+      "options": [
+        "A model",
+        "A chef",
+        "A spokesmodel or an aerobics instructor",
+        "A doctor"
+      ],
+      "correct_answer": "A spokesmodel or an aerobics instructor",
+      "difficulty": "easy",
+      "explanation": "Ross mentions that Rachel asks if Cheryl is a spokesmodel or an aerobics instructor."
+    },
+    {
+      "question": "What is the name of the book that Chandler gives to Kathy as a birthday gift?",
+      "options": [
+        "The Velveteen Rabbit",
+        "The Little Prince",
+        "Alice in Wonderland",
+        "To Kill a Mockingbird"
+      ],
+      "correct_answer": "The Velveteen Rabbit",
+      "difficulty": "medium",
+      "explanation": "Chandler gives Kathy an early edition of her favorite book, The Velveteen Rabbit."
+    },
+    {
+      "question": "Why does Monica turn down a job catering a funeral?",
+      "options": [
+        "Because she doesn't have the right equipment",
+        "Because she doesn't have enough money",
+        "Because she doesn't have the time",
+        "Because the funeral is too small"
+      ],
+      "correct_answer": "Because she doesn't have the money or the equipment",
+      "difficulty": "easy",
+      "explanation": "Monica turns down the job because she doesn't have the money or the equipment to handle it."
+    },
+    {
+      "question": "What does Joey give Kathy as a birthday gift?",
+      "options": [
+        "A pen that is also a clock",
+        "A book by her favorite author",
+        "A piece of jewelry",
+        "A coupon for a massage"
+      ],
+      "correct_answer": "A pen that is also a clock",
+      "difficulty": "medium",
+      "explanation": "Joey gives Kathy a pen that is also a clock, which he claims is two gifts in one."
+    },
+    {
+      "question": "What is the condition of Cheryl's apartment when Ross visits her?",
+      "options": [
+        "It's spotless and organized",
+        "It's a bit cluttered but clean",
+        "It's very messy and dirty",
+        "It's empty and unfurnished"
+      ],
+      "correct_answer": "It's very messy and dirty",
+      "difficulty": "easy",
+      "explanation": "Cheryl's apartment is described as looking like a 'sewage dump exploded' and being extremely messy and dirty."
+    },
+    {
+      "question": "Why does Ross initially hesitate to go inside Cheryl's apartment?",
+      "options": [
+        "Because he is afraid of her",
+        "Because he is not interested in her",
+        "Because her apartment is very messy and dirty",
+        "Because he is tired"
+      ],
+      "correct_answer": "Because her apartment is very messy and dirty",
+      "difficulty": "medium",
+      "explanation": "Ross is taken aback by the state of Cheryl's apartment and is hesitant to go inside."
+    },
+    {
+      "question": "What does Phoebe do to help Monica with the catering business?",
+      "options": [
+        "She lends Monica money to buy equipment",
+        "She helps Monica with the cooking",
+        "She takes care of the finances",
+        "She helps Monica with the marketing"
+      ],
+      "correct_answer": "She lends Monica money to buy equipment and takes care of the finances",
+      "difficulty": "medium",
+      "explanation": "Phoebe lends Monica money to buy equipment and later helps her by taking care of the finances and dealing with a difficult client."
+    },
+    {
+      "question": "What is the name of the song that Mrs. Burkart sings at the funeral?",
+      "options": [
+        "Jeepers Creepers",
+        "You're a Grand Old Flag",
+        "The Lullaby of Broadway",
+        "All of the above"
+      ],
+      "correct_answer": "All of the above",
+      "difficulty": "hard",
+      "explanation": "Mrs. Burkart sings multiple songs at the funeral, including 'Jeepers Creepers', 'You're a Grand Old Flag', and 'The Lullaby of Broadway'."
+    },
+    {
+      "question": "Why does Monica decide to become partners with Phoebe in the catering business?",
+      "options": [
+        "Because Phoebe is a good cook",
+        "Because Phoebe has experience with finances",
+        "Because they have fun together and Phoebe can handle the money",
+        "Because Phoebe has connections in the food industry"
+      ],
+      "correct_answer": "Because they have fun together and Phoebe can handle the money",
+      "difficulty": "medium",
+      "explanation": "Monica decides to partner with Phoebe because they have fun together and Phoebe can handle the finances, while Monica can focus on the cooking."
+    },
+    {
+      "question": "What does Ross use to defend himself against the rat in Cheryl's apartment?",
+      "options": [
+        "A tennis racket and a toilet brush",
+        "A baseball bat and a broom",
+        "A knife and a frying pan",
+        "A vacuum cleaner and a mop"
+      ],
+      "correct_answer": "A tennis racket and a toilet brush",
+      "difficulty": "hard",
+      "explanation": "Ross uses a tennis racket and a toilet brush to defend himself against the rat in Cheryl's apartment."
+    },
+    {
+      "question": "What does Chandler reveal to Kathy about the gift he got her?",
+      "options": [
+        "That he bought it himself",
+        "That Joey helped him pick it out",
+        "That it was very expensive",
+        "That he had nothing to do with it"
+      ],
+      "correct_answer": "That he had something to do with it, but doesn't directly admit it",
+      "difficulty": "medium",
+      "explanation": "Chandler doesn't directly admit to buying the gift, but Kathy suspects that he had something to do with it."
+    },
+    {
+      "question": "What is the outcome of Monica's attempt to get paid by Mrs. Burkart?",
+      "options": [
+        "Mrs. Burkart pays Monica immediately",
+        "Mrs. Burkart refuses to pay Monica",
+        "Phoebe intervenes and gets Mrs. Burkart to pay",
+        "Monica decides to waive the payment"
+      ],
+      "correct_answer": "Phoebe intervenes and gets Mrs. Burkart to pay",
+      "difficulty": "easy",
+      "explanation": "Phoebe steps in and demands that Mrs. Burkart pay Monica for the catering services."
+    },
+    {
+      "question": "What does Gunther do when Rachel finishes her crossword puzzle?",
+      "options": [
+        "He congratulates her and gives her a hug",
+        "He ignores her and walks away",
+        "He tries to hug her but slips and falls",
+        "He takes the puzzle away from her"
+      ],
+      "correct_answer": "He tries to hug her but slips and falls",
+      "difficulty": "medium",
+      "explanation": "Gunther tries to hug Rachel to congratulate her on finishing the crossword puzzle, but he slips and falls."
+    },
+    {
+      "question": "What does Monica offer to do for Cheryl after Ross tells her about Cheryl's apartment?",
+      "options": [
+        "She offers to help Cheryl clean her apartment",
+        "She offers to cook dinner for Cheryl",
+        "She offers to lend Cheryl some money",
+        "She offers to give Cheryl some advice"
+      ],
+      "correct_answer": "She offers to help Cheryl clean her apartment",
+      "difficulty": "easy",
+      "explanation": "Monica offers to help Cheryl clean her apartment after Ross tells her about the state of the apartment."
+    },
+    {
+      "question": "What is the reason why Ross is hesitant to go to Cheryl's apartment?",
+      "options": [
+        "He is afraid of her",
+        "He is not interested in her",
+        "He is hesitant due to the state of her apartment",
+        "He is busy"
+      ],
+      "correct_answer": "He is hesitant due to the state of her apartment",
+      "difficulty": "easy",
+      "explanation": "Ross is hesitant to go to Cheryl's apartment because of its extremely messy and dirty state."
+    },
+    {
+      "question": "What does Joey say to Kathy when he gives her the gift?",
+      "options": [
+        "He says it's because he knows she likes rabbits and cheese",
+        "He says it's because he knows she likes clocks and pens",
+        "He says it's because he knows she likes books and reading",
+        "He says it's because he knows she likes him"
+      ],
+      "correct_answer": "He says it's because he knows she likes rabbits and cheese",
+      "difficulty": "hard",
+      "explanation": "Joey gives Kathy the gift and says it's because he knows she likes rabbits and cheese, which is not the real reason Chandler got the gift."
+    },
+    {
+      "question": "What does Chandler say to Kathy when she thanks him for the gift?",
+      "options": [
+        "He says he's glad she likes it",
+        "He says he had nothing to do with it",
+        "He says he got it for her because he knows Joey likes her",
+        "He says he got it for her because he knows she likes rabbits"
+      ],
+      "correct_answer": "He says he had something to do with it, but doesn't directly admit it",
+      "difficulty": "medium",
+      "explanation": "Chandler doesn't directly admit to getting the gift, but Kathy suspects that he had something to do with it."
+    },
+    {
+      "question": "What is the name of the era that Cheryl specializes in as a paleontology doctoral candidate?",
+      "options": [
+        "Centazoic era",
+        "Mesozoic era",
+        "Cenozoic era",
+        "Paleozoic era"
+      ],
+      "correct_answer": "Cenozoic era",
+      "difficulty": "hard",
+      "explanation": "Cheryl is a paleontology doctoral candidate specializing in the Cenozoic era, although Ross mentions 'centazoic' which seems to be a mistake."
+    },
+    {
+      "question": "What does Phoebe say to Monica when Monica is hesitant to ask for payment from Mrs. Burkart?",
+      "options": [
+        "She says Monica should just forget about the payment",
+        "She says Monica should be more aggressive in asking for payment",
+        "She says Monica should offer to do more work for free",
+        "She says Monica should wait until later to ask for payment"
+      ],
+      "correct_answer": "She says Monica should be more aggressive in asking for payment",
+      "difficulty": "medium",
+      "explanation": "Phoebe tells Monica to be more aggressive in asking for payment and not to back down."
+    }
+  ]
+}

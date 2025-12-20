@@ -1,0 +1,202 @@
+{
+  "season": {
+    "series": "Friends",
+    "seriesSlug": "friends",
+    "seasonNumber": 4,
+    "totalEpisodes": 24
+  },
+  "progress": {
+    "episodesCompleted": 23,
+    "episodesInProgress": 0,
+    "episodesPending": 1,
+    "episodesFailed": 0,
+    "completionPercentage": 95.83333333333334
+  },
+  "statistics": {
+    "totalQuestions": 458,
+    "totalTranscriptWords": 86668,
+    "averageQuestionsPerEpisode": 20,
+    "totalTokensUsed": 0,
+    "estimatedCost": 0
+  },
+  "episodes": [
+    {
+      "episode": 1,
+      "title": "The One With The Jellyfish",
+      "status": "completed",
+      "questionCount": 20,
+      "lastUpdated": "2025-12-19T17:03:15.129Z"
+    },
+    {
+      "episode": 2,
+      "title": "The One With The Cat",
+      "status": "completed",
+      "questionCount": 19,
+      "lastUpdated": "2025-12-19T17:04:44.742Z"
+    },
+    {
+      "episode": 3,
+      "title": "The One With The ‘Cuffs",
+      "status": "completed",
+      "questionCount": 20,
+      "lastUpdated": "2025-12-19T17:05:51.701Z"
+    },
+    {
+      "episode": 4,
+      "title": "The One With The Ballroom Dancing",
+      "status": "completed",
+      "questionCount": 20,
+      "lastUpdated": "2025-12-19T17:06:57.522Z"
+    },
+    {
+      "episode": 5,
+      "title": "The One With Joey's New Girlfriend",
+      "status": "completed",
+      "questionCount": 21,
+      "lastUpdated": "2025-12-19T17:08:03.340Z"
+    },
+    {
+      "episode": 6,
+      "title": "The One With The Dirty Girl",
+      "status": "completed",
+      "questionCount": 19,
+      "lastUpdated": "2025-12-19T17:09:10.121Z"
+    },
+    {
+      "episode": 7,
+      "title": "The One Where Chandler Crosses A Line",
+      "status": "completed",
+      "questionCount": 20,
+      "lastUpdated": "2025-12-19T17:10:16.133Z"
+    },
+    {
+      "episode": 8,
+      "title": "The One With Chandler In A Box",
+      "status": "completed",
+      "questionCount": 19,
+      "lastUpdated": "2025-12-19T17:11:23.692Z"
+    },
+    {
+      "episode": 9,
+      "title": "The One Where They're Gonna PARTY!",
+      "status": "completed",
+      "questionCount": 20,
+      "lastUpdated": "2025-12-19T17:12:29.664Z"
+    },
+    {
+      "episode": 10,
+      "title": "The One With The Girl From Poughkeepsie",
+      "status": "completed",
+      "questionCount": 21,
+      "lastUpdated": "2025-12-19T17:13:35.673Z"
+    },
+    {
+      "episode": 11,
+      "title": "The One With Phoebe’s Uterus",
+      "status": "completed",
+      "questionCount": 20,
+      "lastUpdated": "2025-12-19T17:14:44.157Z"
+    },
+    {
+      "episode": 12,
+      "title": "The One With The Embryos",
+      "status": "completed",
+      "questionCount": 19,
+      "lastUpdated": "2025-12-19T17:15:50.401Z"
+    },
+    {
+      "episode": 13,
+      "title": "The One With Rachel’s Crush",
+      "status": "completed",
+      "questionCount": 20,
+      "lastUpdated": "2025-12-19T17:16:57.217Z"
+    },
+    {
+      "episode": 14,
+      "title": "The One With Joey’s Dirty Day",
+      "status": "completed",
+      "questionCount": 21,
+      "lastUpdated": "2025-12-20T05:33:58.095Z"
+    },
+    {
+      "episode": 15,
+      "title": "The One With All The Rugby",
+      "status": "completed",
+      "questionCount": 20,
+      "lastUpdated": "2025-12-20T05:35:05.421Z"
+    },
+    {
+      "episode": 16,
+      "title": "The One With The Fake Party",
+      "status": "completed",
+      "questionCount": 21,
+      "lastUpdated": "2025-12-20T05:36:12.807Z"
+    },
+    {
+      "episode": 17,
+      "title": "The One With The Free Porn",
+      "status": "completed",
+      "questionCount": 19,
+      "lastUpdated": "2025-12-20T05:37:19.898Z"
+    },
+    {
+      "episode": 18,
+      "title": "The One With Rachel's New Dress",
+      "status": "completed",
+      "questionCount": 21,
+      "lastUpdated": "2025-12-20T05:38:28.260Z"
+    },
+    {
+      "episode": 19,
+      "title": "The One With All The Haste",
+      "status": "completed",
+      "questionCount": 19,
+      "lastUpdated": "2025-12-20T05:39:35.581Z"
+    },
+    {
+      "episode": 20,
+      "title": "The One With All The Wedding Dresses",
+      "status": "completed",
+      "questionCount": 20,
+      "lastUpdated": "2025-12-20T06:16:01.784Z"
+    },
+    {
+      "episode": 21,
+      "title": "The One With the Invitation",
+      "status": "completed",
+      "questionCount": 20,
+      "lastUpdated": "2025-12-20T06:17:09.144Z"
+    },
+    {
+      "episode": 22,
+      "title": "The One With The Worst Best Man Ever",
+      "status": "completed",
+      "questionCount": 19,
+      "lastUpdated": "2025-12-20T06:18:18.162Z"
+    },
+    {
+      "episode": 23,
+      "title": "The One With Ross's Wedding Parts I and II",
+      "status": "completed",
+      "questionCount": 20,
+      "lastUpdated": "2025-12-20T06:19:26.621Z"
+    },
+    {
+      "episode": 24,
+      "title": "S4E24",
+      "status": "pending",
+      "questionCount": 0,
+      "lastUpdated": "2025-12-17T14:29:37.452Z"
+    }
+  ],
+  "sources": {
+    "primary": "Unknown",
+    "reliability": "unknown",
+    "coverage": 0
+  },
+  "metadata": {
+    "createdAt": "2025-12-17T14:29:18.981Z",
+    "updatedAt": "2025-12-20T06:19:26.629Z",
+    "version": "1.0"
+  }
+}
