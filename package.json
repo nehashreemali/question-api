@@ -1,0 +1,27 @@
+{
+  "name": "simple-quiz-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "scrape": "bun scripts/scrape-season.ts",
+    "scrape:friends:s2": "bun scripts/scrape-season.ts 'Friends' 2",
+    "scrape:friends:s3": "bun scripts/scrape-season.ts 'Friends' 3",
+    "generate": "bun scripts/batch-generate.ts",
+    "generate:friends": "bun scripts/batch-generate.ts 'Friends'",
+    "generate:friends:s1": "bun scripts/batch-generate.ts 'Friends' 1",
+    "generate:friends:s2": "bun scripts/batch-generate.ts 'Friends' 2",
+    "generate:bbbt": "bun scripts/batch-generate.ts 'The Big Bang Theory'",
+    "generate:bbbt:s1": "bun scripts/batch-generate.ts 'The Big Bang Theory' 1",
+    "complete:remaining": "./scripts/complete-remaining.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "cheerio": "^1.1.2"
+  }
+}
