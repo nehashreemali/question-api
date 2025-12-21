@@ -22,7 +22,7 @@ This is a **generic quiz question generator** that creates multiple-choice quest
 ## Technology Stack
 
 - **Runtime:** Bun (TypeScript)
-- **AI Provider:** Groq API (LLaMA 3.3-70b-versatile)
+- **AI Provider:** Claude Code CLI (via "power up" command)
 - **Web Scraping:** Cheerio + Axios
 - **Architecture:** Functional programming (no classes, pure functions)
 
@@ -30,152 +30,71 @@ This is a **generic quiz question generator** that creates multiple-choice quest
 
 ## Data Structure
 
-### Folder Hierarchy
+### Database Architecture
+
+Questions are stored in SQLite databases (one per category), with a central registry for metadata.
 
 ```
-data/
-├── manifest.json              # Global manifest
-├── categories.ts              # Category taxonomy (54 categories)
-│
-├── media/                     # TV shows, movies, books
-│   └── tv-shows/
-│       └── {series-slug}/
-│           └── season-{n}/
-│               └── episode-{n}/
-│                   ├── manifest.json
-│                   ├── transcript.json
-│                   ├── questions.json
-│                   └── rawQuestions.json
-│
-├── knowledge/                 # Educational content
-│   └── {category}/
-│       └── {topic}/
-│           ├── manifest.json
-│           ├── source-wikipedia.json
-│           ├── source-openstax.json
-│           └── questions.json
-│
-└── sports/                    # Sports content
-    └── {sport}/
-        └── {format-or-league}/
-            └── {topic}/
-                ├── manifest.json
-                ├── source-wikipedia.json
-                ├── source-{stats-api}.json
-                └── questions.json
+data/                        # Output (databases only)
+├── registry.db              # Central: categories, subcategories, topics, stats
+├── tv-shows.db              # Questions for TV shows
+├── movies.db                # Questions for movies
+├── epics.db                 # Questions for epics
+├── mythology.db             # Questions for mythology
+├── sports.db                # Questions for sports
+└── ...                      # Per-category question databases
+
+generation/                  # Source material for question generation
+└── transcripts/             # TV show transcripts (flat structure)
+    ├── friends/
+    │   ├── s01e01.json
+    │   ├── s01e02.json
+    │   └── ...
+    └── the-big-bang-theory/
+        └── s01e01.json
 ```
+
+### Why This Architecture?
+
+- **Per-category databases**: Multiple people can generate questions simultaneously without git conflicts
+- **Flat transcript structure**: Simple `s{nn}e{nn}.json` naming, easy to see all episodes
+- **Central registry**: Single source of truth for categories, subcategories, topics, and stats
+- **Separation of concerns**: `data/` contains only databases, `generation/` contains source material
+- **Organic growth**: Categories/subcategories/topics are created on-demand via `ensure*` functions
 
 ---
 
-## Leaf Node Files (Episode/Topic Level)
+## Database Schema
 
-At the deepest level of any content type, you'll find these files:
+### Questions Table (per-category database)
 
-### 1. `manifest.json` - Metadata & Status Tracking
+Each category (tv-shows.db, movies.db, etc.) has the same schema:
 
-Tracks the status of transcript/source fetching, question generation, and validation.
+```sql
+CREATE TABLE questions (
+  id INTEGER PRIMARY KEY,
+  hash TEXT UNIQUE NOT NULL,     -- For deduplication
 
-```json
-{
-  "episode": {
-    "series": "Friends",
-    "seriesSlug": "friends",
-    "season": 1,
-    "episode": 1,
-    "title": "The One Where Monica Gets a New Roommate"
-  },
-  "transcript": {
-    "status": "pending" | "completed" | "failed" | "missing",
-    "source": "Friends Transcripts (fangj.github.io)",
-    "sourceUrl": "https://fangj.github.io/friends/season/0101.html",
-    "scrapedAt": "2025-12-16T17:11:17.921Z",
-    "wordCount": 4424,
-    "hasCharacterNames": true,
-    "quality": "excellent" | "good" | "fair" | "poor"
-  },
-  "questions": {
-    "status": "pending" | "completed" | "failed",
-    "generatedAt": "2025-12-16T17:11:17.921Z",
-    "totalCount": 24,
-    "distribution": {
-      "easy": 8,
-      "medium": 15,
-      "hard": 1
-    },
-    "aiModel": "llama-3.3-70b-versatile",
-    "temperature": 0.7,
-    "tokensUsed": 0
-  },
-  "files": {
-    "transcript": "transcript.json",
-    "questions": "questions.json",
-    "rawQuestions": "rawQuestions.json"
-  },
-  "validation": {
-    "transcriptValidated": true,
-    "questionsValidated": true,
-    "noDuplicates": false,
-    "allAnswersValid": false
-  },
-  "metadata": {
-    "createdAt": "2025-12-16T17:11:17.920Z",
-    "updatedAt": "2025-12-16T17:11:17.921Z",
-    "version": "1.0"
-  }
-}
+  subcategory TEXT NOT NULL,     -- e.g., 'sitcoms', 'drama'
+  topic TEXT NOT NULL,           -- e.g., 'friends', 'breaking-bad'
+
+  part INTEGER,                  -- Season, Parva, Book (nullable)
+  chapter INTEGER,               -- Episode, Chapter (nullable)
+  title TEXT,                    -- Episode/chapter title
+
+  question TEXT NOT NULL,
+  options TEXT NOT NULL,         -- JSON array of 4 options
+  correct_answer TEXT NOT NULL,
+  difficulty TEXT,               -- 'easy', 'medium', 'hard'
+  explanation TEXT,
+
+  synced_to_mongo INTEGER NOT NULL DEFAULT 0,  -- MongoDB sync flag
+  created_at TEXT
+);
 ```
 
-### 2. `transcript.json` - Source Content
+### Question Structure
 
-The raw scraped content used for question generation.
-
-```json
-{
-  "show": "Friends",
-  "season": 1,
-  "episode": 1,
-  "title": "The One Where Monica Gets a New Roommate",
-  "transcript": "Full transcript text...",
-  "formattedTranscript": "Formatted version with scene markers...",
-  "source": "Friends Transcripts (fangj.github.io)",
-  "sourceUrl": "https://fangj.github.io/friends/season/0101.html",
-  "scrapedAt": "2025-12-15T15:13:45.305Z",
-  "wordCount": 4424,
-  "hasCharacterNames": true
-}
-```
-
-### 3. `questions.json` - Full Question Data
-
-Complete question set with all metadata.
-
-```json
-{
-  "show": "Friends",
-  "season": 1,
-  "episode": 1,
-  "title": "The One Where Monica Gets a New Roommate",
-  "source": "Friends Transcripts (fangj.github.io)",
-  "generatedAt": "2025-12-15T15:54:35.670Z",
-  "questionCount": 24,
-  "questions": [
-    {
-      "question": "What does Monica say is 'just some guy I work with'?",
-      "options": [
-        "Paul the wine guy",
-        "Her new neighbor",
-        "Her dentist",
-        "Her gym trainer"
-      ],
-      "correct_answer": "Paul the wine guy",
-      "difficulty": "easy" | "medium" | "hard",
-      "explanation": "Monica tells her friends 'There's nothing to tell! He's just some guy I work with!' when asked about Paul."
-    }
-  ]
-}
-```
-
-**Question Structure:**
 | Field | Type | Description |
 |-------|------|-------------|
 | `question` | string | The question text |
@@ -184,31 +103,26 @@ Complete question set with all metadata.
 | `difficulty` | enum | "easy", "medium", or "hard" |
 | `explanation` | string | Why the answer is correct |
 
-### 4. `rawQuestions.json` - Question Text Only
-
-Simple array of just the question strings (for quick reference/deduplication).
-
-```json
-[
-  "What does Monica say is 'just some guy I work with'?",
-  "What is the unusual thing that Phoebe asks if the guy Monica is going out with does?",
-  "What is the dream that Chandler describes to the group?"
-]
-```
-
 ---
 
-## Manifest Hierarchy (Rollup Pattern)
+## Transcript Files
 
-Manifests exist at every level and aggregate statistics upward:
+Transcripts are stored in a flat structure: `generation/transcripts/{show}/s{nn}e{nn}.json`
 
+```json
+{
+  "show": "Friends",
+  "season": 1,
+  "episode": 1,
+  "title": "The One Where Monica Gets a New Roommate",
+  "transcript": "Full transcript text...",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "sourceUrl": "https://fangj.github.io/friends/season/0101.html",
+  "scrapedAt": "2025-12-15T15:13:45.305Z",
+  "wordCount": 4424,
+  "hasCharacterNames": true
+}
 ```
-Episode Manifest → Season Manifest → Series Manifest → Global Manifest
-     ↑                    ↑                 ↑                ↑
-  (leaf data)     (sum of episodes)  (sum of seasons)  (sum of series)
-```
-
-Each parent manifest recalculates its statistics from its children.
 
 ---
 
@@ -243,19 +157,13 @@ Each parent manifest recalculates its statistics from its children.
 
 ### Example
 ```typescript
-// data/enums/categories.ts
-const Categories = {
-  TV_SHOWS: 'tv-shows',
-  SCIENCE: 'science',
+// src/lib/config.ts
+const Config = {
+  DATA_DIR: 'data',
+  GENERATION_DIR: 'generation',
 } as const;
 
-export default Categories;
-```
-
-```typescript
-// data/enums/index.ts (re-exports for convenience)
-export { default as Categories } from './categories';
-export { default as Topics } from './topics';
+export default Config;
 ```
 
 ---
@@ -305,15 +213,12 @@ export { default as Topics } from './topics';
 ## CLI Commands
 
 ```bash
-# TV Shows
-bun index.ts "Friends" 1 1              # Single episode
-bun index.ts "Friends" 1                # Entire season
+# Start web server
+bun start
 
-# Batch generation
-bun scripts/batch-generate.ts "Friends" 1
-
-# Scrape only
-bun src/scrape-tv.ts "Friends" 1 1
+# Generate questions (via Claude Code CLI)
+power up friends s1e10
+power up "The Big Bang Theory" s2e5
 ```
 
 ---
@@ -322,44 +227,23 @@ bun src/scrape-tv.ts "Friends" 1 1
 
 | File | Purpose |
 |------|---------|
+| `src/server.ts` | Web server (read-only) |
+| `src/lib/database.ts` | Question database operations |
+| `src/lib/registry.ts` | Category/subcategory/topic registry |
 | `src/lib/tv-scraper.ts` | Scrapes TV transcripts |
-| `src/lib/question-generator.ts` | Generates questions via Groq API |
-| `src/lib/manifest.ts` | CRUD operations for manifests |
 | `src/lib/http.ts` | HTTP utilities with retry logic |
 | `src/lib/logger.ts` | Colored console logging |
-| `index.ts` | Main entry point |
-| `data/categories.ts` | 54 categories with 540 subcategories |
-
----
-
-## Environment Variables
-
-Required in `config.json`:
-```json
-{
-  "api_keys": {
-    "groq": "your-groq-api-key"
-  },
-  "ai_settings": {
-    "model": "llama-3.3-70b-versatile",
-    "temperature": 0.7,
-    "questions_per_transcript": 35
-  }
-}
-```
 
 ---
 
 ## Important Notes
 
-1. **Rate Limits:** Groq free tier has daily limits. The system handles 429 errors gracefully and saves state for resumption.
+1. **Question Generation:** Use `power up [show] [season] [episode]` in Claude Code CLI. No external API keys needed.
 
-2. **Manifest Updates:** Always update manifests after generating questions. Use `updateSeasonFromEpisodes()` and `updateSeriesFromSeasons()` to roll up statistics.
+2. **Stats:** Statistics are cached in `data/stats.json`. Use "Regenerate Stats" button in web UI after generating questions.
 
-3. **Validation:** The manifest tracks validation status. Currently `noDuplicates` and `allAnswersValid` may be false - these are for future quality checks.
+3. **Deduplication:** Questions are deduplicated per-episode using `raw_questions.log`.
 
 4. **Source Priority:** For TV shows, `scrapeFriendsTranscript` is tried first, then `scrapeSubslikescript` as fallback.
 
 5. **Citations:** Knowledge and sports content must include citations. Media content (TV/movies) doesn't need citations since questions are episode-specific.
-
-6. **Time-Sensitive Data:** Sports statistics questions must include "As of {date}" prefix and track `validAsOf` in metadata.

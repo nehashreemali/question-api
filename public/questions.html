@@ -6,33 +6,71 @@
   <title>Question Browser</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { background: #0f172a; }
+    html, body { height: 100%; overflow: hidden; background: #0f172a; }
     .card { background: #1e293b; border: 1px solid #334155; }
     .question-card:hover { border-color: #06b6d4; }
     .difficulty-easy { background: #22c55e20; color: #4ade80; }
     .difficulty-medium { background: #eab30820; color: #facc15; }
     .difficulty-hard { background: #ef444420; color: #f87171; }
+    .modal-backdrop { background: rgba(0, 0, 0, 0.7); }
   </style>
 </head>
-<body class="min-h-screen text-gray-100">
+<body class="h-screen flex flex-col text-gray-100">
   <!-- Navigation -->
-  <nav class="bg-slate-800 border-b border-slate-700 px-6 py-4 sticky top-0 z-50">
+  <nav class="bg-slate-800 border-b border-slate-700 px-6 py-4 flex-shrink-0">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <h1 class="text-xl font-bold text-white">Question Generator</h1>
-      <div class="flex gap-4">
-        <a href="/" class="text-gray-400 hover:text-white transition">Generator</a>
-        <a href="/stats" class="text-gray-400 hover:text-white transition">Stats</a>
-        <a href="/questions" class="text-cyan-400 font-medium">Questions</a>
+      <div class="flex items-center gap-6">
+        <h1 class="text-xl font-bold text-white">Question API</h1>
+        <span id="results-count" class="text-gray-400 text-sm">Loading...</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <button id="open-filters" class="flex items-center gap-2 bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-lg transition">
+          <span>Filters</span>
+          <span id="active-filter-count" class="hidden bg-cyan-500 text-xs px-2 py-0.5 rounded-full">0</span>
+        </button>
+        <div class="flex gap-4">
+          <a href="/" class="text-gray-400 hover:text-white transition">Home</a>
+          <a href="/stats" class="text-gray-400 hover:text-white transition">Stats</a>
+          <a href="/questions" class="text-cyan-400 font-medium">Questions</a>
+          <a href="/registry" class="text-gray-400 hover:text-white transition">Registry</a>
+        </div>
       </div>
     </div>
   </nav>
 
-  <main class="max-w-7xl mx-auto px-6 py-8">
-    <h2 class="text-3xl font-bold mb-6">Question Browser</h2>
+  <!-- Scrollable Questions List -->
+  <main class="flex-1 overflow-y-auto">
+    <div class="max-w-5xl mx-auto px-6 py-6">
+      <div id="questions-list" class="space-y-4">
+        <!-- Loading state -->
+        <div id="loading" class="text-center py-12">
+          <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-400 mx-auto"></div>
+        </div>
+      </div>
 
-    <!-- Filters -->
-    <div class="card rounded-xl p-4 mb-6">
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+      <!-- Load More -->
+      <div id="load-more-container" class="hidden text-center py-8">
+        <button id="load-more" class="bg-slate-700 hover:bg-slate-600 text-white font-medium py-3 px-8 rounded-lg transition">
+          Load More Questions
+        </button>
+      </div>
+
+      <!-- End of results -->
+      <div id="end-of-results" class="hidden text-center py-8 text-gray-500">
+        No more questions to load
+      </div>
+    </div>
+  </main>
+
+  <!-- Filter Modal -->
+  <div id="filter-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center modal-backdrop">
+    <div class="card rounded-xl p-6 w-full max-w-md mx-4 shadow-2xl">
+      <div class="flex items-center justify-between mb-6">
+        <h3 class="text-xl font-semibold">Filter Questions</h3>
+        <button id="close-filters" class="text-gray-400 hover:text-white text-2xl">&times;</button>
+      </div>
+
+      <div class="space-y-4">
         <div>
           <label class="block text-sm text-gray-400 mb-1">Show</label>
           <select id="filter-show" class="w-full bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 text-white">
@@ -46,14 +84,6 @@
           </select>
         </div>
         <div>
-          <label class="block text-sm text-gray-400 mb-1">Generator</label>
-          <select id="filter-generator" class="w-full bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 text-white">
-            <option value="">All</option>
-            <option value="groq">Groq</option>
-            <option value="claude-code">Claude Code</option>
-          </select>
-        </div>
-        <div>
           <label class="block text-sm text-gray-400 mb-1">Difficulty</label>
           <select id="filter-difficulty" class="w-full bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 text-white">
             <option value="">All</option>
@@ -62,40 +92,18 @@
             <option value="hard">Hard</option>
           </select>
         </div>
-        <div class="flex items-end">
-          <button id="apply-filters" class="w-full bg-cyan-600 hover:bg-cyan-500 text-white font-medium py-2 px-4 rounded-lg transition">
-            Apply Filters
-          </button>
-        </div>
+      </div>
+
+      <div class="flex gap-3 mt-6">
+        <button id="clear-filters" class="flex-1 bg-slate-700 hover:bg-slate-600 text-white font-medium py-2 px-4 rounded-lg transition">
+          Clear
+        </button>
+        <button id="apply-filters" class="flex-1 bg-cyan-600 hover:bg-cyan-500 text-white font-medium py-2 px-4 rounded-lg transition">
+          Apply Filters
+        </button>
       </div>
     </div>
-
-    <!-- Results count -->
-    <div class="flex items-center justify-between mb-4">
-      <p id="results-count" class="text-gray-400">Loading questions...</p>
-      <p id="showing-count" class="text-gray-400"></p>
-    </div>
-
-    <!-- Questions List -->
-    <div id="questions-list" class="space-y-4">
-      <!-- Loading state -->
-      <div id="loading" class="text-center py-12">
-        <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-400 mx-auto"></div>
-      </div>
-    </div>
-
-    <!-- Load More -->
-    <div id="load-more-container" class="hidden text-center py-8">
-      <button id="load-more" class="bg-slate-700 hover:bg-slate-600 text-white font-medium py-3 px-8 rounded-lg transition">
-        Load More Questions
-      </button>
-    </div>
-
-    <!-- End of results -->
-    <div id="end-of-results" class="hidden text-center py-8 text-gray-500">
-      No more questions to load
-    </div>
-  </main>
+  </div>
 
   <script>
     let currentOffset = 0;
@@ -103,19 +111,38 @@
     let totalQuestions = 0;
     let isLoading = false;
 
+    const modal = document.getElementById('filter-modal');
+    const mainContent = document.querySelector('main');
+
+    // Modal controls
+    document.getElementById('open-filters').addEventListener('click', () => {
+      modal.classList.remove('hidden');
+    });
+
+    document.getElementById('close-filters').addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) modal.classList.add('hidden');
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') modal.classList.add('hidden');
+    });
+
     // Load shows for filter
     async function loadShows() {
       try {
-        const response = await fetch('/api/question-stats');
-        const stats = await response.json();
+        const response = await fetch('/api/tv-shows');
+        const shows = await response.json();
 
         const showSelect = document.getElementById('filter-show');
-        const shows = Object.keys(stats.byShow).sort();
 
         for (const show of shows) {
           const option = document.createElement('option');
-          option.value = show;
-          option.textContent = show.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+          option.value = show.slug;
+          option.textContent = show.name;
           showSelect.appendChild(option);
         }
       } catch (error) {
@@ -129,7 +156,6 @@
       seasonSelect.innerHTML = '<option value="">All Seasons</option>';
 
       if (this.value) {
-        // Add seasons 1-10 as options (can be improved with actual data)
         for (let i = 1; i <= 12; i++) {
           const option = document.createElement('option');
           option.value = i;
@@ -143,16 +169,26 @@
       return {
         show: document.getElementById('filter-show').value,
         season: document.getElementById('filter-season').value,
-        generator: document.getElementById('filter-generator').value,
         difficulty: document.getElementById('filter-difficulty').value,
       };
+    }
+
+    function updateFilterBadge() {
+      const filters = getFilters();
+      const count = [filters.show, filters.season, filters.difficulty].filter(Boolean).length;
+      const badge = document.getElementById('active-filter-count');
+      if (count > 0) {
+        badge.textContent = count;
+        badge.classList.remove('hidden');
+      } else {
+        badge.classList.add('hidden');
+      }
     }
 
     function buildQueryString(filters, offset) {
       const params = new URLSearchParams();
       if (filters.show) params.set('show', filters.show);
       if (filters.season) params.set('season', filters.season);
-      if (filters.generator) params.set('generator', filters.generator);
       if (filters.difficulty) params.set('difficulty', filters.difficulty);
       params.set('limit', limit);
       params.set('offset', offset);
@@ -167,11 +203,6 @@
         : '';
 
       const difficultyClass = `difficulty-${q.difficulty || 'medium'}`;
-      const generatorBadge = q.generatedBy === 'groq'
-        ? '<span class="px-2 py-0.5 rounded text-xs bg-emerald-900 text-emerald-300">Groq</span>'
-        : q.generatedBy === 'claude-code'
-        ? '<span class="px-2 py-0.5 rounded text-xs bg-purple-900 text-purple-300">Claude</span>'
-        : '';
 
       return `
         <div class="question-card card rounded-xl p-5 transition-all duration-200">
@@ -179,7 +210,6 @@
             <div class="flex items-center gap-2 text-sm text-gray-400">
               <span class="font-medium text-cyan-400">${showName}</span>
               ${episodeInfo ? `<span>•</span><span>${episodeInfo}</span>` : ''}
-              ${generatorBadge}
             </div>
             <span class="px-2 py-0.5 rounded text-xs ${difficultyClass}">
               ${(q.difficulty || 'medium').charAt(0).toUpperCase() + (q.difficulty || 'medium').slice(1)}
@@ -222,7 +252,7 @@
       const queryString = buildQueryString(filters, currentOffset);
 
       try {
-        const response = await fetch(`/api/questions-list?${queryString}`);
+        const response = await fetch(`/api/questions?${queryString}`);
         const data = await response.json();
 
         totalQuestions = data.total;
@@ -255,8 +285,7 @@
           }
 
           // Update counts
-          document.getElementById('results-count').textContent = `${totalQuestions.toLocaleString()} questions found`;
-          document.getElementById('showing-count').textContent = `Showing ${currentOffset} of ${totalQuestions}`;
+          document.getElementById('results-count').textContent = `${totalQuestions.toLocaleString()} questions`;
 
           // Show/hide load more button
           if (currentOffset < totalQuestions) {
@@ -281,27 +310,41 @@
       }
     }
 
-    // Event listeners
+    // Apply filters
     document.getElementById('apply-filters').addEventListener('click', () => {
+      modal.classList.add('hidden');
       currentOffset = 0;
-      document.getElementById('loading').classList.remove('hidden');
+      updateFilterBadge();
+      document.getElementById('questions-list').innerHTML = `
+        <div id="loading" class="text-center py-12">
+          <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-400 mx-auto"></div>
+        </div>
+      `;
       loadQuestions(false);
+    });
+
+    // Clear filters
+    document.getElementById('clear-filters').addEventListener('click', () => {
+      document.getElementById('filter-show').value = '';
+      document.getElementById('filter-season').value = '';
+      document.getElementById('filter-difficulty').value = '';
+      document.getElementById('filter-season').innerHTML = '<option value="">All Seasons</option>';
     });
 
     document.getElementById('load-more').addEventListener('click', () => {
       loadQuestions(true);
     });
 
-    // Infinite scroll
-    window.addEventListener('scroll', () => {
+    // Infinite scroll on main content
+    mainContent.addEventListener('scroll', () => {
       if (isLoading) return;
 
-      const scrollY = window.scrollY;
-      const visible = document.documentElement.clientHeight;
-      const pageHeight = document.documentElement.scrollHeight;
-      const bottomOfPage = visible + scrollY >= pageHeight - 500;
+      const scrollTop = mainContent.scrollTop;
+      const scrollHeight = mainContent.scrollHeight;
+      const clientHeight = mainContent.clientHeight;
+      const nearBottom = scrollTop + clientHeight >= scrollHeight - 300;
 
-      if (bottomOfPage && currentOffset < totalQuestions) {
+      if (nearBottom && currentOffset < totalQuestions) {
         loadQuestions(true);
       }
     });

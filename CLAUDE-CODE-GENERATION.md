@@ -1,6 +1,40 @@
 # Claude Code Question Generation
 
-This document describes how to generate quiz questions directly through Claude Code CLI, without using external APIs like Groq.
+This document describes the workflow for generating quiz questions via Claude Code CLI.
+
+---
+
+## Architecture Overview
+
+```
+data/                        # Output (databases only)
+├── registry.db              # Central registry: categories, subcategories, topics
+├── tv-shows.db              # Questions for TV shows
+├── movies.db                # Questions for movies
+├── epics.db                 # Questions for epics
+├── mythology.db             # Questions for mythology
+├── sports.db                # Questions for sports
+└── ...                      # Per-category question databases
+
+generation/                  # Source material for question generation
+└── transcripts/             # TV show transcripts (flat structure)
+    ├── friends/
+    │   ├── s01e01.json
+    │   ├── s01e02.json
+    │   └── ...
+    └── the-big-bang-theory/
+        └── s01e01.json
+```
+
+**Why per-category databases?**
+- Allows multiple people to generate questions simultaneously without git conflicts
+- Each category is self-contained and independently mergeable
+- Registry provides the index for all content
+
+**Why separate data/ and generation/ folders?**
+- Clean separation: `data/` is output (databases), `generation/` is input (source material)
+- Easy to understand what's generated vs what's used for generation
+- Simple `s{nn}e{nn}.json` naming is concise and sortable
 
 ---
 
@@ -10,228 +44,284 @@ This document describes how to generate quiz questions directly through Claude C
 
 ```
 power up friends s1e10
+power up mahabharata parva 1 chapter 5
 power up The Big Bang Theory season 2 episode 5
-power up breaking bad 1 1
 ```
-
-Claude will understand natural language variations. The key trigger is `power up`.
 
 ---
 
-## How It Works
+## Power Up Workflow
 
-When you say `power up [show] [season] [episode]`, Claude will:
+When you hear "power up [topic] [part] [chapter]", follow this exact workflow:
 
-1. **Parse your request** - Understand show name, season, episode
-2. **Check/fetch transcript** - Read existing or scrape if missing
-3. **Load existing questions** - Check both `rawQuestions.json` and `claude_code_raw_questions.json` for deduplication
-4. **Generate questions** - Create questions until material is naturally exhausted
-5. **Save output** - Write dated question file + append to raw questions
-6. **Update manifests** - Track stats separately for Groq vs Claude Code
-7. **Report results** - Show how many questions generated, duplicates skipped
+### Step 1: Parse the Request
+
+Extract category, subcategory, topic, part, and chapter from the user's request.
+
+```typescript
+// Examples:
+// "power up friends s1e10" → category: 'tv-shows', subcategory: 'sitcoms', topic: 'friends', part: 1, chapter: 10
+// "power up mahabharata parva 1" → category: 'epics', subcategory: 'hindu', topic: 'mahabharata', part: 1, chapter: null
+// "power up greek gods" → category: 'mythology', subcategory: 'greek', topic: 'greek-gods', part: null, chapter: null
+```
+
+### Step 2: Load Existing Questions
+
+Query the category database to see what questions already exist:
+
+```typescript
+import { getChapterQuestions } from './src/lib/database';
+
+// Get existing questions for this specific chapter (queries tv-shows.db)
+const existing = getChapterQuestions('tv-shows', 'friends', 1, 10);
+console.log(`Found ${existing.length} existing questions for this episode`);
+
+// Use these to avoid generating duplicates
+```
+
+### Step 3: Read Source Material
+
+For TV shows, read the transcript:
+```
+generation/transcripts/{show-slug}/s{nn}e{nn}.json
+```
+
+Example: `generation/transcripts/friends/s01e10.json`
+
+For epics/mythology, read the source content or use web search.
+
+### Step 4: Generate NEW Questions
+
+Generate questions while avoiding the existing ones. For each question:
+
+```typescript
+import { insertQuestion } from './src/lib/database';
+
+const question = {
+  category: 'tv-shows',       // Determines which .db file to use
+  subcategory: 'sitcoms',     // Type within category
+  topic: 'friends',           // The specific show/topic
+  part: 1,                    // Season
+  chapter: 10,                // Episode
+  title: 'The One With The Monkey',
+  question: 'What is the name of Ross\'s monkey?',
+  options: ['Marcel', 'George', 'Charlie', 'Max'],
+  correct_answer: 'Marcel',
+  difficulty: 'easy',
+  explanation: 'Ross\'s capuchin monkey is named Marcel.'
+};
+
+const result = insertQuestion(question);
+if (result.inserted) {
+  console.log(`✓ Added: ${question.question}`);
+} else {
+  console.log(`⊘ Duplicate, skipped`);
+}
+```
+
+### Step 5: Report Results
+
+```
+✓ Friends S1E10 - Generated 20 questions
+  Inserted: 18
+  Skipped: 2 (duplicates)
+  Total for episode: 43
+```
 
 ---
 
-## File Structure
+## Database Architecture
 
-For each episode, all questions are stored in a `questions/` subfolder:
+### Registry Database (`registry.db`)
 
+Central index of all categories, subcategories, and topics.
+
+```sql
+-- Categories
+CREATE TABLE categories (
+  slug TEXT PRIMARY KEY,      -- 'tv-shows', 'movies', 'epics'
+  name TEXT NOT NULL,
+  description TEXT,
+  icon TEXT
+);
+
+-- Subcategories
+CREATE TABLE subcategories (
+  category TEXT NOT NULL,     -- FK to categories
+  slug TEXT NOT NULL,         -- 'sitcoms', 'drama', 'hindu'
+  name TEXT NOT NULL,
+  description TEXT,
+  PRIMARY KEY (category, slug)
+);
+
+-- Topics
+CREATE TABLE topics (
+  category TEXT NOT NULL,
+  subcategory TEXT NOT NULL,
+  slug TEXT NOT NULL,         -- 'friends', 'mahabharata'
+  name TEXT NOT NULL,
+  description TEXT,
+  total_parts INTEGER,
+  source_type TEXT,
+  source_url TEXT,
+  PRIMARY KEY (category, subcategory, slug)
+);
+
+-- Stats (aggregated from category databases)
+CREATE TABLE stats (
+  category TEXT NOT NULL,
+  subcategory TEXT NOT NULL,
+  topic TEXT NOT NULL,
+  part INTEGER,
+  total_questions INTEGER,
+  easy_count INTEGER,
+  medium_count INTEGER,
+  hard_count INTEGER,
+  PRIMARY KEY (category, subcategory, topic, part)
+);
 ```
-data/tv-shows/{show}/season-{N}/episode-{N}/
-├── transcript.json                        # Source content
-├── manifest.json                          # Metadata with Groq/Claude Code stats
-│
-└── questions/                             # All questions in this subfolder
-    │
-    │ # Groq-generated
-    ├── groq_questions_DD_MM_YYYY_HHMMSS.json    # Timestamped session file
-    ├── groq_raw_questions.json                  # Master list (append-only)
-    │
-    │ # Claude Code generated
-    ├── claude_code_questions_DD_MM_YYYY.json    # Session file (dated)
-    └── claude_code_raw_questions.json           # Master list (append-only)
+
+### Category Question Databases (`{category}.db`)
+
+Each category has its own database with the same schema:
+
+```sql
+CREATE TABLE questions (
+  id INTEGER PRIMARY KEY,
+  hash TEXT UNIQUE NOT NULL,    -- For deduplication
+
+  subcategory TEXT NOT NULL,    -- 'sitcoms', 'drama', etc.
+  topic TEXT NOT NULL,          -- 'friends', 'mahabharata', 'greek-gods'
+
+  part INTEGER,                 -- Season, Parva, Book (nullable)
+  chapter INTEGER,              -- Episode, Chapter, Sarga (nullable)
+  title TEXT,                   -- Episode/chapter title
+
+  question TEXT NOT NULL,
+  options TEXT NOT NULL,        -- JSON array of 4 options
+  correct_answer TEXT NOT NULL,
+  difficulty TEXT,              -- 'easy', 'medium', 'hard'
+  explanation TEXT,
+
+  created_at TEXT
+);
 ```
 
-This structure makes it easy to find all questions - just scan for `questions/` folders.
+---
 
-### File Purposes
+## Database Helper Functions
 
-| File | Purpose |
-|------|---------|
-| `groq_questions_*.json` | Full question objects from Groq API sessions. Timestamped. |
-| `groq_raw_questions.json` | Flat array of all Groq question strings. For deduplication. |
-| `claude_code_questions_*.json` | Full question objects from Claude Code sessions. Dated. |
-| `claude_code_raw_questions.json` | Flat array of all Claude Code question strings. For deduplication. |
+### Registry Functions (`src/lib/registry.ts`)
+
+| Function | Purpose |
+|----------|---------|
+| `initRegistry()` | Initialize registry database |
+| `getCategories()` | List all categories |
+| `getSubcategories(category?)` | List subcategories |
+| `getTopics(category?, subcategory?)` | List topics |
+| `getFullHierarchy()` | Complete category tree |
+| `updateStats(stats)` | Update aggregated stats |
+
+### Question Functions (`src/lib/database.ts`)
+
+| Function | Purpose |
+|----------|---------|
+| `getCategoryDatabase(cat)` | Get/create category DB |
+| `insertQuestion(q)` | Insert question (auto-dedup) |
+| `questionExists(cat, text)` | Check if question exists |
+| `getChapterQuestions(cat, topic, part, ch)` | Get questions for chapter |
+| `getTopicQuestions(cat, topic)` | Get all questions for topic |
+| `getQuestions(filters)` | Filtered query with pagination |
+| `getStats()` | Aggregated statistics |
+
+---
+
+## Content Type Examples
+
+| Category | Subcategory | Topic | Part | Chapter | Title |
+|----------|-------------|-------|------|---------|-------|
+| tv-shows | sitcoms | friends | 1 | 10 | The One With The Monkey |
+| tv-shows | drama | breaking-bad | 5 | 16 | Felina |
+| epics | hindu | mahabharata | 1 | 5 | Adi Parva - Chapter 5 |
+| epics | greek | iliad | 1 | 1 | Book I |
+| mythology | greek | greek-gods | NULL | NULL | The Olympians |
+| sports | cricket | ipl | 2024 | NULL | IPL 2024 |
 
 ---
 
 ## Deduplication
 
-Before generating each question, Claude checks both raw question files in the `questions/` folder:
-- `groq_raw_questions.json` (Groq-generated questions)
-- `claude_code_raw_questions.json` (Claude Code-generated questions)
-
-Fuzzy matching is used - questions that are semantically too similar are skipped silently.
-
----
-
-## Manifest Stats
-
-The manifest tracks generation stats separately:
-
-```json
-{
-  "questions": {
-    "groq": {
-      "count": 29,
-      "lastGenerated": "2025-12-16T10:30:00Z"
-    },
-    "claudeCode": {
-      "count": 25,
-      "lastGenerated": "2025-12-21T14:00:00Z"
-    },
-    "totalCount": 54
-  }
-}
+Questions are deduplicated using a hash:
+```typescript
+hash = Bun.hash(question.replace(/\s+/g, '').toLowerCase())
 ```
 
-Stats roll up through the hierarchy: episode → season → series → global.
+- Stored in each category DB with UNIQUE constraint
+- Duplicate inserts automatically rejected
+- Same question can exist in different categories (different DBs)
 
 ---
 
-## Question Format
-
-Each question follows this structure:
-
-```json
-{
-  "question": "What does Monica say is 'just some guy I work with'?",
-  "options": [
-    "Paul the wine guy",
-    "Her new neighbor",
-    "Her dentist",
-    "Her gym trainer"
-  ],
-  "correct_answer": "Paul the wine guy",
-  "difficulty": "easy",
-  "explanation": "Monica tells her friends 'There's nothing to tell! He's just some guy I work with!' when asked about Paul."
-}
-```
-
-### Difficulty Distribution (Target)
-- **Easy (40%)** - Basic plot points, main events
-- **Medium (40%)** - Specific dialogue, character motivations
-- **Hard (20%)** - Subtle details, callbacks (still fair, not obscure)
-
----
-
-## Quality Rules
+## Quality Guidelines
 
 ### Good Questions
 - Test memorable moments, plot points, character traits
 - Reference specific dialogue or events
-- Answerable by someone who watched attentively
+- Answerable by someone who engaged with the content
 - Have one clearly correct answer
 
 ### Avoid
-- Colors of clothing or background objects
+- Trivial visual details
 - Exact counts ("How many times did X happen?")
 - Minor background details
-- Anything requiring freeze-frame analysis
 - Trick questions
 
+### Difficulty Distribution (Target)
+- **Easy (40%):** Basic plot points, main events
+- **Medium (40%):** Specific dialogue, character motivations
+- **Hard (20%):** Subtle details, callbacks (fair, not obscure)
+
 ---
 
-## Output Report
-
-After generation, Claude reports:
+## Example Session
 
 ```
-✓ Friends S1E9 - Generated 27 questions
-  Skipped 3 duplicates
-  Total for episode: 27 (Claude Code) + 29 (Groq) = 56
+User: power up friends s1e10
+
+Claude:
+1. Parsing: category='tv-shows', subcategory='sitcoms', topic='friends', part=1, chapter=10
+
+2. Querying tv-shows.db for existing questions...
+   Found 25 existing questions for this episode.
+
+3. Reading transcript from generation/transcripts/friends/s01e10.json
+
+4. Generating new questions (avoiding existing ones)...
+
+   ✓ What is the name of Ross's monkey?
+   ✓ Where do the friends celebrate New Year's Eve?
+   ⊘ Skipped duplicate: Who brings a date to the party?
+   ✓ What does Marcel keep turning on?
+   ...
+
+5. Results:
+   ✓ Friends S1E10 - Complete
+     New: 18 questions
+     Skipped: 2 duplicates
+     Total for episode: 43
 ```
 
 ---
 
-## Supported Content Types
+## API Endpoints
 
-| Type | Status | Trigger Example |
-|------|--------|-----------------|
-| TV Shows | ✅ Supported | `power up friends s1e10` |
-| Movies | ✅ Supported | `power up the godfather` |
-| Sports | ✅ Supported | `power up cricket world cup 2023` |
-| Knowledge | ✅ Supported | `power up physics thermodynamics` |
+### Registry API
+- `GET /api/categories` - List all categories
+- `GET /api/subcategories?category=tv-shows` - List subcategories
+- `GET /api/hierarchy` - Full category tree
 
-All content types are supported. One topic at a time.
-
-### Adapter Details
-
-#### TV Shows
-- **Trigger:** `power up [show] s[season]e[episode]`
-- **Sources:** fangj.github.io (Friends), Subslikescript (other shows)
-- **Data path:** `data/tv-shows/{show}/season-{N}/episode-{N}/`
-
-#### Movies
-- **Trigger:** `power up [movie name]`
-- **Sources:** Wikipedia, IMDb summaries
-- **Data path:** `data/movies/{movie-slug}/`
-
-#### Sports
-- **Trigger:** `power up [sport] [topic]`
-- **Sources:** Wikipedia, ESPN, CricInfo
-- **Topics:** tournaments, players, teams, records
-- **Data path:** `data/sports/{sport}/{topic}/`
-
-#### Knowledge (Science, History, Geography, etc.)
-- **Trigger:** `power up [category] [topic]`
-- **Sources:** Wikipedia, OpenStax, Khan Academy
-- **Data path:** `data/{category}/{topic}/`
-
----
-
-## Transcript Sources
-
-For TV shows, transcripts are fetched from:
-1. **Friends Transcripts** (fangj.github.io) - Primary for Friends
-2. **Subslikescript.com** - Fallback for other shows
-
-If a transcript doesn't exist, Claude will attempt to scrape it automatically.
-
----
-
-## Comparison: Claude Code vs Groq
-
-| Aspect | Claude Code | Groq API |
-|--------|-------------|----------|
-| Cost | Included in Claude subscription | Separate API cost |
-| Interface | CLI conversation | Web UI or scripts |
-| Speed | Conversational pace | Batch processing |
-| Rate limits | Claude's limits | Groq's daily limits |
-| Files | `claude_code_*.json` | `questions.json`, `rawQuestions.json` |
-
-Both systems output the same question format and update the same manifest hierarchy.
-
----
-
-## Session Start Checklist
-
-When starting a new Claude Code session for question generation:
-
-1. Read `PROGRESS-SUMMARY.md` to see current status
-2. Check which episodes need questions
-3. Use `power up [show] [season] [episode]` to generate
-
----
-
-## Examples
-
-```
-# Generate questions for Friends Season 1 Episode 10
-power up friends s1e10
-
-# Different formats all work
-power up Friends Season 1 Episode 10
-power up friends 1 10
-power up "The Big Bang Theory" s2e5
-```
+### Question API
+- `GET /api/stats` - Aggregated statistics
+- `GET /api/questions?category=tv-shows&topic=friends` - List questions
+- `GET /api/topics` - List topics from questions
+- `POST /api/import` - Import from JSON files

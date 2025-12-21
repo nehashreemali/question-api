@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: #0f172a; }
+    .card { background: #1e293b; border: 1px solid #334155; }
+    .tab { transition: all 0.2s ease; }
+    .tab:hover { background: #334155; }
+    .tab.active { background: #0891b2; color: white; }
+    .topic-card { background: #1e293b; border: 1px solid #334155; }
+    .topic-card:hover { border-color: #06b6d4; background: #334155; }
+  </style>
+</head>
+<body class="min-h-screen text-gray-100">
+  <!-- Navigation -->
+  <nav class="bg-slate-800 border-b border-slate-700 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <h1 class="text-xl font-bold text-white">Question API</h1>
+      <div class="flex gap-4">
+        <a href="/" class="text-gray-400 hover:text-white transition">Home</a>
+        <a href="/stats" class="text-gray-400 hover:text-white transition">Stats</a>
+        <a href="/questions" class="text-gray-400 hover:text-white transition">Questions</a>
+        <a href="/registry" class="text-cyan-400 font-medium">Registry</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-6 py-8">
+    <!-- Breadcrumb -->
+    <div class="flex items-center gap-2 text-sm text-gray-400 mb-6">
+      <a href="/registry" class="hover:text-white transition">Registry</a>
+      <span>/</span>
+      <span id="breadcrumb-category" class="text-white">Loading...</span>
+    </div>
+
+    <!-- Category Header -->
+    <div class="flex items-center gap-4 mb-8">
+      <span id="category-icon" class="text-5xl">📁</span>
+      <div>
+        <h2 id="category-name" class="text-3xl font-bold">Loading...</h2>
+        <p id="category-description" class="text-gray-400 mt-1"></p>
+      </div>
+    </div>
+
+    <!-- Loading State -->
+    <div id="loading" class="text-center py-12">
+      <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-400 mx-auto"></div>
+      <p class="mt-4 text-gray-400">Loading category...</p>
+    </div>
+
+    <!-- Content -->
+    <div id="content" class="hidden">
+      <!-- Subcategory Tabs -->
+      <div class="mb-6">
+        <div id="subcategory-tabs" class="flex flex-wrap gap-2">
+          <!-- Tabs populated by JS -->
+        </div>
+      </div>
+
+      <!-- Search within subcategory -->
+      <div class="mb-6">
+        <input type="text" id="search" placeholder="Search topics..."
+               class="w-full max-w-md bg-slate-800 border border-slate-600 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500">
+      </div>
+
+      <!-- Topics List -->
+      <div id="topics-container">
+        <div class="flex items-center justify-between mb-4">
+          <h3 id="subcategory-title" class="text-xl font-semibold text-gray-200"></h3>
+          <span id="topic-count" class="text-gray-500 text-sm"></span>
+        </div>
+        <p id="subcategory-description" class="text-gray-500 text-sm mb-6"></p>
+
+        <div id="topics-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- Topics populated by JS -->
+        </div>
+
+        <!-- Empty State -->
+        <div id="empty-state" class="hidden text-center py-12">
+          <p class="text-gray-500 text-lg">No topics yet in this subcategory</p>
+          <p class="text-gray-600 text-sm mt-2">Topics are created when you generate questions</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Not Found -->
+    <div id="not-found" class="hidden text-center py-12">
+      <p class="text-red-400 text-lg">Category not found</p>
+      <a href="/registry" class="text-cyan-400 hover:underline mt-4 inline-block">Back to Registry</a>
+    </div>
+  </main>
+
+  <script>
+    let categoryData = null;
+    let activeSubcategory = null;
+
+    async function loadCategory() {
+      // Get category slug from URL
+      const path = window.location.pathname;
+      const categorySlug = path.split('/').pop();
+
+      try {
+        const response = await fetch('/api/hierarchy');
+        const hierarchy = await response.json();
+
+        // Find the category
+        categoryData = hierarchy.find(c => c.slug === categorySlug);
+
+        if (!categoryData) {
+          document.getElementById('loading').classList.add('hidden');
+          document.getElementById('not-found').classList.remove('hidden');
+          return;
+        }
+
+        // Update header
+        document.getElementById('breadcrumb-category').textContent = categoryData.name;
+        document.getElementById('category-icon').textContent = categoryData.icon || '📁';
+        document.getElementById('category-name').textContent = categoryData.name;
+        document.getElementById('category-description').textContent = categoryData.description || '';
+        document.title = `${categoryData.name} - Registry`;
+
+        // Render subcategory tabs
+        renderTabs();
+
+        // Select first subcategory by default
+        if (categoryData.subcategories?.length > 0) {
+          selectSubcategory(categoryData.subcategories[0].slug);
+        }
+
+        document.getElementById('loading').classList.add('hidden');
+        document.getElementById('content').classList.remove('hidden');
+
+      } catch (error) {
+        console.error('Failed to load category:', error);
+        document.getElementById('loading').innerHTML = `
+          <p class="text-red-400">Failed to load category. Make sure the server is running.</p>
+        `;
+      }
+    }
+
+    function renderTabs() {
+      const tabsContainer = document.getElementById('subcategory-tabs');
+      tabsContainer.innerHTML = '';
+
+      categoryData.subcategories?.forEach(sub => {
+        const tab = document.createElement('button');
+        tab.className = 'tab px-4 py-2 rounded-lg text-sm font-medium text-gray-300 border border-slate-600';
+        tab.dataset.slug = sub.slug;
+        tab.innerHTML = `
+          <span>${sub.name}</span>
+          <span class="ml-2 text-xs text-gray-500">(${sub.topics?.length || 0})</span>
+        `;
+        tab.addEventListener('click', () => selectSubcategory(sub.slug));
+        tabsContainer.appendChild(tab);
+      });
+    }
+
+    function selectSubcategory(slug) {
+      activeSubcategory = categoryData.subcategories?.find(s => s.slug === slug);
+      if (!activeSubcategory) return;
+
+      // Update active tab
+      document.querySelectorAll('#subcategory-tabs .tab').forEach(tab => {
+        if (tab.dataset.slug === slug) {
+          tab.classList.add('active');
+          tab.classList.remove('text-gray-300', 'border-slate-600');
+        } else {
+          tab.classList.remove('active');
+          tab.classList.add('text-gray-300', 'border-slate-600');
+        }
+      });
+
+      // Update subcategory info
+      document.getElementById('subcategory-title').textContent = activeSubcategory.name;
+      document.getElementById('subcategory-description').textContent = activeSubcategory.description || '';
+
+      // Render topics
+      renderTopics(activeSubcategory.topics || []);
+    }
+
+    function renderTopics(topics) {
+      const container = document.getElementById('topics-list');
+      const emptyState = document.getElementById('empty-state');
+      const countEl = document.getElementById('topic-count');
+
+      countEl.textContent = `${topics.length} topic${topics.length !== 1 ? 's' : ''}`;
+
+      if (topics.length === 0) {
+        container.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+      container.innerHTML = topics.map(topic => `
+        <div class="topic-card rounded-lg p-4 cursor-pointer" onclick="viewTopic('${topic.slug}')">
+          <h4 class="font-medium text-white mb-1">${topic.name}</h4>
+          ${topic.description ? `<p class="text-gray-500 text-sm mb-2">${topic.description}</p>` : ''}
+          <div class="flex items-center gap-4 text-xs text-gray-500">
+            ${topic.total_parts ? `<span>${topic.total_parts} parts</span>` : ''}
+            ${topic.source_type ? `<span class="bg-slate-700 px-2 py-0.5 rounded">${topic.source_type}</span>` : ''}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function viewTopic(slug) {
+      // Navigate to questions filtered by this topic
+      const category = categoryData.slug;
+      window.location.href = `/questions?category=${category}&topic=${slug}`;
+    }
+
+    // Search functionality
+    document.getElementById('search').addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+
+      if (!activeSubcategory) return;
+
+      const filtered = query
+        ? activeSubcategory.topics?.filter(t =>
+            t.name.toLowerCase().includes(query) ||
+            t.slug.toLowerCase().includes(query) ||
+            (t.description && t.description.toLowerCase().includes(query))
+          ) || []
+        : activeSubcategory.topics || [];
+
+      renderTopics(filtered);
+    });
+
+    loadCategory();
+  </script>
+</body>
+</html>

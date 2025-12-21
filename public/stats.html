@@ -15,17 +15,27 @@
   <!-- Navigation -->
   <nav class="bg-slate-800 border-b border-slate-700 px-6 py-4">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <h1 class="text-xl font-bold text-white">Question Generator</h1>
+      <h1 class="text-xl font-bold text-white">Question API</h1>
       <div class="flex gap-4">
-        <a href="/" class="text-gray-400 hover:text-white transition">Generator</a>
+        <a href="/" class="text-gray-400 hover:text-white transition">Home</a>
         <a href="/stats" class="text-cyan-400 font-medium">Stats</a>
         <a href="/questions" class="text-gray-400 hover:text-white transition">Questions</a>
+        <a href="/registry" class="text-gray-400 hover:text-white transition">Registry</a>
       </div>
     </div>
   </nav>
 
   <main class="max-w-7xl mx-auto px-6 py-8">
-    <h2 class="text-3xl font-bold mb-8">Question Statistics</h2>
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="text-3xl font-bold">Question Statistics</h2>
+      <button id="import-btn" class="bg-emerald-600 hover:bg-emerald-500 text-white font-medium py-2 px-4 rounded-lg transition flex items-center gap-2">
+        <span id="import-icon">📥</span>
+        <span id="import-text">Import from Files</span>
+      </button>
+    </div>
+
+    <!-- Import Result -->
+    <div id="import-result" class="hidden card rounded-lg p-4 mb-6 border-emerald-500"></div>
 
     <!-- Loading State -->
     <div id="loading" class="text-center py-12">
@@ -36,22 +46,18 @@
     <!-- Stats Content -->
     <div id="stats-content" class="hidden">
       <!-- Overview Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <div class="stat-card card rounded-xl p-6">
           <p class="text-gray-400 text-sm uppercase tracking-wide">Total Questions</p>
           <p id="total-questions" class="text-4xl font-bold text-white mt-2">0</p>
         </div>
         <div class="stat-card card rounded-xl p-6">
-          <p class="text-gray-400 text-sm uppercase tracking-wide">Groq Generated</p>
-          <p id="groq-count" class="text-4xl font-bold text-emerald-400 mt-2">0</p>
-        </div>
-        <div class="stat-card card rounded-xl p-6">
-          <p class="text-gray-400 text-sm uppercase tracking-wide">Claude Code Generated</p>
-          <p id="claude-count" class="text-4xl font-bold text-purple-400 mt-2">0</p>
-        </div>
-        <div class="stat-card card rounded-xl p-6">
-          <p class="text-gray-400 text-sm uppercase tracking-wide">Shows Covered</p>
+          <p class="text-gray-400 text-sm uppercase tracking-wide">Topics</p>
           <p id="shows-count" class="text-4xl font-bold text-cyan-400 mt-2">0</p>
+        </div>
+        <div class="stat-card card rounded-xl p-6">
+          <p class="text-gray-400 text-sm uppercase tracking-wide">Categories</p>
+          <p id="categories-count" class="text-4xl font-bold text-emerald-400 mt-2">0</p>
         </div>
       </div>
 
@@ -79,7 +85,7 @@
 
       <!-- By Show -->
       <div class="card rounded-xl p-6">
-        <h3 class="text-xl font-semibold mb-4">Questions by Show</h3>
+        <h3 class="text-xl font-semibold mb-4">Questions by Topic</h3>
         <div id="shows-list" class="space-y-4">
           <!-- Populated by JS -->
         </div>
@@ -90,60 +96,58 @@
   <script>
     async function loadStats() {
       try {
-        const response = await fetch('/api/question-stats');
+        const response = await fetch('/api/stats');
         const stats = await response.json();
 
         // Update totals
         document.getElementById('total-questions').textContent = stats.total.toLocaleString();
-        document.getElementById('groq-count').textContent = stats.byGenerator.groq.toLocaleString();
-        document.getElementById('claude-count').textContent = stats.byGenerator.claudeCode.toLocaleString();
-        document.getElementById('shows-count').textContent = Object.keys(stats.byShow).length;
+        document.getElementById('shows-count').textContent = Object.keys(stats.byTopic || stats.byShow || {}).length;
+        document.getElementById('categories-count').textContent = Object.keys(stats.byCategory || {}).length;
+
 
         // Difficulty distribution
         const total = stats.total || 1;
-        const easyPct = (stats.byDifficulty.easy / total) * 100;
-        const mediumPct = (stats.byDifficulty.medium / total) * 100;
-        const hardPct = (stats.byDifficulty.hard / total) * 100;
+        const easyPct = (stats.byDifficulty?.easy / total) * 100 || 0;
+        const mediumPct = (stats.byDifficulty?.medium / total) * 100 || 0;
+        const hardPct = (stats.byDifficulty?.hard / total) * 100 || 0;
 
         document.getElementById('easy-bar').style.height = `${easyPct}%`;
         document.getElementById('medium-bar').style.height = `${mediumPct}%`;
         document.getElementById('hard-bar').style.height = `${hardPct}%`;
 
-        document.getElementById('easy-count').textContent = stats.byDifficulty.easy.toLocaleString();
-        document.getElementById('medium-count').textContent = stats.byDifficulty.medium.toLocaleString();
-        document.getElementById('hard-count').textContent = stats.byDifficulty.hard.toLocaleString();
+        document.getElementById('easy-count').textContent = (stats.byDifficulty?.easy || 0).toLocaleString();
+        document.getElementById('medium-count').textContent = (stats.byDifficulty?.medium || 0).toLocaleString();
+        document.getElementById('hard-count').textContent = (stats.byDifficulty?.hard || 0).toLocaleString();
 
-        // Shows list
+        // Topics list
         const showsList = document.getElementById('shows-list');
         showsList.innerHTML = '';
 
-        const shows = Object.entries(stats.byShow)
+        const topics = Object.entries(stats.byTopic || stats.byShow || {})
           .sort((a, b) => b[1].total - a[1].total);
 
-        for (const [showName, showStats] of shows) {
-          const showEl = document.createElement('div');
-          showEl.className = 'bg-slate-800 rounded-lg p-4';
+        for (const [topicName, topicStats] of topics) {
+          const topicEl = document.createElement('div');
+          topicEl.className = 'bg-slate-800 rounded-lg p-4';
 
-          const displayName = showName.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-          const seasonCount = Object.keys(showStats.seasons).length;
+          const displayName = topicName.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+          const partCount = Object.keys(topicStats.parts || topicStats.seasons || {}).length;
 
-          showEl.innerHTML = `
+          topicEl.innerHTML = `
             <div class="flex items-center justify-between mb-2">
               <h4 class="font-semibold text-lg">${displayName}</h4>
-              <span class="text-2xl font-bold text-cyan-400">${showStats.total.toLocaleString()}</span>
+              <span class="text-2xl font-bold text-cyan-400">${topicStats.total.toLocaleString()}</span>
             </div>
             <div class="flex gap-4 text-sm text-gray-400">
-              <span>${seasonCount} season${seasonCount !== 1 ? 's' : ''}</span>
-              <span class="text-emerald-400">${showStats.groq} Groq</span>
-              <span class="text-purple-400">${showStats.claudeCode} Claude</span>
+              <span>${partCount} part${partCount !== 1 ? 's' : ''}</span>
             </div>
             <div class="mt-3 h-2 bg-slate-700 rounded-full overflow-hidden">
-              <div class="h-full bg-gradient-to-r from-emerald-500 to-purple-500"
-                   style="width: ${(showStats.total / stats.total) * 100}%"></div>
+              <div class="h-full bg-cyan-500"
+                   style="width: ${(topicStats.total / stats.total) * 100}%"></div>
             </div>
           `;
 
-          showsList.appendChild(showEl);
+          showsList.appendChild(topicEl);
         }
 
         // Show content
@@ -158,6 +162,54 @@
       }
     }
 
+    async function importFromFiles() {
+      const btn = document.getElementById('import-btn');
+      const icon = document.getElementById('import-icon');
+      const text = document.getElementById('import-text');
+      const resultDiv = document.getElementById('import-result');
+
+      btn.disabled = true;
+      icon.textContent = '⏳';
+      text.textContent = 'Importing...';
+      resultDiv.classList.add('hidden');
+
+      try {
+        const response = await fetch('/api/import', { method: 'POST' });
+        const result = await response.json();
+
+        if (result.success) {
+          resultDiv.classList.remove('hidden');
+          if (result.inserted > 0) {
+            resultDiv.className = 'card rounded-lg p-4 mb-6 border border-emerald-500 bg-emerald-900/20';
+            resultDiv.innerHTML = `
+              <p class="text-emerald-400 font-medium">Import complete!</p>
+              <p class="text-gray-300 text-sm mt-1">
+                Added ${result.inserted} new questions, skipped ${result.skipped} duplicates.
+                Total: ${result.total.toLocaleString()} questions.
+              </p>
+            `;
+          } else {
+            resultDiv.className = 'card rounded-lg p-4 mb-6 border border-slate-500';
+            resultDiv.innerHTML = `
+              <p class="text-gray-400">No new questions to import.</p>
+              <p class="text-gray-500 text-sm mt-1">All ${result.skipped} questions already in database.</p>
+            `;
+          }
+          await loadStats();
+        }
+      } catch (error) {
+        console.error('Failed to import:', error);
+        resultDiv.classList.remove('hidden');
+        resultDiv.className = 'card rounded-lg p-4 mb-6 border border-red-500 bg-red-900/20';
+        resultDiv.innerHTML = `<p class="text-red-400">Failed to import questions.</p>`;
+      } finally {
+        btn.disabled = false;
+        icon.textContent = '📥';
+        text.textContent = 'Import from Files';
+      }
+    }
+
+    document.getElementById('import-btn').addEventListener('click', importFromFiles);
     loadStats();
   </script>
 </body>

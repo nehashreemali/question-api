@@ -3,7 +3,7 @@
  */
 
 import * as cheerio from 'cheerio';
-import { writeFileSync, mkdirSync, existsSync } from 'fs';
+import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'fs';
 import { join } from 'path';
 import { fetchWithRetry } from './http.js';
 import { createLogger } from './logger.js';
@@ -145,26 +145,53 @@ export async function scrapeEpisode(episode: TVEpisode): Promise<TranscriptResul
 }
 
 /**
- * Save transcript to file system (new structure)
+ * Get transcript file path (new flat structure)
+ */
+export function getTranscriptPath(show: string, season: number, episode: number): string {
+  const showSlug = show.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
+  const filename = `s${season.toString().padStart(2, '0')}e${episode.toString().padStart(2, '0')}.json`;
+  return join(process.cwd(), 'generation', 'transcripts', showSlug, filename);
+}
+
+/**
+ * Check if transcript exists
+ */
+export function transcriptExists(show: string, season: number, episode: number): boolean {
+  return existsSync(getTranscriptPath(show, season, episode));
+}
+
+/**
+ * Load existing transcript
+ */
+export function loadTranscript(show: string, season: number, episode: number): TranscriptResult | null {
+  const filepath = getTranscriptPath(show, season, episode);
+  if (!existsSync(filepath)) {
+    return null;
+  }
+  try {
+    const content = readFileSync(filepath, 'utf8');
+    return JSON.parse(content) as TranscriptResult;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Save transcript to file system (flat structure)
+ * Path: data/transcripts/{show-slug}/s{nn}e{nn}.json
  */
 export function saveTranscript(result: TranscriptResult): string {
   const { show, season, episode } = result;
 
-  const showDir = show.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
-  const episodeDir = join(
-    process.cwd(),
-    'data',
-    'tv-shows',
-    showDir,
-    `season-${season}`,
-    `episode-${episode}`
-  );
+  const showSlug = show.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
+  const showDir = join(process.cwd(), 'generation', 'transcripts', showSlug);
 
-  if (!existsSync(episodeDir)) {
-    mkdirSync(episodeDir, { recursive: true });
+  if (!existsSync(showDir)) {
+    mkdirSync(showDir, { recursive: true });
   }
 
-  const filepath = join(episodeDir, 'transcript.json');
+  const filename = `s${season.toString().padStart(2, '0')}e${episode.toString().padStart(2, '0')}.json`;
+  const filepath = join(showDir, filename);
   writeFileSync(filepath, JSON.stringify(result, null, 2));
   logger.success(`Saved transcript: ${filepath}`);
 

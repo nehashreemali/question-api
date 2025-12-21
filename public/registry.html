@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registry Browser</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: #0f172a; }
+    .card { background: #1e293b; border: 1px solid #334155; }
+    .category-card { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+    .subcategory-item:hover { background: #334155; }
+    .topic-item:hover { background: #475569; }
+    details summary { cursor: pointer; list-style: none; }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] summary .chevron { transform: rotate(90deg); }
+    .chevron { transition: transform 0.2s ease; }
+  </style>
+</head>
+<body class="min-h-screen text-gray-100">
+  <!-- Navigation -->
+  <nav class="bg-slate-800 border-b border-slate-700 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <h1 class="text-xl font-bold text-white">Question API</h1>
+      <div class="flex gap-4">
+        <a href="/" class="text-gray-400 hover:text-white transition">Home</a>
+        <a href="/stats" class="text-gray-400 hover:text-white transition">Stats</a>
+        <a href="/questions" class="text-gray-400 hover:text-white transition">Questions</a>
+        <a href="/registry" class="text-cyan-400 font-medium">Registry</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-6 py-8">
+    <div class="mb-8">
+      <h2 class="text-3xl font-bold">Registry Browser</h2>
+      <p class="text-gray-400 mt-1">Click a category to view its subcategories and topics</p>
+    </div>
+
+    <!-- Summary Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div class="category-card card rounded-xl p-6">
+        <p class="text-gray-400 text-sm uppercase tracking-wide">Categories</p>
+        <p id="cat-count" class="text-4xl font-bold text-cyan-400 mt-2">0</p>
+      </div>
+      <div class="category-card card rounded-xl p-6">
+        <p class="text-gray-400 text-sm uppercase tracking-wide">Subcategories</p>
+        <p id="subcat-count" class="text-4xl font-bold text-emerald-400 mt-2">0</p>
+      </div>
+      <div class="category-card card rounded-xl p-6">
+        <p class="text-gray-400 text-sm uppercase tracking-wide">Topics with Questions</p>
+        <p id="topic-count" class="text-4xl font-bold text-purple-400 mt-2">0</p>
+      </div>
+    </div>
+
+    <!-- Search -->
+    <div class="mb-6">
+      <input type="text" id="search" placeholder="Search categories, subcategories, or topics..."
+             class="w-full bg-slate-800 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500">
+    </div>
+
+    <!-- Loading State -->
+    <div id="loading" class="text-center py-12">
+      <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-400 mx-auto"></div>
+      <p class="mt-4 text-gray-400">Loading registry...</p>
+    </div>
+
+    <!-- Registry Content -->
+    <div id="registry-content" class="hidden space-y-4">
+      <!-- Populated by JS -->
+    </div>
+  </main>
+
+  <script>
+    let hierarchyData = [];
+
+    async function loadRegistry() {
+      try {
+        const response = await fetch('/api/hierarchy');
+        hierarchyData = await response.json();
+
+        // Count totals
+        let subcatCount = 0;
+        let topicCount = 0;
+        hierarchyData.forEach(cat => {
+          subcatCount += cat.subcategories?.length || 0;
+          cat.subcategories?.forEach(sub => {
+            topicCount += sub.topics?.length || 0;
+          });
+        });
+
+        document.getElementById('cat-count').textContent = hierarchyData.length;
+        document.getElementById('subcat-count').textContent = subcatCount;
+        document.getElementById('topic-count').textContent = topicCount;
+
+        renderRegistry(hierarchyData);
+
+        document.getElementById('loading').classList.add('hidden');
+        document.getElementById('registry-content').classList.remove('hidden');
+
+      } catch (error) {
+        console.error('Failed to load registry:', error);
+        document.getElementById('loading').innerHTML = `
+          <p class="text-red-400">Failed to load registry. Make sure the server is running.</p>
+        `;
+      }
+    }
+
+    function renderRegistry(categories) {
+      const container = document.getElementById('registry-content');
+      container.innerHTML = '';
+
+      // Render as a grid of category cards that link to detail pages
+      const grid = document.createElement('div');
+      grid.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4';
+
+      categories.forEach(category => {
+        const topicCount = category.subcategories?.reduce((sum, sub) => sum + (sub.topics?.length || 0), 0) || 0;
+
+        const card = document.createElement('a');
+        card.href = `/registry/${category.slug}`;
+        card.className = 'card rounded-xl p-5 hover:border-cyan-500 transition block';
+        card.innerHTML = `
+          <div class="flex items-start gap-4">
+            <span class="text-3xl">${category.icon || '📁'}</span>
+            <div class="flex-1 min-w-0">
+              <h3 class="text-lg font-semibold text-white truncate">${category.name}</h3>
+              <p class="text-gray-500 text-sm mt-1 line-clamp-2">${category.description || ''}</p>
+              <div class="flex gap-3 mt-3 text-xs">
+                <span class="text-cyan-400">${category.subcategories?.length || 0} subcategories</span>
+                ${topicCount > 0 ? `<span class="text-emerald-400">${topicCount} topics</span>` : ''}
+              </div>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      container.appendChild(grid);
+    }
+
+    // Search functionality - filter categories
+    document.getElementById('search').addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+
+      if (!query) {
+        renderRegistry(hierarchyData);
+        return;
+      }
+
+      const filtered = hierarchyData.filter(cat => {
+        // Match category name or description
+        if (cat.name.toLowerCase().includes(query) ||
+            cat.slug.toLowerCase().includes(query) ||
+            (cat.description && cat.description.toLowerCase().includes(query))) {
+          return true;
+        }
+
+        // Match any subcategory name
+        if (cat.subcategories?.some(sub =>
+          sub.name.toLowerCase().includes(query) ||
+          sub.slug.toLowerCase().includes(query)
+        )) {
+          return true;
+        }
+
+        return false;
+      });
+
+      renderRegistry(filtered);
+    });
+
+    loadRegistry();
+  </script>
+</body>
+</html>
