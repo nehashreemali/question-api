@@ -1,0 +1,662 @@
+{
+  "show": "Friends",
+  "season": 2,
+  "episode": 1,
+  "title": "The One With Ross' New Girlfriend",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-17T14:47:54.634Z",
+  "questionCount": 31,
+  "questions": [
+    {
+      "question": "What does Phoebe say happened to Ross and Rachel so far in the series?",
+      "options": [
+        "Ross was in love with Rachel, but she didn't feel the same way",
+        "Ross and Rachel were together, but then they broke up",
+        "Ross was in love with Rachel, but every time he tried to tell her, something got in the way",
+        "Ross and Rachel hated each other"
+      ],
+      "correct_answer": "Ross was in love with Rachel, but every time he tried to tell her, something got in the way",
+      "difficulty": "easy",
+      "explanation": "Phoebe recaps the story of Ross and Rachel, explaining that Ross has been in love with Rachel since forever, but every time he tried to tell her, something got in the way.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What is Rachel's reaction when she sees Ross with Julie at the airport?",
+      "options": [
+        "She is happy for Ross and Julie",
+        "She tries to make a break for it and falls down",
+        "She ignores them and walks away",
+        "She confronts Ross about his new relationship"
+      ],
+      "correct_answer": "She tries to make a break for it and falls down",
+      "difficulty": "easy",
+      "explanation": "Rachel sees Ross with Julie at the airport and tries to make a quick exit, but falls down in the process.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What is the name of the woman Ross brings to Central Perk?",
+      "options": [
+        "Julie",
+        "Rachel",
+        "Monica",
+        "Phoebe"
+      ],
+      "correct_answer": "Julie",
+      "difficulty": "easy",
+      "explanation": "Ross brings Julie to Central Perk to introduce her to his friends.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "Why did Ross and Julie go to the baby's place?",
+      "options": [
+        "To visit their friend's baby",
+        "To see Ross' sister's baby",
+        "To see Ross' and Julie's baby",
+        "To attend a baby shower"
+      ],
+      "correct_answer": "To visit their friend's baby",
+      "difficulty": "medium",
+      "explanation": "Ross and Julie went to the baby's place, but the context implies they were visiting a friend's baby, not their own.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Chandler say to Rachel when she asks him what Ross said about his relationship with Julie?",
+      "options": [
+        "He said they're having a great time",
+        "He said he's still in love with you",
+        "He said Julie is a great person",
+        "He said he's not interested in a relationship"
+      ],
+      "correct_answer": "He said they're having a great time",
+      "difficulty": "medium",
+      "explanation": "Chandler tells Rachel that Ross said he and Julie are having a great time, which makes Rachel unhappy.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What is the name of the guy Rachel slept with after seeing Ross with Julie?",
+      "options": [
+        "Paulo",
+        "Ross",
+        "Joey",
+        "Chandler"
+      ],
+      "correct_answer": "Paulo",
+      "difficulty": "easy",
+      "explanation": "Rachel slept with Paulo after seeing Ross with Julie, which she later regrets.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Phoebe agree to do for Monica?",
+      "options": [
+        "Give her a massage",
+        "Cut her hair",
+        "Cook her dinner",
+        "Go shopping with her"
+      ],
+      "correct_answer": "Cut her hair",
+      "difficulty": "medium",
+      "explanation": "Phoebe agrees to cut Monica's hair, but only after Monica promises not to be too controlling.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What is the problem with Monica's haircut?",
+      "options": [
+        "It's too long",
+        "It's too short",
+        "It's uneven",
+        "It's the same as before"
+      ],
+      "correct_answer": "It's too short",
+      "difficulty": "medium",
+      "explanation": "Monica is unhappy with her haircut because it's too short, which Phoebe gave her after a misunderstanding about the style.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Joey tell Rachel about Ross' feelings for her?",
+      "options": [
+        "He's never felt that way about anyone before",
+        "He's only in love with her as a friend",
+        "He's been in love with her for 10 years",
+        "He's not interested in her romantically"
+      ],
+      "correct_answer": "He's been in love with her for 10 years",
+      "difficulty": "medium",
+      "explanation": "Joey tells Rachel that Ross has been in love with her for 10 years, which makes Rachel realize her feelings for Ross.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Chandler accuse Frankie of doing?",
+      "options": [
+        "Taking advantage of him financially",
+        "Measuring his inseam inappropriately",
+        "Not doing a good job on his pants",
+        "Being rude to him"
+      ],
+      "correct_answer": "Measuring his inseam inappropriately",
+      "difficulty": "medium",
+      "explanation": "Chandler accuses Frankie of taking advantage of him by measuring his inseam in an inappropriate manner.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Ross tell Rachel about Paulo?",
+      "options": [
+        "He's a great guy and she should be with him",
+        "He's scum and she deserves better",
+        "He's okay, but not good enough for her",
+        "He's not his type"
+      ],
+      "correct_answer": "He's scum and she deserves better",
+      "difficulty": "medium",
+      "explanation": "Ross tells Rachel that Paulo is scum and she deserves someone better, which shows his concern for Rachel's well-being.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What is the name of the actress that Phoebe mistakenly thinks has a haircut that Monica wants?",
+      "options": [
+        "Demi Moore",
+        "Andie McDowell",
+        "Mary Tyler Moore",
+        "Rodney McDowell"
+      ],
+      "correct_answer": "Andie McDowell",
+      "difficulty": "hard",
+      "explanation": "Phoebe mistakenly thinks Andie McDowell is the actress with the haircut Monica wants, but actually, Monica wants Demi Moore's haircut.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Phoebe ask Rachel to confirm about Andie McDowell?",
+      "options": [
+        "If she's an actress",
+        "If she's a model",
+        "If she's in the movie Four Weddings and a Funeral",
+        "If she's a guy from Planet of the Apes"
+      ],
+      "correct_answer": "If she's the girl from Four Weddings and a Funeral",
+      "difficulty": "hard",
+      "explanation": "Phoebe asks Rachel to confirm if Andie McDowell is the girl from Four Weddings and a Funeral, which Rachel corrects her about.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Ross say to Rachel when she asks to talk to him?",
+      "options": [
+        "He says he's busy and can't talk",
+        "He says he's happy to talk to her",
+        "He says he's not interested in talking about his relationship with Julie",
+        "He says he's going to break up with Julie for her"
+      ],
+      "correct_answer": "He says he's happy to talk to her",
+      "difficulty": "medium",
+      "explanation": "Ross agrees to talk to Rachel when she asks him, which shows his willingness to communicate with her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Joey say is one of his gifts?",
+      "options": [
+        "Being able to sense when women are happy",
+        "Being able to sense when women are depressed and vulnerable",
+        "Being able to cook well",
+        "Being able to dance well"
+      ],
+      "correct_answer": "Being able to sense when women are depressed and vulnerable",
+      "difficulty": "medium",
+      "explanation": "Joey claims that one of his gifts is being able to sense when women are depressed and vulnerable, which he uses to try to help Rachel.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Rachel say to Ross when he asks if there's a 'second of all'?",
+      "options": [
+        "She says there is a second of all and tells him something else",
+        "She says there isn't a second of all and ends the conversation",
+        "She says she doesn't know what he's talking about",
+        "She says she's not interested in talking to him"
+      ],
+      "correct_answer": "She says there isn't a second of all and ends the conversation",
+      "difficulty": "medium",
+      "explanation": "Rachel tells Ross that there isn't a second of all, which ends their conversation and leaves Ross unsure of what to do next.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Phoebe say about her haircutting skills?",
+      "options": [
+        "She's very confident in her abilities",
+        "She's not very good at cutting hair",
+        "She's only good at cutting men's hair",
+        "She's only good at cutting women's hair"
+      ],
+      "correct_answer": "She's not very good at cutting hair",
+      "difficulty": "medium",
+      "explanation": "Phoebe admits that she's not very good at cutting hair, which is evident from Monica's bad haircut.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Chandler say to Joey about Frankie?",
+      "options": [
+        "He's a great tailor and Chandler recommends him",
+        "He's a bad tailor and Chandler doesn't recommend him",
+        "He's a good tailor, but Chandler had a bad experience with him",
+        "He's not a tailor at all"
+      ],
+      "correct_answer": "He's a bad tailor and Chandler doesn't recommend him",
+      "difficulty": "medium",
+      "explanation": "Chandler warns Joey about Frankie, saying that he's a bad tailor and had a bad experience with him.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Ross say to Rachel about how he feels about her?",
+      "options": [
+        "He says he's still in love with her",
+        "He says he's not in love with her anymore",
+        "He says he's happy for her and Paulo",
+        "He says he's just friends with her"
+      ],
+      "correct_answer": "He says he's happy for her and wants her to be with someone who appreciates her",
+      "difficulty": "medium",
+      "explanation": "Ross tells Rachel that he wants her to be with someone who appreciates her and makes her happy, which shows his concern for her well-being.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Joey say to Chandler about Frankie's measuring technique?",
+      "options": [
+        "He says it's inappropriate and Chandler should be upset",
+        "He says it's a normal part of measuring pants",
+        "He says he's never heard of it before",
+        "He says it's only done with certain types of pants"
+      ],
+      "correct_answer": "He says it's a normal part of measuring pants",
+      "difficulty": "medium",
+      "explanation": "Joey explains to Chandler that Frankie's measuring technique is a normal part of measuring pants, which makes Chandler realize he overreacted.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Phoebe say about doing Julie's haircut?",
+      "options": [
+        "She's excited to do it and thinks it will be a great experience",
+        "She's nervous about doing it and hopes she doesn't mess it up",
+        "She's not interested in doing it and tries to get out of it",
+        "She's only doing it because Julie is Ross' girlfriend"
+      ],
+      "correct_answer": "She's willing to do it and asks Julie about the style she wants",
+      "difficulty": "medium",
+      "explanation": "Phoebe agrees to do Julie's haircut and asks her about the style she wants, which shows her willingness to help.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Rachel say to Phoebe about Andie McDowell?",
+      "options": [
+        "She's an actress in the movie Four Weddings and a Funeral",
+        "She's a guy from the movie Planet of the Apes",
+        "She's a model and not an actress",
+        "She's a singer and not an actress"
+      ],
+      "correct_answer": "She's an actress, but Phoebe has incorrect information about her",
+      "difficulty": "hard",
+      "explanation": "Rachel corrects Phoebe's misunderstanding about Andie McDowell, explaining that she's an actress, but not the one Phoebe thinks she is.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Ross say to Rachel when she asks him to talk?",
+      "options": [
+        "He says he's busy and can't talk to her",
+        "He says he's happy to talk to her and listens to what she has to say",
+        "He says he's not interested in talking to her about his relationship with Julie",
+        "He says he's going to break up with Julie for her"
+      ],
+      "correct_answer": "He says he's happy to talk to her and listens to what she has to say",
+      "difficulty": "medium",
+      "explanation": "Ross agrees to talk to Rachel and listens to what she has to say, which shows his willingness to communicate with her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Joey tell Chandler about his experience with Frankie?",
+      "options": [
+        "He says Frankie is a great tailor and he's been going to him for years",
+        "He says Frankie is a bad tailor and he had a bad experience with him",
+        "He says Frankie is okay, but not the best tailor",
+        "He says he's never been to Frankie before"
+      ],
+      "correct_answer": "He says Frankie is a great tailor and he's been going to him for years",
+      "difficulty": "medium",
+      "explanation": "Joey tells Chandler that Frankie is a great tailor and he's been going to him for years, which makes Chandler realize that Frankie's measuring technique is normal.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Phoebe say to Monica about her haircut?",
+      "options": [
+        "She says it's perfect and she loves it",
+        "She says it's not what she wanted, but it's okay",
+        "She says she's sorry and will try to fix it",
+        "She says it's a disaster and she can't fix it"
+      ],
+      "correct_answer": "She says she's sorry and will try to fix it",
+      "difficulty": "medium",
+      "explanation": "Phoebe apologizes to Monica for the bad haircut and tries to fix it, which shows her willingness to make things right.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Ross say to Rachel about Paulo?",
+      "options": [
+        "He says Paulo is a great guy and she should be with him",
+        "He says Paulo is scum and she deserves better",
+        "He says Paulo is okay, but not good enough for her",
+        "He says he doesn't know anything about Paulo"
+      ],
+      "correct_answer": "He says Paulo is scum and she deserves better",
+      "difficulty": "medium",
+      "explanation": "Ross tells Rachel that Paulo is scum and she deserves someone better, which shows his concern for her well-being.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Chandler say to Joey about his experience with Frankie?",
+      "options": [
+        "He says Frankie is a great tailor and he recommends him",
+        "He says Frankie is a bad tailor and he doesn't recommend him",
+        "He says Frankie is okay, but not the best tailor",
+        "He says he's never been to Frankie before"
+      ],
+      "correct_answer": "He says Frankie is a bad tailor and he doesn't recommend him",
+      "difficulty": "medium",
+      "explanation": "Chandler warns Joey about Frankie, saying that he's a bad tailor and had a bad experience with him.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Phoebe ask Rachel to confirm about Andie McDowell's haircut?",
+      "options": [
+        "If it's similar to Demi Moore's haircut",
+        "If it's a popular style",
+        "If it's a good style for Julie",
+        "If it's the same as the girl from Four Weddings and a Funeral"
+      ],
+      "correct_answer": "If it's the same as the girl from Four Weddings and a Funeral",
+      "difficulty": "hard",
+      "explanation": "Phoebe asks Rachel to confirm if Andie McDowell's haircut is the same as the girl from Four Weddings and a Funeral, which Rachel corrects her about.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Ross tell Rachel about his feelings for her?",
+      "options": [
+        "He says he's still in love with her",
+        "He says he's not in love with her anymore",
+        "He says he's happy for her and wants her to be with someone who appreciates her",
+        "He says he's just friends with her"
+      ],
+      "correct_answer": "He says he's happy for her and wants her to be with someone who appreciates her",
+      "difficulty": "medium",
+      "explanation": "Ross tells Rachel that he wants her to be with someone who appreciates her and makes her happy, which shows his concern for her well-being.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Joey say to Rachel about Ross' feelings for her?",
+      "options": [
+        "He says Ross is not in love with her",
+        "He says Ross is in love with her, but it's not reciprocated",
+        "He says Ross has been in love with her for 10 years",
+        "He says Ross is just friends with her"
+      ],
+      "correct_answer": "He says Ross has been in love with her for 10 years",
+      "difficulty": "medium",
+      "explanation": "Joey tells Rachel that Ross has been in love with her for 10 years, which makes Rachel realize her feelings for Ross.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    },
+    {
+      "question": "What does Chandler accuse Frankie of doing?",
+      "options": [
+        "Taking advantage of him financially",
+        "Measuring his inseam inappropriately",
+        "Not doing a good job on his pants",
+        "Being rude to him"
+      ],
+      "correct_answer": "Measuring his inseam inappropriately",
+      "difficulty": "medium",
+      "explanation": "Chandler accuses Frankie of taking advantage of him by measuring his inseam in an inappropriate manner.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 1,
+        "title": "The One With Ross' New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T14:47:54.634Z"
+    }
+  ]
+}

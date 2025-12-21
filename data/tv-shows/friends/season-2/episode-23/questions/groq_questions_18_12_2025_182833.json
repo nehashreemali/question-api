@@ -1,0 +1,620 @@
+{
+  "show": "Friends",
+  "season": 2,
+  "episode": 23,
+  "title": "The One With the Chicken Pox",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-18T12:58:33.958Z",
+  "questionCount": 29,
+  "questions": [
+    {
+      "question": "What does Rachel bring to Chandler and Monica at Central Perk?",
+      "options": [
+        "A tray of coffee",
+        "A muffin",
+        "A sandwich",
+        "A salad"
+      ],
+      "correct_answer": "A muffin",
+      "difficulty": "easy",
+      "explanation": "Rachel brings a muffin to Chandler and Monica who are sitting on the couch at Central Perk.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What is the name of the guy Phoebe went out with who is in the Navy?",
+      "options": [
+        "Ryan",
+        "Richard",
+        "Joey",
+        "Chandler"
+      ],
+      "correct_answer": "Ryan",
+      "difficulty": "easy",
+      "explanation": "Phoebe tells her friends that Ryan, the guy she went out with who is in the Navy, is coming to New York.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What disease does Ben have?",
+      "options": [
+        "Chicken pox",
+        "Smallpox",
+        "Measles",
+        "Mumps"
+      ],
+      "correct_answer": "Chicken pox",
+      "difficulty": "easy",
+      "explanation": "Ross tells his friends that Ben has the chicken pox.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "Why does Monica tape oven mitts to Phoebe and Ryan's hands?",
+      "options": [
+        "To prevent them from scratching",
+        "To help them cook",
+        "To keep their hands warm",
+        "To make them look funny"
+      ],
+      "correct_answer": "To prevent them from scratching",
+      "difficulty": "easy",
+      "explanation": "Monica tapes oven mitts to Phoebe and Ryan's hands to prevent them from scratching due to the chicken pox.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What is the name of the song Richard is going to sing?",
+      "options": [
+        "Leroy Brown",
+        "Yesterday",
+        "Stairway to Heaven",
+        "Bohemian Rhapsody"
+      ],
+      "correct_answer": "Leroy Brown",
+      "difficulty": "medium",
+      "explanation": "Richard tells Monica that he is going to sing Jim Crochee's Leroy Brown.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What is the name of the character Joey pretends to be at Chandler's office?",
+      "options": [
+        "Joseph",
+        "Joey",
+        "Chandler",
+        "Ryan"
+      ],
+      "correct_answer": "Joseph",
+      "difficulty": "medium",
+      "explanation": "Joey pretends to be a character named Joseph at Chandler's office.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What is the reason Richard gives for having to sleep on a specific side of the bed?",
+      "options": [
+        "Because he grew up in California and the ocean would be on the wrong side",
+        "Because he is allergic to the other side",
+        "Because he has a bad back",
+        "Because he likes to face the window"
+      ],
+      "correct_answer": "Because he grew up in California and the ocean would be on the wrong side",
+      "difficulty": "hard",
+      "explanation": "Richard tells Monica that he has to sleep on the west side of the bed because he grew up in California and otherwise the ocean would be on the wrong side.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Ryan do when he says goodbye to Phoebe at the end of the episode?",
+      "options": [
+        "He gives her a hug",
+        "He kisses her",
+        "He shakes her hand",
+        "He waves goodbye"
+      ],
+      "correct_answer": "He kisses her",
+      "difficulty": "easy",
+      "explanation": "Ryan kisses Phoebe goodbye at the end of the episode.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Ross wear at the end of the episode to impress Rachel?",
+      "options": [
+        "A suit",
+        "A uniform",
+        "A hat",
+        "A scarf"
+      ],
+      "correct_answer": "A uniform",
+      "difficulty": "easy",
+      "explanation": "Ross wears a uniform at the end of the episode to impress Rachel.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What is the name of the park where Phoebe met Ryan?",
+      "options": [
+        "Washington Square Park",
+        "Central Park",
+        "Prospect Park",
+        "Bryant Park"
+      ],
+      "difficulty": "medium",
+      "correct_answer": "Washington Square Park",
+      "explanation": "Phoebe met Ryan when she was playing guitar in Washington Square Park.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "Why does Phoebe start scratching herself despite having oven mitts on her hands?",
+      "options": [
+        "Because she is allergic to the oven mitts",
+        "Because she has an itch she can't resist",
+        "Because Ryan is scratching himself",
+        "Because she wants to make Ryan laugh"
+      ],
+      "correct_answer": "Because she has an itch she can't resist",
+      "difficulty": "medium",
+      "explanation": "Phoebe starts scratching herself despite having oven mitts on her hands because she has an itch she can't resist.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Joey say about his character Joseph's kids?",
+      "options": [
+        "That they are very smart",
+        "That they are very athletic",
+        "That they are very creative",
+        "That they go to the same school as Jeannie's kids"
+      ],
+      "correct_answer": "That they go to the same school as Jeannie's kids",
+      "difficulty": "medium",
+      "explanation": "Joey tells Chandler that his character Joseph's kids go to the same school as Jeannie's kids.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Chandler threaten to do to Joey at the end of the episode?",
+      "options": [
+        "Fire him",
+        "Promote him",
+        "Give him a raise",
+        "Push him out the door"
+      ],
+      "correct_answer": "Push him out the door",
+      "difficulty": "easy",
+      "explanation": "Chandler threatens to push Joey out the door at the end of the episode.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What is the name of the company where Chandler works?",
+      "options": [
+        "Fleischman's group",
+        "Chandler's company",
+        "Joey's company",
+        "Ross's company"
+      ],
+      "correct_answer": "Fleischman's group",
+      "difficulty": "medium",
+      "explanation": "Chandler tells Joey about an opening in Fleischman's group.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "Why does Monica remake the bed?",
+      "options": [
+        "Because Richard made it wrong",
+        "Because she likes to make the bed",
+        "Because the tag should be at the bottom right corner",
+        "Because the head of the bed is where the sun would be"
+      ],
+      "correct_answer": "Because the tag should be at the bottom right corner",
+      "difficulty": "hard",
+      "explanation": "Monica remakes the bed because the tag shouldn't be at the top left corner, it should be at the bottom right corner.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Phoebe do to Ryan when they are playing Monopoly?",
+      "options": [
+        "She scratches him",
+        "She kisses him",
+        "She hugs him",
+        "She hits him"
+      ],
+      "correct_answer": "She scratches him",
+      "difficulty": "medium",
+      "explanation": "Phoebe scratches Ryan when they are playing Monopoly.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Ryan pull out with his teeth?",
+      "options": [
+        "A cork",
+        "A plug",
+        "A nail",
+        "A staple"
+      ],
+      "correct_answer": "A cork",
+      "difficulty": "easy",
+      "explanation": "Ryan pulls out a cork with his teeth.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Ross tell Rachel he will do for her?",
+      "options": [
+        "He will buy her a gift",
+        "He will take her out for dinner",
+        "He will make some calls to get her a uniform",
+        "He will give her a massage"
+      ],
+      "correct_answer": "He will make some calls to get her a uniform",
+      "difficulty": "easy",
+      "explanation": "Ross tells Rachel that he will make some calls to get her a uniform like the one Ryan was wearing.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Monica tell Richard she will do to his clocks?",
+      "options": [
+        "She will set them to her time",
+        "She will set them to his time",
+        "She will break them",
+        "She will throw them away"
+      ],
+      "correct_answer": "She will set them to her time",
+      "difficulty": "medium",
+      "explanation": "Monica tells Richard that she will set his clocks to her time.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Joey say about his character Joseph's wife?",
+      "options": [
+        "That she is very smart",
+        "That she is very athletic",
+        "That she is very creative",
+        "That she is hot"
+      ],
+      "correct_answer": "That she is hot",
+      "difficulty": "medium",
+      "explanation": "Joey tells Chandler that his character Joseph's wife, Karen, is hot.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Chandler pretend to do when Joey wakes him up?",
+      "options": [
+        "He pretends to be asleep",
+        "He pretends to be writing",
+        "He pretends to be talking",
+        "He pretends to be eating"
+      ],
+      "correct_answer": "He pretends to be writing",
+      "difficulty": "easy",
+      "explanation": "Chandler pretends to be writing when Joey wakes him up.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Phoebe use to scratch herself when she is playing Monopoly with Ryan?",
+      "options": [
+        "The dice",
+        "The houses",
+        "The board",
+        "The cards"
+      ],
+      "correct_answer": "The houses",
+      "difficulty": "medium",
+      "explanation": "Phoebe uses the houses to scratch herself when she is playing Monopoly with Ryan.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Ross carry Rachel out of Central Perk with at the end of the episode?",
+      "options": [
+        "In his arms",
+        "In a chair",
+        "In a car",
+        "In a taxi"
+      ],
+      "correct_answer": "In his arms",
+      "difficulty": "easy",
+      "explanation": "Ross carries Rachel out of Central Perk in his arms at the end of the episode.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Monica do to the coffee cup that Chandler used?",
+      "options": [
+        "She washes it",
+        "She throws it away",
+        "She licks the rim",
+        "She fills it with coffee"
+      ],
+      "correct_answer": "She licks the rim",
+      "difficulty": "medium",
+      "explanation": "Monica licks the rim of the coffee cup that Chandler used.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Ryan say he would do if he could go back in time?",
+      "options": [
+        "He would build a time machine",
+        "He would rub his face on Jimmy Hauser's face",
+        "He would give Phoebe a gift",
+        "He would go on a vacation"
+      ],
+      "correct_answer": "He would rub his face on Jimmy Hauser's face",
+      "difficulty": "medium",
+      "explanation": "Ryan says that if he could go back in time, he would rub his face on Jimmy Hauser's face to get the chicken pox.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Chandler say about Joseph's wife, Karen?",
+      "options": [
+        "That she is very smart",
+        "That she is very athletic",
+        "That he is going to have an affair with her",
+        "That she is very creative"
+      ],
+      "correct_answer": "That he is going to have an affair with her",
+      "difficulty": "hard",
+      "explanation": "Chandler jokingly says that he is going to have an affair with Joseph's wife, Karen.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Phoebe say is ironic about her having the chicken pox?",
+      "options": [
+        "That she is a doctor",
+        "That she is a vegetarian",
+        "That she is a chef",
+        "That she is a nurse"
+      ],
+      "correct_answer": "That she is a vegetarian",
+      "difficulty": "medium",
+      "explanation": "Phoebe says that it is ironic that she has the chicken pox because she is a vegetarian.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Richard say about Monica's obsessive behavior?",
+      "options": [
+        "That it is cute",
+        "That it is annoying",
+        "That it is normal",
+        "That it is weird"
+      ],
+      "correct_answer": "That it is cute",
+      "difficulty": "medium",
+      "explanation": "Richard says that Monica's obsessive behavior is cute.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    },
+    {
+      "question": "What does Joey say about his character Joseph's kids, Ashley and Brittany?",
+      "options": [
+        "That they are very smart",
+        "That they are very athletic",
+        "That Ashley copies everything Brittany does",
+        "That they are very creative"
+      ],
+      "correct_answer": "That Ashley copies everything Brittany does",
+      "difficulty": "medium",
+      "explanation": "Joey says that his character Joseph's kids, Ashley and Brittany, have a dynamic where Ashley copies everything Brittany does.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 23,
+        "title": "The One With the Chicken Pox"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:58:33.958Z"
+    }
+  ]
+}

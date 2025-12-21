@@ -1,0 +1,515 @@
+{
+  "show": "Friends",
+  "season": 3,
+  "episode": 5,
+  "title": "The One With Frank Jr.",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-18T13:15:52.900Z",
+  "questionCount": 24,
+  "questions": [
+    {
+      "question": "What does Joey start building in his apartment?",
+      "options": [
+        "A bookshelf",
+        "An entertainment unit with a mail cubby",
+        "A coffee table",
+        "A desk"
+      ],
+      "correct_answer": "An entertainment unit with a mail cubby",
+      "difficulty": "easy",
+      "explanation": "Joey tells Chandler that he started building a place for the mail, but then decided to take it to the next step and build an entertainment unit with a mail cubby.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What is the name of the jeans Joey is wearing?",
+      "options": [
+        "Levi's",
+        "Calvin Klein",
+        "Sergio Valente's",
+        "Armani"
+      ],
+      "correct_answer": "Sergio Valente's",
+      "difficulty": "medium",
+      "explanation": "Chandler comments on how tight Joey's pants are, and Joey replies that they are his old work pants, Sergio Valente's.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "Who is Phoebe waiting for outside Central Perk?",
+      "options": [
+        "Her brother Frank",
+        "Her sister Ursula",
+        "Her friend Rachel",
+        "Her boyfriend"
+      ],
+      "correct_answer": "Her brother Frank",
+      "difficulty": "easy",
+      "explanation": "Phoebe is pacing back and forth outside Central Perk, waiting for her brother Frank to arrive.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What is the name of the game that Monica and Ross used to play as kids?",
+      "options": [
+        "The Shadow Game",
+        "Hide and Seek",
+        "Tag",
+        "Simon Says"
+      ],
+      "correct_answer": "The Shadow Game",
+      "difficulty": "medium",
+      "explanation": "Monica mentions that she and Ross used to play a game called the Shadow Game when they were kids.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What is on Chandler's 'freebie list'?",
+      "options": [
+        "Kim Basinger, Cindy Crawford, Halle Berry, Yasmine Bleeth, and Jessica Rabbit",
+        "Uma Thurman, Winona Ryder, Elizabeth Hurely, Michelle Pfieffer, and Dorothy Hammel",
+        "Isabella Rosselini, Julia Roberts, Sandra Bullock, Meg Ryan, and Cameron Diaz",
+        "Jennifer Lopez, Gwyneth Paltrow, Charlize Theron, Renee Zellweger, and Kate Hudson"
+      ],
+      "correct_answer": "Kim Basinger, Cindy Crawford, Halle Berry, Yasmine Bleeth, and Jessica Rabbit",
+      "difficulty": "medium",
+      "explanation": "Chandler reveals his 'freebie list' to the gang, which includes Kim Basinger, Cindy Crawford, Halle Berry, Yasmine Bleeth, and Jessica Rabbit.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "Why does Ross take Isabella Rosselini off his list?",
+      "options": [
+        "Because she is not his type",
+        "Because she is international and not always in the country",
+        "Because he thinks she is too old",
+        "Because he thinks she is too young"
+      ],
+      "correct_answer": "Because she is international and not always in the country",
+      "difficulty": "medium",
+      "explanation": "Ross takes Isabella Rosselini off his list because Chandler points out that she is international and not always in the country, making it unlikely that he would be able to sleep with her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What does Frank like to do as a hobby?",
+      "options": [
+        "Play the guitar",
+        "Melt things",
+        "Read books",
+        "Watch movies"
+      ],
+      "correct_answer": "Melt things",
+      "difficulty": "easy",
+      "explanation": "Frank tells Phoebe that he likes to melt things, and is later seen melting a plastic spoon and a fire extinguisher's hose.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What is the name of the place where Phoebe works?",
+      "options": [
+        "Healing Hands Inc.",
+        "Central Perk",
+        "Monica's Restaurant",
+        "Ross's Museum"
+      ],
+      "correct_answer": "Healing Hands Inc.",
+      "difficulty": "easy",
+      "explanation": "Phoebe works at a place called Healing Hands Inc., where she gives people massages.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What does Joey try to fit into at the end of the episode?",
+      "options": [
+        "A small box",
+        "A hole in the entertainment center",
+        "A pair of tight pants",
+        "A tiny car"
+      ],
+      "correct_answer": "A hole in the entertainment center",
+      "difficulty": "easy",
+      "explanation": "Joey tries to fit into a hole in the entertainment center, and successfully does so, winning a bet with Chandler.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What is the problem with the entertainment unit that Joey builds?",
+      "options": [
+        "It's too small",
+        "It's too expensive",
+        "It blocks the bedroom doors",
+        "It's too heavy"
+      ],
+      "correct_answer": "It blocks the bedroom doors",
+      "difficulty": "easy",
+      "explanation": "The entertainment unit that Joey builds is so long that it blocks some of both Chandler and Joey's bedroom doors.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What is the name of the actress that Ross tries to hit on at Central Perk?",
+      "options": [
+        "Isabella Rosselini",
+        "Uma Thurman",
+        "Winona Ryder",
+        "Elizabeth Hurely"
+      ],
+      "correct_answer": "Isabella Rosselini",
+      "difficulty": "easy",
+      "explanation": "Ross tries to hit on Isabella Rosselini at Central Perk, but is unsuccessful.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "Why does Phoebe get upset with Frank?",
+      "options": [
+        "Because he is late",
+        "Because he thinks she is a hooker",
+        "Because he breaks something",
+        "Because he doesn't like her cooking"
+      ],
+      "correct_answer": "Because he thinks she is a hooker",
+      "difficulty": "medium",
+      "explanation": "Phoebe gets upset with Frank because he thinks she is a hooker, and makes a pass at one of her coworkers at her workplace, Healing Hands Inc.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What does Monica and Rachel's bathroom floor look like after Joey tries to retile it?",
+      "options": [
+        "It's beautifully tiled",
+        "It's still old and dingy",
+        "It has a hole in the middle",
+        "It's covered in paint"
+      ],
+      "correct_answer": "It has a hole in the middle",
+      "difficulty": "easy",
+      "explanation": "Joey tries to retile Monica and Rachel's bathroom floor, but ends up making a mess and creating a hole in the middle of the floor.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What does Ross use to try to impress Isabella Rosselini?",
+      "options": [
+        "His list of famous people he's allowed to sleep with",
+        "His knowledge of dinosaurs",
+        "His cooking skills",
+        "His dancing abilities"
+      ],
+      "correct_answer": "His list of famous people he's allowed to sleep with",
+      "difficulty": "medium",
+      "explanation": "Ross tries to impress Isabella Rosselini by showing her his list of famous people he's allowed to sleep with, but ends up embarrassing himself.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What is the reaction of the girl at Healing Hands Inc. when Frank touches her?",
+      "options": [
+        "She is flattered",
+        "She is angry",
+        "She is scared",
+        "She is indifferent"
+      ],
+      "correct_answer": "She is angry",
+      "difficulty": "medium",
+      "explanation": "The girl at Healing Hands Inc. is angry when Frank touches her, and accuses him of breaking her arm.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What does Phoebe give to Frank at the end of their time together?",
+      "options": [
+        "A hug",
+        "A kiss",
+        "A fire extinguisher",
+        "A massage"
+      ],
+      "correct_answer": "A fire extinguisher",
+      "difficulty": "easy",
+      "explanation": "Phoebe gives Frank a fire extinguisher at the end of their time together, saying 'just in case'.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "Why does Ross's attempt to hit on Isabella Rosselini fail?",
+      "options": [
+        "Because he is too shy",
+        "Because she is not interested",
+        "Because he shows her his list of famous people he's allowed to sleep with",
+        "Because he is too old"
+      ],
+      "correct_answer": "Because he shows her his list of famous people he's allowed to sleep with",
+      "difficulty": "medium",
+      "explanation": "Ross's attempt to hit on Isabella Rosselini fails because he shows her his list of famous people he's allowed to sleep with, which she finds embarrassing and off-putting.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What is the result of Joey's bet with Chandler?",
+      "options": [
+        "Joey wins and gets $5",
+        "Chandler wins and gets $5",
+        "They tie and split the $5",
+        "Joey gets stuck in the entertainment center"
+      ],
+      "correct_answer": "Joey wins and gets $5",
+      "difficulty": "easy",
+      "explanation": "Joey wins the bet with Chandler by successfully fitting into the hole in the entertainment center, and gets $5 as a result.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What is the name of the game that Monica and Ross used to play as kids, according to Monica?",
+      "options": [
+        "The Shadow Game",
+        "Hide and Seek",
+        "Tag",
+        "Simon Says"
+      ],
+      "correct_answer": "The Shadow Game",
+      "difficulty": "medium",
+      "explanation": "Monica mentions that she and Ross used to play a game called the Shadow Game when they were kids, but the rules of the game are not clearly explained.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What is the reaction of the gang when Ross tries to hit on Isabella Rosselini?",
+      "options": [
+        "They are supportive and encouraging",
+        "They are embarrassed and try to stop him",
+        "They are amused and entertained",
+        "They are indifferent and uninterested"
+      ],
+      "correct_answer": "They are amused and entertained",
+      "difficulty": "medium",
+      "explanation": "The gang is amused and entertained by Ross's attempt to hit on Isabella Rosselini, with Rachel even joking that they should get popcorn to watch.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What does Frank do to the fire extinguisher's hose?",
+      "options": [
+        "He melts it",
+        "He breaks it",
+        "He fixes it",
+        "He ignores it"
+      ],
+      "correct_answer": "He melts it",
+      "difficulty": "easy",
+      "explanation": "Frank melts the fire extinguisher's hose, which Phoebe had given him 'just in case'.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What is the reason for Phoebe's initial nervousness about meeting her brother Frank?",
+      "options": [
+        "She is worried that he will not like her",
+        "She is worried that he will be late",
+        "She is worried that he will not feel like a brother to her",
+        "She is worried that he will not want to spend time with her"
+      ],
+      "correct_answer": "She is worried that he will not feel like a brother to her",
+      "difficulty": "medium",
+      "explanation": "Phoebe is nervous about meeting her brother Frank because she wants him to feel like a brother to her, and is worried that their relationship will not be close or connected.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What does Chandler use to block the doors of the entertainment center?",
+      "options": [
+        "A 2x4",
+        "A hammer",
+        "A screwdriver",
+        "A drill"
+      ],
+      "correct_answer": "A 2x4",
+      "difficulty": "easy",
+      "explanation": "Chandler uses a 2x4 to block the doors of the entertainment center, trapping Joey inside.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    },
+    {
+      "question": "What is the final result of Ross's list of famous people he's allowed to sleep with?",
+      "options": [
+        "He successfully sleeps with one of the people on the list",
+        "He is rejected by all of the people on the list",
+        "He decides to add Isabella Rosselini to the list",
+        "He decides to remove Isabella Rosselini from the list and replace her with someone else"
+      ],
+      "correct_answer": "He is rejected by Isabella Rosselini, who was not even on the list",
+      "difficulty": "medium",
+      "explanation": "Ross's attempt to hit on Isabella Rosselini fails, and she reveals that she had actually considered putting him on her own list of people to sleep with, but had already replaced him with someone else.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 5,
+        "title": "The One With Frank Jr."
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:15:52.900Z"
+    }
+  ]
+}

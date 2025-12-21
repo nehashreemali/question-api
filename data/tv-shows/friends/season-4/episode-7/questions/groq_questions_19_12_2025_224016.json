@@ -1,0 +1,431 @@
+{
+  "show": "Friends",
+  "season": 4,
+  "episode": 7,
+  "title": "The One Where Chandler Crosses A Line",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-19T17:10:16.130Z",
+  "questionCount": 20,
+  "questions": [
+    {
+      "question": "What does Chandler say he saw when he walked into the bathroom?",
+      "options": [
+        "Kathy fully clothed",
+        "Kathy partially dressed",
+        "Kathy naked",
+        "The bathroom empty"
+      ],
+      "correct_answer": "Kathy naked",
+      "difficulty": "easy",
+      "explanation": "Chandler mentions that seeing Kathy naked was like torture.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "What does Joey plan to do with Kathy and Casey?",
+      "options": [
+        "Go on a double date with them",
+        "Have dinner with Kathy and then Casey",
+        "Have an early dinner with Casey and a late dinner with Kathy",
+        "Cancel plans with both of them"
+      ],
+      "correct_answer": "Have an early dinner with Casey and a late dinner with Kathy",
+      "difficulty": "easy",
+      "explanation": "Joey tells Chandler that he is having an early dinner with Casey and a late dinner with Kathy.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "What is Ross' musical talent like?",
+      "options": [
+        "Exceptional and moving",
+        "Average but improving",
+        "Poor but enthusiastic",
+        "Non-existent"
+      ],
+      "correct_answer": "Poor but enthusiastic",
+      "difficulty": "medium",
+      "explanation": "Ross' music is described as not being good, but he is enthusiastic about playing.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "What does Phoebe think about Ross' music?",
+      "options": [
+        "She loves it and finds it inspiring",
+        "She hates it and thinks it's terrible",
+        "She is indifferent to it",
+        "She thinks it's okay but not great"
+      ],
+      "correct_answer": "She loves it and finds it inspiring",
+      "difficulty": "medium",
+      "explanation": "Phoebe tells Ross that his music is inspiring and that she loves it.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "Why does Chandler kiss Kathy?",
+      "options": [
+        "Because Joey told him to",
+        "Because Kathy initiated it",
+        "Because he has feelings for her",
+        "Because he wanted to hurt Joey"
+      ],
+      "correct_answer": "Because he has feelings for her",
+      "difficulty": "medium",
+      "explanation": "Chandler kisses Kathy because he has developed feelings for her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "How does Joey react when he finds out Chandler kissed Kathy?",
+      "options": [
+        "He is understanding and forgiving",
+        "He is angry and feels betrayed",
+        "He is indifferent and doesn't care",
+        "He is surprised but not upset"
+      ],
+      "correct_answer": "He is angry and feels betrayed",
+      "difficulty": "easy",
+      "explanation": "Joey is angry and feels betrayed when he finds out that Chandler kissed Kathy.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "What does Ross reveal about his musical performance at the end?",
+      "options": [
+        "That he was playing a new song",
+        "That he was playing a cover song",
+        "That he was playing badly on purpose",
+        "That he was playing his best"
+      ],
+      "correct_answer": "That he was playing badly on purpose",
+      "difficulty": "medium",
+      "explanation": "Ross reveals that he played his last song badly on purpose.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "What does Chandler say to Joey when Joey finds out about the kiss?",
+      "options": [
+        "That he is sorry and it was a mistake",
+        "That he is not sorry and it was not a mistake",
+        "That he did it to hurt Joey",
+        "That he did it because Kathy initiated it"
+      ],
+      "correct_answer": "That he is sorry and it was a mistake",
+      "difficulty": "easy",
+      "explanation": "Chandler apologizes to Joey and admits that kissing Kathy was a mistake.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "Why does Phoebe refuse to play her music after Ross?",
+      "options": [
+        "Because she thinks her music is not as good as Ross'",
+        "Because she thinks Ross' music is too good",
+        "Because she is intimidated by Ross' talent",
+        "Because she thinks it would be like following The Beatles"
+      ],
+      "correct_answer": "Because she thinks it would be like following The Beatles",
+      "difficulty": "medium",
+      "explanation": "Phoebe says that playing after Ross would be like the bicycle-riding chimps following The Beatles.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "What does Joey say about the new furniture in the apartment?",
+      "options": [
+        "That he bought it all",
+        "That Chandler bought it all",
+        "That it's ugly and he doesn't like it",
+        "That it's okay but not great"
+      ],
+      "correct_answer": "That Chandler bought it all",
+      "difficulty": "easy",
+      "explanation": "Joey is surprised by the new furniture and asks Chandler if he bought it all.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "What does Kathy offer to do for Chandler?",
+      "options": [
+        "Cut his hair",
+        "Cook him dinner",
+        "Give him a massage",
+        "Help him with his furniture"
+      ],
+      "correct_answer": "Cut his hair",
+      "difficulty": "easy",
+      "explanation": "Kathy offers to cut Chandler's hair after he mentions that he had a haircut appointment that got canceled.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "What does Ross use to create his music?",
+      "options": [
+        "A guitar",
+        "A piano",
+        "A keyboard",
+        "A drum set"
+      ],
+      "correct_answer": "A keyboard",
+      "difficulty": "easy",
+      "explanation": "Ross uses a keyboard to create his music.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "What is the name of the woman Joey gets a phone number from at Central Perk?",
+      "options": [
+        "Kathy",
+        "Casey",
+        "Monica",
+        "Rachel"
+      ],
+      "correct_answer": "Casey",
+      "difficulty": "easy",
+      "explanation": "Joey gets a phone number from a woman named Casey at Central Perk.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "Why does Joey have to walk back to get transmission fluid?",
+      "options": [
+        "Because his car broke down",
+        "Because he forgot something",
+        "Because he wanted to get some exercise",
+        "Because he was lost"
+      ],
+      "correct_answer": "Because his car broke down",
+      "difficulty": "easy",
+      "explanation": "Joey's car breaks down, so he has to walk back to get transmission fluid.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "What does Chandler tell Joey when Joey asks him to put Kathy on the phone?",
+      "options": [
+        "That Kathy is not there",
+        "That Kathy is busy",
+        "That Kathy is on her way",
+        "That Joey should talk to Kathy himself"
+      ],
+      "correct_answer": "That Kathy is on her way",
+      "difficulty": "medium",
+      "explanation": "Chandler tells Joey that Kathy will talk to him, but then Joey's time runs out on the payphone.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "What does Ross say his music is meant to be?",
+      "options": [
+        "Uplifting and inspiring",
+        "Sad and depressing",
+        "Angry and aggressive",
+        "Happy and carefree"
+      ],
+      "correct_answer": "Uplifting and inspiring",
+      "difficulty": "medium",
+      "explanation": "Ross says that his music is meant to be uplifting and inspiring.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "What does Phoebe think about Ross' decision to stop playing music?",
+      "options": [
+        "That it's a good idea",
+        "That it's a bad idea",
+        "That she's indifferent",
+        "That she's surprised"
+      ],
+      "correct_answer": "That it's a bad idea",
+      "difficulty": "medium",
+      "explanation": "Phoebe tells Ross that she doesn't want him to stop playing music.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "What does Joey say about Chandler's feelings for Kathy?",
+      "options": [
+        "That he's happy for him",
+        "That he's angry with him",
+        "That he's surprised by them",
+        "That he's indifferent to them"
+      ],
+      "correct_answer": "That he's angry with him",
+      "difficulty": "easy",
+      "explanation": "Joey is angry with Chandler for having feelings for Kathy.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "What does Chandler buy for the apartment?",
+      "options": [
+        "A new TV",
+        "A new couch",
+        "A new bed",
+        "All of the above and more"
+      ],
+      "correct_answer": "All of the above and more",
+      "difficulty": "easy",
+      "explanation": "Chandler buys a lot of new furniture for the apartment, including a TV and other items.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    },
+    {
+      "question": "Why does Joey say the bread is tainted?",
+      "options": [
+        "Because it's old",
+        "Because it's stale",
+        "Because it's made with bad ingredients",
+        "Because it's associated with Chandler's betrayal"
+      ],
+      "correct_answer": "Because it's associated with Chandler's betrayal",
+      "difficulty": "medium",
+      "explanation": "Joey says that the bread is tainted because it's associated with Chandler's betrayal.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 7,
+        "title": "The One Where Chandler Crosses A Line"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:10:16.130Z"
+    }
+  ]
+}

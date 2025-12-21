@@ -1,0 +1,662 @@
+{
+  "show": "Friends",
+  "season": 1,
+  "episode": 12,
+  "title": "The One With the Dozen Lasagnas",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-16T17:26:15.800Z",
+  "questionCount": 31,
+  "questions": [
+    {
+      "question": "What does Monica say to Aunt Syl about the lasagna?",
+      "options": [
+        "I made it with meat",
+        "I made it without meat",
+        "I made it with extra cheese",
+        "I made it with a special sauce"
+      ],
+      "correct_answer": "I made it with meat",
+      "difficulty": "easy",
+      "explanation": "Monica tells her aunt that the lasagna has meat in every third layer.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What is Ross reading to prepare for fatherhood?",
+      "options": [
+        "Baby books",
+        "Parenting magazines",
+        "Childcare websites",
+        "Fatherhood blogs"
+      ],
+      "correct_answer": "Baby books",
+      "difficulty": "easy",
+      "explanation": "Ross has read all the baby books to prepare for fatherhood.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Phoebe say people eat in some parts of the world?",
+      "options": [
+        "The placenta",
+        "The umbilical cord",
+        "The baby's first clothes",
+        "The hospital food"
+      ],
+      "correct_answer": "The placenta",
+      "difficulty": "medium",
+      "explanation": "Phoebe mentions that in some parts of the world, people eat the placenta after birth.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What is the result of Carol's amnio test?",
+      "options": [
+        "The baby has a genetic disorder",
+        "The baby is healthy",
+        "The baby is a girl",
+        "The baby is a boy"
+      ],
+      "correct_answer": "The baby is healthy",
+      "difficulty": "easy",
+      "explanation": "Carol tells Ross that the amnio test results show the baby is totally and completely healthy.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Ross not want to know about the baby?",
+      "options": [
+        "The baby's weight",
+        "The baby's height",
+        "The baby's sex",
+        "The baby's due date"
+      ],
+      "correct_answer": "The baby's sex",
+      "difficulty": "easy",
+      "explanation": "Ross explicitly states that he does not want to know the sex of the baby.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "Why does Rachel think she didn't see Paolo's true nature?",
+      "options": [
+        "Because he was ugly",
+        "Because he was poor",
+        "Because he was charming and gorgeous",
+        "Because he was mean"
+      ],
+      "correct_answer": "Because he was charming and gorgeous",
+      "difficulty": "medium",
+      "explanation": "Phoebe explains to Rachel that she didn't see Paolo's true nature because he is charming and gorgeous.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Phoebe give Rachel to comfort her?",
+      "options": [
+        "A hug",
+        "A cookie",
+        "A glass of milk",
+        "A box of tissues"
+      ],
+      "correct_answer": "A cookie",
+      "difficulty": "easy",
+      "explanation": "Phoebe gives Rachel one of her famous oatmeal raisin cookies to comfort her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What is the new piece of furniture that Joey and Chandler buy?",
+      "options": [
+        "A foosball table",
+        "A dining table",
+        "A couch",
+        "A bed"
+      ],
+      "correct_answer": "A foosball table",
+      "difficulty": "easy",
+      "explanation": "Joey and Chandler buy a new foosball table for their apartment.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "Why does Ross want to be the one to comfort Rachel?",
+      "options": [
+        "Because he wants to be her friend",
+        "Because he wants to be her boyfriend",
+        "Because he wants to comfort Paolo",
+        "Because he wants to eat her cookies"
+      ],
+      "correct_answer": "Because he wants to be her boyfriend",
+      "difficulty": "medium",
+      "explanation": "Ross wants to be the one to comfort Rachel because he has feelings for her and wants to be with her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Ross finally learn about the baby?",
+      "options": [
+        "The baby's name",
+        "The baby's weight",
+        "The baby's sex",
+        "The baby's due date"
+      ],
+      "correct_answer": "The baby's sex",
+      "difficulty": "easy",
+      "explanation": "Ross finally learns that he is having a boy.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Monica do to Joey and Chandler at foosball?",
+      "options": [
+        "She beats them",
+        "She loses to them",
+        "She ties with them",
+        "She doesn't play with them"
+      ],
+      "correct_answer": "She beats them",
+      "difficulty": "easy",
+      "explanation": "Monica beats Joey and Chandler at foosball, scoring a shut-out.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Paolo do to Phoebe during the massage?",
+      "options": [
+        "He falls asleep",
+        "He starts talking",
+        "He makes a pass at her",
+        "He gets a cramp"
+      ],
+      "correct_answer": "He makes a pass at her",
+      "difficulty": "medium",
+      "explanation": "Paolo makes a pass at Phoebe during the massage, which makes her uncomfortable.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Rachel do with Paolo's clothes?",
+      "options": [
+        "She folds them",
+        "She puts them away",
+        "She throws them off the balcony",
+        "She donates them"
+      ],
+      "correct_answer": "She throws them off the balcony",
+      "difficulty": "easy",
+      "explanation": "Rachel throws Paolo's clothes off the balcony after finding out about his infidelity.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What is Phoebe's policy on lying?",
+      "options": [
+        "She never lies",
+        "She always lies",
+        "She lies sometimes",
+        "She doesn't care about lying"
+      ],
+      "correct_answer": "She never lies",
+      "difficulty": "easy",
+      "explanation": "Phoebe tells Rachel that she never lies, which is one of the three things Rachel should know about her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Ross want Rachel to know about him?",
+      "options": [
+        "That he is a good listener",
+        "That he is a good cook",
+        "That he is a good friend",
+        "That he is everything Paolo is not"
+      ],
+      "correct_answer": "That he is everything Paolo is not",
+      "difficulty": "medium",
+      "explanation": "Ross wants Rachel to know that he is everything Paolo is not, implying that he is a better person and a better partner.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Joey think Ross should do after Rachel breaks up with Paolo?",
+      "options": [
+        "He should give her space",
+        "He should try to comfort her",
+        "He should try to win her over",
+        "He should ignore her"
+      ],
+      "correct_answer": "He should try to win her over",
+      "difficulty": "medium",
+      "explanation": "Joey thinks Ross should try to win Rachel over after she breaks up with Paolo, by being there for her and showing her that he is a better partner.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What is the name of the person who answers the door at Carol and Susan's apartment?",
+      "options": [
+        "Carol",
+        "Susan",
+        "Ross",
+        "Tanya"
+      ],
+      "correct_answer": "Carol",
+      "difficulty": "easy",
+      "explanation": "Carol answers the door at her and Susan's apartment when Ross arrives with the lasagna.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Ross bring to Carol and Susan's apartment?",
+      "options": [
+        "A cake",
+        "A gift",
+        "A lasagna",
+        "A book"
+      ],
+      "correct_answer": "A lasagna",
+      "difficulty": "easy",
+      "explanation": "Ross brings a lasagna to Carol and Susan's apartment, which was made by Monica.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What is the topic of conversation between Ross and Carol in the living room?",
+      "options": [
+        "The baby's sex",
+        "The baby's name",
+        "The baby's due date",
+        "The amnio test results"
+      ],
+      "correct_answer": "The amnio test results",
+      "difficulty": "easy",
+      "explanation": "Ross and Carol discuss the results of the amnio test, which show that the baby is healthy.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Ross do when Paolo comes to the apartment to say goodbye?",
+      "options": [
+        "He hugs him",
+        "He shakes his hand",
+        "He slams the door in his face",
+        "He ignores him"
+      ],
+      "correct_answer": "He slams the door in his face",
+      "difficulty": "easy",
+      "explanation": "Ross slams the door in Paolo's face when he comes to the apartment to say goodbye to Rachel.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Phoebe tell Rachel about Paolo's behavior during the massage?",
+      "options": [
+        "He was professional",
+        "He was friendly",
+        "He was flirtatious",
+        "He made a pass at her"
+      ],
+      "correct_answer": "He made a pass at her",
+      "difficulty": "medium",
+      "explanation": "Phoebe tells Rachel that Paolo made a pass at her during the massage, which made her uncomfortable.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What is Rachel's reaction to Phoebe's revelation about Paolo?",
+      "options": [
+        "She is angry",
+        "She is sad",
+        "She is shocked",
+        "She is indifferent"
+      ],
+      "correct_answer": "She is shocked",
+      "difficulty": "easy",
+      "explanation": "Rachel is shocked and upset when Phoebe tells her about Paolo's behavior during the massage.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Ross think Rachel needs after breaking up with Paolo?",
+      "options": [
+        "A new boyfriend",
+        "A new hobby",
+        "A more sophisticated screening process for guys",
+        "A break from dating"
+      ],
+      "correct_answer": "A more sophisticated screening process for guys",
+      "difficulty": "medium",
+      "explanation": "Ross thinks Rachel needs to develop a more sophisticated screening process for guys to avoid getting hurt again.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What is the final scene of the episode?",
+      "options": [
+        "Ross and Rachel kissing",
+        "Joey and Chandler playing foosball",
+        "Monica beating Joey and Chandler at foosball",
+        "Phoebe and Rachel hugging"
+      ],
+      "correct_answer": "Monica beating Joey and Chandler at foosball",
+      "difficulty": "easy",
+      "explanation": "The final scene of the episode shows Monica beating Joey and Chandler at foosball.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Monica give Paolo when he leaves the apartment?",
+      "options": [
+        "A hug",
+        "A kiss",
+        "A lasagna",
+        "A piece of advice"
+      ],
+      "correct_answer": "A lasagna",
+      "difficulty": "easy",
+      "explanation": "Monica gives Paolo a lasagna when he leaves the apartment, along with instructions on how to heat it up.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Phoebe say is one of the three things Rachel should know about her?",
+      "options": [
+        "She never lies",
+        "She always lies",
+        "She is a good cook",
+        "She is a good listener"
+      ],
+      "correct_answer": "She never lies",
+      "difficulty": "easy",
+      "explanation": "Phoebe tells Rachel that one of the three things she should know about her is that she never lies.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Ross do when he finds out he is having a boy?",
+      "options": [
+        "He cries",
+        "He screams",
+        "He hugs everyone",
+        "He is shocked and babbling"
+      ],
+      "correct_answer": "He is shocked and babbling",
+      "difficulty": "easy",
+      "explanation": "Ross is shocked and babbling when he finds out he is having a boy.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Joey think Ross should do to win Rachel over?",
+      "options": [
+        "He should give her space",
+        "He should try to comfort her",
+        "He should try to win her over",
+        "He should ignore her"
+      ],
+      "correct_answer": "He should try to win her over",
+      "difficulty": "medium",
+      "explanation": "Joey thinks Ross should try to win Rachel over by being there for her and showing her that he is a better partner.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What is the name of the place where Joey and Chandler buy their new table?",
+      "options": [
+        "The Table Store",
+        "The Furniture Store",
+        "The Foosball Store",
+        "The Game Store"
+      ],
+      "correct_answer": "The Table Store",
+      "difficulty": "easy",
+      "explanation": "Joey and Chandler buy their new foosball table at The Table Store.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Ross learn from Carol about the baby?",
+      "options": [
+        "The baby's sex",
+        "The baby's weight",
+        "The baby's due date",
+        "The baby's health"
+      ],
+      "correct_answer": "The baby's sex",
+      "difficulty": "easy",
+      "explanation": "Ross learns from Carol that he is having a boy.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    },
+    {
+      "question": "What does Phoebe do to comfort Rachel after she breaks up with Paolo?",
+      "options": [
+        "She gives her a hug",
+        "She gives her a cookie",
+        "She gives her a glass of milk",
+        "She gives her a shoulder to cry on"
+      ],
+      "correct_answer": "She gives her a cookie",
+      "difficulty": "easy",
+      "explanation": "Phoebe gives Rachel one of her famous oatmeal raisin cookies to comfort her after she breaks up with Paolo.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 12,
+        "title": "The One With the Dozen Lasagnas"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:26:15.800Z"
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+{
+  "show": "Friends",
+  "season": 4,
+  "episode": 20,
+  "title": "The One With All The Wedding Dresses",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-20T06:16:01.782Z",
+  "questionCount": 20,
+  "questions": [
+    {
+      "question": "What does Chandler say to Joey when he starts snoring again?",
+      "options": [
+        "Oh. Oh, did-did-did I wake you?",
+        "You have to go to a sleep clinic!",
+        "I'm going to roll you over!",
+        "I'm leaving the room!"
+      ],
+      "correct_answer": "You have to go to a sleep clinic!",
+      "difficulty": "easy",
+      "explanation": "Chandler tells Joey that he needs to go to a sleep clinic because of his loud snoring.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "What is Monica's reaction when she tries on Emily's wedding dress?",
+      "options": [
+        "She starts crying",
+        "She feels silly",
+        "She feels like a beautiful bride",
+        "She doesn't like the dress"
+      ],
+      "correct_answer": "She feels like a beautiful bride",
+      "difficulty": "medium",
+      "explanation": "Monica tries on Emily's wedding dress and feels like a beautiful bride, even pretending to thank guests at her own wedding.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "Why does Ross want to have dinner with Rachel, Joshua, and Emily?",
+      "options": [
+        "To celebrate his engagement",
+        "To discuss wedding plans",
+        "So the four of them can hang out together",
+        "To introduce Joshua to Emily"
+      ],
+      "correct_answer": "So the four of them can hang out together",
+      "difficulty": "easy",
+      "explanation": "Ross wants to have dinner with the four of them so they can all spend time together.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "What is Rachel's initial reaction to Ross's engagement?",
+      "options": [
+        "She's happy for him",
+        "She's upset and feels like she's lost him",
+        "She's indifferent",
+        "She's surprised but okay with it"
+      ],
+      "correct_answer": "She's surprised but okay with it",
+      "difficulty": "medium",
+      "explanation": "Rachel tells Ross that she's okay with his engagement, but later reveals that she's not handling it well.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "What does Joey discover at the sleep clinic?",
+      "options": [
+        "That he doesn't snore",
+        "That he talks in his sleep",
+        "That he needs to wear a mouth guard to stop snoring",
+        "That he has sleep apnea"
+      ],
+      "correct_answer": "That he needs to wear a mouth guard to stop snoring",
+      "difficulty": "easy",
+      "explanation": "Joey is given a mouth guard at the sleep clinic to help him stop snoring.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "Why does Rachel ask Joshua to marry her?",
+      "options": [
+        "Because she loves him",
+        "Because she wants to get married before Ross does",
+        "Because she thinks they're a great couple",
+        "Because she wants to prove a point to Ross"
+      ],
+      "correct_answer": "Because she thinks they're a great couple and wants to be crazy in love",
+      "difficulty": "medium",
+      "explanation": "Rachel asks Joshua to marry her because she thinks they have a great connection and wants to be crazy in love.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "What is the outcome of Rachel's conversation with Joshua?",
+      "options": [
+        "He agrees to marry her",
+        "He tells her he's not ready for marriage",
+        "He breaks up with her",
+        "He needs time to think about it"
+      ],
+      "correct_answer": "He breaks up with her",
+      "difficulty": "easy",
+      "explanation": "Joshua breaks up with Rachel, telling her that his divorce isn't final and they've only been on four dates.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "What do the girls do to cheer Rachel up after her breakup?",
+      "options": [
+        "They go out for coffee",
+        "They watch a movie",
+        "They try on wedding dresses and eat popcorn",
+        "They go for a walk"
+      ],
+      "correct_answer": "They try on wedding dresses and eat popcorn",
+      "difficulty": "medium",
+      "explanation": "The girls try on wedding dresses, eat popcorn, and watch TV to cheer Rachel up after her breakup.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "What is Marjorie's condition that she's being treated for at the sleep clinic?",
+      "options": [
+        "Sleep apnea",
+        "Insomnia",
+        "Talking in her sleep",
+        "Snoring"
+      ],
+      "correct_answer": "Talking in her sleep",
+      "difficulty": "easy",
+      "explanation": "Marjorie is at the sleep clinic because she talks in her sleep.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "What does Chandler say to Joey when he's snoring loudly in his sleep?",
+      "options": [
+        "You're going to a clinic!",
+        "I'm going to roll you over!",
+        "You're really loud!",
+        "I'm leaving the room!"
+      ],
+      "correct_answer": "You're going to a clinic!",
+      "difficulty": "medium",
+      "explanation": "Chandler tells Joey that he's going to a clinic because of his loud snoring.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "Why does Ross think getting married in a month is a good idea?",
+      "options": [
+        "Because Emily wants to get married quickly",
+        "Because the venue they want is being torn down",
+        "Because they've been together for a long time",
+        "Because they're in love"
+      ],
+      "correct_answer": "Because the venue they want is being torn down",
+      "difficulty": "medium",
+      "explanation": "Ross thinks getting married in a month is a good idea because the venue they want is being torn down and Emily's parents got married there.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "What is Phoebe's reaction when she sees Monica wearing Emily's wedding dress?",
+      "options": [
+        "She's upset",
+        "She's happy for Monica",
+        "She's indifferent",
+        "She joins in and tries on a wedding dress too"
+      ],
+      "correct_answer": "She joins in and tries on a wedding dress too",
+      "difficulty": "easy",
+      "explanation": "Phoebe joins in and tries on a wedding dress, and they both pretend to be brides.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "What does Joey say when he's introduced to Marjorie at the sleep clinic?",
+      "options": [
+        "Hi, I'm Joey",
+        "How you doin'?",
+        "I'm so tired",
+        "So why don't you give me your number?"
+      ],
+      "correct_answer": "So why don't you give me your number?",
+      "difficulty": "medium",
+      "explanation": "Joey, while asleep, tells Marjorie to give him her number.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "What does Chandler do when Marjorie starts talking in her sleep?",
+      "options": [
+        "He wakes her up",
+        "He ignores her",
+        "He talks back to her",
+        "He screams with her"
+      ],
+      "correct_answer": "He screams with her",
+      "difficulty": "hard",
+      "explanation": "Chandler screams with Marjorie when she starts talking in her sleep.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "Why does Rachel feel sad about Ross's engagement?",
+      "options": [
+        "Because she's still in love with him",
+        "Because she's happy for him",
+        "Because she thinks they rushed into it",
+        "Because she's not invited to the wedding"
+      ],
+      "correct_answer": "Because she's still in love with him",
+      "difficulty": "hard",
+      "explanation": "Rachel feels sad about Ross's engagement because she realizes she still has feelings for him.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "What does Monica say when she's pretending to be a bride in Emily's wedding dress?",
+      "options": [
+        "I do",
+        "Thank you for coming",
+        "I'm so happy",
+        "I'm a beautiful bride"
+      ],
+      "correct_answer": "Thank you for coming",
+      "difficulty": "hard",
+      "explanation": "Monica says 'Thank you for coming' when she's pretending to be a bride in Emily's wedding dress.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "What is the name of the woman Chandler meets at the sleep clinic?",
+      "options": [
+        "Marjorie",
+        "Emily",
+        "Rachel",
+        "Phoebe"
+      ],
+      "correct_answer": "Marjorie",
+      "difficulty": "easy",
+      "explanation": "Chandler meets a woman named Marjorie at the sleep clinic.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "Why does Joey wear a mouth guard?",
+      "options": [
+        "To stop snoring",
+        "To help him sleep",
+        "To talk in his sleep",
+        "To eat popcorn"
+      ],
+      "correct_answer": "To stop snoring",
+      "difficulty": "easy",
+      "explanation": "Joey wears a mouth guard to help him stop snoring.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "What does Ross say to Rachel when she's feeling down about his engagement?",
+      "options": [
+        "You'll find someone else",
+        "I'm sorry",
+        "You're not handling it well",
+        "Come here"
+      ],
+      "correct_answer": "Come here",
+      "difficulty": "medium",
+      "explanation": "Ross tells Rachel 'Come here' and gives her a hug when she's feeling down about his engagement.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    },
+    {
+      "question": "What do the girls do when they hear someone knocking on the door while they're wearing wedding dresses?",
+      "options": [
+        "They hide",
+        "They answer the door",
+        "They pretend to be brides",
+        "They take off their dresses"
+      ],
+      "correct_answer": "They try to hide and avoid answering the door",
+      "difficulty": "medium",
+      "explanation": "The girls try to hide and avoid answering the door when they hear someone knocking, because they don't want to be seen in their wedding dresses.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 20,
+        "title": "The One With All The Wedding Dresses"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:16:01.782Z"
+    }
+  ]
+}

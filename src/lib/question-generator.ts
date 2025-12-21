@@ -9,12 +9,25 @@ import { createLogger } from './logger.js';
 
 const logger = createLogger('question-gen');
 
+export interface QuestionTopic {
+  type: string;
+  show?: string;
+  season?: number;
+  episode?: number;
+  title?: string;
+  category?: string;
+  subcategory?: string;
+}
+
 export interface Question {
   question: string;
   options: string[];
   correct_answer: string;
   difficulty: 'easy' | 'medium' | 'hard';
   explanation?: string;
+  topic?: QuestionTopic;
+  generatedBy?: string;
+  generatedAt?: string;
 }
 
 export interface QuestionSet {
@@ -80,21 +93,28 @@ function loadTranscript(show: string, season: number, episode: number): any {
 }
 
 /**
- * Check if questions already exist
+ * Check if questions already exist (checks for any groq_questions_*.json files)
  */
 function questionsExist(show: string, season: number, episode: number): boolean {
   const showSlug = show.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
-  const questionsPath = join(
+  const questionsDir = join(
     process.cwd(),
     'data',
     'tv-shows',
     showSlug,
     `season-${season}`,
     `episode-${episode}`,
-    'questions.json'
+    'questions'
   );
 
-  return existsSync(questionsPath);
+  if (!existsSync(questionsDir)) {
+    return false;
+  }
+
+  // Check if any groq_questions_*.json files exist
+  const { readdirSync } = require('fs');
+  const files = readdirSync(questionsDir);
+  return files.some((f: string) => f.startsWith('groq_questions_') && f.endsWith('.json'));
 }
 
 /**
@@ -207,6 +227,19 @@ async function callGroqAPI(
 }
 
 /**
+ * Format timestamp for filename
+ */
+function formatTimestampForFilename(date: Date): string {
+  const day = String(date.getDate()).padStart(2, '0');
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const year = date.getFullYear();
+  const hours = String(date.getHours()).padStart(2, '0');
+  const minutes = String(date.getMinutes()).padStart(2, '0');
+  const seconds = String(date.getSeconds()).padStart(2, '0');
+  return `${day}_${month}_${year}_${hours}${minutes}${seconds}`;
+}
+
+/**
  * Save questions to file system
  */
 function saveQuestions(
@@ -225,20 +258,56 @@ function saveQuestions(
     `episode-${episode}`
   );
 
-  if (!existsSync(episodeDir)) {
-    mkdirSync(episodeDir, { recursive: true });
+  // Create questions subfolder
+  const questionsDir = join(episodeDir, 'questions');
+  if (!existsSync(questionsDir)) {
+    mkdirSync(questionsDir, { recursive: true });
   }
 
-  // Save full questions.json
-  const questionsPath = join(episodeDir, 'questions.json');
-  writeFileSync(questionsPath, JSON.stringify(questionSet, null, 2));
-  logger.success(`Saved questions.json: ${questionsPath}`);
+  const generatedAt = new Date();
+  const timestamp = formatTimestampForFilename(generatedAt);
 
-  // Save rawQuestions.json (just question text)
-  const rawQuestions = questionSet.questions.map(q => q.question);
-  const rawQuestionsPath = join(episodeDir, 'rawQuestions.json');
-  writeFileSync(rawQuestionsPath, JSON.stringify(rawQuestions, null, 2));
-  logger.success(`Saved rawQuestions.json: ${rawQuestionsPath}`);
+  // Add topic info and metadata to each question
+  const enhancedQuestions = questionSet.questions.map(q => ({
+    ...q,
+    topic: {
+      type: 'tv-show',
+      show: questionSet.show,
+      season: questionSet.season,
+      episode: questionSet.episode,
+      title: questionSet.title,
+    },
+    generatedBy: 'groq',
+    generatedAt: generatedAt.toISOString(),
+  }));
+
+  const enhancedQuestionSet = {
+    ...questionSet,
+    questions: enhancedQuestions,
+  };
+
+  // Save timestamped questions file
+  const questionsFileName = `groq_questions_${timestamp}.json`;
+  const questionsPath = join(questionsDir, questionsFileName);
+  writeFileSync(questionsPath, JSON.stringify(enhancedQuestionSet, null, 2));
+  logger.success(`Saved ${questionsFileName}`);
+
+  // Load existing raw questions and append
+  const rawQuestionsPath = join(questionsDir, 'groq_raw_questions.json');
+  let existingRawQuestions: string[] = [];
+  if (existsSync(rawQuestionsPath)) {
+    try {
+      existingRawQuestions = JSON.parse(readFileSync(rawQuestionsPath, 'utf8'));
+    } catch {
+      existingRawQuestions = [];
+    }
+  }
+
+  // Append new questions (avoiding duplicates)
+  const newRawQuestions = questionSet.questions.map(q => q.question);
+  const allRawQuestions = [...new Set([...existingRawQuestions, ...newRawQuestions])];
+  writeFileSync(rawQuestionsPath, JSON.stringify(allRawQuestions, null, 2));
+  logger.success(`Updated groq_raw_questions.json (${allRawQuestions.length} total)`);
 
   return { questionsPath, rawQuestionsPath };
 }
@@ -264,16 +333,24 @@ export async function generateQuestions(options: GenerateOptions): Promise<Quest
   if (skipIfExists && questionsExist(show, season, episode)) {
     logger.warn(`Questions already exist, skipping. Use skipIfExists=false to regenerate.`);
     const showSlug = show.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
-    const questionsPath = join(
+    const questionsDir = join(
       process.cwd(),
       'data',
       'tv-shows',
       showSlug,
       `season-${season}`,
       `episode-${episode}`,
-      'questions.json'
+      'questions'
     );
-    return JSON.parse(readFileSync(questionsPath, 'utf8'));
+    // Find the most recent groq_questions_*.json file
+    const { readdirSync } = require('fs');
+    const files = readdirSync(questionsDir)
+      .filter((f: string) => f.startsWith('groq_questions_') && f.endsWith('.json'))
+      .sort()
+      .reverse();
+    if (files.length > 0) {
+      return JSON.parse(readFileSync(join(questionsDir, files[0]), 'utf8'));
+    }
   }
 
   // Load transcript

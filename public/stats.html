@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question Stats</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: #0f172a; }
+    .card { background: #1e293b; border: 1px solid #334155; }
+    .stat-card { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+  </style>
+</head>
+<body class="min-h-screen text-gray-100">
+  <!-- Navigation -->
+  <nav class="bg-slate-800 border-b border-slate-700 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <h1 class="text-xl font-bold text-white">Question Generator</h1>
+      <div class="flex gap-4">
+        <a href="/" class="text-gray-400 hover:text-white transition">Generator</a>
+        <a href="/stats" class="text-cyan-400 font-medium">Stats</a>
+        <a href="/questions" class="text-gray-400 hover:text-white transition">Questions</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-6 py-8">
+    <h2 class="text-3xl font-bold mb-8">Question Statistics</h2>
+
+    <!-- Loading State -->
+    <div id="loading" class="text-center py-12">
+      <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-400 mx-auto"></div>
+      <p class="mt-4 text-gray-400">Loading statistics...</p>
+    </div>
+
+    <!-- Stats Content -->
+    <div id="stats-content" class="hidden">
+      <!-- Overview Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+        <div class="stat-card card rounded-xl p-6">
+          <p class="text-gray-400 text-sm uppercase tracking-wide">Total Questions</p>
+          <p id="total-questions" class="text-4xl font-bold text-white mt-2">0</p>
+        </div>
+        <div class="stat-card card rounded-xl p-6">
+          <p class="text-gray-400 text-sm uppercase tracking-wide">Groq Generated</p>
+          <p id="groq-count" class="text-4xl font-bold text-emerald-400 mt-2">0</p>
+        </div>
+        <div class="stat-card card rounded-xl p-6">
+          <p class="text-gray-400 text-sm uppercase tracking-wide">Claude Code Generated</p>
+          <p id="claude-count" class="text-4xl font-bold text-purple-400 mt-2">0</p>
+        </div>
+        <div class="stat-card card rounded-xl p-6">
+          <p class="text-gray-400 text-sm uppercase tracking-wide">Shows Covered</p>
+          <p id="shows-count" class="text-4xl font-bold text-cyan-400 mt-2">0</p>
+        </div>
+      </div>
+
+      <!-- Difficulty Distribution -->
+      <div class="card rounded-xl p-6 mb-8">
+        <h3 class="text-xl font-semibold mb-4">Difficulty Distribution</h3>
+        <div class="flex gap-4 items-end h-40">
+          <div class="flex-1 flex flex-col items-center">
+            <div id="easy-bar" class="w-full bg-green-500 rounded-t transition-all duration-500" style="height: 0%"></div>
+            <p class="mt-2 text-sm text-gray-400">Easy</p>
+            <p id="easy-count" class="text-lg font-semibold text-green-400">0</p>
+          </div>
+          <div class="flex-1 flex flex-col items-center">
+            <div id="medium-bar" class="w-full bg-yellow-500 rounded-t transition-all duration-500" style="height: 0%"></div>
+            <p class="mt-2 text-sm text-gray-400">Medium</p>
+            <p id="medium-count" class="text-lg font-semibold text-yellow-400">0</p>
+          </div>
+          <div class="flex-1 flex flex-col items-center">
+            <div id="hard-bar" class="w-full bg-red-500 rounded-t transition-all duration-500" style="height: 0%"></div>
+            <p class="mt-2 text-sm text-gray-400">Hard</p>
+            <p id="hard-count" class="text-lg font-semibold text-red-400">0</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- By Show -->
+      <div class="card rounded-xl p-6">
+        <h3 class="text-xl font-semibold mb-4">Questions by Show</h3>
+        <div id="shows-list" class="space-y-4">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    async function loadStats() {
+      try {
+        const response = await fetch('/api/question-stats');
+        const stats = await response.json();
+
+        // Update totals
+        document.getElementById('total-questions').textContent = stats.total.toLocaleString();
+        document.getElementById('groq-count').textContent = stats.byGenerator.groq.toLocaleString();
+        document.getElementById('claude-count').textContent = stats.byGenerator.claudeCode.toLocaleString();
+        document.getElementById('shows-count').textContent = Object.keys(stats.byShow).length;
+
+        // Difficulty distribution
+        const total = stats.total || 1;
+        const easyPct = (stats.byDifficulty.easy / total) * 100;
+        const mediumPct = (stats.byDifficulty.medium / total) * 100;
+        const hardPct = (stats.byDifficulty.hard / total) * 100;
+
+        document.getElementById('easy-bar').style.height = `${easyPct}%`;
+        document.getElementById('medium-bar').style.height = `${mediumPct}%`;
+        document.getElementById('hard-bar').style.height = `${hardPct}%`;
+
+        document.getElementById('easy-count').textContent = stats.byDifficulty.easy.toLocaleString();
+        document.getElementById('medium-count').textContent = stats.byDifficulty.medium.toLocaleString();
+        document.getElementById('hard-count').textContent = stats.byDifficulty.hard.toLocaleString();
+
+        // Shows list
+        const showsList = document.getElementById('shows-list');
+        showsList.innerHTML = '';
+
+        const shows = Object.entries(stats.byShow)
+          .sort((a, b) => b[1].total - a[1].total);
+
+        for (const [showName, showStats] of shows) {
+          const showEl = document.createElement('div');
+          showEl.className = 'bg-slate-800 rounded-lg p-4';
+
+          const displayName = showName.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+          const seasonCount = Object.keys(showStats.seasons).length;
+
+          showEl.innerHTML = `
+            <div class="flex items-center justify-between mb-2">
+              <h4 class="font-semibold text-lg">${displayName}</h4>
+              <span class="text-2xl font-bold text-cyan-400">${showStats.total.toLocaleString()}</span>
+            </div>
+            <div class="flex gap-4 text-sm text-gray-400">
+              <span>${seasonCount} season${seasonCount !== 1 ? 's' : ''}</span>
+              <span class="text-emerald-400">${showStats.groq} Groq</span>
+              <span class="text-purple-400">${showStats.claudeCode} Claude</span>
+            </div>
+            <div class="mt-3 h-2 bg-slate-700 rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-emerald-500 to-purple-500"
+                   style="width: ${(showStats.total / stats.total) * 100}%"></div>
+            </div>
+          `;
+
+          showsList.appendChild(showEl);
+        }
+
+        // Show content
+        document.getElementById('loading').classList.add('hidden');
+        document.getElementById('stats-content').classList.remove('hidden');
+
+      } catch (error) {
+        console.error('Failed to load stats:', error);
+        document.getElementById('loading').innerHTML = `
+          <p class="text-red-400">Failed to load statistics. Make sure the server is running.</p>
+        `;
+      }
+    }
+
+    loadStats();
+  </script>
+</body>
+</html>

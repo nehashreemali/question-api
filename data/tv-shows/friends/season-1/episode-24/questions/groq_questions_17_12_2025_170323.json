@@ -1,0 +1,704 @@
+{
+  "show": "Friends",
+  "season": 1,
+  "episode": 24,
+  "title": "The One Where Rachel Finds Out",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-17T11:33:23.842Z",
+  "questionCount": 33,
+  "questions": [
+    {
+      "question": "What is Ross showing the gang at Central Perk?",
+      "options": [
+        "Pictures of his new apartment",
+        "Pictures of his new baby boy, Ben",
+        "Pictures of his trip to China",
+        "Pictures of his favorite food"
+      ],
+      "correct_answer": "Pictures of his new baby boy, Ben",
+      "difficulty": "easy",
+      "explanation": "Ross is showing pictures of his son Ben to the gang.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What is Joey participating in at N.Y.U. Med School?",
+      "options": [
+        "A study on the effects of coffee",
+        "A fertility study",
+        "A study on the benefits of exercise",
+        "A study on the importance of sleep"
+      ],
+      "correct_answer": "A fertility study",
+      "difficulty": "easy",
+      "explanation": "Joey is helping out with a fertility study at N.Y.U. Med School.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "Why is Ross going to China?",
+      "options": [
+        "For a vacation",
+        "For a business trip",
+        "For the museum, to persuade someone to give them a bone",
+        "To visit his family"
+      ],
+      "correct_answer": "For the museum, to persuade someone to give them a bone",
+      "difficulty": "easy",
+      "explanation": "Ross is going to China for the museum to try to get a bone.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What gift did Chandler give to Rachel?",
+      "options": [
+        "A fruit basket",
+        "A book by Dr. Seuss",
+        "Travel Scrabble",
+        "A pin"
+      ],
+      "correct_answer": "Travel Scrabble",
+      "difficulty": "easy",
+      "explanation": "Chandler gave Rachel a Travel Scrabble game.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What is the name of the gift that Ross gave to Rachel?",
+      "options": [
+        "A pin",
+        "A book by Dr. Seuss",
+        "Travel Scrabble",
+        "A fruit basket"
+      ],
+      "correct_answer": "A pin",
+      "difficulty": "easy",
+      "explanation": "Ross gave Rachel a pin that she had seen in an antique store.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Rachel try to do at the airport?",
+      "options": [
+        "Meet Ross at the gate",
+        "Give a message to Ross",
+        "Go through security",
+        "Buy a ticket to China"
+      ],
+      "correct_answer": "Give a message to Ross",
+      "difficulty": "easy",
+      "explanation": "Rachel tried to give a message to Ross at the airport.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did the flight attendant do with Rachel's message?",
+      "options": [
+        "Gave it to Ross",
+        "Threw it away",
+        "Gave it to the wrong person",
+        "Kept it for herself"
+      ],
+      "correct_answer": "Gave it to the wrong person",
+      "difficulty": "easy",
+      "explanation": "The flight attendant gave Rachel's message to the wrong person.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Joey learn from his experience with Melanie?",
+      "options": [
+        "That he is great in bed",
+        "That he should always prioritize himself",
+        "That being generous and selfless can be rewarding",
+        "That he should never donate to fertility studies"
+      ],
+      "correct_answer": "That being generous and selfless can be rewarding",
+      "difficulty": "medium",
+      "explanation": "Joey learned that being generous and selfless can be rewarding from his experience with Melanie.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "Why did Rachel decide not to pursue a relationship with Ross?",
+      "options": [
+        "Because she didn't find him attractive",
+        "Because she was already in a relationship with someone else",
+        "Because she didn't want to deal with the pressure from their friends",
+        "Because she thought it would be too weird"
+      ],
+      "correct_answer": "Because she thought it would be too weird",
+      "difficulty": "medium",
+      "explanation": "Rachel decided not to pursue a relationship with Ross because she thought it would be too weird.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Rachel finally decide to do at the end of the episode?",
+      "options": [
+        "Go on a date with Carl",
+        "Meet Ross at the airport",
+        "Stay home and watch TV",
+        "Go to China with Ross"
+      ],
+      "correct_answer": "Meet Ross at the airport",
+      "difficulty": "easy",
+      "explanation": "Rachel finally decided to meet Ross at the airport.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What is the name of the woman Ross kisses at the airport?",
+      "options": [
+        "Julie",
+        "Rachel",
+        "Monica",
+        "Phoebe"
+      ],
+      "correct_answer": "Julie",
+      "difficulty": "easy",
+      "explanation": "The woman Ross kisses at the airport is named Julie.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Chandler say to Joey about his experience with Melanie?",
+      "options": [
+        "That he was great in bed",
+        "That he should always prioritize himself",
+        "That being generous and selfless can be rewarding",
+        "That he didn't know Joey had another level"
+      ],
+      "correct_answer": "That he didn't know Joey had another level",
+      "difficulty": "medium",
+      "explanation": "Chandler said he didn't know Joey had another level.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Phoebe say about Ross and Rachel's potential relationship?",
+      "options": [
+        "That it would be perfect",
+        "That it would be too weird",
+        "That it would be like starting on the fifteenth date",
+        "That it would never work out"
+      ],
+      "correct_answer": "That it would be like starting on the fifteenth date",
+      "difficulty": "medium",
+      "explanation": "Phoebe said that Ross and Rachel's potential relationship would be like starting on the fifteenth date.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Monica say about Ross and Rachel's potential relationship?",
+      "options": [
+        "That it would be perfect",
+        "That it would be too weird",
+        "That it would be like starting on the first date",
+        "That it would be like starting on the fifteenth date"
+      ],
+      "correct_answer": "That it would be perfect",
+      "difficulty": "medium",
+      "explanation": "Monica said that Ross and Rachel's potential relationship would be perfect.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Joey say about his experience with Melanie?",
+      "options": [
+        "That it was amazing",
+        "That it was terrible",
+        "That it was just okay",
+        "That it was nothing special"
+      ],
+      "correct_answer": "That it was amazing",
+      "difficulty": "easy",
+      "explanation": "Joey said that his experience with Melanie was amazing.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Rachel say to Carl at the end of their date?",
+      "options": [
+        "That she had a great time",
+        "That she wanted to see him again",
+        "That she had to leave to pick up a friend at the airport",
+        "That she didn't want to see him again"
+      ],
+      "correct_answer": "That she had to leave to pick up a friend at the airport",
+      "difficulty": "easy",
+      "explanation": "Rachel told Carl that she had to leave to pick up a friend at the airport.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Ross say to Rachel in her imagination?",
+      "options": [
+        "That he loved her",
+        "That he wanted to be friends",
+        "That he wanted to go out with her",
+        "That he had been in love with her since the ninth grade"
+      ],
+      "correct_answer": "That he had been in love with her since the ninth grade",
+      "difficulty": "medium",
+      "explanation": "Ross said that he had been in love with Rachel since the ninth grade.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Rachel say to Ross in her imagination?",
+      "options": [
+        "That she loved him",
+        "That she wanted to be friends",
+        "That she wanted to go out with him",
+        "That she didn't know if she was attracted to him"
+      ],
+      "correct_answer": "That she didn't know if she was attracted to him",
+      "difficulty": "medium",
+      "explanation": "Rachel said that she didn't know if she was attracted to Ross.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Ross say to Rachel about their potential relationship?",
+      "options": [
+        "That it would be too weird",
+        "That it would be perfect",
+        "That they should just be friends",
+        "That they should give it a chance"
+      ],
+      "correct_answer": "That they should give it a chance",
+      "difficulty": "medium",
+      "explanation": "Ross said that they should give their relationship a chance.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Rachel do at the end of the episode?",
+      "options": [
+        "Went on a date with Carl",
+        "Met Ross at the airport",
+        "Stayed home and watched TV",
+        "Went to China with Ross"
+      ],
+      "correct_answer": "Met Ross at the airport",
+      "difficulty": "easy",
+      "explanation": "Rachel met Ross at the airport at the end of the episode.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What was the name of the song playing at the airport?",
+      "options": [
+        "Take A Bow by Madonna",
+        "I Will Always Love You by Whitney Houston",
+        "My Heart Will Go On by Celine Dion",
+        "We Are The Champions by Queen"
+      ],
+      "correct_answer": "Take A Bow by Madonna",
+      "difficulty": "hard",
+      "explanation": "The song playing at the airport was Take A Bow by Madonna.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Joey get paid for participating in the fertility study?",
+      "options": [
+        "Five hundred dollars",
+        "Seven hundred dollars",
+        "One thousand dollars",
+        "Two thousand dollars"
+      ],
+      "correct_answer": "Seven hundred dollars",
+      "difficulty": "easy",
+      "explanation": "Joey got paid seven hundred dollars for participating in the fertility study.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Chandler give Joey to help him with his debt?",
+      "options": [
+        "A loan",
+        "A gift",
+        "A job",
+        "A place to stay"
+      ],
+      "correct_answer": "A loan",
+      "difficulty": "easy",
+      "explanation": "Chandler gave Joey a loan to help him with his debt.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Phoebe do with the picture of Ross?",
+      "options": [
+        "She threw it away",
+        "She gave it to Rachel",
+        "She put it up to her face",
+        "She drew on it"
+      ],
+      "correct_answer": "She put it up to her face",
+      "difficulty": "medium",
+      "explanation": "Phoebe put the picture of Ross up to her face.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Monica say about Ross and Rachel's relationship?",
+      "options": [
+        "That it would be perfect",
+        "That it would be too weird",
+        "That it would never work out",
+        "That it would be like starting on the first date"
+      ],
+      "correct_answer": "That it would be perfect",
+      "difficulty": "medium",
+      "explanation": "Monica said that Ross and Rachel's relationship would be perfect.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Rachel say to Monica about Ross?",
+      "options": [
+        "That she loved him",
+        "That she wanted to go out with him",
+        "That she didn't know if she was attracted to him",
+        "That she thought he was just a friend"
+      ],
+      "correct_answer": "That she didn't know if she was attracted to him",
+      "difficulty": "medium",
+      "explanation": "Rachel said that she didn't know if she was attracted to Ross.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Chandler say to Joey about his experience with Melanie?",
+      "options": [
+        "That he was great in bed",
+        "That he should always prioritize himself",
+        "That being generous and selfless can be rewarding",
+        "That he didn't know Joey had another level"
+      ],
+      "correct_answer": "That he didn't know Joey had another level",
+      "difficulty": "medium",
+      "explanation": "Chandler said that he didn't know Joey had another level.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Joey say about his experience with Melanie?",
+      "options": [
+        "That it was amazing",
+        "That it was terrible",
+        "That it was just okay",
+        "That it was nothing special"
+      ],
+      "correct_answer": "That it was amazing",
+      "difficulty": "easy",
+      "explanation": "Joey said that his experience with Melanie was amazing.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Rachel say to Carl at the end of their date?",
+      "options": [
+        "That she had a great time",
+        "That she wanted to see him again",
+        "That she had to leave to pick up a friend at the airport",
+        "That she didn't want to see him again"
+      ],
+      "correct_answer": "That she had to leave to pick up a friend at the airport",
+      "difficulty": "easy",
+      "explanation": "Rachel told Carl that she had to leave to pick up a friend at the airport.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Ross say to Rachel in her imagination?",
+      "options": [
+        "That he loved her",
+        "That he wanted to be friends",
+        "That he wanted to go out with her",
+        "That he had been in love with her since the ninth grade"
+      ],
+      "correct_answer": "That he had been in love with her since the ninth grade",
+      "difficulty": "medium",
+      "explanation": "Ross said that he had been in love with Rachel since the ninth grade.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Rachel say to Ross in her imagination?",
+      "options": [
+        "That she loved him",
+        "That she wanted to be friends",
+        "That she wanted to go out with him",
+        "That she didn't know if she was attracted to him"
+      ],
+      "correct_answer": "That she didn't know if she was attracted to him",
+      "difficulty": "medium",
+      "explanation": "Rachel said that she didn't know if she was attracted to Ross.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Ross say to Rachel about their potential relationship?",
+      "options": [
+        "That it would be too weird",
+        "That it would be perfect",
+        "That they should just be friends",
+        "That they should give it a chance"
+      ],
+      "correct_answer": "That they should give it a chance",
+      "difficulty": "medium",
+      "explanation": "Ross said that they should give their relationship a chance.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    },
+    {
+      "question": "What did Rachel do at the end of the episode?",
+      "options": [
+        "Went on a date with Carl",
+        "Met Ross at the airport",
+        "Stayed home and watched TV",
+        "Went to China with Ross"
+      ],
+      "correct_answer": "Met Ross at the airport",
+      "difficulty": "easy",
+      "explanation": "Rachel met Ross at the airport at the end of the episode.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 24,
+        "title": "The One Where Rachel Finds Out"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:33:23.842Z"
+    }
+  ]
+}

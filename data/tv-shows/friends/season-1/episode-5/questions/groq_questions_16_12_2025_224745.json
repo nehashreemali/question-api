@@ -1,0 +1,746 @@
+{
+  "show": "Friends",
+  "season": 1,
+  "episode": 5,
+  "title": "The One With the East German Laundry Detergent",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-16T17:17:45.794Z",
+  "questionCount": 35,
+  "questions": [
+    {
+      "question": "What does Ross say is 'amazing' about a guy's ability?",
+      "options": [
+        "Being able to cook",
+        "Being able to fix things",
+        "Being able to remove a bra with one maneuver",
+        "Being able to run fast"
+      ],
+      "correct_answer": "Being able to remove a bra with one maneuver",
+      "difficulty": "easy",
+      "explanation": "Ross says 'It's amazing. Ok, you just reach in there, there's one little maneuver, and bam, a bra right out the sleeve.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Joey say women can see anytime they want?",
+      "options": [
+        "Their own feet",
+        "Their own breasts",
+        "Their own hands",
+        "Their own face"
+      ],
+      "correct_answer": "Their own breasts",
+      "difficulty": "easy",
+      "explanation": "Joey says 'You just look down and there they are. How you get any work done is beyond me.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What is the reason Ross gives for not doing his laundry in his own building?",
+      "options": [
+        "The laundry room is always busy",
+        "The laundry room is too small",
+        "There's a rat problem",
+        "The laundry room is too expensive"
+      ],
+      "correct_answer": "There's a rat problem",
+      "difficulty": "easy",
+      "explanation": "Ross says 'there's a.... rat problem. Apparently they're attracted to the dryer sheets, and they're goin' in fine, but they're comin' out all.... fluffy.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What is the name of the laundry detergent Ross uses?",
+      "options": [
+        "Tide",
+        "Gain",
+        "Uberveiss",
+        "Arm & Hammer"
+      ],
+      "correct_answer": "Uberveiss",
+      "difficulty": "easy",
+      "explanation": "Ross says 'Uberveiss. It's new, it's German, it's extra-tough.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What happens to Rachel's clothes after she does her laundry?",
+      "options": [
+        "They shrink",
+        "They get lost",
+        "They turn pink",
+        "They get stolen"
+      ],
+      "correct_answer": "They turn pink",
+      "difficulty": "easy",
+      "explanation": "Ross says 'now, everything's kinda pink' after Rachel leaves a red sock in with her white clothes.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "Who does Joey ask to pretend to be his girlfriend?",
+      "options": [
+        "Monica",
+        "Rachel",
+        "Phoebe",
+        "Angela"
+      ],
+      "correct_answer": "Monica",
+      "difficulty": "easy",
+      "explanation": "Joey asks Monica to pretend to be his girlfriend to make Angela jealous.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Chandler compare himself to when talking to Janice about their relationship?",
+      "options": [
+        "A bird in flight",
+        "A bing, bing, bing",
+        "A boom, boom, boom",
+        "A bang, bang, bang"
+      ],
+      "correct_answer": "A bing, bing, bing",
+      "difficulty": "medium",
+      "explanation": "Chandler says 'I'm like the bing, bing, bing. You're like the boom, boom, boom.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What is the reason Rachel gives for feeling like she can't live on her own?",
+      "options": [
+        "She can't cook",
+        "She can't do her laundry",
+        "She can't pay her bills",
+        "She can't clean her apartment"
+      ],
+      "correct_answer": "She can't do her laundry",
+      "difficulty": "easy",
+      "explanation": "Rachel says 'I'm gonna look like a big marshmallow peep. What am I doing? What am I doing? My father's right. I can't live on my own! I can't even do laundry!'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Phoebe compare breaking up with someone to?",
+      "options": [
+        "Pulling off a Band-aid",
+        "Ripping off a bandage",
+        "Cutting a rope",
+        "Throwing a stone"
+      ],
+      "correct_answer": "Pulling off a Band-aid",
+      "difficulty": "medium",
+      "explanation": "Phoebe says 'It's like pulling off a Band-aid. Just do it really fast, and then the wound is exposed.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Ross do after Rachel kisses him?",
+      "options": [
+        "He kisses her back",
+        "He hugs her",
+        "He turns and bangs his head on an open dryer door",
+        "He walks away"
+      ],
+      "correct_answer": "He turns and bangs his head on an open dryer door",
+      "difficulty": "easy",
+      "explanation": "Ross turns and bangs his head on an open dryer door after Rachel kisses him.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What is the name of the woman who keeps causing trouble for Rachel at the laundromat?",
+      "options": [
+        "Mrs. Jenkins",
+        "Mrs. Johnson",
+        "Mrs. Smith",
+        "No name mentioned"
+      ],
+      "correct_answer": "No name mentioned",
+      "difficulty": "hard",
+      "explanation": "The woman's name is not mentioned in the transcript.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Monica say about Bob?",
+      "options": [
+        "He's smart and funny",
+        "He's handsome and rich",
+        "He's kind and gentle",
+        "He's boring and stupid"
+      ],
+      "correct_answer": "He's smart and funny",
+      "difficulty": "medium",
+      "explanation": "Monica says 'Bob is great. He's smart, he's sophisticated, and he has an emotional age beyond, like eight.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Joey say about Angela's eating habits?",
+      "options": [
+        "She eats very little",
+        "She eats very much",
+        "She makes a cute nibbly noise when she eats",
+        "She only eats healthy food"
+      ],
+      "correct_answer": "She makes a cute nibbly noise when she eats",
+      "difficulty": "medium",
+      "explanation": "Joey says 'You know what I miss the most about her? That cute nibbly noise when she eats. Like a happy little squirrel, or a weasel.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Chandler give as a reason for breaking up with Janice?",
+      "options": [
+        "They want different things",
+        "They're not compatible",
+        "They're too different",
+        "They're not in love"
+      ],
+      "correct_answer": "They're too different",
+      "difficulty": "medium",
+      "explanation": "Chandler says 'Here's the thing, Janice. You know, I mean, it's like we're different.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Phoebe do to help Chandler break up with Janice?",
+      "options": [
+        "She talks to Janice for him",
+        "She gives him advice",
+        "She breaks up with Janice for him",
+        "She does nothing"
+      ],
+      "correct_answer": "She talks to Janice for him",
+      "difficulty": "easy",
+      "explanation": "Phoebe talks to Janice for Chandler and helps him break up with her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What is the outcome of Rachel and Ross's laundry adventure?",
+      "options": [
+        "All of Rachel's clothes are clean and intact",
+        "All of Rachel's clothes are lost",
+        "All of Rachel's clothes are pink",
+        "All of Rachel's clothes are stolen"
+      ],
+      "correct_answer": "All of Rachel's clothes are pink",
+      "difficulty": "easy",
+      "explanation": "Ross says 'now, everything's kinda pink' after Rachel leaves a red sock in with her white clothes.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Monica say about Bob's emotional age?",
+      "options": [
+        "He's very mature",
+        "He's very immature",
+        "He's emotionally older than his age",
+        "He has an emotional age beyond, like eight"
+      ],
+      "correct_answer": "He has an emotional age beyond, like eight",
+      "difficulty": "medium",
+      "explanation": "Monica says 'Bob is great. He's smart, he's sophisticated, and he has an emotional age beyond, like eight.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Joey say about his plan to win Angela back?",
+      "options": [
+        "He's going to be honest with her",
+        "He's going to pretend to be someone else",
+        "He's going to make her jealous",
+        "He's going to give up"
+      ],
+      "correct_answer": "He's going to make her jealous",
+      "difficulty": "medium",
+      "explanation": "Joey says 'I'm thinking, if we put our heads together, between the two of us, we can break them up.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Chandler do after he breaks up with Janice?",
+      "options": [
+        "He cries",
+        "He gets angry",
+        "He runs out of Central Perk",
+        "He drinks multiple espressos"
+      ],
+      "correct_answer": "He drinks multiple espressos",
+      "difficulty": "easy",
+      "explanation": "Chandler is shown with multiple empty espresso cups in front of him after he breaks up with Janice.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Phoebe say about breaking up with someone?",
+      "options": [
+        "It's like pulling off a Band-aid",
+        "It's like ripping off a bandage",
+        "It's like cutting a rope",
+        "It's like throwing a stone"
+      ],
+      "correct_answer": "It's like pulling off a Band-aid",
+      "difficulty": "medium",
+      "explanation": "Phoebe says 'It's like pulling off a Band-aid. Just do it really fast, and then the wound is exposed.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Ross say about doing laundry?",
+      "options": [
+        "It's very difficult",
+        "It's very easy",
+        "It's a necessary chore",
+        "It's a fun activity"
+      ],
+      "correct_answer": "It's a necessary chore",
+      "difficulty": "easy",
+      "explanation": "Ross says 'It's laundry. The thinking through is minimal.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Monica say about Angela and Bob's relationship?",
+      "options": [
+        "They're very much in love",
+        "They're not compatible",
+        "They're just friends",
+        "They're in a complicated relationship"
+      ],
+      "correct_answer": "They're in a complicated relationship",
+      "difficulty": "medium",
+      "explanation": "Monica says 'Hello! Were we at the same table? It's like... cocktails in Appalachia.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Joey say about Angela's new boyfriend?",
+      "options": [
+        "He's very handsome",
+        "He's very rich",
+        "He's very smart",
+        "He's named Bob"
+      ],
+      "correct_answer": "He's named Bob",
+      "difficulty": "easy",
+      "explanation": "Joey says 'Bob is great. He's smart, he's sophisticated, and he has a real job.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Chandler do to prepare for his break-up with Janice?",
+      "options": [
+        "He practices what he's going to say",
+        "He writes a letter",
+        "He drinks multiple espressos",
+        "He seeks advice from his friends"
+      ],
+      "correct_answer": "He drinks multiple espressos",
+      "difficulty": "easy",
+      "explanation": "Chandler is shown with multiple empty espresso cups in front of him before he breaks up with Janice.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Phoebe do after Chandler breaks up with Janice?",
+      "options": [
+        "She comforts Chandler",
+        "She talks to Janice",
+        "She leaves Central Perk",
+        "She does nothing"
+      ],
+      "correct_answer": "She talks to Janice",
+      "difficulty": "easy",
+      "explanation": "Phoebe talks to Janice after Chandler breaks up with her and helps her to calm down.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What is the result of Rachel's confrontation with the woman at the laundromat?",
+      "options": [
+        "The woman apologizes",
+        "The woman gives Rachel her cart back",
+        "Rachel gets her cart back",
+        "The woman calls the police"
+      ],
+      "correct_answer": "Rachel gets her cart back",
+      "difficulty": "easy",
+      "explanation": "Rachel gets her cart back after she stands up to the woman and refuses to give it up.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Ross say about the laundry detergent he uses?",
+      "options": [
+        "It's very expensive",
+        "It's very cheap",
+        "It's new and German",
+        "It's old and American"
+      ],
+      "correct_answer": "It's new and German",
+      "difficulty": "easy",
+      "explanation": "Ross says 'Uberveiss. It's new, it's German, it's extra-tough.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Monica say about her experience with Joey's cousin?",
+      "options": [
+        "He was very nice",
+        "He was very mean",
+        "He could belch the alphabet",
+        "He was very boring"
+      ],
+      "correct_answer": "He could belch the alphabet",
+      "difficulty": "medium",
+      "explanation": "Monica says 'Not after your cousin who could belch the alphabet.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Joey say about his plan to break up Angela and Bob?",
+      "options": [
+        "He's going to be honest with them",
+        "He's going to pretend to be someone else",
+        "He's going to make them jealous",
+        "He's going to give up"
+      ],
+      "correct_answer": "He's going to make them jealous",
+      "difficulty": "medium",
+      "explanation": "Joey says 'I'm thinking, if we put our heads together, between the two of us, we can break them up.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Chandler say about his relationship with Janice?",
+      "options": [
+        "They're very compatible",
+        "They're very incompatible",
+        "They're just friends",
+        "They're in a complicated relationship"
+      ],
+      "correct_answer": "They're very incompatible",
+      "difficulty": "medium",
+      "explanation": "Chandler says 'Here's the thing, Janice. You know, I mean, it's like we're different.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Phoebe say about her break-up with Tony?",
+      "options": [
+        "It was very difficult",
+        "It was very easy",
+        "It was like pulling off a Band-aid",
+        "It was like ripping off a bandage"
+      ],
+      "correct_answer": "It was like pulling off a Band-aid",
+      "difficulty": "medium",
+      "explanation": "Phoebe says 'It's like pulling off a Band-aid. Just do it really fast, and then the wound is exposed.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Ross do to help Rachel with her laundry?",
+      "options": [
+        "He gives her advice",
+        "He does her laundry for her",
+        "He helps her sort her clothes",
+        "He teaches her how to use the washing machine"
+      ],
+      "correct_answer": "He helps her sort her clothes",
+      "difficulty": "easy",
+      "explanation": "Ross helps Rachel sort her clothes and teaches her how to do her laundry.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Monica say about Bob's personality?",
+      "options": [
+        "He's very smart and funny",
+        "He's very handsome and rich",
+        "He's very kind and gentle",
+        "He's very boring and stupid"
+      ],
+      "correct_answer": "He's very smart and funny",
+      "difficulty": "medium",
+      "explanation": "Monica says 'Bob is great. He's smart, he's sophisticated, and he has an emotional age beyond, like eight.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Joey say about Angela's new boyfriend Bob?",
+      "options": [
+        "He's very handsome",
+        "He's very rich",
+        "He's very smart",
+        "He has a real job"
+      ],
+      "correct_answer": "He has a real job",
+      "difficulty": "easy",
+      "explanation": "Joey says 'Bob is great. He's smart, he's sophisticated, and he has a real job.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    },
+    {
+      "question": "What does Chandler do after he breaks up with Janice?",
+      "options": [
+        "He cries",
+        "He gets angry",
+        "He runs out of Central Perk",
+        "He feels relieved"
+      ],
+      "correct_answer": "He feels relieved",
+      "difficulty": "easy",
+      "explanation": "Chandler is shown running out of Central Perk and shouting 'I'm free!' after he breaks up with Janice.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 5,
+        "title": "The One With the East German Laundry Detergent"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:17:45.794Z"
+    }
+  ]
+}

@@ -1,0 +1,578 @@
+{
+  "show": "Friends",
+  "season": 2,
+  "episode": 17,
+  "title": "The One Where Eddie Moves In",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-18T12:26:46.822Z",
+  "questionCount": 27,
+  "questions": [
+    {
+      "question": "What does Joey say his new apartment is called?",
+      "options": [
+        "Casa de Joey",
+        "Joey's Place",
+        "The Apartment",
+        "Joey's Pad"
+      ],
+      "correct_answer": "Casa de Joey",
+      "difficulty": "easy",
+      "explanation": "Joey says 'So whaddya think? Casa de Joey. Huh? I decorated it myself.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What is the unusual item in Joey's bathroom?",
+      "options": [
+        "A phone",
+        "A toilet seat",
+        "A shower curtain",
+        "A bathtub"
+      ],
+      "correct_answer": "A phone",
+      "difficulty": "easy",
+      "explanation": "Joey shows his friends a phone in his bathroom.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What happens to the pie Rachel is carrying at Central Perk?",
+      "options": [
+        "She drops it on the floor",
+        "Someone bumps into her and it goes into a guy's hood",
+        "She gives it to Phoebe",
+        "She eats it herself"
+      ],
+      "correct_answer": "Someone bumps into her and it goes into a guy's hood",
+      "difficulty": "easy",
+      "explanation": "Someone bumps into Rachel, causing the pie to go into a guy's hood.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What is the name of the song Phoebe is going to record?",
+      "options": [
+        "Smelly Dog",
+        "Smelly Cat",
+        "Stinky Cat",
+        "Furry Cat"
+      ],
+      "correct_answer": "Smelly Cat",
+      "difficulty": "easy",
+      "explanation": "Phoebe says 'OK Phoebe, you ready to try one?' and then starts singing 'Smelly cat, smell-ly cat, what are they feeding you?'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "Who is Chandler's new roommate?",
+      "options": [
+        "Joey",
+        "Ross",
+        "Eddie",
+        "Monica"
+      ],
+      "difficulty": "easy",
+      "correct_answer": "Eddie",
+      "explanation": "Chandler introduces Eddie as his new roommate.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What is the name of the TV show Chandler and Joey like to watch?",
+      "options": [
+        "Baywatch",
+        "Friends",
+        "Seinfeld",
+        "The X-Files"
+      ],
+      "difficulty": "easy",
+      "correct_answer": "Baywatch",
+      "explanation": "Chandler and Joey both say 'Baywatch' when the oven timer goes off.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "Why does Phoebe decide not to work with the record company?",
+      "options": [
+        "They didn't like her song",
+        "They didn't like her voice",
+        "They wanted someone else to sing for her",
+        "They didn't like her outfit"
+      ],
+      "difficulty": "medium",
+      "correct_answer": "They wanted someone else to sing for her",
+      "explanation": "Phoebe finds out the record company wants someone else to sing for her and decides not to work with them.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What is the argument between Ross and Monica about?",
+      "options": [
+        "Whose turn it is to do the dishes",
+        "What TV show to watch",
+        "Who gets to use the bathroom first",
+        "Who is the better cook"
+      ],
+      "difficulty": "medium",
+      "correct_answer": "What TV show to watch",
+      "explanation": "Ross and Monica are fighting over the remote control and what TV show to watch.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What does Phoebe compare the voice woman to?",
+      "options": [
+        "A smelly cat",
+        "A pretty dog",
+        "An animal at the pound",
+        "A singing bird"
+      ],
+      "difficulty": "medium",
+      "correct_answer": "An animal at the pound",
+      "explanation": "Phoebe compares the voice woman to 'one of those animals at the pound who like nobody wants 'cause they're not pretty enough'.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What is Eddie's opinion of the TV show Baywatch?",
+      "options": [
+        "He loves it",
+        "He hates it",
+        "He thinks it's okay",
+        "He's never seen it"
+      ],
+      "difficulty": "medium",
+      "correct_answer": "He hates it",
+      "explanation": "Eddie says 'I mean it's just a bunch of pretty people runnin' around on the beach, ya know' and doesn't want to watch it.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What is the name of the song Phoebe sings at the end of the episode?",
+      "options": [
+        "Smelly Dog",
+        "Smelly Cat",
+        "Stinky Cat",
+        "Furry Cat"
+      ],
+      "difficulty": "easy",
+      "correct_answer": "Smelly Cat",
+      "explanation": "Phoebe sings 'Smelly cat, smell-ly cat, what are they feeding you?' at the end of the episode.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "Why does Joey visit Chandler's apartment?",
+      "options": [
+        "To pick up his moose hat",
+        "To watch Baywatch",
+        "To play foosball",
+        "To have dinner"
+      ],
+      "difficulty": "medium",
+      "correct_answer": "To pick up his moose hat",
+      "explanation": "Joey visits Chandler's apartment to pick up his moose hat.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What does Ross say to Monica when she's upset?",
+      "options": [
+        "I'm sorry",
+        "I love you",
+        "You're being ridiculous",
+        "Let's watch TV"
+      ],
+      "difficulty": "medium",
+      "correct_answer": "I love you",
+      "explanation": "Ross says 'Now I love you. And not just 'cause I have to' to Monica when she's upset.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What does Phoebe think about her video?",
+      "options": [
+        "She loves it",
+        "She hates it",
+        "She's neutral",
+        "She's surprised"
+      ],
+      "difficulty": "medium",
+      "correct_answer": "She's surprised",
+      "explanation": "Phoebe says 'Oh my God' and seems surprised when she watches her video.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "Why does Monica hate Ross when they were kids?",
+      "options": [
+        "He was mean to her",
+        "He was nice to her",
+        "He was her brother",
+        "He was her friend"
+      ],
+      "difficulty": "medium",
+      "correct_answer": "He was mean to her",
+      "explanation": "Monica says 'Because, you were mean to me and you, you teased me and you always, always got your way'.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What does Chandler do when Eddie doesn't want to play foosball?",
+      "options": [
+        "He plays with Joey",
+        "He plays by himself",
+        "He watches TV",
+        "He goes to bed"
+      ],
+      "difficulty": "medium",
+      "correct_answer": "He plays by himself",
+      "explanation": "Chandler plays foosball by himself when Eddie doesn't want to play.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What is the name of the person who helped Chandler pick out a chorizo?",
+      "options": [
+        "Joey",
+        "Eddie",
+        "Ross",
+        "Monica"
+      ],
+      "difficulty": "hard",
+      "correct_answer": "Eddie",
+      "explanation": "Eddie says 'I helped him pick out a chorizo' when Joey asks how they met.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What does Joey say about Chandler's eggs?",
+      "options": [
+        "He loves them",
+        "He hates them",
+        "They're okay",
+        "They're not as good as his"
+      ],
+      "difficulty": "hard",
+      "correct_answer": "They're not as good as his",
+      "explanation": "Joey says 'I just uh, thought you liked your eggs with the bread with the hole in the middle, a-la me'.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What is the reason for Phoebe's video being dubbed with another voice?",
+      "options": [
+        "The record company didn't like her voice",
+        "The record company thought she wasn't talented enough",
+        "The record company wanted to make her sound better",
+        "The record company thought she didn't have the right look"
+      ],
+      "difficulty": "hard",
+      "correct_answer": "The record company thought she didn't have the right look",
+      "explanation": "Phoebe says 'according to the producer people, they said she doesn't have like the right look or something'.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What does Monica say to Ross when he's being annoying?",
+      "options": [
+        "I love you",
+        "I hate you",
+        "Stop it",
+        "You're being ridiculous"
+      ],
+      "difficulty": "hard",
+      "correct_answer": "You're being ridiculous",
+      "explanation": "Monica says 'You're being ridiculous' to Ross when he's being annoying.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What does Joey do when he's alone in his apartment?",
+      "options": [
+        "He watches TV",
+        "He plays ping pong",
+        "He plays foosball",
+        "He reads a book"
+      ],
+      "difficulty": "hard",
+      "correct_answer": "He plays ping pong",
+      "explanation": "Joey is shown playing ping pong by himself in his apartment.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What is the song playing at the end of the episode?",
+      "options": [
+        "Smelly Cat",
+        "All By Myself",
+        "I Will Survive",
+        "Yesterday"
+      ],
+      "difficulty": "hard",
+      "correct_answer": "All By Myself",
+      "explanation": "The song 'All By Myself' is playing at the end of the episode.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What does Chandler do when Eddie says he's going to go read in his room?",
+      "options": [
+        "He joins Eddie",
+        "He watches TV",
+        "He plays foosball",
+        "He goes to bed"
+      ],
+      "difficulty": "hard",
+      "correct_answer": "He plays foosball",
+      "explanation": "Chandler is shown playing foosball by himself after Eddie says he's going to go read in his room.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What is the reason for Ross and Monica's argument?",
+      "options": [
+        "Ross is being annoying",
+        "Monica is being bossy",
+        "Ross is watching TV",
+        "Monica is using the bathroom"
+      ],
+      "difficulty": "hard",
+      "correct_answer": "Ross is being annoying",
+      "explanation": "Monica says 'I just can't stand you being here all the time' to Ross, indicating that he's being annoying.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What does Phoebe say about the voice woman?",
+      "options": [
+        "She's talented",
+        "She's not talented",
+        "She's pretty",
+        "She's not pretty"
+      ],
+      "difficulty": "hard",
+      "correct_answer": "She's talented",
+      "explanation": "Phoebe says 'she has a great voice' when talking about the voice woman.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What does Joey think about Eddie's eggs?",
+      "options": [
+        "He loves them",
+        "He hates them",
+        "They're okay",
+        "They're not as good as his"
+      ],
+      "difficulty": "hard",
+      "correct_answer": "They're not as good as his",
+      "explanation": "Joey says 'I just uh, thought you liked your eggs with the bread with the hole in the middle, a-la me' when talking about Eddie's eggs.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    },
+    {
+      "question": "What is the reason for Chandler and Eddie's disagreement?",
+      "options": [
+        "They disagree on what TV show to watch",
+        "They disagree on what to eat for breakfast",
+        "They disagree on what game to play",
+        "They disagree on what to do on the weekend"
+      ],
+      "difficulty": "hard",
+      "correct_answer": "They disagree on what TV show to watch",
+      "explanation": "Chandler and Eddie disagree on what TV show to watch, with Eddie not liking Baywatch.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 17,
+        "title": "The One Where Eddie Moves In"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:46.822Z"
+    }
+  ]
+}

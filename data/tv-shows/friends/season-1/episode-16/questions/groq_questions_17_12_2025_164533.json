@@ -1,0 +1,662 @@
+{
+  "show": "Friends",
+  "season": 1,
+  "episode": 16,
+  "title": "The One With Two Parts, part 1",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-17T11:15:33.879Z",
+  "questionCount": 31,
+  "questions": [
+    {
+      "question": "What is the name of the restaurant where Joey and Chandler see Ursula?",
+      "options": [
+        "Riff's Restaurant",
+        "Central Perk",
+        "Monica's Restaurant",
+        "Chandler's Cafe"
+      ],
+      "correct_answer": "Riff's Restaurant",
+      "difficulty": "easy",
+      "explanation": "Joey and Chandler see Ursula at Riff's Restaurant, where she is working as a waitress.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What is the reason Ursula gives for working at Riff's Restaurant?",
+      "options": [
+        "Because it's close to her home and the aprons are cute",
+        "Because she loves the food",
+        "Because she wants to meet new people",
+        "Because she needs the money"
+      ],
+      "correct_answer": "Because it's close to her home and the aprons are cute",
+      "difficulty": "easy",
+      "explanation": "Ursula tells Joey and Chandler that she works at Riff's because it's close to her home and the aprons are cute.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Ross's monkey keep doing to his answering machine messages?",
+      "options": [
+        "Eating them",
+        "Erasing them",
+        "Playing them back",
+        "Recording new ones"
+      ],
+      "correct_answer": "Erasing them",
+      "difficulty": "easy",
+      "explanation": "Ross tells his friends that his monkey keeps erasing the messages on his answering machine.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What is the name of the couple who introduce themselves in the Lamaze class?",
+      "options": [
+        "The Rostins",
+        "The Gellers",
+        "The Willicks",
+        "The Bunches"
+      ],
+      "correct_answer": "The Rostins",
+      "difficulty": "medium",
+      "explanation": "The couple who introduce themselves in the Lamaze class are J.C. and Michael Rostin.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Ross say is 'out of control'?",
+      "options": [
+        "His monkey",
+        "His job",
+        "His love life",
+        "His apartment"
+      ],
+      "correct_answer": "His monkey",
+      "difficulty": "easy",
+      "explanation": "Ross tells his friends that his monkey is out of control.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Marcel do to the TV remote control?",
+      "options": [
+        "He changes the channel",
+        "He turns off the TV",
+        "He presses a combination of keys that changes the language to Spanish",
+        "He eats the batteries"
+      ],
+      "correct_answer": "He presses a combination of keys that changes the language to Spanish",
+      "difficulty": "medium",
+      "explanation": "Marcel presses a combination of keys on the TV remote control that changes the language to Spanish.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What is the name of the woman who comes to Chandler's office?",
+      "options": [
+        "Nina Bookbinder",
+        "Ursula Buffay",
+        "Phoebe Buffay",
+        "Carol Willick"
+      ],
+      "correct_answer": "Nina Bookbinder",
+      "difficulty": "medium",
+      "explanation": "The woman who comes to Chandler's office is Nina Bookbinder.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Chandler tell Nina is 'out of whack'?",
+      "options": [
+        "His love life",
+        "His job",
+        "His WENUS",
+        "His apartment"
+      ],
+      "correct_answer": "His WENUS",
+      "difficulty": "medium",
+      "explanation": "Chandler tells Nina that his WENUS (Weekly Estimated Net Usage Statistics) is out of whack.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Phoebe want for her birthday?",
+      "options": [
+        "A new guitar",
+        "A trip to Europe",
+        "Bath salts from Crabtree and Evelyn",
+        "A party with her friends"
+      ],
+      "correct_answer": "Bath salts from Crabtree and Evelyn",
+      "difficulty": "easy",
+      "explanation": "Phoebe tells Rachel that she would like bath salts from Crabtree and Evelyn for her birthday.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Joey ask Phoebe to do with the cardigan?",
+      "options": [
+        "Try it on",
+        "Give it to Ursula",
+        "Keep it for herself",
+        "Return it to the store"
+      ],
+      "correct_answer": "Try it on",
+      "difficulty": "easy",
+      "explanation": "Joey asks Phoebe to try on the cardigan to see if it fits Ursula.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What is the name of the class that Ross, Carol, and Susan are attending?",
+      "options": [
+        "Lamaze class",
+        "Parenting class",
+        "Birthing class",
+        "Baby care class"
+      ],
+      "correct_answer": "Lamaze class",
+      "difficulty": "easy",
+      "explanation": "The class that Ross, Carol, and Susan are attending is a Lamaze class.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Ross do with the doll in the Lamaze class?",
+      "options": [
+        "He gives it to Carol",
+        "He gives it to Susan",
+        "He steps on it and then performs 'emergency surgery' on it",
+        "He throws it away"
+      ],
+      "correct_answer": "He steps on it and then performs 'emergency surgery' on it",
+      "difficulty": "medium",
+      "explanation": "Ross steps on the doll in the Lamaze class and then performs 'emergency surgery' on it.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Mr. Heckles complain about to Monica?",
+      "options": [
+        "The noise level in the apartment",
+        "The state of the kitchen",
+        "The cleanliness of the bathroom",
+        "The lack of parking"
+      ],
+      "correct_answer": "The noise level in the apartment",
+      "difficulty": "easy",
+      "explanation": "Mr. Heckles complains to Monica about the noise level in the apartment.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Chandler tell his boss about Nina?",
+      "options": [
+        "That she is doing a great job",
+        "That she is not doing well",
+        "That she has a psychiatrist who says she is fragile",
+        "That she is quitting her job"
+      ],
+      "correct_answer": "That she has a psychiatrist who says she is fragile",
+      "difficulty": "medium",
+      "explanation": "Chandler tells his boss that Nina has a psychiatrist who says she is fragile.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Ross say is 'just one day'?",
+      "options": [
+        "The birth of his baby",
+        "The day he becomes a father",
+        "The day he gets married",
+        "The day he graduates from college"
+      ],
+      "correct_answer": "The birth of his baby",
+      "difficulty": "easy",
+      "explanation": "Ross says that the birth of his baby is 'just one day'.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Susan say is 'just one day'?",
+      "options": [
+        "The birth of the baby",
+        "The day they become parents",
+        "The day they get married",
+        "The day they move in together"
+      ],
+      "correct_answer": "The birth of the baby",
+      "difficulty": "easy",
+      "explanation": "Susan says that the birth of the baby is 'just one day'.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Chandler's boss say about the Annual Net Usage Statistics?",
+      "options": [
+        "That they are the best they have ever been",
+        "That they are the worst they have ever been",
+        "That they are average",
+        "That they are improving"
+      ],
+      "correct_answer": "That they are the worst they have ever been",
+      "difficulty": "medium",
+      "explanation": "Chandler's boss says that the Annual Net Usage Statistics are the worst they have ever been.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Joey say he likes about Ursula?",
+      "options": [
+        "Her sense of humor",
+        "Her intelligence",
+        "Her beauty",
+        "Her cooking"
+      ],
+      "correct_answer": "Her beauty",
+      "difficulty": "easy",
+      "explanation": "Joey says that he likes Ursula's beauty.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Phoebe say about her relationship with her sister Ursula?",
+      "options": [
+        "That they are very close",
+        "That they are not close at all",
+        "That they are twins",
+        "That they are sisters but not twins"
+      ],
+      "correct_answer": "That they are twins",
+      "difficulty": "easy",
+      "explanation": "Phoebe says that she and Ursula are twins.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Ross say he is going to do in the Lamaze class?",
+      "options": [
+        "He is going to be the coach",
+        "He is going to be the mother",
+        "He is going to learn how to change a diaper",
+        "He is going to learn how to breathe"
+      ],
+      "correct_answer": "He is going to learn how to breathe",
+      "difficulty": "medium",
+      "explanation": "Ross says that he is going to learn how to breathe in the Lamaze class.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Carol say she is not going to do?",
+      "options": [
+        "She is not going to have the baby",
+        "She is not going to get married",
+        "She is not going to move in with Susan",
+        "She is not going to push the baby out"
+      ],
+      "correct_answer": "She is not going to push the baby out",
+      "difficulty": "medium",
+      "explanation": "Carol says that she is not going to push the baby out.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Susan say to Ross in the Lamaze class?",
+      "options": [
+        "That she is going to be the mother",
+        "That she is going to be the coach",
+        "That she is going to learn how to breathe",
+        "That she is going to flip a coin to see who gets to be the coach"
+      ],
+      "correct_answer": "That she is going to flip a coin to see who gets to be the coach",
+      "difficulty": "medium",
+      "explanation": "Susan says that she is going to flip a coin to see who gets to be the coach.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Ross say to Susan in the Lamaze class?",
+      "options": [
+        "That he is going to be the coach",
+        "That he is going to be the mother",
+        "That he is going to learn how to breathe",
+        "That he is going to play his 'sperm card'"
+      ],
+      "correct_answer": "That he is going to play his 'sperm card'",
+      "difficulty": "medium",
+      "explanation": "Ross says that he is going to play his 'sperm card' in the Lamaze class.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Chandler's boss say about firing Nina?",
+      "options": [
+        "That he is going to fire her immediately",
+        "That he is not going to fire her",
+        "That he is going to wait until she is no longer a threat to herself or others",
+        "That he is going to give her a warning"
+      ],
+      "correct_answer": "That he is going to wait until she is no longer a threat to herself or others",
+      "difficulty": "medium",
+      "explanation": "Chandler's boss says that he is going to wait until Nina is no longer a threat to herself or others before firing her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Phoebe say to Joey about asking out her sister?",
+      "options": [
+        "That it's okay",
+        "That it's not okay",
+        "That she needs to think about it",
+        "That she doesn't care"
+      ],
+      "correct_answer": "That it's okay",
+      "difficulty": "easy",
+      "explanation": "Phoebe initially says that it's okay for Joey to ask out her sister Ursula.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Joey say to Phoebe about asking out her sister?",
+      "options": [
+        "That he's not interested in Ursula",
+        "That he's going to ask her out anyway",
+        "That he needs Phoebe's permission",
+        "That he's already asked her out"
+      ],
+      "correct_answer": "That he's going to ask her out anyway",
+      "difficulty": "medium",
+      "explanation": "Joey says that he's going to ask Ursula out anyway, even if Phoebe doesn't give her permission.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Ross say about being a father?",
+      "options": [
+        "That he's excited",
+        "That he's nervous",
+        "That he's not sure if he's ready",
+        "That the baby is having him"
+      ],
+      "correct_answer": "That the baby is having him",
+      "difficulty": "medium",
+      "explanation": "Ross says that the baby is having him, implying that he's not in control of the situation.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Mr. Heckles say to Monica about the noise level?",
+      "options": [
+        "That it's too loud",
+        "That it's too quiet",
+        "That it's just right",
+        "That he doesn't care"
+      ],
+      "correct_answer": "That it's too loud",
+      "difficulty": "easy",
+      "explanation": "Mr. Heckles says that the noise level is too loud.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Chandler say to Nina about her job?",
+      "options": [
+        "That she's doing a great job",
+        "That she's not doing well",
+        "That she's going to be fired",
+        "That she's going to get a raise"
+      ],
+      "correct_answer": "That she's not doing well",
+      "difficulty": "medium",
+      "explanation": "Chandler says that Nina is not doing well in her job.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Ross do with the doll in the Lamaze class?",
+      "options": [
+        "He gives it to Carol",
+        "He gives it to Susan",
+        "He steps on it and then performs 'emergency surgery' on it",
+        "He throws it away"
+      ],
+      "correct_answer": "He steps on it and then performs 'emergency surgery' on it",
+      "difficulty": "medium",
+      "explanation": "Ross steps on the doll in the Lamaze class and then performs 'emergency surgery' on it.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    },
+    {
+      "question": "What does Carol say about the birth of the baby?",
+      "options": [
+        "That it's going to be easy",
+        "That it's going to be hard",
+        "That she's not going to do it",
+        "That it's just one day"
+      ],
+      "correct_answer": "That it's going to be hard",
+      "difficulty": "medium",
+      "explanation": "Carol says that the birth of the baby is going to be hard.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 16,
+        "title": "The One With Two Parts, part 1"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T11:15:33.879Z"
+    }
+  ]
+}

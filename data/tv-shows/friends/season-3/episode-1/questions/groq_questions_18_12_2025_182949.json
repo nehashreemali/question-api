@@ -1,0 +1,536 @@
+{
+  "show": "Friends",
+  "season": 3,
+  "episode": 1,
+  "title": "The One With the Princess Leia Fantasy",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-18T12:59:49.640Z",
+  "questionCount": 25,
+  "questions": [
+    {
+      "question": "What does Joey claim a girl did to him at Central Perk?",
+      "options": [
+        "She waved at him",
+        "She ignored him",
+        "She winked at him",
+        "She talked to him"
+      ],
+      "correct_answer": "She winked at him",
+      "difficulty": "easy",
+      "explanation": "Joey tells his friends that a girl totally winked at him at Central Perk.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What song does Ross think is the most romantic?",
+      "options": [
+        "The Way We Were",
+        "Tupelo Honey by Van Morrison",
+        "I Will Always Love You",
+        "Unchained Melody"
+      ],
+      "correct_answer": "Tupelo Honey by Van Morrison",
+      "difficulty": "easy",
+      "explanation": "Ross says that Tupelo Honey by Van Morrison is the most romantic song.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What is Phoebe's idea of a romantic song?",
+      "options": [
+        "The Way We Were",
+        "Tupelo Honey by Van Morrison",
+        "Hold Me Close, Young Tony Danza",
+        "I Will Always Love You"
+      ],
+      "correct_answer": "Hold Me Close, Young Tony Danza",
+      "difficulty": "easy",
+      "explanation": "Phoebe thinks that the song Elton John wrote for Tony Danza is romantic.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "Why is Monica not sleeping?",
+      "options": [
+        "She is worried about her job",
+        "She is missing Richard",
+        "She is stressed about her apartment",
+        "She is planning a party"
+      ],
+      "correct_answer": "She is missing Richard",
+      "difficulty": "easy",
+      "explanation": "Monica is not sleeping because she is missing her ex-boyfriend Richard.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What does Monica find in the drain?",
+      "options": [
+        "A ring",
+        "A hair clip",
+        "Some of Richard's hair",
+        "A toy"
+      ],
+      "correct_answer": "Some of Richard's hair",
+      "difficulty": "easy",
+      "explanation": "Monica finds some of Richard's hair in the drain.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What is Ross's fantasy?",
+      "options": [
+        "Princess Leia in a white dress",
+        "Princess Leia in a gold bikini",
+        "Wonder Woman",
+        "Supergirl"
+      ],
+      "correct_answer": "Princess Leia in a gold bikini",
+      "difficulty": "medium",
+      "explanation": "Ross reveals that his fantasy is Princess Leia in a gold bikini.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "Why does Joey dislike Janice?",
+      "options": [
+        "She is annoying",
+        "She is mean",
+        "She is lazy",
+        "She is messy"
+      ],
+      "correct_answer": "She is annoying",
+      "difficulty": "easy",
+      "explanation": "Joey thinks Janice is annoying and wants to rip his arm off when she laughs.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What is 'Joey and Janice's DAY OF FUN!'?",
+      "options": [
+        "A day at the beach",
+        "A day at the park",
+        "A day at the Mets game and getting Chinese food",
+        "A day at the museum"
+      ],
+      "correct_answer": "A day at the Mets game and getting Chinese food",
+      "difficulty": "medium",
+      "explanation": "Janice plans a day of fun with Joey, which includes a Mets game and Chinese food.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What does Chandler reveal to Ross?",
+      "options": [
+        "His favorite food",
+        "His favorite movie",
+        "That he pictures his mom during sex",
+        "That he hates Janice"
+      ],
+      "correct_answer": "That he pictures his mom during sex",
+      "difficulty": "hard",
+      "explanation": "Chandler tells Ross that he pictures his mom during sex, which Ross finds disturbing.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "Why is Monica watching the Civil War videos?",
+      "options": [
+        "She is interested in history",
+        "She ordered them for Richard",
+        "She wants to learn about battles",
+        "She is trying to fall asleep"
+      ],
+      "correct_answer": "She ordered them for Richard",
+      "difficulty": "medium",
+      "explanation": "Monica is watching the Civil War videos because she ordered them for Richard.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What does Mr. Geller tell Monica about Richard?",
+      "options": [
+        "He is doing well",
+        "He is doing terrible",
+        "He is getting married",
+        "He is moving away"
+      ],
+      "correct_answer": "He is doing terrible",
+      "difficulty": "medium",
+      "explanation": "Mr. Geller tells Monica that Richard is doing terrible after their breakup.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What does Rachel dress up as for Ross?",
+      "options": [
+        "Wonder Woman",
+        "Supergirl",
+        "Princess Leia in a gold bikini",
+        "Catwoman"
+      ],
+      "correct_answer": "Princess Leia in a gold bikini",
+      "difficulty": "medium",
+      "explanation": "Rachel dresses up as Princess Leia in a gold bikini for Ross.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "Why can't Ross enjoy the Princess Leia fantasy with Rachel?",
+      "options": [
+        "Because he is tired",
+        "Because he is hungry",
+        "Because he pictures his mom",
+        "Because he is not in the mood"
+      ],
+      "correct_answer": "Because he pictures his mom",
+      "difficulty": "hard",
+      "explanation": "Ross can't enjoy the Princess Leia fantasy with Rachel because Chandler's earlier revelation has made him picture his mom.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What is the name of the song that Phoebe thinks is romantic?",
+      "options": [
+        "Hold Me Close",
+        "I Will Always Love You",
+        "The Way We Were",
+        "Tupelo Honey"
+      ],
+      "correct_answer": "Hold Me Close",
+      "difficulty": "medium",
+      "explanation": "Phoebe thinks the song 'Hold Me Close, Young Tony Danza' is romantic.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What does Monica do with Richard's hair?",
+      "options": [
+        "She throws it away",
+        "She keeps it",
+        "She gives it to Rachel",
+        "She puts it in Ross's cereal"
+      ],
+      "correct_answer": "She puts it in Ross's cereal",
+      "difficulty": "easy",
+      "explanation": "Monica puts Richard's hair in Ross's cereal.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "Why does Joey agree to spend the day with Janice?",
+      "options": [
+        "Because he likes her",
+        "Because he wants to make Chandler happy",
+        "Because he has nothing better to do",
+        "Because he wants to annoy Chandler"
+      ],
+      "correct_answer": "Because he wants to make Chandler happy",
+      "difficulty": "medium",
+      "explanation": "Joey agrees to spend the day with Janice because he wants to make Chandler happy.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What does Chandler give Joey?",
+      "options": [
+        "A book",
+        "A movie ticket",
+        "A hockey ticket",
+        "A video game"
+      ],
+      "correct_answer": "A hockey ticket",
+      "difficulty": "medium",
+      "explanation": "Chandler gives Joey a ticket to a Rangers game.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What is the reason for Monica's sleeplessness?",
+      "options": [
+        "She is stressed about work",
+        "She is missing Richard",
+        "She is worried about her apartment",
+        "She is planning a party"
+      ],
+      "correct_answer": "She is missing Richard",
+      "difficulty": "easy",
+      "explanation": "Monica is not sleeping because she is missing Richard.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What is Phoebe's attempt to help Monica?",
+      "options": [
+        "She tries to talk to her",
+        "She gives her a massage",
+        "She tries to relax her with music and imagery",
+        "She ignores her"
+      ],
+      "correct_answer": "She tries to relax her with music and imagery",
+      "difficulty": "medium",
+      "explanation": "Phoebe tries to relax Monica by having her listen to soothing music and imagine a happy place.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What does Mr. Geller reveal to Monica about her parents' relationship?",
+      "options": [
+        "They were high school sweethearts",
+        "They broke up after college",
+        "They got married young",
+        "They hated each other"
+      ],
+      "correct_answer": "They broke up after college",
+      "difficulty": "hard",
+      "explanation": "Mr. Geller tells Monica that he and her mom broke up after college.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What is the setting for the scene where Ross and Rachel discuss fantasies?",
+      "options": [
+        "Central Perk",
+        "Monica's apartment",
+        "Ross's bedroom",
+        "The park"
+      ],
+      "correct_answer": "Ross's bedroom",
+      "difficulty": "medium",
+      "explanation": "Ross and Rachel discuss fantasies in Ross's bedroom.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What is Joey's reaction to Janice's laugh?",
+      "options": [
+        "He finds it annoying",
+        "He finds it funny",
+        "He finds it attractive",
+        "He is indifferent"
+      ],
+      "correct_answer": "He finds it annoying",
+      "difficulty": "easy",
+      "explanation": "Joey finds Janice's laugh annoying and wants to rip his arm off when he hears it.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What does Chandler want Joey to do?",
+      "options": [
+        "To hate Janice",
+        "To like Janice",
+        "To ignore Janice",
+        "To avoid Janice"
+      ],
+      "correct_answer": "To like Janice",
+      "difficulty": "medium",
+      "explanation": "Chandler wants Joey to like Janice and accept her as his girlfriend.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What is the outcome of Joey and Janice's day together?",
+      "options": [
+        "Joey hates Janice even more",
+        "Joey starts to like Janice",
+        "Joey and Janice get into a fight",
+        "Joey and Janice become friends"
+      ],
+      "correct_answer": "Joey starts to like Janice",
+      "difficulty": "medium",
+      "explanation": "After spending the day together, Joey starts to like Janice and can tolerate her presence.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    },
+    {
+      "question": "What is Ross's initial reaction to Rachel's Princess Leia costume?",
+      "options": [
+        "He is excited",
+        "He is embarrassed",
+        "He is confused",
+        "He is disgusted"
+      ],
+      "correct_answer": "He is confused",
+      "difficulty": "medium",
+      "explanation": "Ross is confused when he sees Rachel dressed as Princess Leia because he is still picturing his mom due to Chandler's earlier revelation.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 1,
+        "title": "The One With the Princess Leia Fantasy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:59:49.640Z"
+    }
+  ]
+}

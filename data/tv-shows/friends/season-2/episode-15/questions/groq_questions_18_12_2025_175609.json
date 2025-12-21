@@ -1,0 +1,704 @@
+{
+  "show": "Friends",
+  "season": 2,
+  "episode": 15,
+  "title": "The One Where Ross and Rachel...You Know",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-18T12:26:09.413Z",
+  "questionCount": 33,
+  "questions": [
+    {
+      "question": "What does Joey say when Chandler asks which recliner is his?",
+      "options": [
+        "Whichever one you want, man",
+        "The one on the left",
+        "The one on the right",
+        "You can't have one"
+      ],
+      "correct_answer": "Whichever one you want, man",
+      "difficulty": "easy",
+      "explanation": "Joey tells Chandler he can have whichever recliner he wants.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Phoebe say when Monica asks her to be a waitress?",
+      "options": [
+        "I'd love to",
+        "No way",
+        "I can be a waitress, I can be a waitress",
+        "Only if I get to wear a fancy dress"
+      ],
+      "correct_answer": "I can be a waitress, I can be a waitress",
+      "difficulty": "medium",
+      "explanation": "Phoebe agrees to be a waitress for Monica's catering event.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What is the name of the TV show that Chandler and Joey are watching when Ross enters?",
+      "options": [
+        "Green Acres",
+        "The Dick Van Dyke Show",
+        "Beavis and Butthead",
+        "Miracle Wax infomercial"
+      ],
+      "correct_answer": "Miracle Wax infomercial",
+      "difficulty": "easy",
+      "explanation": "Chandler and Joey are watching a Miracle Wax infomercial when Ross enters.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "Why does Rachel start laughing when Ross puts his hands on her butt?",
+      "options": [
+        "Because it's her first time",
+        "Because Ross has big hands",
+        "Because she's nervous and it's a big moment for them",
+        "Because Ross is not wearing gloves"
+      ],
+      "correct_answer": "Because she's nervous and it's a big moment for them",
+      "difficulty": "medium",
+      "explanation": "Rachel starts laughing because she's nervous about the moment and it's a big deal for them.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Ross say when Rachel asks him to grab her ass?",
+      "options": [
+        "No",
+        "Yes, I'd love to",
+        "Only if you want me to",
+        "I'm not comfortable with that"
+      ],
+      "correct_answer": "No",
+      "difficulty": "easy",
+      "explanation": "Ross declines Rachel's request to grab her ass.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What is the name of the restaurant that Ross and Rachel were supposed to go to for dinner?",
+      "options": [
+        "Sorentino's",
+        "Monica's",
+        "Central Perk",
+        "The Museum Cafe"
+      ],
+      "correct_answer": "Sorentino's",
+      "difficulty": "easy",
+      "explanation": "Ross and Rachel were supposed to go to Sorentino's for dinner.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Monica say when Phoebe suggests she ask Dr. Burke out?",
+      "options": [
+        "That's a great idea",
+        "I don't think so",
+        "He's too old for me",
+        "I'm not interested in him"
+      ],
+      "correct_answer": "I don't think so",
+      "difficulty": "medium",
+      "explanation": "Monica dismisses the idea of asking Dr. Burke out.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Dr. Burke give Monica at the end of her eye appointment?",
+      "options": [
+        "A pair of glasses",
+        "A bottle of eye drops",
+        "A kiss on the cheek",
+        "A prescription for contacts"
+      ],
+      "correct_answer": "A kiss on the cheek",
+      "difficulty": "easy",
+      "explanation": "Dr. Burke gives Monica a kiss on the cheek at the end of her appointment.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What is the name of the display that Ross is working on at the museum?",
+      "options": [
+        "Australopithicus",
+        "Homo-habilus",
+        "Ursa Major",
+        "The Planetarium"
+      ],
+      "correct_answer": "Australopithicus",
+      "difficulty": "medium",
+      "explanation": "Ross is working on the Australopithicus display at the museum.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Rachel do when she's waiting for Ross to finish work at the museum?",
+      "options": [
+        "She takes a nap",
+        "She goes for a walk",
+        "She looks at the exhibits",
+        "She peeks under the loincloth of a display model"
+      ],
+      "correct_answer": "She peeks under the loincloth of a display model",
+      "difficulty": "easy",
+      "explanation": "Rachel takes a peek under the loincloth of a display model while waiting for Ross.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "Where do Ross and Rachel end up having their romantic dinner?",
+      "options": [
+        "Sorentino's",
+        "Monica's apartment",
+        "The museum planetarium",
+        "Central Perk"
+      ],
+      "correct_answer": "The museum planetarium",
+      "difficulty": "easy",
+      "explanation": "Ross and Rachel have their romantic dinner in the museum planetarium.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Ross use as a blanket in the planetarium?",
+      "options": [
+        "A fur pelt",
+        "A museum jacket",
+        "A blanket from the gift shop",
+        "His coat"
+      ],
+      "correct_answer": "A fur pelt",
+      "difficulty": "easy",
+      "explanation": "Ross uses a fur pelt as a blanket in the planetarium.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What is the reaction of the church youth group when they see Ross and Rachel in the morning?",
+      "options": [
+        "They are shocked and upset",
+        "They are amused and take pictures",
+        "They are confused and ask questions",
+        "They are indifferent and walk away"
+      ],
+      "correct_answer": "They are shocked and upset",
+      "difficulty": "medium",
+      "explanation": "The church youth group is shocked and upset when they see Ross and Rachel in the morning.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What is the name of the TV show that Chandler and Joey are watching at the end of the episode?",
+      "options": [
+        "Beavis and Butthead",
+        "The Dick Van Dyke Show",
+        "Green Acres",
+        "Miracle Wax infomercial"
+      ],
+      "correct_answer": "Beavis and Butthead",
+      "difficulty": "easy",
+      "explanation": "Chandler and Joey are watching Beavis and Butthead at the end of the episode.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "Why does Monica go to Dr. Burke's office?",
+      "options": [
+        "For a date",
+        "For an eye appointment",
+        "To return a book",
+        "To borrow money"
+      ],
+      "correct_answer": "For an eye appointment",
+      "difficulty": "easy",
+      "explanation": "Monica goes to Dr. Burke's office for an eye appointment.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What is the reason for the fire alarm going off in Chandler and Joey's apartment?",
+      "options": [
+        "The pizza delivery guy set it off",
+        "Joey's cooking set it off",
+        "Chandler's chair caught on fire",
+        "Unknown reason"
+      ],
+      "correct_answer": "Unknown reason",
+      "difficulty": "hard",
+      "explanation": "The reason for the fire alarm going off is not explicitly stated in the episode.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Phoebe say when she's pretending to be a waitress?",
+      "options": [
+        "Gimme two number ones, 86 the bacon",
+        "I'll have a coffee, black",
+        "Can I get a menu, please?",
+        "Where's the restroom?"
+      ],
+      "correct_answer": "Gimme two number ones, 86 the bacon",
+      "difficulty": "medium",
+      "explanation": "Phoebe says this line when she's pretending to be a waitress.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What is the name of the friend who used to be 'so...' according to Dr. Burke?",
+      "options": [
+        "Monica",
+        "Rachel",
+        "Phoebe",
+        "Barbara"
+      ],
+      "correct_answer": "Monica",
+      "difficulty": "easy",
+      "explanation": "Dr. Burke says that Monica used to be 'so...'.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Dr. Burke give to Monica at the end of their conversation at his apartment?",
+      "options": [
+        "A kiss on the cheek",
+        "A hug",
+        "A book",
+        "A picture of his grandchildren"
+      ],
+      "correct_answer": "A kiss on the cheek",
+      "difficulty": "easy",
+      "explanation": "Dr. Burke gives Monica a kiss on the cheek at the end of their conversation.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Ross say when Rachel asks him to put his hands on her butt again?",
+      "options": [
+        "No, I'm not comfortable with that",
+        "Yes, I'd love to",
+        "Only if you want me to",
+        "Not now, maybe later"
+      ],
+      "correct_answer": "No, I'm not comfortable with that",
+      "difficulty": "easy",
+      "explanation": "Ross declines Rachel's request to put his hands on her butt again.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What is the reason for Monica's eye appointment with Dr. Burke?",
+      "options": [
+        "She has an eye infection",
+        "She needs glasses",
+        "She's getting a check-up",
+        "She's 27 and it's a 'dangerous eye age'"
+      ],
+      "correct_answer": "She's 27 and it's a 'dangerous eye age'",
+      "difficulty": "medium",
+      "explanation": "Monica says that 27 is a 'dangerous eye age' as the reason for her appointment.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Chandler say when Joey asks him what to do if they have to pee?",
+      "options": [
+        "I'll cancel the sodas",
+        "We'll use a bucket",
+        "We'll get up and go to the bathroom",
+        "We'll hold it in"
+      ],
+      "correct_answer": "I'll cancel the sodas",
+      "difficulty": "easy",
+      "explanation": "Chandler says he'll cancel the sodas if they have to pee.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What is the name of the music that Ross plays in the planetarium?",
+      "options": [
+        "Classical music",
+        "Jazz music",
+        "Rock music",
+        "The soundtrack from the museum's planetarium show"
+      ],
+      "correct_answer": "The soundtrack from the museum's planetarium show",
+      "difficulty": "hard",
+      "explanation": "The music that Ross plays in the planetarium is the soundtrack from the museum's planetarium show.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Rachel say when Ross asks her why she's laughing?",
+      "options": [
+        "Because it's funny",
+        "Because I'm nervous",
+        "Because you're silly",
+        "Because I'm happy"
+      ],
+      "correct_answer": "Because I'm nervous",
+      "difficulty": "medium",
+      "explanation": "Rachel says she's laughing because she's nervous.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Phoebe say when Monica asks her to cover for Rachel at the catering event?",
+      "options": [
+        "I'd love to",
+        "No way",
+        "Only if I can wear a fancy dress",
+        "I can be a waitress, I can be a waitress"
+      ],
+      "correct_answer": "I can be a waitress, I can be a waitress",
+      "difficulty": "medium",
+      "explanation": "Phoebe agrees to cover for Rachel at the catering event.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What is the reason for Ross's beeper going off?",
+      "options": [
+        "He has a date with Rachel",
+        "He has to go to the museum",
+        "He has a meeting with his boss",
+        "He has to pick up his dry cleaning"
+      ],
+      "correct_answer": "He has to go to the museum",
+      "difficulty": "easy",
+      "explanation": "Ross's beeper goes off because he has to go to the museum.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Joey say when Chandler asks him what to do if they have to get up from their recliners?",
+      "options": [
+        "We'll get up and go to the bathroom",
+        "We'll use a bucket",
+        "We'll hold it in",
+        "Inside good, outside bad"
+      ],
+      "correct_answer": "Inside good, outside bad",
+      "difficulty": "easy",
+      "explanation": "Joey says that inside is good and outside is bad when Chandler asks him what to do if they have to get up.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Monica say when Phoebe asks her if she's going to ask Dr. Burke out?",
+      "options": [
+        "Yes, I am",
+        "No, I'm not",
+        "Maybe, I'll think about it",
+        "I don't think so"
+      ],
+      "correct_answer": "I don't think so",
+      "difficulty": "medium",
+      "explanation": "Monica says she doesn't think she'll ask Dr. Burke out.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Dr. Burke say when Monica asks him how he's doing?",
+      "options": [
+        "I'm doing great, thanks",
+        "I'm doing okay, I guess",
+        "I'm not doing well, thanks for asking",
+        "I'm fine, just got divorced"
+      ],
+      "correct_answer": "I'm fine, just got divorced",
+      "difficulty": "medium",
+      "explanation": "Dr. Burke mentions that he's recently gotten divorced.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Ross say when Rachel asks him why he can't put his hands on her butt again?",
+      "options": [
+        "Because I'm not comfortable with it",
+        "Because you're laughing",
+        "Because it's not romantic",
+        "Because the moment's gone"
+      ],
+      "correct_answer": "Because the moment's gone",
+      "difficulty": "easy",
+      "explanation": "Ross says that the moment's gone and that's why he can't put his hands on Rachel's butt again.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Phoebe say when she's talking to Monica about Dr. Burke?",
+      "options": [
+        "You should ask him out",
+        "He's not interested in you",
+        "You're too young for him",
+        "He's too old for you"
+      ],
+      "correct_answer": "You should ask him out",
+      "difficulty": "medium",
+      "explanation": "Phoebe suggests that Monica should ask Dr. Burke out.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Dr. Burke say when Monica asks him about his divorce?",
+      "options": [
+        "It was a mutual decision",
+        "It was a difficult time",
+        "I'm still in love with my ex-wife",
+        "I'm doing fine, just got divorced"
+      ],
+      "correct_answer": "I'm doing fine, just got divorced",
+      "difficulty": "medium",
+      "explanation": "Dr. Burke mentions that he's recently gotten divorced and is doing fine.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    },
+    {
+      "question": "What does Rachel say when Ross asks her why she's checking if Monica is home?",
+      "options": [
+        "Because I'm looking for her",
+        "Because I want to make sure we're alone",
+        "Because I'm worried about her",
+        "Because I'm trying to avoid her"
+      ],
+      "correct_answer": "Because I want to make sure we're alone",
+      "difficulty": "medium",
+      "explanation": "Rachel is checking if Monica is home to make sure they're alone.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 15,
+        "title": "The One Where Ross and Rachel...You Know"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T12:26:09.413Z"
+    }
+  ]
+}

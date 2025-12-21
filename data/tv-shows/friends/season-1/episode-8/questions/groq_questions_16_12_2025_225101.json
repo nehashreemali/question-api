@@ -1,0 +1,620 @@
+{
+  "show": "Friends",
+  "season": 1,
+  "episode": 8,
+  "title": "The One Where Nana Dies Twice",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-16T17:21:01.554Z",
+  "questionCount": 29,
+  "questions": [
+    {
+      "question": "What does Shelley think Chandler would be perfect for?",
+      "options": [
+        "A blind date with a woman",
+        "A blind date with a man",
+        "A promotion at work",
+        "A new apartment"
+      ],
+      "correct_answer": "A blind date with a man",
+      "difficulty": "medium",
+      "explanation": "Shelley thought Chandler would be perfect for a date with a man named Lowell.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What is Ross's initial reaction when he finds out Nana has passed away?",
+      "options": [
+        "He screams and runs out of the room",
+        "He stays calm and tries to comfort his family",
+        "He is in denial and thinks it's a mistake",
+        "He is relieved that she is no longer suffering"
+      ],
+      "correct_answer": "He stays calm and tries to comfort his family",
+      "difficulty": "easy",
+      "explanation": "Ross tries to stay calm and support his family after hearing the news about Nana's passing.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "Why does Phoebe return the pencil to Rachel?",
+      "options": [
+        "Because it was the wrong color",
+        "Because it was too sharp",
+        "Because it didn't feel like her friend Debbie's presence",
+        "Because she didn't like the brand"
+      ],
+      "correct_answer": "Because it didn't feel like her friend Debbie's presence",
+      "difficulty": "medium",
+      "explanation": "Phoebe returns the pencil because it didn't give her the same feeling as when she uses a specific yellow pencil that reminds her of her friend Debbie.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What is Joey doing at the funeral?",
+      "options": [
+        "He is giving a eulogy",
+        "He is playing a musical instrument",
+        "He is watching a football game on a portable TV",
+        "He is leading a prayer"
+      ],
+      "correct_answer": "He is watching a football game on a portable TV",
+      "difficulty": "easy",
+      "explanation": "Joey is secretly watching a football game on a portable TV during the funeral.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What does Ross take from his mother's closet?",
+      "options": [
+        "A dress for Nana to wear",
+        "A pair of shoes to match the dress",
+        "A box of Sweet 'n' Lo's",
+        "A photo album"
+      ],
+      "correct_answer": "A box of Sweet 'n' Lo's",
+      "difficulty": "medium",
+      "explanation": "Ross finds a box of Sweet 'n' Lo's in his mother's closet while looking for shoes to match Nana's dress.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What is the reason for Ross's strange behavior at the wake?",
+      "options": [
+        "He is overcome with grief",
+        "He has had too much to drink",
+        "He took some of his mother's pain pills",
+        "He is trying to make a joke"
+      ],
+      "correct_answer": "He took some of his mother's pain pills",
+      "difficulty": "easy",
+      "explanation": "Ross took some of his mother's pain pills, which causes him to act strangely and become loopy.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What does Monica's mother say about her hair?",
+      "options": [
+        "That it looks nice down",
+        "That it looks better up",
+        "That her ears are not her best feature",
+        "That she should cut it shorter"
+      ],
+      "correct_answer": "That her ears are not her best feature",
+      "difficulty": "medium",
+      "explanation": "Monica's mother comments that her ears are not her best feature, implying that she should wear her hair down to cover them.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What is the name of the woman Chandler meets at the wake?",
+      "options": [
+        "Andrea",
+        "Dorothy",
+        "Shelley",
+        "Phoebe"
+      ],
+      "correct_answer": "Andrea",
+      "difficulty": "medium",
+      "explanation": "Chandler meets a woman named Andrea at the wake, who is Dorothy's daughter.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What does Ross say to Rachel when he is under the influence of the pain pills?",
+      "options": [
+        "That he loves her",
+        "That he hates her",
+        "That she is his sister",
+        "That she is his best friend"
+      ],
+      "correct_answer": "That he loves her",
+      "difficulty": "easy",
+      "explanation": "Ross tells Rachel that he loves her when he is under the influence of the pain pills.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What is the significance of the earrings Monica is wearing?",
+      "options": [
+        "They were a gift from her boyfriend",
+        "They were a gift from her mother",
+        "They belonged to Nana",
+        "They were a gift from Phoebe"
+      ],
+      "correct_answer": "They belonged to Nana",
+      "difficulty": "medium",
+      "explanation": "The earrings Monica is wearing belonged to Nana, and her mother comments on how nice they look on her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What does Lowell say about Chandler?",
+      "options": [
+        "That he has a certain quality",
+        "That he is out of his league",
+        "That he is not his type",
+        "That he is gay"
+      ],
+      "correct_answer": "That he is not his type",
+      "difficulty": "medium",
+      "explanation": "Lowell tells Chandler that he doesn't have a certain quality that he and his friends look for in a partner.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What is the name of the person Shelley thinks Chandler would be perfect for?",
+      "options": [
+        "Lowell",
+        "Brian",
+        "Mike",
+        "David"
+      ],
+      "correct_answer": "Lowell",
+      "difficulty": "medium",
+      "explanation": "Shelley thinks Chandler would be perfect for a blind date with a man named Lowell.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What does Phoebe say about her mom and her friend Debbie?",
+      "options": [
+        "That they are both alive and well",
+        "That they are both dead",
+        "That she gets a strong feeling that they are with her",
+        "That she never thinks about them"
+      ],
+      "correct_answer": "That she gets a strong feeling that they are with her",
+      "difficulty": "medium",
+      "explanation": "Phoebe says that she gets a strong feeling that her mom and her friend Debbie are with her, especially when she uses a certain yellow pencil.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What is the reason for the nurse's surprise at Nana's death?",
+      "options": [
+        "That Nana was very old",
+        "That Nana was very sick",
+        "That Nana came back to life after being declared dead",
+        "That Nana died suddenly"
+      ],
+      "correct_answer": "That Nana came back to life after being declared dead",
+      "difficulty": "easy",
+      "explanation": "The nurse is surprised because Nana came back to life after being declared dead, which is a rare occurrence.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What does Monica's father want to do when he dies?",
+      "options": [
+        "Be buried in a cemetery",
+        "Be cremated",
+        "Be buried at sea",
+        "Be donated to science"
+      ],
+      "correct_answer": "Be buried at sea",
+      "difficulty": "medium",
+      "explanation": "Monica's father wants to be buried at sea, which he thinks would be a fun and unique experience for his family.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What does Ross do when he falls into the open grave?",
+      "options": [
+        "He gets up and walks away",
+        "He starts crying",
+        "He screams for help",
+        "He realizes his worst fear"
+      ],
+      "correct_answer": "He realizes his worst fear",
+      "difficulty": "easy",
+      "explanation": "Ross falls into an open grave and realizes that it is his worst fear come true.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What is the name of the person who gives Ross the pain pills?",
+      "options": [
+        "His mother",
+        "His father",
+        "Phoebe",
+        "Monica"
+      ],
+      "correct_answer": "His mother",
+      "difficulty": "medium",
+      "explanation": "Ross's mother gives him the pain pills that he takes, which causes him to act strangely.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What does Chandler say to Lowell about Brian?",
+      "options": [
+        "That he is out of his league",
+        "That he is perfect for him",
+        "That he is not his type",
+        "That he is gay"
+      ],
+      "correct_answer": "That he is out of his league",
+      "difficulty": "medium",
+      "explanation": "Chandler says that Brian is out of his league, implying that he is not good enough for him.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What is the significance of the photo of Nana and the gang at Java Joe's?",
+      "options": [
+        "It is a recent photo",
+        "It is an old photo",
+        "It is a photo of Nana's wedding",
+        "It is a photo of Nana's birthday"
+      ],
+      "correct_answer": "It is an old photo",
+      "difficulty": "medium",
+      "explanation": "The photo of Nana and the gang at Java Joe's is an old photo from 1939, which shows Nana and her friends having fun.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What does Monica say about her grandmother?",
+      "options": [
+        "That she was very critical",
+        "That she was very kind",
+        "That she was very funny",
+        "That she was very smart"
+      ],
+      "correct_answer": "That she was very critical",
+      "difficulty": "medium",
+      "explanation": "Monica says that her grandmother was very critical, which made it difficult for her mother to grow up with her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What does Ross do when he is trying to get the dress for Nana?",
+      "options": [
+        "He climbs over the furniture",
+        "He opens a drawer and climbs into the closet",
+        "He uses a ladder to reach the top shelf",
+        "He asks for help"
+      ],
+      "correct_answer": "He opens a drawer and climbs into the closet",
+      "difficulty": "medium",
+      "explanation": "Ross opens a drawer and climbs into the closet to try to find a dress for Nana.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What is the name of the coffee shop where Nana and the gang took a photo?",
+      "options": [
+        "Central Perk",
+        "Java Joe's",
+        "The Coffee Spot",
+        "The Daily Grind"
+      ],
+      "correct_answer": "Java Joe's",
+      "difficulty": "medium",
+      "explanation": "The photo of Nana and the gang was taken at Java Joe's, which was a coffee shop they used to frequent.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What does Phoebe do when she is checking on Ross after he falls into the grave?",
+      "options": [
+        "She calls for help",
+        "She checks his pulse",
+        "She checks if his muscle is in spasm",
+        "She tries to pull him out"
+      ],
+      "correct_answer": "She checks if his muscle is in spasm",
+      "difficulty": "medium",
+      "explanation": "Phoebe checks if Ross's muscle is in spasm after he falls into the grave, which shows her concern for his well-being.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What is the score of the football game that Joey is watching?",
+      "options": [
+        "Giants 17, Cowboys 14",
+        "Giants 14, Cowboys 17",
+        "Giants 21, Cowboys 10",
+        "Giants 10, Cowboys 21"
+      ],
+      "correct_answer": "Giants 17, Cowboys 14",
+      "difficulty": "medium",
+      "explanation": "Joey is watching a football game between the Giants and the Cowboys, and the score is Giants 17, Cowboys 14.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What does Monica's mother say about her grandmother's criticism?",
+      "options": [
+        "That it was justified",
+        "That it was unfair",
+        "That it was something she got used to",
+        "That it was something she avoided"
+      ],
+      "correct_answer": "That it was something she got used to",
+      "difficulty": "medium",
+      "explanation": "Monica's mother says that she got used to her grandmother's criticism, which implies that it was a regular occurrence.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What does Ross say to Chandler when he is under the influence of the pain pills?",
+      "options": [
+        "That he loves him",
+        "That he hates him",
+        "That he is his best friend",
+        "That he is his brother"
+      ],
+      "correct_answer": "That he loves him",
+      "difficulty": "easy",
+      "explanation": "Ross tells Chandler that he loves him when he is under the influence of the pain pills.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What is the name of the woman who is watching the football game with Joey?",
+      "options": [
+        "Monica",
+        "Rachel",
+        "Phoebe",
+        "Mr. Geller"
+      ],
+      "correct_answer": "Mr. Geller",
+      "difficulty": "medium",
+      "explanation": "Mr. Geller is watching the football game with Joey, which shows that he is also interested in the game.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What does Chandler say to Brian at the end of the episode?",
+      "options": [
+        "That he is out of his league",
+        "That he is perfect for him",
+        "That he is not his type",
+        "That he could get him if he wanted to"
+      ],
+      "correct_answer": "That he could get him if he wanted to",
+      "difficulty": "medium",
+      "explanation": "Chandler says that he could get Brian if he wanted to, which shows his confidence in his ability to attract someone like Brian.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    },
+    {
+      "question": "What is the significance of the Sweet 'n' Lo's in Nana's closet?",
+      "options": [
+        "They were her favorite snack",
+        "They were a gift from someone",
+        "They were something she collected",
+        "They were something she stole from restaurants"
+      ],
+      "correct_answer": "They were something she stole from restaurants",
+      "difficulty": "medium",
+      "explanation": "The Sweet 'n' Lo's in Nana's closet were something she stole from restaurants, which shows her mischievous personality.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 1,
+        "episode": 8,
+        "title": "The One Where Nana Dies Twice"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-16T17:21:01.554Z"
+    }
+  ]
+}

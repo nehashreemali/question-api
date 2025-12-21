@@ -1,0 +1,725 @@
+{
+  "show": "Friends",
+  "season": 2,
+  "episode": 3,
+  "title": "The One Where Mr. Heckles Dies",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-17T16:02:30.841Z",
+  "questionCount": 34,
+  "questions": [
+    {
+      "question": "What is the reason for Mr. Heckles' complaint to Monica?",
+      "options": [
+        "The noise from the apartment above is disturbing his birds",
+        "The apartment above is having a loud party",
+        "The noise from the apartment above is disturbing his dinner party",
+        "The noise from the apartment above is disturbing his sleep"
+      ],
+      "correct_answer": "The noise from the apartment above is disturbing his dinner party",
+      "difficulty": "easy",
+      "explanation": "Mr. Heckles tells Monica that the noise is disturbing his dinner party.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Ross say is 'scientific fact, like, like, like the air we breathe, like gravity'?",
+      "options": [
+        "Evolution",
+        "Gravity",
+        "The water cycle",
+        "Photosynthesis"
+      ],
+      "correct_answer": "Evolution",
+      "difficulty": "medium",
+      "explanation": "Ross says that evolution is a scientific fact, comparable to gravity.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "Why did Joey initially think women had Adam's apples?",
+      "options": [
+        "He had gone out with a woman who had a large Adam's apple",
+        "He had learned about Adam's apples in health class",
+        "He had seen a picture of a woman with an Adam's apple in a book",
+        "He had no idea what an Adam's apple was"
+      ],
+      "correct_answer": "He had gone out with a woman who had a large Adam's apple",
+      "difficulty": "easy",
+      "explanation": "Joey says he went out with a woman who had a big Adam's apple, which made him think women had Adam's apples.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Phoebe sense in the building after Mr. Heckles' death?",
+      "options": [
+        "A presence of evil",
+        "A presence of good",
+        "The spirit of Mr. Heckles",
+        "Nothing unusual"
+      ],
+      "correct_answer": "The spirit of Mr. Heckles",
+      "difficulty": "medium",
+      "explanation": "Phoebe says she can still sense Mr. Heckles in the building.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What is the name of Mr. Heckles' attorney?",
+      "options": [
+        "Mr. Treeger",
+        "Mr. Boyle",
+        "Mr. Heckles Jr.",
+        "Mr. Smith"
+      ],
+      "correct_answer": "Mr. Boyle",
+      "difficulty": "easy",
+      "explanation": "Mr. Treeger introduces Mr. Boyle as Mr. Heckles' attorney.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Mr. Heckles leave to Monica and Rachel in his will?",
+      "options": [
+        "A large sum of money",
+        "His apartment and all its contents",
+        "A note telling them to be quieter",
+        "All his earthly possessions"
+      ],
+      "correct_answer": "All his earthly possessions",
+      "difficulty": "easy",
+      "explanation": "Mr. Boyle says that Mr. Heckles left all his earthly possessions to the 'noisy girls in the apartment above mine'.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "Why does Chandler reject many women he dates?",
+      "options": [
+        "Because they are not smart enough",
+        "Because they are not pretty enough",
+        "Because of superficial or insignificant things",
+        "Because they do not like him"
+      ],
+      "correct_answer": "Because of superficial or insignificant things",
+      "difficulty": "medium",
+      "explanation": "Monica says that Chandler rejects many women because of superficial or insignificant things.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Ross try to convince Phoebe of?",
+      "options": [
+        "The existence of aliens",
+        "The importance of recycling",
+        "The validity of evolution",
+        "The benefits of meditation"
+      ],
+      "correct_answer": "The validity of evolution",
+      "difficulty": "medium",
+      "explanation": "Ross tries to convince Phoebe that evolution is a scientific fact.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Phoebe compare the possibility of evolution to?",
+      "options": [
+        "The possibility of gravity",
+        "The possibility of the earth being flat",
+        "The possibility of the atom being the smallest thing",
+        "The possibility of aliens existing"
+      ],
+      "correct_answer": "The possibility of the earth being flat",
+      "difficulty": "medium",
+      "explanation": "Phoebe compares the possibility of evolution to the possibility of the earth being flat, saying that just as people used to believe the earth was flat, they may be wrong about evolution.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Chandler find in Mr. Heckles' apartment that makes him realize they have things in common?",
+      "options": [
+        "A clarinet",
+        "A yearbook",
+        "A photo album",
+        "A collection of grievances"
+      ],
+      "correct_answer": "A yearbook",
+      "difficulty": "medium",
+      "explanation": "Chandler finds Mr. Heckles' high school yearbook and discovers they have things in common, such as playing the clarinet.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "Why does Chandler want to keep Mr. Heckles' yearbook?",
+      "options": [
+        "Because it is valuable",
+        "Because it has nice memories",
+        "Because somebody should have it",
+        "Because he wants to throw it away"
+      ],
+      "correct_answer": "Because somebody should have it",
+      "difficulty": "easy",
+      "explanation": "Chandler says that somebody should have the yearbook, and he wants to keep it.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Monica suggest the friends do to honor Mr. Heckles' memory?",
+      "options": [
+        "Have a party",
+        "Go to the zoo",
+        "Take a few moments to remember him",
+        "Forget about him"
+      ],
+      "correct_answer": "Take a few moments to remember him",
+      "difficulty": "easy",
+      "explanation": "Monica suggests that the friends take a few moments to remember Mr. Heckles.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Chandler decide to do after his conversation with Janice?",
+      "options": [
+        "He decides to become a monk",
+        "He decides to get a pet snake",
+        "He decides to ask out Alison from work",
+        "He decides to move to a new city"
+      ],
+      "correct_answer": "He decides to ask out Alison from work",
+      "difficulty": "medium",
+      "explanation": "Chandler decides to ask out Alison from work, despite her having an unusually large head.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What is Alison's major in college?",
+      "options": [
+        "Philosophy",
+        "Biology",
+        "Psychology",
+        "English"
+      ],
+      "correct_answer": "Philosophy",
+      "difficulty": "easy",
+      "explanation": "Alison says that her major was philosophy, which she thinks is 'totally useless'.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Chandler think about Alison's head size when he meets her?",
+      "options": [
+        "He thinks it is perfectly normal",
+        "He thinks it is slightly small",
+        "He thinks it is unusually large",
+        "He does not notice it"
+      ],
+      "correct_answer": "He thinks it is unusually large",
+      "difficulty": "medium",
+      "explanation": "Chandler thinks that Alison's head is unusually large, but tries not to focus on it.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "Why does Chandler want to take risks and be vulnerable with someone?",
+      "options": [
+        "Because he wants to prove himself to his friends",
+        "Because he wants to get married and have kids",
+        "Because he is ready to find someone special",
+        "Because he is tired of being alone"
+      ],
+      "correct_answer": "Because he is ready to find someone special",
+      "difficulty": "medium",
+      "explanation": "Monica says that Chandler is ready to take risks and be vulnerable with someone because he knows what he wants.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Monica give to Rachel to make up for breaking her lamp?",
+      "options": [
+        "A new lamp",
+        "A seashell",
+        "A girly clock",
+        "Nothing"
+      ],
+      "correct_answer": "Nothing",
+      "difficulty": "easy",
+      "explanation": "Monica tries to give Rachel something to make up for breaking her lamp, but it is not specified what it is.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Phoebe say about Ross' need to make everyone agree with him?",
+      "options": [
+        "She says it is a good trait",
+        "She says it is a bad trait",
+        "She says it is a neutral trait",
+        "She says it is not a trait at all"
+      ],
+      "correct_answer": "She says it is a bad trait",
+      "difficulty": "medium",
+      "explanation": "Phoebe says that Ross has an obsessive need to make everyone agree with him, which she thinks is a bad trait.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Chandler decide to call himself if he ends up alone?",
+      "options": [
+        "Crazy Man with a Snake",
+        "Lone Wolf",
+        "Bachelor Boy",
+        "Solo Man"
+      ],
+      "correct_answer": "Crazy Man with a Snake",
+      "difficulty": "medium",
+      "explanation": "Chandler says that if he ends up alone, he will be known as 'Crazy Man with a Snake'.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Ross show Phoebe to prove the validity of evolution?",
+      "options": [
+        "A book on evolution",
+        "A documentary on evolution",
+        "A briefcase full of fossils",
+        "A diagram of the human body"
+      ],
+      "correct_answer": "A briefcase full of fossils",
+      "difficulty": "medium",
+      "explanation": "Ross shows Phoebe a briefcase full of fossils to prove the validity of evolution.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Phoebe say about the possibility of evolution being wrong?",
+      "options": [
+        "She says it is impossible",
+        "She says it is unlikely",
+        "She says it is possible",
+        "She says it is probable"
+      ],
+      "correct_answer": "She says it is possible",
+      "difficulty": "medium",
+      "explanation": "Phoebe says that there is a possibility that evolution could be wrong, and that Ross should be open to other ideas.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Joey find in Mr. Heckles' apartment that he wants to keep?",
+      "options": [
+        "A yearbook",
+        "A photo album",
+        "A collection of grievances",
+        "A funky shirt"
+      ],
+      "correct_answer": "A funky shirt",
+      "difficulty": "easy",
+      "explanation": "Joey finds a funky shirt in Mr. Heckles' apartment that he wants to keep.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Monica say about Chandler being different from other men?",
+      "options": [
+        "She says he is worse",
+        "She says he is better",
+        "She says he is the same",
+        "She says he is more confident"
+      ],
+      "correct_answer": "She says he is better",
+      "difficulty": "medium",
+      "explanation": "Monica says that Chandler is different from other men in a wonderful way, because he knows what he wants and is ready to take risks.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Rachel accuse Monica of doing to her lamp?",
+      "options": [
+        "Breaking it on purpose",
+        "Losing it",
+        "Giving it away",
+        "Selling it"
+      ],
+      "correct_answer": "Breaking it on purpose",
+      "difficulty": "easy",
+      "explanation": "Rachel accuses Monica of breaking her lamp on purpose, which Monica denies.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Phoebe say about the idea that 'you can touch someone's life without even knowing it'?",
+      "options": [
+        "She says it is a myth",
+        "She says it is a fact",
+        "She says it is a possibility",
+        "She says it is a cliché"
+      ],
+      "correct_answer": "She says it is a fact",
+      "difficulty": "medium",
+      "explanation": "Phoebe says that Monica's comment about touching someone's life without knowing it is a fact, and that it is amazing how much you can affect someone's life without realizing it.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Chandler say about his date with Alison?",
+      "options": [
+        "He says it is going well",
+        "He says it is not going well",
+        "He says he is nervous",
+        "He says he is excited"
+      ],
+      "correct_answer": "He says it is going well",
+      "difficulty": "easy",
+      "explanation": "Chandler says that his date with Alison is going well, despite her having an unusually large head.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Ross say about the fossils he shows Phoebe?",
+      "options": [
+        "He says they are from the dinosaur era",
+        "He says they are from the ice age",
+        "He says they are over 200 million years old",
+        "He says they are from the present day"
+      ],
+      "correct_answer": "He says they are over 200 million years old",
+      "difficulty": "medium",
+      "explanation": "Ross says that the fossils he shows Phoebe are over 200 million years old.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Phoebe say about the idea of evolution being 'one of the possibilities'?",
+      "options": [
+        "She says it is the only possibility",
+        "She says it is a strong possibility",
+        "She says it is a weak possibility",
+        "She says it is one of the possibilities"
+      ],
+      "correct_answer": "She says it is one of the possibilities",
+      "difficulty": "medium",
+      "explanation": "Phoebe says that evolution is one of the possibilities, but that she is not convinced it is the only explanation for the origin of life.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Joey say about Chandler's chances of finding someone?",
+      "options": [
+        "He says Chandler will definitely find someone",
+        "He says Chandler will probably find someone",
+        "He says Chandler might find someone",
+        "He says Chandler will never find someone"
+      ],
+      "correct_answer": "He says Chandler will definitely find someone",
+      "difficulty": "medium",
+      "explanation": "Joey tells Chandler that he will find someone, and that he should not worry about ending up alone.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Monica say about Mr. Heckles' apartment?",
+      "options": [
+        "She says it is neat and tidy",
+        "She says it is a mess",
+        "She says it is cozy",
+        "She says it is empty"
+      ],
+      "correct_answer": "She says it is a mess",
+      "difficulty": "easy",
+      "explanation": "Monica says that Mr. Heckles' apartment is a 'dump' and that it is full of 'crap'.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Chandler say about his relationship with Janice?",
+      "options": [
+        "He says they are getting married",
+        "He says they are breaking up",
+        "He says they are just friends",
+        "He says she is married to someone else"
+      ],
+      "correct_answer": "He says she is married to someone else",
+      "difficulty": "easy",
+      "explanation": "Chandler finds out that Janice is married to someone else, which disappoints him.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Phoebe say about Ross' briefcase of facts?",
+      "options": [
+        "She says it is empty",
+        "She says it is full of useless information",
+        "She says it is full of scientific facts",
+        "She says it is a myth"
+      ],
+      "correct_answer": "She says it is full of scientific facts",
+      "difficulty": "medium",
+      "explanation": "Phoebe says that Ross' briefcase is full of scientific facts, which he uses to try to convince her of the validity of evolution.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Monica say about Chandler's decision to ask out Alison?",
+      "options": [
+        "She says it is a bad idea",
+        "She says it is a good idea",
+        "She says it is a neutral idea",
+        "She says it is a crazy idea"
+      ],
+      "correct_answer": "She says it is a good idea",
+      "difficulty": "medium",
+      "explanation": "Monica says that Chandler's decision to ask out Alison is a good idea, because he is ready to take risks and be vulnerable with someone.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    },
+    {
+      "question": "What does Chandler say about his fear of ending up alone?",
+      "options": [
+        "He says it is irrational",
+        "He says it is rational",
+        "He says it is a possibility",
+        "He says it is a certainty"
+      ],
+      "correct_answer": "He says it is a possibility",
+      "difficulty": "medium",
+      "explanation": "Chandler says that he is afraid of ending up alone, but that he is trying to be more open and vulnerable with others to avoid this fate.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 3,
+        "title": "The One Where Mr. Heckles Dies"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:02:30.841Z"
+    }
+  ]
+}

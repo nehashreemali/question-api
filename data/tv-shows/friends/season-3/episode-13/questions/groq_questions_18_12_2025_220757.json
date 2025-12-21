@@ -1,0 +1,599 @@
+{
+  "show": "Friends",
+  "season": 3,
+  "episode": 13,
+  "title": "The One Where Monica and Richard Are Friends",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-18T16:37:57.987Z",
+  "questionCount": 28,
+  "questions": [
+    {
+      "question": "What does Monica say to the clerk when returning a video?",
+      "options": [
+        "I'd like to return this video, please.",
+        "Six dollars is too much, I only had it for one night.",
+        "I'm just browsing, thanks.",
+        "I'd like to rent a new video, please."
+      ],
+      "correct_answer": "Six dollars is too much, I only had it for one night.",
+      "difficulty": "easy",
+      "explanation": "Monica argues with the clerk about the return fee.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What is the time when Monica returns the video?",
+      "options": [
+        "8:00 PM",
+        "8:02 PM",
+        "7:59 PM",
+        "9:00 PM"
+      ],
+      "correct_answer": "8:02 PM",
+      "difficulty": "easy",
+      "explanation": "The clerk mentions the cut-off time is 8:00 PM and it's currently 8:02 PM.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "Who helps Monica pay for the video return?",
+      "options": [
+        "Richard",
+        "Joey",
+        "Chandler",
+        "Ross"
+      ],
+      "correct_answer": "Richard",
+      "difficulty": "easy",
+      "explanation": "Richard appears behind Monica and offers to help with the payment.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What is Monica's initial reaction when she sees Richard?",
+      "options": [
+        "She's angry at him.",
+        "She's surprised and happy to see him.",
+        "She's indifferent to him.",
+        "She's sad to see him."
+      ],
+      "correct_answer": "She's surprised and happy to see him.",
+      "difficulty": "easy",
+      "explanation": "Monica is delighted to see Richard and they exchange warm greetings.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What does Richard notice stuck to Monica's leg?",
+      "options": [
+        "A piece of paper",
+        "A sock",
+        "Panties",
+        "A book"
+      ],
+      "correct_answer": "Panties",
+      "difficulty": "easy",
+      "explanation": "Richard points out that Monica has panties stuck to her leg due to static cling.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What does Phoebe agree to do with her new friend?",
+      "options": [
+        "Go to the movies",
+        "Play basketball",
+        "Go to the gym",
+        "Learn how to roller blade and play sports"
+      ],
+      "correct_answer": "Learn how to roller blade and play sports",
+      "difficulty": "medium",
+      "explanation": "Phoebe meets a new friend who is into sports and agrees to learn from him.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What book does Joey start reading?",
+      "options": [
+        "The Shining",
+        "Little Women",
+        "Pride and Prejudice",
+        "War and Peace"
+      ],
+      "correct_answer": "Little Women",
+      "difficulty": "medium",
+      "explanation": "Joey agrees to read Little Women as part of a book exchange with Rachel.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "Why does Joey put The Shining in the freezer?",
+      "options": [
+        "He's trying to preserve the book",
+        "He's trying to hide the book from Rachel",
+        "He's scared of the book and wants to avoid reading it",
+        "He's trying to keep the book cold"
+      ],
+      "correct_answer": "He's scared of the book and wants to avoid reading it",
+      "difficulty": "medium",
+      "explanation": "Joey puts The Shining in the freezer because he got scared while reading it.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What does Robert reveal about himself when he meets the gang?",
+      "options": [
+        "He's from New York",
+        "He's a doctor",
+        "He's from California",
+        "He's a professional athlete"
+      ],
+      "difficulty": "medium",
+      "correct_answer": "He's from California",
+      "explanation": "Robert mentions that he's from California when talking to the gang.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What is the problem with Robert's shorts?",
+      "options": [
+        "They're too tight",
+        "They're too loose",
+        "They're too short",
+        "They're too revealing"
+      ],
+      "correct_answer": "They're too revealing",
+      "difficulty": "hard",
+      "explanation": "Robert's shorts are too revealing, causing the gang to react with surprise and embarrassment.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What does Monica teach Richard how to make?",
+      "options": [
+        "Pasta",
+        "Lasagne",
+        "Pizza",
+        "Tacos"
+      ],
+      "correct_answer": "Lasagne",
+      "difficulty": "easy",
+      "explanation": "Monica teaches Richard how to make lasagne for a potluck dinner.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What is the outcome of Monica and Richard's conversation about being friends?",
+      "options": [
+        "They decide to be friends with benefits",
+        "They decide to be exclusive friends",
+        "They decide to just stay friends without any romantic involvement",
+        "They decide to start dating again"
+      ],
+      "correct_answer": "They decide to just stay friends without any romantic involvement",
+      "difficulty": "medium",
+      "explanation": "Monica and Richard discuss being friends, but the conversation is complicated by their past relationship and unresolved feelings.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What does Gunther say to Robert at Central Perk?",
+      "options": [
+        "Put the mouse back in the house",
+        "Take off your shorts",
+        "Leave now",
+        "Don't come back"
+      ],
+      "correct_answer": "Put the mouse back in the house",
+      "difficulty": "hard",
+      "explanation": "Gunther tells Robert to put his private parts back in his shorts, using a euphemism.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What does Monica do when she hears Richard coming home with his date?",
+      "options": [
+        "She hides under the bed",
+        "She hides in the closet",
+        "She hides under the covers",
+        "She confronts them"
+      ],
+      "correct_answer": "She hides under the covers",
+      "difficulty": "medium",
+      "explanation": "Monica hides under the covers when she hears Richard coming home with his date.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What does Richard tell Monica about his date?",
+      "options": [
+        "He didn't like her",
+        "He's going to see her again",
+        "She's his sister",
+        "She's a friend from work"
+      ],
+      "correct_answer": "He didn't like her",
+      "difficulty": "medium",
+      "explanation": "Richard implies that he didn't connect with his date, and Monica is relieved.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What does Monica suggest to Richard about their relationship?",
+      "options": [
+        "They should get married",
+        "They should be exclusive friends",
+        "They should start dating again",
+        "They should just stay friends without any romantic involvement"
+      ],
+      "correct_answer": "They should be exclusive friends",
+      "difficulty": "medium",
+      "explanation": "Monica suggests that they should be exclusive friends, implying a deeper commitment to each other.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What is the final outcome of Monica and Richard's conversation?",
+      "options": [
+        "They decide to stay friends without any romantic involvement",
+        "They decide to be exclusive friends",
+        "They decide to start dating again",
+        "They decide to get married"
+      ],
+      "correct_answer": "They decide to start dating again",
+      "difficulty": "medium",
+      "explanation": "Monica and Richard ultimately decide to start dating again, despite their initial intentions to just be friends.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What book does Rachel read to avoid spoilers from Joey?",
+      "options": [
+        "The Shining",
+        "Little Women",
+        "Pride and Prejudice",
+        "War and Peace"
+      ],
+      "correct_answer": "The Shining",
+      "difficulty": "medium",
+      "explanation": "Rachel reads The Shining to avoid spoilers from Joey, who is also reading the book.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "Why does Joey put Little Women in the freezer?",
+      "options": [
+        "He's trying to preserve the book",
+        "He's trying to hide the book from Rachel",
+        "He's scared of the book and wants to avoid reading it",
+        "He's trying to keep the book cold because a character is sick"
+      ],
+      "correct_answer": "He's trying to keep the book cold because a character is sick",
+      "difficulty": "hard",
+      "explanation": "Joey puts Little Women in the freezer because he's emotionally invested in the story and doesn't want to read about a character's illness.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What is the final scene of the episode?",
+      "options": [
+        "Monica and Richard kissing",
+        "Joey reading Little Women",
+        "Phoebe and Robert on a date",
+        "Rachel and Ross talking about their relationship"
+      ],
+      "correct_answer": "Monica and Richard kissing",
+      "difficulty": "easy",
+      "explanation": "The final scene of the episode shows Monica and Richard kissing, indicating that they have rekindled their romance.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What does Phoebe give to Robert as a gift?",
+      "options": [
+        "A book",
+        "A shirt",
+        "Stretchy pants",
+        "A watch"
+      ],
+      "correct_answer": "Stretchy pants",
+      "difficulty": "medium",
+      "explanation": "Phoebe gives Robert stretchy pants as a gift, which he politely declines due to their revealing nature.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What does Gunther tell Robert to do at Central Perk?",
+      "options": [
+        "To leave the coffee shop",
+        "To put the mouse back in the house",
+        "To buy a drink",
+        "To sit down"
+      ],
+      "correct_answer": "To put the mouse back in the house",
+      "difficulty": "hard",
+      "explanation": "Gunther tells Robert to put his private parts back in his shorts, using a euphemism.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What does Monica use to clean the tomato stain on Richard's shirt?",
+      "options": [
+        "Water",
+        "Soap",
+        "Club soda",
+        "Laundry detergent"
+      ],
+      "correct_answer": "Club soda",
+      "difficulty": "medium",
+      "explanation": "Monica uses club soda to clean the tomato stain on Richard's shirt.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What does Richard tell Monica about his plans for the future?",
+      "options": [
+        "He wants to get married and have kids",
+        "He wants to travel the world",
+        "He wants to start a new business",
+        "He has a blind date with his sister's neighbor"
+      ],
+      "correct_answer": "He has a blind date with his sister's neighbor",
+      "difficulty": "medium",
+      "explanation": "Richard mentions that he has a blind date with his sister's neighbor, which makes Monica uncomfortable.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What does Monica suggest to Richard about their relationship status?",
+      "options": [
+        "They should be friends with benefits",
+        "They should be exclusive friends",
+        "They should just stay friends without any romantic involvement",
+        "They should be in a committed relationship"
+      ],
+      "correct_answer": "They should be friends who don't see other people",
+      "difficulty": "medium",
+      "explanation": "Monica suggests that they should be friends who don't see other people, implying a deeper commitment to each other.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What is the outcome of Phoebe's conversation with Robert about his shorts?",
+      "options": [
+        "Robert agrees to wear different shorts",
+        "Phoebe decides to break up with Robert",
+        "Robert is offended by Phoebe's comment",
+        "Phoebe and Robert laugh about the situation"
+      ],
+      "correct_answer": "Phoebe decides to break up with Robert",
+      "difficulty": "medium",
+      "explanation": "Phoebe decides to break up with Robert due to his overly revealing shorts, which make her and the gang uncomfortable.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What does Joey do when he finds out that Beth is sick in Little Women?",
+      "options": [
+        "He continues reading the book",
+        "He puts the book in the freezer",
+        "He stops reading the book and watches TV instead",
+        "He tells Rachel about the plot twist"
+      ],
+      "correct_answer": "He puts the book in the freezer",
+      "difficulty": "medium",
+      "explanation": "Joey puts Little Women in the freezer because he's emotionally invested in the story and doesn't want to read about a character's illness.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    },
+    {
+      "question": "What is the final scene of the episode with Joey and Rachel?",
+      "options": [
+        "Joey and Rachel are reading books together",
+        "Joey and Rachel are watching TV together",
+        "Joey and Rachel are talking about their relationships",
+        "Joey hands Rachel Little Women to put in the freezer"
+      ],
+      "correct_answer": "Joey hands Rachel Little Women to put in the freezer",
+      "difficulty": "easy",
+      "explanation": "The final scene with Joey and Rachel shows Joey handing her Little Women to put in the freezer, as he's too emotionally invested in the story to continue reading.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 13,
+        "title": "The One Where Monica and Richard Are Friends"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T16:37:57.987Z"
+    }
+  ]
+}

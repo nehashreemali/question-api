@@ -1,0 +1,410 @@
+{
+  "show": "Friends",
+  "season": 4,
+  "episode": 22,
+  "title": "The One With The Worst Best Man Ever",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-20T06:18:18.159Z",
+  "questionCount": 19,
+  "questions": [
+    {
+      "question": "What does Phoebe say is the only happiness she gets from, which has to be decaf due to her pregnancy?",
+      "options": [
+        "A cup of tea",
+        "A cup of coffee",
+        "A glass of wine",
+        "A piece of cake"
+      ],
+      "correct_answer": "A cup of coffee",
+      "difficulty": "easy",
+      "explanation": "Phoebe says 'The only happiness I get is from a cup of coffee, which of course is decaf, ‘cause—Oh! I’m pregnant!'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "Why does Joey think he should be Ross's best man?",
+      "options": [
+        "Because he's known Ross longer",
+        "Because he's never been a best man before",
+        "Because Ross was his best man at his wedding",
+        "Because Chandler is already the best man"
+      ],
+      "correct_answer": "Because he's never been a best man before",
+      "difficulty": "medium",
+      "explanation": "Joey says 'I don’t have any brothers; I’ll never get to be a best man!'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "What is the reason Monica and Rachel give for not inviting Joey to Phoebe's baby shower?",
+      "options": [
+        "Because Joey is not a bachelor",
+        "Because Joey is not a stripper",
+        "Because Joey is planning a party for Ross",
+        "Because Joey doesn't like babies"
+      ],
+      "correct_answer": "Because Joey is not a bachelor and not a stripper, but the actual reason given is that it's a baby shower and Joey doesn't fit the context",
+      "difficulty": "medium",
+      "explanation": "Rachel says 'Are you bachelors?... Are you strippers?' to which Monica and Rachel both say 'Nooo!'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "What does Ross specifically tell Joey not to have at the bachelor party?",
+      "options": [
+        "A lot of liquor",
+        "Many museum geeks",
+        "Any strippers",
+        "Any music"
+      ],
+      "correct_answer": "Any strippers",
+      "difficulty": "easy",
+      "explanation": "Ross says 'Just a couple of guys hanging out playing poker, no-no strippers or anything okay?'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "What does Joey discover is missing after waking up the morning after the bachelor party?",
+      "options": [
+        "The stripper",
+        "The ring",
+        "The liquor",
+        "The music"
+      ],
+      "correct_answer": "The ring",
+      "difficulty": "easy",
+      "explanation": "Joey says 'The ring is gone!'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "What does Phoebe receive as a gift at her baby shower that she finds unhelpful?",
+      "options": [
+        "A little leather jacket for the babies",
+        "A cup of decaf coffee",
+        "Leather pants for herself",
+        "A baby book"
+      ],
+      "correct_answer": "Leather pants for herself",
+      "difficulty": "medium",
+      "explanation": "Phoebe says 'What the hell is this?! What, did you actually thought it would make me feel better to give me stuff that I can’t use for another two months?!'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "Why does Phoebe think she had a false labor?",
+      "options": [
+        "Because she was stressed",
+        "Because she was scared",
+        "Because the babies were kicking each other",
+        "Because the book said it could happen near the end of pregnancy"
+      ],
+      "correct_answer": "Because the book said it could happen near the end of pregnancy",
+      "difficulty": "medium",
+      "explanation": "Phoebe says 'They said that, that can happen near the end, just somebody get the book.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "What is the plan to retrieve Ross's ring?",
+      "options": [
+        "Call the police",
+        "Call the company that sent the stripper",
+        "Wait for the stripper to return it",
+        "Take the duck to the vet to remove the ring"
+      ],
+      "difficulty": "medium",
+      "correct_answer": "Take the duck to the vet to remove the ring",
+      "explanation": "The guys realize the duck might have swallowed the ring and decide to take it to the vet.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "What does Rachel suggest is a benefit of Phoebe not keeping the babies?",
+      "options": [
+        "She won't have to change diapers",
+        "She won't have to save for college",
+        "She won't have to worry about the babies' health",
+        "She won't have to decide what to name them"
+      ],
+      "correct_answer": "She won't have to save for college",
+      "difficulty": "medium",
+      "explanation": "Rachel says 'you’re not gonna be the one worrying about saving for college...'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "What does Phoebe finally feel comfortable being called?",
+      "options": [
+        "Mom",
+        "Aunt Phoebe",
+        "Cool Aunt Phoebe",
+        "Phoebe the pregnancy expert"
+      ],
+      "correct_answer": "Cool Aunt Phoebe",
+      "difficulty": "easy",
+      "explanation": "Phoebe says 'I am pretty cool!... Cool Aunt Phoebe!'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "What procedure does the vet need to perform on the duck to retrieve Ross's ring?",
+      "options": [
+        "A simple surgery",
+        "A complex operation",
+        "A ring removal",
+        "A duck examination"
+      ],
+      "correct_answer": "A simple procedure",
+      "difficulty": "medium",
+      "explanation": "The vet says it's a simple procedure to remove the ring from the duck.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "What is Joey's concern when the vet is about to perform the procedure on the duck?",
+      "options": [
+        "That the vet won't be able to remove the ring",
+        "That the procedure will be too expensive",
+        "That something might go wrong during the procedure",
+        "That the duck will be unhappy"
+      ],
+      "correct_answer": "That something might go wrong during the procedure",
+      "difficulty": "medium",
+      "explanation": "Joey says 'If anything should happen to him… Things can go wrong!'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "Why does Ross call the company that sent the stripper?",
+      "options": [
+        "To thank them for the stripper",
+        "To complain about the stripper's performance",
+        "To ask for the stripper's real name and number",
+        "To cancel the stripper's service"
+      ],
+      "correct_answer": "To ask for the stripper's real name and number",
+      "difficulty": "medium",
+      "explanation": "Ross says 'We’ll call the company that sent her!' to try to retrieve his stolen ring.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "What does Chandler jokingly suggest after the stripper denies stealing the ring?",
+      "options": [
+        "That they should call the police",
+        "That they should search the apartment again",
+        "That he wants to marry the stripper",
+        "That they should give up looking for the ring"
+      ],
+      "correct_answer": "That he wants to marry the stripper",
+      "difficulty": "medium",
+      "explanation": "Chandler says 'Marry me.' after the stripper denies stealing the ring, which Ross and Joey find amusing.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "Why does Phoebe have a change of heart about her pregnancy and the upcoming birth of the babies?",
+      "options": [
+        "Because her friends threw her a baby shower",
+        "Because she realized she will be a cool aunt",
+        "Because she felt the babies kicking",
+        "Because she had a false labor"
+      ],
+      "correct_answer": "Because she realized she will be a cool aunt",
+      "difficulty": "medium",
+      "explanation": "Phoebe says 'I am pretty cool!... Cool Aunt Phoebe!' after her friends reassure her about her role as an aunt.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "What is Monica's initial reaction when Phoebe has a contraction during the tea-drinking scene?",
+      "options": [
+        "She stays calm and tries to help Phoebe",
+        "She panics and starts boiling water",
+        "She tries to give Phoebe the Bible to read",
+        "She quickly takes a step back"
+      ],
+      "correct_answer": "She quickly takes a step back",
+      "difficulty": "medium",
+      "explanation": "Monica and Rachel both take a step back when Phoebe grabs her stomach in pain.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "What does Ross say about the ring that was stolen?",
+      "options": [
+        "It's been in his family for years",
+        "It's very expensive",
+        "It's a magic ring",
+        "It's worthless"
+      ],
+      "correct_answer": "It's been in his family for years",
+      "difficulty": "easy",
+      "explanation": "Ross says 'That ring? When my grandmother first came to this country, that ring and the clothes on her back were all she had with her.'",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "Why does Joey sleep with the stripper after the bachelor party?",
+      "options": [
+        "Because Ross told him to",
+        "Because Chandler encouraged him to",
+        "Because he wanted to have fun",
+        "Because the stripper asked him to"
+      ],
+      "correct_answer": "Because he wanted to have fun",
+      "difficulty": "medium",
+      "explanation": "Joey says 'Of course!!' when Chandler asks if he slept with the stripper, implying that he wanted to have fun.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    },
+    {
+      "question": "What is the final plan to retrieve Ross's stolen ring?",
+      "options": [
+        "To call the police and report the theft",
+        "To search the apartment and question the stripper",
+        "To take the duck to the vet and remove the ring",
+        "To give up and buy a new ring"
+      ],
+      "correct_answer": "To take the duck to the vet and remove the ring",
+      "difficulty": "easy",
+      "explanation": "The guys realize the duck swallowed the ring and decide to take it to the vet to retrieve the ring.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 22,
+        "title": "The One With The Worst Best Man Ever"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T06:18:18.159Z"
+    }
+  ]
+}

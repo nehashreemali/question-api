@@ -126,6 +126,204 @@ function getRecentlyGenerated(limit = 10) {
 }
 
 // ============================================================================
+// Questions Scanner (for new folder structure)
+// ============================================================================
+
+interface QuestionStats {
+  total: number;
+  byGenerator: {
+    groq: number;
+    claudeCode: number;
+  };
+  byCategory: Record<string, { total: number; groq: number; claudeCode: number }>;
+  byShow: Record<string, { total: number; groq: number; claudeCode: number; seasons: Record<string, number> }>;
+  byDifficulty: { easy: number; medium: number; hard: number };
+}
+
+function scanAllQuestions(): QuestionStats {
+  const stats: QuestionStats = {
+    total: 0,
+    byGenerator: { groq: 0, claudeCode: 0 },
+    byCategory: {},
+    byShow: {},
+    byDifficulty: { easy: 0, medium: 0, hard: 0 },
+  };
+
+  // Scan TV shows
+  if (existsSync(TV_DATA_PATH)) {
+    const shows = readdirSync(TV_DATA_PATH, { withFileTypes: true })
+      .filter(d => d.isDirectory());
+
+    for (const show of shows) {
+      const showPath = join(TV_DATA_PATH, show.name);
+      stats.byShow[show.name] = { total: 0, groq: 0, claudeCode: 0, seasons: {} };
+
+      const seasons = readdirSync(showPath, { withFileTypes: true })
+        .filter(d => d.isDirectory() && d.name.startsWith('season-'));
+
+      for (const season of seasons) {
+        const seasonPath = join(showPath, season.name);
+        const seasonNum = season.name.replace('season-', '');
+        stats.byShow[show.name].seasons[seasonNum] = 0;
+
+        const episodes = readdirSync(seasonPath, { withFileTypes: true })
+          .filter(d => d.isDirectory() && d.name.startsWith('episode-'));
+
+        for (const episode of episodes) {
+          const questionsDir = join(seasonPath, episode.name, 'questions');
+          if (!existsSync(questionsDir)) continue;
+
+          const files = readdirSync(questionsDir)
+            .filter(f => f.endsWith('.json') && !f.includes('raw_questions'));
+
+          for (const file of files) {
+            try {
+              const data = JSON.parse(readFileSync(join(questionsDir, file), 'utf8'));
+              const questions = data.questions || [];
+              const isGroq = file.startsWith('groq_');
+              const isClaude = file.startsWith('claude_code_');
+
+              for (const q of questions) {
+                stats.total++;
+                stats.byShow[show.name].total++;
+                stats.byShow[show.name].seasons[seasonNum]++;
+
+                if (isGroq || q.generatedBy === 'groq') {
+                  stats.byGenerator.groq++;
+                  stats.byShow[show.name].groq++;
+                } else if (isClaude || q.generatedBy === 'claude-code') {
+                  stats.byGenerator.claudeCode++;
+                  stats.byShow[show.name].claudeCode++;
+                }
+
+                const diff = q.difficulty || 'medium';
+                if (diff in stats.byDifficulty) {
+                  stats.byDifficulty[diff as keyof typeof stats.byDifficulty]++;
+                }
+              }
+            } catch (e) {
+              // Skip invalid files
+            }
+          }
+        }
+      }
+
+      // Add to category stats
+      if (!stats.byCategory['tv-shows']) {
+        stats.byCategory['tv-shows'] = { total: 0, groq: 0, claudeCode: 0 };
+      }
+      stats.byCategory['tv-shows'].total += stats.byShow[show.name].total;
+      stats.byCategory['tv-shows'].groq += stats.byShow[show.name].groq;
+      stats.byCategory['tv-shows'].claudeCode += stats.byShow[show.name].claudeCode;
+    }
+  }
+
+  return stats;
+}
+
+interface QuestionWithMeta {
+  question: string;
+  options: string[];
+  correct_answer: string;
+  difficulty: string;
+  explanation?: string;
+  topic: {
+    type: string;
+    show?: string;
+    season?: number;
+    episode?: number;
+    title?: string;
+    category?: string;
+  };
+  generatedBy: string;
+  generatedAt?: string;
+}
+
+function getAllQuestions(filters?: {
+  category?: string;
+  show?: string;
+  season?: number;
+  generator?: string;
+  difficulty?: string;
+  limit?: number;
+  offset?: number;
+}): { questions: QuestionWithMeta[]; total: number } {
+  const allQuestions: QuestionWithMeta[] = [];
+
+  // Scan TV shows
+  if (existsSync(TV_DATA_PATH)) {
+    const shows = readdirSync(TV_DATA_PATH, { withFileTypes: true })
+      .filter(d => d.isDirectory());
+
+    for (const show of shows) {
+      if (filters?.show && show.name !== filters.show) continue;
+
+      const showPath = join(TV_DATA_PATH, show.name);
+      const seasons = readdirSync(showPath, { withFileTypes: true })
+        .filter(d => d.isDirectory() && d.name.startsWith('season-'));
+
+      for (const season of seasons) {
+        const seasonNum = parseInt(season.name.replace('season-', ''));
+        if (filters?.season && seasonNum !== filters.season) continue;
+
+        const seasonPath = join(showPath, season.name);
+        const episodes = readdirSync(seasonPath, { withFileTypes: true })
+          .filter(d => d.isDirectory() && d.name.startsWith('episode-'));
+
+        for (const episode of episodes) {
+          const questionsDir = join(seasonPath, episode.name, 'questions');
+          if (!existsSync(questionsDir)) continue;
+
+          const files = readdirSync(questionsDir)
+            .filter(f => f.endsWith('.json') && !f.includes('raw_questions'));
+
+          for (const file of files) {
+            const isGroq = file.startsWith('groq_');
+            const isClaude = file.startsWith('claude_code_');
+            const generator = isGroq ? 'groq' : isClaude ? 'claude-code' : 'unknown';
+
+            if (filters?.generator && generator !== filters.generator) continue;
+
+            try {
+              const data = JSON.parse(readFileSync(join(questionsDir, file), 'utf8'));
+              const questions = data.questions || [];
+
+              for (const q of questions) {
+                if (filters?.difficulty && q.difficulty !== filters.difficulty) continue;
+
+                allQuestions.push({
+                  ...q,
+                  topic: q.topic || {
+                    type: 'tv-show',
+                    show: show.name,
+                    season: seasonNum,
+                    episode: parseInt(episode.name.replace('episode-', '')),
+                    title: data.title,
+                  },
+                  generatedBy: q.generatedBy || generator,
+                  generatedAt: q.generatedAt || data.generatedAt,
+                });
+              }
+            } catch (e) {
+              // Skip invalid files
+            }
+          }
+        }
+      }
+    }
+  }
+
+  const total = allQuestions.length;
+  const offset = filters?.offset || 0;
+  const limit = filters?.limit || 50;
+
+  return {
+    questions: allQuestions.slice(offset, offset + limit),
+    total,
+  };
+}
+
+// ============================================================================
 // TV Show Helpers
 // ============================================================================
 
@@ -632,6 +830,24 @@ const server = Bun.serve({
       return Response.json(getRecentlyGenerated(limit), { headers: corsHeaders });
     }
 
+    // Question Stats & Browser API
+    if (path === '/api/question-stats') {
+      return Response.json(scanAllQuestions(), { headers: corsHeaders });
+    }
+
+    if (path === '/api/questions-list') {
+      const filters = {
+        category: url.searchParams.get('category') || undefined,
+        show: url.searchParams.get('show') || undefined,
+        season: url.searchParams.get('season') ? parseInt(url.searchParams.get('season')!) : undefined,
+        generator: url.searchParams.get('generator') || undefined,
+        difficulty: url.searchParams.get('difficulty') || undefined,
+        limit: parseInt(url.searchParams.get('limit') || '50'),
+        offset: parseInt(url.searchParams.get('offset') || '0'),
+      };
+      return Response.json(getAllQuestions(filters), { headers: corsHeaders });
+    }
+
     // TV Show API Routes
     if (path === '/api/tv-shows') {
       return Response.json(getTVShows(), { headers: corsHeaders });
@@ -855,6 +1071,20 @@ const server = Bun.serve({
     // Serve static files
     if (path === '/' || path === '/index.html') {
       const html = readFileSync(join(process.cwd(), 'public', 'index.html'), 'utf8');
+      return new Response(html, {
+        headers: { 'Content-Type': 'text/html' },
+      });
+    }
+
+    if (path === '/stats' || path === '/stats.html') {
+      const html = readFileSync(join(process.cwd(), 'public', 'stats.html'), 'utf8');
+      return new Response(html, {
+        headers: { 'Content-Type': 'text/html' },
+      });
+    }
+
+    if (path === '/questions' || path === '/questions.html') {
+      const html = readFileSync(join(process.cwd(), 'public', 'questions.html'), 'utf8');
       return new Response(html, {
         headers: { 'Content-Type': 'text/html' },
       });

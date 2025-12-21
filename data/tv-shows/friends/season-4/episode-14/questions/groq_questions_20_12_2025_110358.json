@@ -1,0 +1,452 @@
+{
+  "show": "Friends",
+  "season": 4,
+  "episode": 14,
+  "title": "The One With Joey’s Dirty Day",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-20T05:33:58.093Z",
+  "questionCount": 21,
+  "questions": [
+    {
+      "question": "What does Phoebe pick up and ask Joey about, during his preparation for a fishing trip?",
+      "options": [
+        "A fishing rod",
+        "A lure",
+        "A bucket of worms",
+        "A life jacket"
+      ],
+      "correct_answer": "A lure",
+      "difficulty": "easy",
+      "explanation": "Phoebe is curious about the different lures Joey has for his fishing trip.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "What does Joey call the first lure Phoebe asks him about?",
+      "options": [
+        "Glow-pop giggly jammer",
+        "Guggly worm",
+        "Fishing master",
+        "Lake lure"
+      ],
+      "correct_answer": "Guggly worm",
+      "difficulty": "medium",
+      "explanation": "Joey names the lure when Phoebe asks him about it.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "What object does Ross accidentally knock over with the fishing rod?",
+      "options": [
+        "A lamp",
+        "A chair",
+        "A table",
+        "A plant"
+      ],
+      "correct_answer": "A lamp",
+      "difficulty": "easy",
+      "explanation": "Ross is pretending to fish in the living room and swings the rod, knocking over a lamp.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "Why does Monica think Joey should not leave Chandler alone?",
+      "options": [
+        "Because Chandler is still in his sweat pants",
+        "Because Chandler just broke up with Kathy",
+        "Because Joey has a fishing trip",
+        "Because Monica needs Joey's help"
+      ],
+      "correct_answer": "Because Chandler just broke up with Kathy",
+      "difficulty": "medium",
+      "explanation": "Monica is concerned about Chandler's well-being after his breakup.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "According to Joey, what is Phase Two in the process of getting over a breakup?",
+      "options": [
+        "Getting drunk and going to a strip club",
+        "Crying and watching sad movies",
+        "Eating a lot of ice cream",
+        "Going on a solo trip"
+      ],
+      "correct_answer": "Getting drunk and going to a strip club",
+      "difficulty": "medium",
+      "explanation": "Joey explains the different phases of getting over a breakup to Monica.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "What is the name of the opera that Mr. Waltham invites Rachel to?",
+      "options": [
+        "Die Fledermaus",
+        "The Magic Flute",
+        "La Boheme",
+        "Carmen"
+      ],
+      "difficulty": "easy",
+      "correct_answer": "Die Fledermaus",
+      "explanation": "Mr. Waltham invites Rachel to the opera as a favor to keep his niece company.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "Why does Rachel hit a girl at the nightclub?",
+      "options": [
+        "Because the girl was flirting with Joshua",
+        "Because the girl tried to steal her umbrella",
+        "Because the girl was wearing the same dress as her",
+        "Because the girl was being rude to her"
+      ],
+      "correct_answer": "Because the girl tried to steal her umbrella",
+      "difficulty": "medium",
+      "explanation": "Rachel gets into an altercation with a girl who tries to take her umbrella.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "Where does Ross take Emily after meeting her?",
+      "options": [
+        "A coffee shop",
+        "A park",
+        "A bed and breakfast in Vermont",
+        "A museum"
+      ],
+      "correct_answer": "A bed and breakfast in Vermont",
+      "difficulty": "easy",
+      "explanation": "Ross and Emily go to a bed and breakfast in Vermont after meeting.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "What is Phoebe's reaction when she feels the baby kick?",
+      "options": [
+        "She starts crying",
+        "She gets excited and tells everyone",
+        "She thinks it's just her underwear elastic breaking",
+        "She feels scared"
+      ],
+      "correct_answer": "She thinks it's just her underwear elastic breaking",
+      "difficulty": "medium",
+      "explanation": "Phoebe initially mistakes the baby's kick for her underwear elastic breaking.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "Why does Joey use Charlton Heston's shower?",
+      "options": [
+        "Because he is a big fan of Charlton Heston",
+        "Because he forgot his own shower at home",
+        "Because he stinks from his fishing trip and needs to clean up",
+        "Because Charlton Heston invited him to"
+      ],
+      "correct_answer": "Because he stinks from his fishing trip and needs to clean up",
+      "difficulty": "medium",
+      "explanation": "Joey uses Charlton Heston's shower because he smells bad from his fishing trip.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "What does Charlton Heston tell Joey after catching him in his shower?",
+      "options": [
+        "To never use his shower again",
+        "To always knock before entering his dressing room",
+        "That every actor thinks they stink sometimes",
+        "That he should quit acting"
+      ],
+      "correct_answer": "That every actor thinks they stink sometimes",
+      "difficulty": "medium",
+      "explanation": "Charlton Heston shares some words of wisdom with Joey after catching him in his shower.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "What is Phase Three, according to Joey?",
+      "options": [
+        "Getting drunk and going to a strip club",
+        "Picturing yourself with other women",
+        "Crying and watching sad movies",
+        "Eating a lot of ice cream"
+      ],
+      "correct_answer": "Picturing yourself with other women",
+      "difficulty": "medium",
+      "explanation": "Joey explains the different phases of getting over a breakup to Monica.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "What does Chandler achieve at the strip club with the girls' help?",
+      "options": [
+        "Phase One",
+        "Phase Two",
+        "Phase Three",
+        "Phase Four"
+      ],
+      "correct_answer": "Phase Three",
+      "difficulty": "medium",
+      "explanation": "Chandler achieves Phase Three with the help of the girls at the strip club.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "Why does Phoebe tell the cigarette smoking guy to put out his cigarette?",
+      "options": [
+        "Because she is allergic to smoke",
+        "Because she is pregnant",
+        "Because it's against the law to smoke indoors",
+        "Because she doesn't like the smell"
+      ],
+      "correct_answer": "Because she is pregnant",
+      "difficulty": "easy",
+      "explanation": "Phoebe asks the man to put out his cigarette because she is pregnant.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "What is the name of the woman that Ross is with in Vermont?",
+      "options": [
+        "Emily",
+        "Rachel",
+        "Monica",
+        "Phoebe"
+      ],
+      "correct_answer": "Emily",
+      "difficulty": "easy",
+      "explanation": "Ross is with Emily in Vermont.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "What does Rachel do when she finds out that Ross is in Vermont with Emily?",
+      "options": [
+        "She calls Ross and congratulates him",
+        "She gets angry and hits Chandler",
+        "She decides to go to Vermont and join them",
+        "She starts crying"
+      ],
+      "correct_answer": "She gets angry and hits Chandler",
+      "difficulty": "medium",
+      "explanation": "Rachel gets upset when she finds out that Ross is in Vermont with Emily.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "What does Chandler say he will do after achieving Phase Three?",
+      "options": [
+        "He will call Kathy and try to get back together",
+        "He will go to a strip club and get drunk",
+        "He will never have a relationship again and just have sex with strippers",
+        "He will start dating Janice again"
+      ],
+      "correct_answer": "He will never have a relationship again and just have sex with strippers",
+      "difficulty": "hard",
+      "explanation": "Chandler says he will never have a relationship again after achieving Phase Three.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "What is the name of the actress that Monica says she would want to be with if she were to be with a woman?",
+      "options": [
+        "Michelle",
+        "Chantal",
+        "Candy",
+        "Phoebe"
+      ],
+      "correct_answer": "Michelle",
+      "difficulty": "medium",
+      "explanation": "Monica mentions that she would want to be with Michelle if she were to be with a woman.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "Why does Joey smell so bad when he returns from his fishing trip?",
+      "options": [
+        "Because he fell into a tub of worms",
+        "Because he didn't shower for three days",
+        "Because he ate too much fish",
+        "Because he got into a fight with a skunk"
+      ],
+      "correct_answer": "Because he didn't shower for three days and fell into a tub of worms",
+      "difficulty": "easy",
+      "explanation": "Joey smells bad because he didn't shower for three days and fell into a tub of worms.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "What does Charlton Heston give to Joey after catching him in his shower?",
+      "options": [
+        "A towel",
+        "A pair of pants",
+        "A shirt",
+        "A hat"
+      ],
+      "correct_answer": "A towel",
+      "difficulty": "easy",
+      "explanation": "Charlton Heston gives Joey a towel after catching him in his shower.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    },
+    {
+      "question": "What is the name of the club that Joshua invites Rachel to?",
+      "options": [
+        "The Nightclub",
+        "The Strip Club",
+        "The Opera House",
+        "The Coffee Shop"
+      ],
+      "correct_answer": "The Nightclub",
+      "difficulty": "medium",
+      "explanation": "Joshua invites Rachel to the opening of his new nightclub.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 14,
+        "title": "The One With Joey’s Dirty Day"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:33:58.093Z"
+    }
+  ]
+}

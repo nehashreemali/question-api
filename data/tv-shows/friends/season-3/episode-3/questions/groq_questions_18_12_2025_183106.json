@@ -1,0 +1,578 @@
+{
+  "show": "Friends",
+  "season": 3,
+  "episode": 3,
+  "title": "The One With the Jam",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-18T13:01:06.837Z",
+  "questionCount": 27,
+  "questions": [
+    {
+      "question": "What is Monica making in her apartment?",
+      "options": [
+        "Jam",
+        "Pickles",
+        "Cookies",
+        "Cakes"
+      ],
+      "correct_answer": "Jam",
+      "difficulty": "easy",
+      "explanation": "Monica is making jam as a way to get over her ex-boyfriend Richard.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "Why is Joey wearing a sling?",
+      "options": [
+        "He fell down the stairs",
+        "He jumped on the bed",
+        "He got into a fight",
+        "He played sports"
+      ],
+      "correct_answer": "He jumped on the bed",
+      "difficulty": "easy",
+      "explanation": "Joey hurt his shoulder by jumping on the bed.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What does Phoebe tell the guy who has been following her?",
+      "options": [
+        "She tells him to leave her alone",
+        "She tells him she's interested",
+        "She tells him she's her twin sister",
+        "She tells him to get a new hobby"
+      ],
+      "correct_answer": "She tells him she's her twin sister",
+      "difficulty": "medium",
+      "explanation": "Phoebe reveals to the guy that she is actually Ursula's twin sister.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What is Ross's advice to Chandler about sleeping with Janice?",
+      "options": [
+        "To cuddle with her all night",
+        "To give her space",
+        "To use the hug and roll technique",
+        "To sleep on the couch"
+      ],
+      "correct_answer": "To use the hug and roll technique",
+      "difficulty": "medium",
+      "explanation": "Ross suggests that Chandler use the hug and roll technique to give Janice space while sleeping.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "Why does Monica want to have a baby?",
+      "options": [
+        "She's getting married",
+        "She's in a stable relationship",
+        "She's ready to take control of her life",
+        "She's feeling broody"
+      ],
+      "correct_answer": "She's ready to take control of her life",
+      "difficulty": "easy",
+      "explanation": "Monica wants to have a baby as a way to take control of her life and move on from her ex-boyfriend.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What is the name of the guy who has been following Phoebe?",
+      "options": [
+        "Malcom",
+        "Mike",
+        "David",
+        "Tom"
+      ],
+      "correct_answer": "Malcom",
+      "difficulty": "easy",
+      "explanation": "The guy who has been following Phoebe is named Malcom.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What does Joey do for a living?",
+      "options": [
+        "He's an actor",
+        "He's a chef",
+        "He's a doctor",
+        "He's a lawyer"
+      ],
+      "correct_answer": "He's an actor",
+      "difficulty": "easy",
+      "explanation": "Joey is an actor, as mentioned in his sperm donor profile.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "Why does Phoebe agree to help Malcom get over her sister?",
+      "options": [
+        "She feels sorry for him",
+        "She's interested in him",
+        "She wants to help him move on",
+        "She's trying to get back at her sister"
+      ],
+      "correct_answer": "She wants to help him move on",
+      "difficulty": "medium",
+      "explanation": "Phoebe agrees to help Malcom get over her sister because she wants to help him move on and get over his obsession.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What is the name of the sperm donor that Monica chooses?",
+      "options": [
+        "37135",
+        "03815",
+        "Hoyt",
+        "Joey"
+      ],
+      "correct_answer": "37135",
+      "difficulty": "easy",
+      "explanation": "Monica chooses sperm donor number 37135.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What is Joey's suggestion to Phoebe about Malcom?",
+      "options": [
+        "To trust him",
+        "To follow him",
+        "To avoid him",
+        "To confront him"
+      ],
+      "correct_answer": "To follow him",
+      "difficulty": "medium",
+      "explanation": "Joey suggests that Phoebe follow Malcom to see if he's still interested in her sister.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What is the result of Chandler using the hug and roll technique on Janice?",
+      "options": [
+        "She gets hurt",
+        "She gets angry",
+        "She gets spun off the bed",
+        "She gets cuddly"
+      ],
+      "correct_answer": "She gets spun off the bed",
+      "difficulty": "medium",
+      "explanation": "Chandler's use of the hug and roll technique results in Janice getting spun off the bed.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What does Monica imagine her future family to be like?",
+      "options": [
+        "A big house with a pool and three kids",
+        "A small apartment with one kid",
+        "A farm with lots of animals",
+        "A beach house with no kids"
+      ],
+      "correct_answer": "A big house with a pool and three kids",
+      "difficulty": "medium",
+      "explanation": "Monica imagines her future family to be like a big house with a pool and three kids, with a husband named Hoyt.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "Why does Phoebe follow Malcom?",
+      "options": [
+        "She's interested in him",
+        "She's trying to help him",
+        "She's afraid he's still obsessed with her sister",
+        "She's trying to get revenge"
+      ],
+      "correct_answer": "She's afraid he's still obsessed with her sister",
+      "difficulty": "medium",
+      "explanation": "Phoebe follows Malcom because she's afraid he's still obsessed with her sister.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What is the result of Joey's donation to the sperm bank?",
+      "options": [
+        "He becomes a father",
+        "He gets paid",
+        "He gets a free sweater",
+        "None of his units are sold"
+      ],
+      "correct_answer": "None of his units are sold",
+      "difficulty": "easy",
+      "explanation": "None of Joey's units are sold, as revealed at the end of the episode.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What is Ross's additional relationship thought for Chandler?",
+      "options": [
+        "Women talk",
+        "Men don't listen",
+        "Communication is key",
+        "Space is important"
+      ],
+      "correct_answer": "Women talk",
+      "difficulty": "easy",
+      "explanation": "Ross's additional relationship thought for Chandler is that women talk.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What is the name of the technique Ross suggests to Chandler for giving Janice space while sleeping?",
+      "options": [
+        "The hug and roll",
+        "The push and pull",
+        "The squeeze and release",
+        "The snuggle and slide"
+      ],
+      "correct_answer": "The hug and roll",
+      "difficulty": "medium",
+      "explanation": "Ross suggests the hug and roll technique to Chandler for giving Janice space while sleeping.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "Why does Monica choose to use a sperm donor?",
+      "options": [
+        "She's in a hurry to have a baby",
+        "She's not ready for a relationship",
+        "She wants to take control of her life",
+        "She's trying to get back at her ex-boyfriend"
+      ],
+      "correct_answer": "She wants to take control of her life",
+      "difficulty": "medium",
+      "explanation": "Monica chooses to use a sperm donor because she wants to take control of her life and have a baby on her own terms.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What is the result of Phoebe's conversation with Malcom?",
+      "options": [
+        "She agrees to date him",
+        "She tells him to leave her alone",
+        "She helps him get over her sister",
+        "She becomes obsessed with him"
+      ],
+      "correct_answer": "She helps him get over her sister",
+      "difficulty": "medium",
+      "explanation": "Phoebe agrees to help Malcom get over her sister after their conversation.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What is Joey's occupation, according to his sperm donor profile?",
+      "options": [
+        "Actor",
+        "Model",
+        "Lawyer",
+        "Doctor"
+      ],
+      "correct_answer": "Actor",
+      "difficulty": "easy",
+      "explanation": "Joey's occupation is listed as an actor on his sperm donor profile.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "Why does Chandler get hit on the head with a magazine?",
+      "options": [
+        "He's being punished for something",
+        "He's being initiated into a club",
+        "He's being given a warning",
+        "He's being taught a lesson about relationships"
+      ],
+      "correct_answer": "He's being taught a lesson about relationships",
+      "difficulty": "medium",
+      "explanation": "Chandler gets hit on the head with a magazine as a way of Ross teaching him a lesson about relationships.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What is the name of the guy that Monica imagines as her future husband?",
+      "options": [
+        "Hoyt",
+        "Joey",
+        "Chandler",
+        "Ross"
+      ],
+      "correct_answer": "Hoyt",
+      "difficulty": "medium",
+      "explanation": "Monica imagines a guy named Hoyt as her future husband.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What is the result of Monica's decision to have a baby using a sperm donor?",
+      "options": [
+        "She gets pregnant immediately",
+        "She has to choose a new sperm donor",
+        "She changes her mind",
+        "She becomes more confident"
+      ],
+      "correct_answer": "She becomes more confident",
+      "difficulty": "medium",
+      "explanation": "Monica's decision to have a baby using a sperm donor makes her more confident and in control of her life.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What is the personality of the guy who has been following Phoebe?",
+      "options": [
+        "He's romantic and passionate",
+        "He's creepy and obsessive",
+        "He's funny and carefree",
+        "He's serious and brooding"
+      ],
+      "correct_answer": "He's romantic and passionate",
+      "difficulty": "medium",
+      "explanation": "The guy who has been following Phoebe is described as romantic and passionate, but also a bit obsessive.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What is the name of the technique that Chandler uses to give Janice space while sleeping?",
+      "options": [
+        "The hug and roll",
+        "The push and pull",
+        "The squeeze and release",
+        "The snuggle and slide"
+      ],
+      "correct_answer": "The hug and roll",
+      "difficulty": "medium",
+      "explanation": "Chandler uses the hug and roll technique to give Janice space while sleeping.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "Why does Phoebe agree to help Malcom get over her sister?",
+      "options": [
+        "She feels sorry for him",
+        "She's interested in him",
+        "She wants to help him move on",
+        "She's trying to get back at her sister"
+      ],
+      "correct_answer": "She wants to help him move on",
+      "difficulty": "medium",
+      "explanation": "Phoebe agrees to help Malcom get over her sister because she wants to help him move on and get over his obsession.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What is the result of Joey's donation to the sperm bank?",
+      "options": [
+        "He becomes a father",
+        "He gets paid",
+        "He gets a free sweater",
+        "None of his units are sold"
+      ],
+      "correct_answer": "None of his units are sold",
+      "difficulty": "easy",
+      "explanation": "None of Joey's units are sold, as revealed at the end of the episode.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    },
+    {
+      "question": "What is Ross's advice to Chandler about relationships?",
+      "options": [
+        "To always listen to the woman",
+        "To never listen to the woman",
+        "To use the hug and roll technique",
+        "To give her space"
+      ],
+      "correct_answer": "To always listen to the woman",
+      "difficulty": "medium",
+      "explanation": "Ross's advice to Chandler is to always listen to the woman, as revealed when he hits Chandler on the head with a magazine.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 3,
+        "title": "The One With the Jam"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T13:01:06.837Z"
+    }
+  ]
+}

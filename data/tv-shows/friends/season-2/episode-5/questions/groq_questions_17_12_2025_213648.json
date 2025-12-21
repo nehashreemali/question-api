@@ -1,0 +1,641 @@
+{
+  "show": "Friends",
+  "season": 2,
+  "episode": 5,
+  "title": "The One With Five Steaks and an Eggplant",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-17T16:06:48.545Z",
+  "questionCount": 30,
+  "questions": [
+    {
+      "question": "What is Ross watching on TV at Chandler and Joey's apartment?",
+      "options": [
+        "A movie",
+        "Wrestling",
+        "A news program",
+        "A sports game"
+      ],
+      "correct_answer": "Wrestling",
+      "difficulty": "easy",
+      "explanation": "Ross is watching wrestling on TV at Chandler and Joey's apartment.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the name of the woman who leaves a message on Ross's answering machine?",
+      "options": [
+        "Jade",
+        "Julie",
+        "Monica",
+        "Phoebe"
+      ],
+      "correct_answer": "Jade",
+      "difficulty": "easy",
+      "explanation": "Jade leaves a message on Ross's answering machine, looking for a person named Bob.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the reason for Monica's celebration at the restaurant?",
+      "options": [
+        "Her birthday",
+        "Her new job promotion",
+        "Her anniversary",
+        "Her graduation"
+      ],
+      "correct_answer": "Her new job promotion",
+      "difficulty": "easy",
+      "explanation": "Monica is celebrating her new job promotion as head lunch chef and head of purchasing.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the name of the band that Ross's friends want to see in concert?",
+      "options": [
+        "Hootie and the Blowfish",
+        "The Rolling Stones",
+        "The Beatles",
+        "The Eagles"
+      ],
+      "correct_answer": "Hootie and the Blowfish",
+      "difficulty": "easy",
+      "explanation": "Ross's friends want to see Hootie and the Blowfish in concert for his birthday.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "Why do Rachel, Phoebe, and Joey feel uncomfortable about Ross's birthday celebration?",
+      "options": [
+        "They don't like Hootie and the Blowfish",
+        "They can't afford the concert tickets",
+        "They don't like Ross's gift",
+        "They don't like the restaurant"
+      ],
+      "correct_answer": "They can't afford the concert tickets",
+      "difficulty": "medium",
+      "explanation": "Rachel, Phoebe, and Joey feel uncomfortable about Ross's birthday celebration because they can't afford the concert tickets and feel like they're being treated to something they can't afford.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the outcome of Monica's job after she receives a call from her boss?",
+      "options": [
+        "She gets a raise",
+        "She gets a promotion",
+        "She gets fired",
+        "She gets a new title"
+      ],
+      "correct_answer": "She gets fired",
+      "difficulty": "easy",
+      "explanation": "Monica gets fired from her job after her boss calls her about the steaks she received from the meat vendor.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What does Chandler tell Jade when she asks him about the guy she had sex with?",
+      "options": [
+        "He was great",
+        "He was terrible",
+        "He was nothing compared to you",
+        "He was okay"
+      ],
+      "correct_answer": "He was nothing compared to you",
+      "difficulty": "medium",
+      "explanation": "Chandler tells Jade that the guy she had sex with was nothing compared to her, trying to make her feel better.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "Who does Monica run into at the concert?",
+      "options": [
+        "An old friend",
+        "A family member",
+        "A coworker",
+        "Little Stevie Fisher"
+      ],
+      "correct_answer": "Little Stevie Fisher",
+      "difficulty": "medium",
+      "explanation": "Monica runs into Little Stevie Fisher, a boy she used to babysit, at the concert.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "Why does Phoebe decline the invitation to the concert?",
+      "options": [
+        "She doesn't like Hootie and the Blowfish",
+        "She's not in a Hootie place",
+        "She's busy",
+        "She's sick"
+      ],
+      "correct_answer": "She's not in a Hootie place",
+      "difficulty": "medium",
+      "explanation": "Phoebe declines the invitation to the concert because she's not in a Hootie place, meaning she's not in the right mood for the concert.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the name of the person who gives Monica a hickey?",
+      "options": [
+        "A friend",
+        "A family member",
+        "A coworker",
+        "A Blowfish"
+      ],
+      "correct_answer": "A Blowfish",
+      "difficulty": "medium",
+      "explanation": "Monica gets a hickey from one of the members of the band Hootie and the Blowfish.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the reason for the group's discussion about money?",
+      "options": [
+        "Ross's birthday celebration",
+        "Monica's new job",
+        "Chandler's date with Jade",
+        "The cost of the concert tickets"
+      ],
+      "correct_answer": "Ross's birthday celebration",
+      "difficulty": "medium",
+      "explanation": "The group discusses money because of the cost of Ross's birthday celebration, including the concert tickets.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is Chandler's response to Jade's message on Ross's answering machine?",
+      "options": [
+        "He ignores it",
+        "He calls her back as Bob",
+        "He tells Ross about it",
+        "He deletes the message"
+      ],
+      "correct_answer": "He calls her back as Bob",
+      "difficulty": "medium",
+      "explanation": "Chandler calls Jade back as Bob, pretending to be the person she was looking for.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the outcome of Chandler's conversation with Jade?",
+      "options": [
+        "She agrees to meet him",
+        "She declines his offer",
+        "She tells him she's in a relationship",
+        "She hangs up on him"
+      ],
+      "correct_answer": "She agrees to meet him",
+      "difficulty": "medium",
+      "explanation": "Jade agrees to meet Chandler, but he eventually tells her the truth and she reveals she had sex with another guy.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the name of the restaurant where the group celebrates Monica's promotion?",
+      "options": [
+        "Central Perk",
+        "Monica's restaurant",
+        "A fancy restaurant",
+        "Somplace Nice"
+      ],
+      "correct_answer": "Somplace Nice",
+      "difficulty": "medium",
+      "explanation": "The group celebrates Monica's promotion at a restaurant called Somplace Nice.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the reason for Joey's reluctance to order food at the restaurant?",
+      "options": [
+        "He's not hungry",
+        "He's on a diet",
+        "He can't afford it",
+        "He doesn't like the menu"
+      ],
+      "correct_answer": "He can't afford it",
+      "difficulty": "medium",
+      "explanation": "Joey is reluctant to order food at the restaurant because he can't afford it, and he jokes about selling his kidney to pay for it.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is Phoebe's order at the restaurant?",
+      "options": [
+        "A salad",
+        "A cup of soup",
+        "A sandwich",
+        "A steak"
+      ],
+      "correct_answer": "A cup of soup",
+      "difficulty": "easy",
+      "explanation": "Phoebe orders a cup of cucumber soup at the restaurant.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the name of the person who represents the band Hootie and the Blowfish?",
+      "options": [
+        "Steve",
+        "Stevie",
+        "Little Stevie Fisher",
+        "The band's manager"
+      ],
+      "correct_answer": "Little Stevie Fisher",
+      "difficulty": "medium",
+      "explanation": "Little Stevie Fisher, a boy Monica used to babysit, represents the band Hootie and the Blowfish.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the outcome of Monica's conversation with her boss?",
+      "options": [
+        "She gets a raise",
+        "She gets a promotion",
+        "She gets fired",
+        "She gets a warning"
+      ],
+      "correct_answer": "She gets fired",
+      "difficulty": "easy",
+      "explanation": "Monica gets fired from her job after her boss calls her about the steaks she received from the meat vendor.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the reason for Rachel's sarcasm when she says 'Hi, Julie'?",
+      "options": [
+        "She doesn't like Julie",
+        "She's joking around",
+        "She's being sarcastic because Julie is Ross's girlfriend",
+        "She's being sarcastic because Julie is not present"
+      ],
+      "correct_answer": "She's being sarcastic because Julie is Ross's girlfriend",
+      "difficulty": "medium",
+      "explanation": "Rachel is being sarcastic when she says 'Hi, Julie' because Julie is Ross's girlfriend and Rachel is likely joking around.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the name of the song that Chandler requests the waiter to sing?",
+      "options": [
+        "Killing Me Softly",
+        "I Will Always Love You",
+        "Yesterday",
+        "Stairway to Heaven"
+      ],
+      "correct_answer": "Killing Me Softly",
+      "difficulty": "easy",
+      "explanation": "Chandler requests the waiter to sing 'Killing Me Softly' at the restaurant.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the amount that each person owes for Ross's birthday celebration?",
+      "options": [
+        "$20",
+        "$28",
+        "$33.50",
+        "$62"
+      ],
+      "correct_answer": "$33.50",
+      "difficulty": "medium",
+      "explanation": "Each person owes $33.50 for Ross's birthday celebration, but they eventually decide to pay for their own meals instead.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the reason for Phoebe's reluctance to pay $33.50 for Ross's birthday celebration?",
+      "options": [
+        "She doesn't like Ross",
+        "She can't afford it",
+        "She's on a diet",
+        "She doesn't like the restaurant"
+      ],
+      "correct_answer": "She can't afford it",
+      "difficulty": "medium",
+      "explanation": "Phoebe is reluctant to pay $33.50 for Ross's birthday celebration because she can't afford it, and she jokes about not being able to afford 'cold cucumber mush' for that price.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the name of the dish that Monica brings home for dinner?",
+      "options": [
+        "5 steaks and an eggplant",
+        "5 chicken breasts and a salad",
+        "5 pizzas and a cake",
+        "5 burgers and fries"
+      ],
+      "correct_answer": "5 steaks and an eggplant",
+      "difficulty": "easy",
+      "explanation": "Monica brings home 5 steaks and an eggplant for dinner, courtesy of the new meat supplier at her work.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the reason for Joey's joke about selling his kidney?",
+      "options": [
+        "He's trying to be funny",
+        "He's serious about selling his kidney",
+        "He's trying to make a point about the cost of Ross's birthday celebration",
+        "He's trying to impress the others"
+      ],
+      "correct_answer": "He's trying to make a point about the cost of Ross's birthday celebration",
+      "difficulty": "medium",
+      "explanation": "Joey jokes about selling his kidney to pay for Ross's birthday celebration, highlighting the financial burden it puts on him and the others.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the outcome of Chandler's date with Jade?",
+      "options": [
+        "They fall in love",
+        "They have a great time",
+        "They have sex",
+        "It's awkward and bumpy"
+      ],
+      "correct_answer": "It's awkward and bumpy",
+      "difficulty": "medium",
+      "explanation": "Chandler's date with Jade is awkward and bumpy, and she eventually reveals that she had sex with another guy.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the reason for the group's decision to not attend the concert?",
+      "options": [
+        "They don't like Hootie and the Blowfish",
+        "They can't afford the tickets",
+        "They're not in the mood",
+        "They have other plans"
+      ],
+      "correct_answer": "They can't afford the tickets",
+      "difficulty": "medium",
+      "explanation": "The group decides not to attend the concert because they can't afford the tickets, and they feel like they're being treated to something they can't afford.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the name of the person who gives Monica a job opportunity?",
+      "options": [
+        "Leon",
+        "Steve",
+        "Stevie",
+        "Little Stevie Fisher"
+      ],
+      "correct_answer": "Leon",
+      "difficulty": "easy",
+      "explanation": "Leon, Monica's boss, gives her a job opportunity as head lunch chef and head of purchasing.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the reason for Ross's friends' decision to buy him concert tickets?",
+      "options": [
+        "They want to celebrate his birthday",
+        "They want to cheer him up",
+        "They want to apologize for something",
+        "They want to impress him"
+      ],
+      "correct_answer": "They want to celebrate his birthday",
+      "difficulty": "easy",
+      "explanation": "Ross's friends buy him concert tickets to celebrate his birthday and make it a special day for him.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the outcome of Monica's conversation with Steve?",
+      "options": [
+        "She gets a job offer",
+        "She gets a promotion",
+        "She gets fired",
+        "She gets a warning"
+      ],
+      "correct_answer": "She gets to meet the band",
+      "difficulty": "easy",
+      "explanation": "Monica's conversation with Steve leads to her meeting the band Hootie and the Blowfish, and she even gets a hickey from one of the band members.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    },
+    {
+      "question": "What is the reason for Phoebe's decision to not attend the concert?",
+      "options": [
+        "She doesn't like Hootie and the Blowfish",
+        "She's not in the mood",
+        "She's busy",
+        "She's not feeling well"
+      ],
+      "correct_answer": "She's not in the mood",
+      "difficulty": "medium",
+      "explanation": "Phoebe decides not to attend the concert because she's not in a Hootie place, meaning she's not in the right mood for the concert.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 2,
+        "episode": 5,
+        "title": "The One With Five Steaks and an Eggplant"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-17T16:06:48.545Z"
+    }
+  ]
+}

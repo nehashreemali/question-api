@@ -1,0 +1,662 @@
+{
+  "show": "Friends",
+  "season": 3,
+  "episode": 12,
+  "title": "The One With All The Jealousy",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-18T14:50:02.157Z",
+  "questionCount": 31,
+  "questions": [
+    {
+      "question": "What does Rachel wear to her first day at her new job?",
+      "options": [
+        "A dress",
+        "A business suit",
+        "A towel",
+        "A skirt"
+      ],
+      "correct_answer": "A towel",
+      "difficulty": "easy",
+      "explanation": "Rachel runs into the living room wearing only a towel.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "Who helps Rachel pick out a purse for her first day of work?",
+      "options": [
+        "Monica",
+        "Phoebe",
+        "Chandler",
+        "Joey"
+      ],
+      "correct_answer": "Phoebe",
+      "difficulty": "easy",
+      "explanation": "Phoebe arrives with about 20 purses hanging around her neck to help Rachel choose one.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What is the name of Chandler's weird cousin who is getting married?",
+      "options": [
+        "Albert",
+        "Julio",
+        "Mark",
+        "Ross"
+      ],
+      "correct_answer": "Albert",
+      "difficulty": "easy",
+      "explanation": "Chandler mentions that his weird cousin Albert is getting married.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What is the name of the song Joey plans to sing at his audition?",
+      "options": [
+        "New York, New York",
+        "I Left My Heart in San Francisco",
+        "You've Got to Pick a Pocket or Two",
+        "All of the above"
+      ],
+      "correct_answer": "You've Got to Pick a Pocket or Two",
+      "difficulty": "medium",
+      "explanation": "Joey sings 'You've Got to Pick a Pocket or Two' during his audition.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What is the name of the woman who kisses Mark in Rachel's office?",
+      "options": [
+        "Rachel",
+        "Monica",
+        "Phoebe",
+        "Another woman at the office"
+      ],
+      "correct_answer": "Another woman at the office",
+      "difficulty": "medium",
+      "explanation": "Mark is seen kissing another woman in Rachel's office.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What is the name of the poem Julio writes about?",
+      "options": [
+        "The Empty Vase",
+        "Flowers of Evil",
+        "The Shadow of a Tree",
+        "A Child Laughing"
+      ],
+      "correct_answer": "The Empty Vase",
+      "difficulty": "medium",
+      "explanation": "Monica mentions that Julio wrote a poem called 'The Empty Vase'.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Ross send to Rachel's office to mark his territory?",
+      "options": [
+        "A love bug",
+        "A barbershop quartet",
+        "A bouquet of flowers",
+        "A box of chocolates"
+      ],
+      "correct_answer": "Both A and B",
+      "difficulty": "hard",
+      "explanation": "Ross sends both a love bug and a barbershop quartet to Rachel's office.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What is the name of the diner where Monica works?",
+      "options": [
+        "Central Perk",
+        "The Moondance Diner",
+        "The Coffee Spot",
+        "The Daily Grind"
+      ],
+      "correct_answer": "The Moondance Diner",
+      "difficulty": "easy",
+      "explanation": "Monica works at the Moondance Diner.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "Who does Ross have a play date with at the end of the episode?",
+      "options": [
+        "Monica",
+        "Rachel",
+        "Phoebe",
+        "A stripper he met at a party"
+      ],
+      "correct_answer": "A stripper he met at a party",
+      "difficulty": "medium",
+      "explanation": "Ross has a play date with a stripper he met at a party.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Joey claim to have on his resume?",
+      "options": [
+        "Three years of modern dance with Twila Tharp",
+        "Five years with the American Ballet Theater",
+        "Both A and B",
+        "Neither A nor B"
+      ],
+      "correct_answer": "Both A and B",
+      "difficulty": "medium",
+      "explanation": "Joey claims to have both three years of modern dance with Twila Tharp and five years with the American Ballet Theater on his resume.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Phoebe think Julio's poem 'The Empty Vase' is really about?",
+      "options": [
+        "Monica",
+        "All American women",
+        "The beauty of nature",
+        "The power of love"
+      ],
+      "correct_answer": "All American women",
+      "difficulty": "medium",
+      "explanation": "Phoebe thinks Julio's poem is really about all American women.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Monica give to Julio as a gift?",
+      "options": [
+        "A book of poetry",
+        "A vase",
+        "A bouquet of flowers",
+        "A box of chocolates"
+      ],
+      "correct_answer": "A vase",
+      "difficulty": "easy",
+      "explanation": "Monica gives Julio a vase as a gift.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Ross do when he sees Mark kissing another woman in Rachel's office?",
+      "options": [
+        "He gets angry and confronts Mark",
+        "He gets jealous and tries to mark his territory",
+        "He realizes he needs to work on his relationship with Rachel",
+        "He storms out of the office"
+      ],
+      "correct_answer": "He gets angry and confronts Mark",
+      "difficulty": "medium",
+      "explanation": "Ross gets angry and confronts Mark when he sees him kissing another woman in Rachel's office.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Joey do during his dance audition?",
+      "options": [
+        "He sings 'New York, New York'",
+        "He sings 'I Left My Heart in San Francisco'",
+        "He sings 'You've Got to Pick a Pocket or Two' and picks a pocket",
+        "He runs out of the audition"
+      ],
+      "correct_answer": "He runs out of the audition",
+      "difficulty": "medium",
+      "explanation": "Joey runs out of the audition during his dance audition.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Rachel do when Ross tells her he has a play date with a stripper?",
+      "options": [
+        "She gets angry and confronts Ross",
+        "She becomes jealous and tries to mark her territory",
+        "She realizes she needs to work on her relationship with Ross",
+        "She gives Ross a passionate kiss"
+      ],
+      "correct_answer": "She gives Ross a passionate kiss",
+      "difficulty": "medium",
+      "explanation": "Rachel gives Ross a passionate kiss when he tells her he has a play date with a stripper.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What is the reason for Ross's jealousy according to Chandler?",
+      "options": [
+        "Ross is afraid of losing Rachel to Mark",
+        "Ross is insecure about his relationship with Rachel",
+        "Ross is trying to mark his territory",
+        "Ross is being Mr. Inappropriate"
+      ],
+      "correct_answer": "Ross is afraid of losing Rachel to Mark",
+      "difficulty": "medium",
+      "explanation": "Chandler thinks Ross is jealous because he is afraid of losing Rachel to Mark.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Gunther say when Ross and Rachel are talking at Central Perk?",
+      "options": [
+        "Let it be me",
+        "I'll have a coffee",
+        "I'm going home",
+        "Nothing"
+      ],
+      "correct_answer": "Let it be me",
+      "difficulty": "easy",
+      "explanation": "Gunther says 'Let it be me' when Ross and Rachel are talking at Central Perk.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Monica say to Julio when she finds out what his poem is really about?",
+      "options": [
+        "You're a great poet",
+        "I love your poem",
+        "You're a buttmunch",
+        "You have no right to make that kind of judgment about me"
+      ],
+      "correct_answer": "You have no right to make that kind of judgment about me",
+      "difficulty": "medium",
+      "explanation": "Monica tells Julio that he has no right to make that kind of judgment about her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does the barbershop quartet sing to Julio at the end of the episode?",
+      "options": [
+        "You're a great poet",
+        "You're a buttmunch",
+        "We love your poem",
+        "You're bad in bed"
+      ],
+      "correct_answer": "You're a buttmunch and you're bad in bed",
+      "difficulty": "medium",
+      "explanation": "The barbershop quartet sings that Julio is a buttmunch and bad in bed.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What is the name of the song the pianist plays during Joey's dance audition?",
+      "options": [
+        "You've Got to Pick a Pocket or Two",
+        "New York, New York",
+        "I Left My Heart in San Francisco",
+        "Not specified"
+      ],
+      "correct_answer": "Not specified",
+      "difficulty": "hard",
+      "explanation": "The song the pianist plays during Joey's dance audition is not specified.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Chandler buy for the bachelor party?",
+      "options": [
+        "A stripper",
+        "A magician",
+        "A pen with a naked woman",
+        "A cake"
+      ],
+      "correct_answer": "A stripper and a pen with a naked woman",
+      "difficulty": "medium",
+      "explanation": "Chandler buys a stripper and a pen with a naked woman for the bachelor party.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Ross do when he sees Mark kissing another woman in Rachel's office?",
+      "options": [
+        "He gets angry and confronts Mark",
+        "He throws the love bug at Mark",
+        "He storms out of the office",
+        "He tries to mark his territory"
+      ],
+      "correct_answer": "He throws the love bug at Mark",
+      "difficulty": "medium",
+      "explanation": "Ross throws the love bug at Mark when he sees him kissing another woman in Rachel's office.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Joey do when he is asked to teach the dance combination to the other dancers?",
+      "options": [
+        "He teaches them the combination",
+        "He runs out of the audition",
+        "He sings 'You've Got to Pick a Pocket or Two'",
+        "He picks a pocket"
+      ],
+      "correct_answer": "He runs out of the audition",
+      "difficulty": "medium",
+      "explanation": "Joey runs out of the audition when he is asked to teach the dance combination to the other dancers.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What is the reason for Monica's confrontation with Julio?",
+      "options": [
+        "She thinks he is a great poet",
+        "She loves his poem",
+        "She thinks he is a buttmunch",
+        "She thinks his poem is about her"
+      ],
+      "correct_answer": "She thinks his poem is about her",
+      "difficulty": "medium",
+      "explanation": "Monica confronts Julio because she thinks his poem is about her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Phoebe think about Julio's poem?",
+      "options": [
+        "It's a great poem",
+        "It's about Monica",
+        "It's about all American women",
+        "It's not a good translation"
+      ],
+      "correct_answer": "It's about all American women",
+      "difficulty": "medium",
+      "explanation": "Phoebe thinks Julio's poem is about all American women.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Ross say to Rachel when she asks him why he is jealous?",
+      "options": [
+        "I'm afraid of losing you to Mark",
+        "I'm insecure about our relationship",
+        "I'm trying to mark my territory",
+        "I love you more than I loved Carol"
+      ],
+      "correct_answer": "I love you more than I loved Carol",
+      "difficulty": "medium",
+      "explanation": "Ross tells Rachel that he loves her more than he loved Carol.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Chandler say to Ross when he is trying to decide what to do about Rachel and Mark?",
+      "options": [
+        "You should send her a love bug",
+        "You should confront Mark",
+        "You should try to mark your territory",
+        "You should go to her office and surprise her"
+      ],
+      "correct_answer": "You should go to her office and surprise her",
+      "difficulty": "medium",
+      "explanation": "Chandler suggests that Ross should go to Rachel's office and surprise her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Joey say to the director when he is asked to teach the dance combination?",
+      "options": [
+        "I'd be happy to teach it",
+        "I don't know the combination",
+        "I'm not a good teacher",
+        "It's step-ity, step and jazz hands"
+      ],
+      "correct_answer": "It's step-ity, step and jazz hands",
+      "difficulty": "medium",
+      "explanation": "Joey says 'It's step-ity, step and jazz hands' when he is asked to teach the dance combination.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Monica say to Julio when she gives him the vase?",
+      "options": [
+        "I love your poem",
+        "You're a great poet",
+        "I think your poem is about me",
+        "I'm just an empty vase"
+      ],
+      "correct_answer": "I think your poem is about me",
+      "difficulty": "medium",
+      "explanation": "Monica tells Julio that she thinks his poem is about her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does the director say to Joey when he asks him to teach the dance combination?",
+      "options": [
+        "You're a great dancer",
+        "You're a good teacher",
+        "You have a lot of experience",
+        "You have to teach the combination to the other dancers"
+      ],
+      "correct_answer": "You have to teach the combination to the other dancers",
+      "difficulty": "medium",
+      "explanation": "The director asks Joey to teach the dance combination to the other dancers.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    },
+    {
+      "question": "What does Ross do when he sees the woman Mark is kissing?",
+      "options": [
+        "He gets angry and confronts Mark",
+        "He storms out of the office",
+        "He throws the love bug at Mark",
+        "He realizes it's not Rachel"
+      ],
+      "correct_answer": "He realizes it's not Rachel",
+      "difficulty": "medium",
+      "explanation": "Ross realizes that the woman Mark is kissing is not Rachel.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 12,
+        "title": "The One With All The Jealousy"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-18T14:50:02.157Z"
+    }
+  ]
+}

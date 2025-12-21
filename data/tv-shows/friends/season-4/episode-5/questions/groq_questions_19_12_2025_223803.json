@@ -1,0 +1,452 @@
+{
+  "show": "Friends",
+  "season": 4,
+  "episode": 5,
+  "title": "The One With Joey's New Girlfriend",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-19T17:08:03.338Z",
+  "questionCount": 21,
+  "questions": [
+    {
+      "question": "What is the name of the woman Ross is interested in?",
+      "options": [
+        "Amanda",
+        "Kathy",
+        "Monica",
+        "Rachel"
+      ],
+      "correct_answer": "Amanda",
+      "difficulty": "easy",
+      "explanation": "Ross mentions that he's going to Amanda's place for a date.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "Why does Phoebe want to catch a cold?",
+      "options": [
+        "She wants to miss work",
+        "She wants to stay home and watch TV",
+        "She wants to sound sexy when she sings",
+        "She wants to get attention from her friends"
+      ],
+      "correct_answer": "She wants to sound sexy when she sings",
+      "difficulty": "medium",
+      "explanation": "Phoebe says she wants to catch a cold so she can sound sexy again when she sings.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "What is the name of the song Phoebe sings at Central Perk?",
+      "options": [
+        "Smelly Cat",
+        "Sticky Shoes",
+        "Platting Goats",
+        "My Paper Mache Man"
+      ],
+      "correct_answer": "Multiple songs, but one of them is Smelly Cat",
+      "difficulty": "easy",
+      "explanation": "Phoebe sings multiple songs, including 'Smelly Cat', at Central Perk.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "Why does Ross go to Amanda's place?",
+      "options": [
+        "For a date",
+        "To babysit her kids",
+        "To help her move",
+        "To borrow something"
+      ],
+      "correct_answer": "To babysit her kids",
+      "difficulty": "medium",
+      "explanation": "Amanda asks Ross to babysit her kids while she goes out on a date.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "What is the gesture that Ross and Rachel share?",
+      "options": [
+        "A secret handshake",
+        "A special wink",
+        "A way of giving the finger without actually giving it",
+        "A romantic kiss"
+      ],
+      "correct_answer": "A way of giving the finger without actually giving it",
+      "difficulty": "hard",
+      "explanation": "Ross and Rachel share a gesture that Ross made up as a kid, which is a way of giving the finger without actually giving it.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "Why does Chandler chase after Kathy?",
+      "options": [
+        "Because he's in love with her",
+        "Because he wants to be friends with her",
+        "Because he wants to go out on a date with her",
+        "Because he wants to get away from Joey"
+      ],
+      "correct_answer": "Because he's in love with her",
+      "difficulty": "medium",
+      "explanation": "Chandler chases after Kathy because he has developed feelings for her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "What does Joey tell Chandler to do about Kathy?",
+      "options": [
+        "To avoid her",
+        "To be nice to her",
+        "To pretend to like her",
+        "To tell her how he really feels"
+      ],
+      "correct_answer": "To pretend to like her",
+      "difficulty": "medium",
+      "explanation": "Joey tells Chandler to pretend to like Kathy and make an effort to get along with her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "What does Rachel discover about her boyfriend Josh?",
+      "options": [
+        "He's married",
+        "He's a great guy",
+        "He's stealing from her",
+        "He's a doctor"
+      ],
+      "correct_answer": "He's stealing from her",
+      "difficulty": "easy",
+      "explanation": "Rachel discovers that Josh is stealing from her when she finds out that he's been taking money from her wallet.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "Why does Phoebe kiss Gunther?",
+      "options": [
+        "Because she's in love with him",
+        "Because she wants to make him feel better",
+        "Because she wants to catch a cold",
+        "Because she's drunk"
+      ],
+      "correct_answer": "Because she wants to catch a cold",
+      "difficulty": "medium",
+      "explanation": "Phoebe kisses Gunther because she wants to catch a cold and get her 'sexy voice' back.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "What is the name of the woman that Joey is dating?",
+      "options": [
+        "Kathy",
+        "Amanda",
+        "Monica",
+        "Rachel"
+      ],
+      "correct_answer": "Kathy",
+      "difficulty": "easy",
+      "explanation": "Joey is dating a woman named Kathy.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "Why does Chandler turn up the TV volume?",
+      "options": [
+        "Because he wants to watch a show",
+        "Because he wants to drown out the noise from Joey's room",
+        "Because he wants to annoy Joey",
+        "Because he wants to wake up the neighbors"
+      ],
+      "correct_answer": "Because he wants to drown out the noise from Joey's room",
+      "difficulty": "medium",
+      "explanation": "Chandler turns up the TV volume because he wants to drown out the noise coming from Joey's room.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "What is the reason for Monica's cold?",
+      "options": [
+        "She caught it from Phoebe",
+        "She caught it from Rachel",
+        "She caught it from Ross",
+        "She caught it from Gunther"
+      ],
+      "correct_answer": "She caught it from Phoebe",
+      "difficulty": "easy",
+      "explanation": "Monica catches a cold from Phoebe.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "What does Gunther want to talk to Rachel about?",
+      "options": [
+        "His feelings for Phoebe",
+        "His feelings for Rachel",
+        "His job at Central Perk",
+        "His favorite coffee drink"
+      ],
+      "correct_answer": "His feelings for Phoebe",
+      "difficulty": "medium",
+      "explanation": "Gunther wants to talk to Rachel about his feelings after kissing Phoebe.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "What is the name of the medical researcher that Kathy works for?",
+      "options": [
+        "Amanda",
+        "Monica",
+        "Rachel",
+        "Not specified"
+      ],
+      "correct_answer": "Not specified",
+      "difficulty": "hard",
+      "explanation": "The name of the medical researcher that Kathy works for is not specified in the episode.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "What is the activity that Joey and Kathy are doing when Chandler is watching TV?",
+      "options": [
+        "Playing a game",
+        "Watching a movie",
+        "Having a conversation",
+        "Being intimate"
+      ],
+      "correct_answer": "Being intimate",
+      "difficulty": "medium",
+      "explanation": "Joey and Kathy are being intimate in his bedroom while Chandler is watching TV.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "What is the reason for Phoebe's visit to Monica and Rachel's apartment?",
+      "options": [
+        "To borrow something",
+        "To return something",
+        "To bring soup for Monica",
+        "To hang out with the girls"
+      ],
+      "correct_answer": "To bring soup for Monica",
+      "difficulty": "easy",
+      "explanation": "Phoebe visits Monica and Rachel's apartment to bring soup for Monica, who is sick.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "What is the gift that Josh gives to Rachel?",
+      "options": [
+        "A ring",
+        "A necklace",
+        "A bracelet",
+        "A pair of earrings"
+      ],
+      "correct_answer": "A ring",
+      "difficulty": "easy",
+      "explanation": "Josh gives Rachel a ring, which belongs to Monica.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "Why does Chandler want to sleep on Monica's couch?",
+      "options": [
+        "Because he's tired",
+        "Because he's homeless",
+        "Because he's fighting with Joey",
+        "Because he's in love with Kathy and can't be around Joey"
+      ],
+      "correct_answer": "Because he's in love with Kathy and can't be around Joey",
+      "difficulty": "medium",
+      "explanation": "Chandler wants to sleep on Monica's couch because he's in love with Kathy and can't be around Joey.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "What is the song that Phoebe sings at the end of the episode?",
+      "options": [
+        "Smelly Cat",
+        "Sticky Shoes",
+        "Platting Goats",
+        "My Paper Mache Man"
+      ],
+      "correct_answer": "My Paper Mache Man",
+      "difficulty": "easy",
+      "explanation": "Phoebe sings 'My Paper Mache Man' at the end of the episode.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "What is the reason for Ross's disappointment with Amanda?",
+      "options": [
+        "She's not interested in him romantically",
+        "She's already in a relationship",
+        "She's not what he expected",
+        "She's using him as a babysitter"
+      ],
+      "correct_answer": "She's using him as a babysitter",
+      "difficulty": "easy",
+      "explanation": "Ross is disappointed with Amanda because she's using him as a babysitter, not because she's interested in him romantically.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    },
+    {
+      "question": "What does Chandler tell Joey to do about Kathy?",
+      "options": [
+        "To break up with her",
+        "To be nice to her",
+        "To pretend to like her",
+        "To tell her how he really feels"
+      ],
+      "correct_answer": "To tell her how he really feels, but toned down",
+      "difficulty": "medium",
+      "explanation": "Chandler tells Joey to tell Kathy how he really feels, but to tone it down.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 5,
+        "title": "The One With Joey's New Girlfriend"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T17:08:03.338Z"
+    }
+  ]
+}

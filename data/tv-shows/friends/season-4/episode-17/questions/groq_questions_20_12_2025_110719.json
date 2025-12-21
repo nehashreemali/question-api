@@ -1,0 +1,410 @@
+{
+  "show": "Friends",
+  "season": 4,
+  "episode": 17,
+  "title": "The One With The Free Porn",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-20T05:37:19.896Z",
+  "questionCount": 19,
+  "questions": [
+    {
+      "question": "What is Mr. Treeger doing in the bathroom at the beginning of the episode?",
+      "options": [
+        "Taking a shower",
+        "Fixing the toilet",
+        "Snaking the shower drain",
+        "Getting a drink of water"
+      ],
+      "correct_answer": "Snaking the shower drain",
+      "difficulty": "easy",
+      "explanation": "Mr. Treeger is fixing the shower drain, as indicated by the sound effects and his comments.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "What happens when Joey changes the channel on the TV?",
+      "options": [
+        "A sports game comes on",
+        "A news program starts",
+        "A free porn channel appears",
+        "The TV turns off"
+      ],
+      "correct_answer": "A free porn channel appears",
+      "difficulty": "easy",
+      "explanation": "Joey changes the channel and inadvertently discovers a free porn channel.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "Why does Ross go to the airport to see Emily?",
+      "options": [
+        "To pick her up and drive her home",
+        "To say goodbye to her before she leaves",
+        "To tell her he loves her",
+        "To return a book he borrowed from her"
+      ],
+      "correct_answer": "To tell her he loves her",
+      "difficulty": "medium",
+      "explanation": "Ross goes to the airport to confess his love to Emily before she leaves for London.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "What does Phoebe learn at her doctor's appointment?",
+      "options": [
+        "She is having twins",
+        "She is having triplets",
+        "She is having a boy",
+        "She is having a girl"
+      ],
+      "correct_answer": "She is having triplets",
+      "difficulty": "medium",
+      "explanation": "Phoebe discovers she is pregnant with triplets during her ultrasound appointment.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "What is the name of Phoebe's proposed business venture?",
+      "options": [
+        "Relaxi-Taxi",
+        "Relaxi-Cab",
+        "Massage Mobile",
+        "Phoebe's Massage"
+      ],
+      "correct_answer": "Relaxi-Taxi",
+      "difficulty": "medium",
+      "explanation": "Phoebe plans to start a mobile massage business, which she calls Relaxi-Taxi.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "Why does Ross decide to go to London?",
+      "options": [
+        "To visit his sister",
+        "To fight for Emily's love",
+        "To attend a conference",
+        "To go on vacation"
+      ],
+      "correct_answer": "To fight for Emily's love",
+      "difficulty": "medium",
+      "explanation": "Ross decides to go to London to win Emily back after she reveals she has feelings for another man.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "What is the outcome of Ross's trip to London?",
+      "options": [
+        "He wins Emily back",
+        "He meets Emily's family",
+        "He realizes he doesn't love Emily",
+        "He spends the night outside Emily's apartment waiting for her"
+      ],
+      "correct_answer": "He spends the night outside Emily's apartment waiting for her",
+      "difficulty": "hard",
+      "explanation": "Ross travels to London but ends up waiting outside Emily's apartment all night, only to discover she is not home.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "What is Emily's response to Ross's confession of love?",
+      "options": [
+        "She says she loves him too",
+        "She says she doesn't feel the same way",
+        "She says she needs time to think",
+        "She says thank you"
+      ],
+      "correct_answer": "She says thank you",
+      "difficulty": "medium",
+      "explanation": "Emily responds to Ross's confession by saying 'thank you', which leaves Ross uncertain about her feelings.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "What is the name of the candy bar Emily gives to Ross at the airport?",
+      "options": [
+        "Toblerone",
+        "Snickers",
+        "Mars",
+        "Kit Kat"
+      ],
+      "correct_answer": "Toblerone",
+      "difficulty": "easy",
+      "explanation": "Emily gives Ross a Toblerone bar as a gift before she boards her flight.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "What do Chandler and Joey finally decide to do with the free porn channel?",
+      "options": [
+        "They keep watching it",
+        "They turn it off",
+        "They change the channel",
+        "They record it"
+      ],
+      "correct_answer": "They turn it off",
+      "difficulty": "easy",
+      "explanation": "After initially enjoying the free porn channel, Chandler and Joey eventually decide to turn it off.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "Why does Phoebe want to start her own business?",
+      "options": [
+        "To become rich",
+        "To help her family",
+        "To pursue her passion",
+        "To prove herself"
+      ],
+      "correct_answer": "To help her family",
+      "difficulty": "medium",
+      "explanation": "Phoebe wants to start her own business to help support her brother Frank and his family, who are expecting triplets.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "What is the reason for Ross's trip to the airport at the beginning of the episode?",
+      "options": [
+        "To pick up Emily",
+        "To drop off Emily",
+        "To see Emily before she leaves",
+        "To return a book to Emily"
+      ],
+      "correct_answer": "To see Emily before she leaves",
+      "difficulty": "medium",
+      "explanation": "Ross goes to the airport to see Emily before she leaves for London, and to confess his love to her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "What is the outcome of Phoebe's business idea?",
+      "options": [
+        "It is a huge success",
+        "It is a moderate success",
+        "It fails",
+        "It is still in the planning stages"
+      ],
+      "correct_answer": "It is still in the planning stages",
+      "difficulty": "hard",
+      "explanation": "The outcome of Phoebe's business idea is not fully revealed in the episode, but it is still in the planning stages.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "What is the name of the person Ross is competing with for Emily's love?",
+      "options": [
+        "Colin",
+        "Paul",
+        "Mike",
+        "Tom"
+      ],
+      "correct_answer": "Colin",
+      "difficulty": "medium",
+      "explanation": "Ross is competing with Colin for Emily's love, as revealed in their phone conversation.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "What is the reason for Ross's uncertainty about his relationship with Emily?",
+      "options": [
+        "He doesn't know if she loves him back",
+        "He doesn't know if he loves her",
+        "He doesn't know if they are compatible",
+        "He doesn't know if she is interested in him"
+      ],
+      "correct_answer": "He doesn't know if she loves him back",
+      "difficulty": "medium",
+      "explanation": "Ross is uncertain about his relationship with Emily because she doesn't explicitly say she loves him back when he confesses his love.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "What is the final outcome of Ross and Emily's relationship?",
+      "options": [
+        "They get back together",
+        "They stay apart",
+        "They become friends",
+        "They get married"
+      ],
+      "correct_answer": "They get back together",
+      "difficulty": "hard",
+      "explanation": "The final outcome of Ross and Emily's relationship is that they get back together, as revealed in the final scene of the episode.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "What is the reason for Joey's interest in the Toblerone bar?",
+      "options": [
+        "He loves chocolate",
+        "He wants to give it to Chandler",
+        "He wants to eat it all by himself",
+        "He wants to share it with the gang"
+      ],
+      "correct_answer": "He loves chocolate",
+      "difficulty": "easy",
+      "explanation": "Joey is interested in the Toblerone bar because he loves chocolate, as revealed in his conversation with Ross.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "What is the name of Phoebe's brother?",
+      "options": [
+        "Frank",
+        "Alice",
+        "Chandler",
+        "Joey"
+      ],
+      "correct_answer": "Frank",
+      "difficulty": "medium",
+      "explanation": "Phoebe's brother is named Frank, as revealed in the episode.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    },
+    {
+      "question": "What is the reason for Monica's encouragement of Ross to go to London?",
+      "options": [
+        "She wants him to win Emily back",
+        "She wants him to get over Emily",
+        "She wants him to prove his love",
+        "She wants him to forget about Emily"
+      ],
+      "correct_answer": "She wants him to win Emily back",
+      "difficulty": "medium",
+      "explanation": "Monica encourages Ross to go to London because she wants him to win Emily back and fight for their relationship.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 4,
+        "episode": 17,
+        "title": "The One With The Free Porn"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-20T05:37:19.896Z"
+    }
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "show": "Friends",
+  "season": 3,
+  "episode": 19,
+  "title": "The One With The Tiny T-shirt",
+  "source": "Friends Transcripts (fangj.github.io)",
+  "generatedAt": "2025-12-19T16:54:00.730Z",
+  "questionCount": 23,
+  "questions": [
+    {
+      "question": "What does Gunther want to ask Rachel to do?",
+      "options": [
+        "Go to a movie with him",
+        "Get something to eat with him",
+        "Be his lover",
+        "All of the above"
+      ],
+      "correct_answer": "All of the above",
+      "difficulty": "easy",
+      "explanation": "Gunther wants to ask Rachel to go to a movie, get something to eat, and be his lover.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What is Mark's confession to Rachel?",
+      "options": [
+        "He has had a crush on her since they met",
+        "He wants to be friends with her",
+        "He has had a crush on her since she was with Ross",
+        "He doesn't like her"
+      ],
+      "correct_answer": "He has had a crush on her since she was with Ross",
+      "difficulty": "easy",
+      "explanation": "Mark confesses to Rachel that he has had a crush on her since she was with Ross.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What does Monica tell her friends about her date with Pete?",
+      "options": [
+        "It was terrible",
+        "It was great, but she's not attracted to him",
+        "It was boring",
+        "It was romantic"
+      ],
+      "correct_answer": "It was great, but she's not attracted to him",
+      "difficulty": "easy",
+      "explanation": "Monica tells her friends that her date with Pete was great, but she's not attracted to him.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What is the name of the play that Joey is in?",
+      "options": [
+        "A Midsummer Night's Dream",
+        "Romeo and Juliet",
+        "The American Middle Class",
+        "Unknown"
+      ],
+      "correct_answer": "The American Middle Class",
+      "difficulty": "medium",
+      "explanation": "The play is based on the work of Jennifer Van Murray, which is described as 'brilliantly incisive when it comes to deconstructing the psyche of the American middle class'.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "Why does Rachel feel guilty about Mark asking her out?",
+      "options": [
+        "Because she's still in love with Ross",
+        "Because she's not ready to date",
+        "Because she's afraid of what others will think",
+        "Because she's already dating someone else"
+      ],
+      "correct_answer": "Because she's still in love with Ross",
+      "difficulty": "medium",
+      "explanation": "Rachel feels guilty because she's still in love with Ross and feels like she's cheating on him.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What does Ross want from Rachel's apartment?",
+      "options": [
+        "His dinosaur mug",
+        "His book",
+        "His 'Frankie says relax' T-shirt",
+        "All of the above"
+      ],
+      "correct_answer": "All of the above",
+      "difficulty": "easy",
+      "explanation": "Ross wants his dinosaur mug, book, and 'Frankie says relax' T-shirt from Rachel's apartment.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What does Monica tell Pete about her past relationship?",
+      "options": [
+        "She's still in love with her ex",
+        "She's not ready to date",
+        "She needs to focus on herself",
+        "She's already dating someone else"
+      ],
+      "correct_answer": "She needs to focus on herself",
+      "difficulty": "medium",
+      "explanation": "Monica tells Pete that she's not attracted to him and needs to focus on herself right now.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "Why does Joey hate Kate?",
+      "options": [
+        "Because she's a bad actress",
+        "Because she's mean to him",
+        "Because she told everyone about his info-mercial",
+        "Because she's not attracted to him"
+      ],
+      "correct_answer": "Because she told everyone about his info-mercial",
+      "difficulty": "medium",
+      "explanation": "Joey hates Kate because she told everyone about his info-mercial and now they all tease him about it.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What does Chandler tell Ross about his relationship with Rachel?",
+      "options": [
+        "That he should try to win her back",
+        "That he should move on",
+        "That he should be friends with her",
+        "That he should give her space"
+      ],
+      "correct_answer": "That he should move on",
+      "difficulty": "medium",
+      "explanation": "Chandler tells Ross that he needs to move on and accept that his relationship with Rachel is over.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "Why does Rachel stop Mark from kissing her?",
+      "options": [
+        "Because she's not attracted to him",
+        "Because she's still in love with Ross",
+        "Because she's not ready to date",
+        "Because she's already dating someone else"
+      ],
+      "correct_answer": "Because she's not attracted to him and is only using him to get back at Ross",
+      "difficulty": "medium",
+      "explanation": "Rachel stops Mark from kissing her because she realizes she's only using him to get back at Ross and it's not fair to Mark.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What is the name of the hospital where Monica and Pete are?",
+      "options": [
+        "New York Hospital",
+        "St. Michael's Hospital",
+        "Unknown",
+        "Pete's Hospital"
+      ],
+      "correct_answer": "Unknown",
+      "difficulty": "hard",
+      "explanation": "The name of the hospital is not explicitly mentioned in the episode.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What does Phoebe think is wrong with Monica?",
+      "options": [
+        "She's not attracted to Pete",
+        "She's still in love with her ex",
+        "She only attracts guys with no future",
+        "She's not ready to date"
+      ],
+      "correct_answer": "She only attracts guys with no future",
+      "difficulty": "medium",
+      "explanation": "Phoebe thinks that Monica only attracts guys with no future, whether it's because they're too old, too young, or not right for her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What does Joey realize about his feelings for Kate?",
+      "options": [
+        "He hates her",
+        "He's not attracted to her",
+        "He has a crush on her",
+        "He's just friends with her"
+      ],
+      "correct_answer": "He has a crush on her",
+      "difficulty": "medium",
+      "explanation": "Joey realizes that he has a crush on Kate, despite his initial denial and hatred towards her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What is the name of the director of the play that Joey is in?",
+      "options": [
+        "The Director",
+        "Jennifer Van Murray",
+        "Kate Miller",
+        "Joey Tribbiani"
+      ],
+      "correct_answer": "The Director",
+      "difficulty": "hard",
+      "explanation": "The director's name is not explicitly mentioned in the episode, but he is referred to as 'The Director'.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What does Rachel do with the 'Frankie says relax' T-shirt?",
+      "options": [
+        "She gives it back to Ross",
+        "She keeps it for herself",
+        "She throws it away",
+        "She uses it to clean the floor"
+      ],
+      "correct_answer": "She keeps it for herself",
+      "difficulty": "easy",
+      "explanation": "Rachel keeps the 'Frankie says relax' T-shirt for herself and smells it, indicating that she still has feelings for Ross.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What does Chandler say to Ross about his relationship with Rachel?",
+      "options": [
+        "That he should try to win her back",
+        "That he should move on",
+        "That he should be friends with her",
+        "That he should give her space"
+      ],
+      "correct_answer": "That he should move on",
+      "difficulty": "medium",
+      "explanation": "Chandler tells Ross that he needs to move on and accept that his relationship with Rachel is over.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What does Joey want to do with Kate after rehearsal?",
+      "options": [
+        "Go get a cup of coffee",
+        "Go to the movies",
+        "Go to dinner",
+        "Go to the park"
+      ],
+      "correct_answer": "Go get a cup of coffee",
+      "difficulty": "easy",
+      "explanation": "Joey asks Kate if she wants to go get a cup of coffee with him after rehearsal.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What does Monica tell Pete about why she's not attracted to him?",
+      "options": [
+        "That she's still in love with her ex",
+        "That she's not ready to date",
+        "That she needs to focus on herself",
+        "That she's just not feeling it"
+      ],
+      "correct_answer": "That she needs to focus on herself",
+      "difficulty": "medium",
+      "explanation": "Monica tells Pete that she needs to focus on herself right now and can't be in a relationship.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What does Phoebe think Gold Man's powers should be?",
+      "options": [
+        "The power of telekinesis",
+        "The power of flight",
+        "The power to turn things to gold",
+        "The power of invisibility"
+      ],
+      "correct_answer": "The power to turn things to gold",
+      "difficulty": "hard",
+      "explanation": "Phoebe thinks that Gold Man's powers should be the ability to turn things to gold.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What does Chandler say to Joey about his feelings for Kate?",
+      "options": [
+        "That he's just being friendly",
+        "That he's in love with her",
+        "That he has a crush on her",
+        "That he hates her"
+      ],
+      "correct_answer": "That he has a crush on her",
+      "difficulty": "medium",
+      "explanation": "Chandler tells Joey that he thinks Joey has a crush on Kate, despite Joey's initial denial.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What does Ross do when he sees Rachel and Mark on their date?",
+      "options": [
+        "He tries to intervene",
+        "He tries to ignore them",
+        "He tries to spy on them",
+        "He tries to talk to them"
+      ],
+      "correct_answer": "He tries to spy on them",
+      "difficulty": "medium",
+      "explanation": "Ross tries to spy on Rachel and Mark through the peephole, indicating that he's still interested in Rachel and can't move on.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What is the reason for Monica's lack of attraction to Pete?",
+      "options": [
+        "He's too old",
+        "He's too young",
+        "He's not rich enough",
+        "There's no chemistry between them"
+      ],
+      "correct_answer": "There's no chemistry between them",
+      "difficulty": "medium",
+      "explanation": "Monica tells Pete that she's just not feeling it, indicating that there's no chemistry between them.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    },
+    {
+      "question": "What does Mark say to Rachel after she stops him from kissing her?",
+      "options": [
+        "That he's okay with it",
+        "That he's not interested in her",
+        "That he wants to get back at Ross",
+        "That he's willing to wait for her"
+      ],
+      "correct_answer": "That he wants to get back at Ross",
+      "difficulty": "medium",
+      "explanation": "Mark tells Rachel that he's willing to help her get back at Ross, indicating that he's still interested in her.",
+      "topic": {
+        "type": "tv-show",
+        "show": "Friends",
+        "season": 3,
+        "episode": 19,
+        "title": "The One With The Tiny T-shirt"
+      },
+      "generatedBy": "groq",
+      "generatedAt": "2025-12-19T16:54:00.730Z"
+    }
+  ]
+}

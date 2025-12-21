@@ -1,5 +1,17 @@
 # Project Conventions - Quiz Question Generator
 
+## Claude Code Question Generation
+
+**To generate questions directly in Claude Code CLI (no external API costs):**
+
+```
+power up friends s1e10
+```
+
+See **[CLAUDE-CODE-GENERATION.md](./CLAUDE-CODE-GENERATION.md)** for full documentation.
+
+---
+
 ## Project Overview
 
 This is a **generic quiz question generator** that creates multiple-choice questions from various content sources:
