@@ -1,20 +1,8 @@
 # Project Conventions - Quiz Question Generator
 
-## Claude Code Question Generation
-
-**To generate questions directly in Claude Code CLI (no external API costs):**
-
-```
-power up friends s1e10
-```
-
-See **[CLAUDE-CODE-GENERATION.md](./CLAUDE-CODE-GENERATION.md)** for full documentation.
-
----
-
 ## Project Overview
 
-This is a **generic quiz question generator** that creates multiple-choice questions from various content sources:
+A **universal quiz question generator** that creates multiple-choice questions from various content sources:
 - **Media content** (TV shows, movies, books) - from scraped transcripts
 - **Knowledge content** (physics, history, etc.) - from Wikipedia, OpenStax, Khan Academy
 - **Sports content** (cricket, football, WWE) - from stats APIs + Wikipedia
@@ -22,53 +10,82 @@ This is a **generic quiz question generator** that creates multiple-choice quest
 ## Technology Stack
 
 - **Runtime:** Bun (TypeScript)
-- **AI Provider:** Claude Code CLI (via "power up" command)
+- **Database:** SQLite (registry + per-category question databases)
 - **Web Scraping:** Cheerio + Axios
 - **Architecture:** Functional programming (no classes, pure functions)
 
 ---
 
-## Data Structure
+## Current Architecture (SQLite-Only)
 
-### Database Architecture
-
-Questions are stored in SQLite databases (one per category), with a central registry for metadata.
+### Database Structure
 
 ```
-data/                        # Output (databases only)
-├── registry.db              # Central: categories, subcategories, topics, stats
+data/
+├── registry.db              # Central catalog (5,214 topics)
+│   ├── categories           # 44 categories
+│   ├── subcategories        # Subcategories per category
+│   └── topics               # Topics with metadata
+│
 ├── tv-shows.db              # Questions for TV shows
-├── movies.db                # Questions for movies
-├── epics.db                 # Questions for epics
-├── mythology.db             # Questions for mythology
-├── sports.db                # Questions for sports
+├── movies.db                # Questions for movies (when generated)
+├── sports.db                # Questions for sports (when generated)
 └── ...                      # Per-category question databases
 
-generation/                  # Source material for question generation
-└── transcripts/             # TV show transcripts (flat structure)
-    ├── friends/
-    │   ├── s01e01.json
-    │   ├── s01e02.json
-    │   └── ...
-    └── the-big-bang-theory/
-        └── s01e01.json
+generation/                  # Source material (transcripts, etc.)
+└── transcripts/
+    └── {show}/
+        └── s{nn}e{nn}.json  # Episode transcript
 ```
 
-### Why This Architecture?
+### Why SQLite?
 
-- **Per-category databases**: Multiple people can generate questions simultaneously without git conflicts
-- **Flat transcript structure**: Simple `s{nn}e{nn}.json` naming, easy to see all episodes
-- **Central registry**: Single source of truth for categories, subcategories, topics, and stats
-- **Separation of concerns**: `data/` contains only databases, `generation/` contains source material
-- **Organic growth**: Categories/subcategories/topics are created on-demand via `ensure*` functions
+- **No git conflicts** - Multiple people can work simultaneously
+- **Fast queries** - Instant lookups by category/topic
+- **Organic growth** - Topics created on-demand via `ensure*` functions
+- **Simple structure** - One registry, one DB per category
 
 ---
 
 ## Database Schema
 
-### Questions Table (per-category database)
+### Registry Database (`registry.db`)
 
-Each category (tv-shows.db, movies.db, etc.) has the same schema:
+```sql
+-- Categories table
+CREATE TABLE categories (
+  slug TEXT PRIMARY KEY,
+  name TEXT NOT NULL,
+  description TEXT,
+  adapter TEXT,
+  topic_count INTEGER DEFAULT 0
+);
+
+-- Subcategories table
+CREATE TABLE subcategories (
+  id INTEGER PRIMARY KEY,
+  category TEXT NOT NULL,
+  slug TEXT NOT NULL,
+  name TEXT NOT NULL,
+  topic_count INTEGER DEFAULT 0,
+  UNIQUE(category, slug)
+);
+
+-- Topics table
+CREATE TABLE topics (
+  id INTEGER PRIMARY KEY,
+  category TEXT NOT NULL,
+  subcategory TEXT NOT NULL,
+  slug TEXT NOT NULL,
+  name TEXT NOT NULL,
+  depth TEXT,
+  description TEXT,
+  question_count INTEGER DEFAULT 0,
+  UNIQUE(category, subcategory, slug)
+);
+```
+
+### Questions Database (per-category, e.g., `tv-shows.db`)
 
 ```sql
 CREATE TABLE questions (
@@ -88,41 +105,51 @@ CREATE TABLE questions (
   difficulty TEXT,               -- 'easy', 'medium', 'hard'
   explanation TEXT,
 
-  synced_to_mongo INTEGER NOT NULL DEFAULT 0,  -- MongoDB sync flag
+  synced_to_mongo INTEGER DEFAULT 0,
   created_at TEXT
 );
 ```
 
-### Question Structure
+---
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `question` | string | The question text |
-| `options` | string[4] | Exactly 4 answer options |
-| `correct_answer` | string | Must match one option exactly |
-| `difficulty` | enum | "easy", "medium", or "hard" |
-| `explanation` | string | Why the answer is correct |
+## Key Source Files
+
+| File | Purpose |
+|------|---------|
+| `src/server.ts` | Web server with API endpoints |
+| `src/lib/registry.ts` | SQLite registry management |
+| `src/lib/database.ts` | Per-category question databases |
+| `src/lib/tv-scraper.ts` | Scrapes TV transcripts |
+| `src/lib/adapters/` | Content adapters (Wikipedia, etc.) |
+| `src/lib/http.ts` | HTTP utilities with retry logic |
+| `src/lib/logger.ts` | Colored console logging |
 
 ---
 
-## Transcript Files
+## CLI Commands
 
-Transcripts are stored in a flat structure: `generation/transcripts/{show}/s{nn}e{nn}.json`
+```bash
+# Start web server
+bun start
 
-```json
-{
-  "show": "Friends",
-  "season": 1,
-  "episode": 1,
-  "title": "The One Where Monica Gets a New Roommate",
-  "transcript": "Full transcript text...",
-  "source": "Friends Transcripts (fangj.github.io)",
-  "sourceUrl": "https://fangj.github.io/friends/season/0101.html",
-  "scrapedAt": "2025-12-15T15:13:45.305Z",
-  "wordCount": 4424,
-  "hasCharacterNames": true
-}
+# Kill anything on port 3000
+bun run kill
+
+# Test content adapters
+bun src/fetch-content.ts
 ```
+
+---
+
+## Web Server API
+
+The server at `http://localhost:3000` provides:
+
+- **GET /api/categories** - List all categories with stats
+- **GET /api/categories/:category** - Get category details
+- **GET /api/topics/:category** - List topics in category
+- **GET /api/questions/:category/:topic** - Get questions for topic
+- **POST /api/stats/regenerate** - Regenerate statistics
 
 ---
 
@@ -175,75 +202,45 @@ export default Config;
 - No special characters: `friends` not `Friend's`
 - Spaces become hyphens: `breaking bad` → `breaking-bad`
 
-### Folder Names
-- Seasons: `season-1`, `season-2`, etc.
-- Episodes: `episode-1`, `episode-2`, etc.
-- Topics: `mechanics`, `thermodynamics`, etc.
-
 ### File Names
 - Always lowercase
-- JSON extension for all data files
-- Standard names: `manifest.json`, `transcript.json`, `questions.json`, `rawQuestions.json`
+- JSON extension for data files
+- SQLite databases use `.db` extension
 
 ---
 
-## Source Adapters
+## Registry Functions
 
-### Media Content
-| Adapter | Source | Content Type |
-|---------|--------|--------------|
-| `tv-scraper` | fangj.github.io, Subslikescript | TV transcripts |
+The registry (`src/lib/registry.ts`) provides:
 
-### Knowledge Content
-| Adapter | Source | License |
-|---------|--------|---------|
-| `wikipedia` | Wikipedia REST API | CC BY-SA |
-| `openstax` | OpenStax textbooks | CC BY |
-| `khan-academy` | Khan Academy | Free |
+```typescript
+// Ensure functions (create if not exists)
+ensureCategory({ slug, name, adapter?, description? })
+ensureSubcategory({ category, slug, name })
+ensureTopic({ category, subcategory, slug, name, depth?, description? })
 
-### Sports Content
-| Adapter | Source | Sports |
-|---------|--------|--------|
-| `cricinfo` | ESPNcricinfo | Cricket |
-| `espn` | ESPN API | NFL, NBA, etc. |
-| `wrestling` | Cagematch | WWE, AEW |
-
----
-
-## CLI Commands
-
-```bash
-# Start web server
-bun start
-
-# Generate questions (via Claude Code CLI)
-power up friends s1e10
-power up "The Big Bang Theory" s2e5
+// Query functions
+getCategories()
+getCategory(slug)
+getSubcategories(category)
+getTopics(category, subcategory?)
+getTopic(category, subcategory, slug)
 ```
 
 ---
 
-## Key Source Files
+## Current Stats
 
-| File | Purpose |
-|------|---------|
-| `src/server.ts` | Web server (read-only) |
-| `src/lib/database.ts` | Question database operations |
-| `src/lib/registry.ts` | Category/subcategory/topic registry |
-| `src/lib/tv-scraper.ts` | Scrapes TV transcripts |
-| `src/lib/http.ts` | HTTP utilities with retry logic |
-| `src/lib/logger.ts` | Colored console logging |
+- **Total Topics:** 5,214
+- **Categories:** 44
+- **Questions Database:** `tv-shows.db` (active)
 
 ---
 
 ## Important Notes
 
-1. **Question Generation:** Use `power up [show] [season] [episode]` in Claude Code CLI. No external API keys needed.
-
-2. **Stats:** Statistics are cached in `data/stats.json`. Use "Regenerate Stats" button in web UI after generating questions.
-
-3. **Deduplication:** Questions are deduplicated per-episode using `raw_questions.log`.
-
-4. **Source Priority:** For TV shows, `scrapeFriendsTranscript` is tried first, then `scrapeSubslikescript` as fallback.
-
-5. **Citations:** Knowledge and sports content must include citations. Media content (TV/movies) doesn't need citations since questions are episode-specific.
+1. **No JSON manifests** - Everything is in SQLite databases
+2. **Organic growth** - Topics are created on-demand using `ensure*` functions
+3. **Transcripts stay as files** - Large text content in `generation/transcripts/`
+4. **Stats cached in memory** - Regenerate via API when needed
+5. **Garbage folder** - Old/unused scripts archived in `/garbage/`

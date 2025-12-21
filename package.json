@@ -3,7 +3,8 @@
   "version": "2.0.0",
   "description": "Universal quiz question generator with web UI",
   "scripts": {
-    "start": "bun src/server.ts"
+    "start": "bun src/server.ts",
+    "kill": "lsof -ti:3000 | xargs kill -9 2>/dev/null || true"
   },
   "keywords": ["quiz", "questions", "generator", "ai"],
   "author": "",

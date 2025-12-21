@@ -1,237 +1,121 @@
-# How to Generate Questions
+# How to Use the Quiz Generator
 
-A quick guide to generating quiz questions using the adapters.
+A quick guide to the current SQLite-based architecture.
 
 ---
 
 ## Prerequisites
 
-### 1. Install Dependencies
 ```bash
+# Install dependencies
 bun install
 ```
 
-### 2. Set Up API Keys
-Create a `.env` file or export environment variables:
-
-```bash
-# Option 1: Claude API (recommended - better quality)
-export ANTHROPIC_API_KEY=your_key_here
-
-# Option 2: Groq API (faster, free tier available)
-export GROQ_API_KEY=your_key_here
-```
-
-You only need one of these. Claude is preferred if both are set.
-
 ---
 
-## Basic Usage
+## Start the Web Server
 
 ```bash
-bun src/generate.ts <category> <topic> [subcategory] [--count=N] [--force]
-```
+# Start server on port 3000
+bun start
 
-| Argument | Required | Description |
-|----------|----------|-------------|
-| `category` | Yes | Main category (tv-shows, movies, history, etc.) |
-| `topic` | Yes | Topic slug from registry |
-| `subcategory` | No | Auto-detected from registry if not provided |
-| `--count=N` | No | Number of questions (default: 25) |
-| `--force` | No | Regenerate even if questions exist |
-
----
-
-## Examples by Category
-
-### TV Shows
-```bash
-# Generate 25 questions for Friends
-bun src/generate.ts tv-shows friends
-
-# Generate 50 questions for Breaking Bad
-bun src/generate.ts tv-shows breaking-bad --count=50
-
-# Regenerate Game of Thrones questions
-bun src/generate.ts tv-shows game-of-thrones --force
-```
-
-### Movies
-```bash
-# Marvel Cinematic Universe
-bun src/generate.ts movies marvel-mcu franchises
-
-# Individual film (The Godfather)
-bun src/generate.ts movies the-godfather-trilogy franchises
-
-# Christopher Nolan's filmography
-bun src/generate.ts movies christopher-nolan directors
-```
-
-### History
-```bash
-# Ancient Egypt
-bun src/generate.ts history ancient-egypt ancient-civilizations
-
-# World War II - European Theater
-bun src/generate.ts history ww2-european-theater world-wars
-
-# Indian Freedom Movement
-bun src/generate.ts history indian-independence-movement indian-history
-```
-
-### Science (NCERT)
-```bash
-# Class 10 - Electricity
-bun src/generate.ts science electricity ncert-class-10
-
-# Class 12 - Electrochemistry
-bun src/generate.ts science electrochemistry ncert-class-12
-
-# General Physics
-bun src/generate.ts science classical-mechanics physics
-```
-
-### Sports
-```bash
-# Cricket World Cups
-bun src/generate.ts sports cricket-world-cups cricket
-
-# Formula 1
-bun src/generate.ts sports formula-1 motorsport
-
-# FIFA World Cup
-bun src/generate.ts sports fifa-world-cup football
-```
-
-### General Knowledge
-```bash
-# Mahabharata
-bun src/generate.ts general-knowledge mahabharata indian-epics
-
-# Indian Constitution
-bun src/generate.ts general-knowledge indian-constitution india
+# Kill anything on port 3000 (if needed)
+bun run kill
 ```
 
 ---
 
-## Output
+## Web UI
 
-Questions are saved to:
-```
-data/<category>/<topic>/questions.json
-```
+Open `http://localhost:3000` in your browser to:
+- Browse categories and topics
+- View generated questions
+- Regenerate statistics
 
-Example output structure:
-```json
-{
-  "category": "tv-shows",
-  "subcategory": "sitcoms",
-  "topic": "friends",
-  "title": "Friends",
-  "source": "Subslikescript",
-  "generatedAt": "2024-12-20T...",
-  "questionCount": 25,
-  "questions": [
-    {
-      "question": "What is the name of the coffee shop where the friends hang out?",
-      "options": ["Central Perk", "Java Joe's", "The Coffee House", "Mocha Lounge"],
-      "correct_answer": "Central Perk",
-      "difficulty": "easy",
-      "explanation": "Central Perk is the iconic coffee shop..."
-    }
-  ]
-}
+---
+
+## API Endpoints
+
+| Endpoint | Description |
+|----------|-------------|
+| `GET /api/categories` | List all categories with topic counts |
+| `GET /api/categories/:slug` | Get single category details |
+| `GET /api/topics/:category` | List topics in a category |
+| `GET /api/questions/:category/:topic` | Get questions for a topic |
+| `POST /api/stats/regenerate` | Regenerate all statistics |
+
+---
+
+## Database Structure
+
+```
+data/
+├── registry.db       # 5,214 topics across 44 categories
+├── tv-shows.db       # Questions for TV shows
+└── [category].db     # Per-category question databases
 ```
 
 ---
 
-## Finding Topics
+## Exploring the Registry
 
-### List All Categories
 ```bash
-cat data-generation/registry.json | jq 'keys'
-```
+# View all categories
+sqlite3 data/registry.db "SELECT slug, name, topic_count FROM categories ORDER BY topic_count DESC"
 
-### List Topics in a Category
-```bash
-# List all TV show topics
-cat data-generation/registry.json | jq '.categories["tv-shows"].subcategories[].topics | keys[]'
+# View topics in a category
+sqlite3 data/registry.db "SELECT slug, name FROM topics WHERE category = 'tv-shows' LIMIT 20"
 
-# List topics in a specific subcategory
-cat data-generation/registry.json | jq '.categories["history"].subcategories["world-wars"].topics | keys[]'
-```
-
-### Search for a Topic
-```bash
-# Find topics containing "batman"
-grep -i "batman" data-generation/registry.json
+# Count total topics
+sqlite3 data/registry.db "SELECT COUNT(*) FROM topics"
 ```
 
 ---
 
-## Tips
+## Question Database
 
-### Start with High-Depth Topics
-Topics with `immense` or `massive` depth have more content for better questions:
 ```bash
-# Check a topic's depth
-cat data-generation/registry.json | jq '.categories["tv-shows"].subcategories["sitcoms"].topics["friends"]'
-```
+# View questions for a topic
+sqlite3 data/tv-shows.db "SELECT question, difficulty FROM questions WHERE topic = 'friends' LIMIT 5"
 
-### Batch Generation
-Generate multiple topics:
-```bash
-# Generate for multiple shows
-for show in friends seinfeld the-office parks-and-recreation; do
-  bun src/generate.ts tv-shows $show --count=50
-done
-```
-
-### Check Existing Questions
-```bash
-# See what's already generated
-ls -la data/tv-shows/*/questions.json
-
-# Count total generated questions
-find data -name "questions.json" | wc -l
+# Count questions per topic
+sqlite3 data/tv-shows.db "SELECT topic, COUNT(*) as count FROM questions GROUP BY topic ORDER BY count DESC"
 ```
 
 ---
 
-## Troubleshooting
+## Source Files
 
-### "Topic not found in registry"
-- Check spelling of topic slug
-- Topic may exist under a different subcategory
-- Use `grep` to search registry
-
-### "No API key set"
-- Ensure `ANTHROPIC_API_KEY` or `GROQ_API_KEY` is exported
-- Check `.env` file exists and is loaded
-
-### "Questions already exist"
-- Use `--force` flag to regenerate
-- Or delete existing `questions.json` file
-
-### Rate Limiting
-- Claude API: ~50 requests/minute
-- Groq API: Check your tier limits
-- Add delays between batch requests if needed
+| File | Purpose |
+|------|---------|
+| `src/server.ts` | Web server with API |
+| `src/lib/registry.ts` | Registry database operations |
+| `src/lib/database.ts` | Question database operations |
+| `src/lib/tv-scraper.ts` | TV transcript scraper |
+| `src/lib/adapters/` | Content adapters |
 
 ---
 
-## Quick Reference
+## Adding New Topics
 
-| Category | Example Topic | Adapter |
-|----------|--------------|---------|
-| tv-shows | friends, breaking-bad | tv-adapter |
-| movies | marvel-mcu, inception | movies-adapter |
-| history | roman-empire, ww2-pacific | wikipedia-adapter |
-| science | electricity, photosynthesis | ncert-adapter |
-| sports | ipl, fifa-world-cup | sports-adapter |
-| geography | indian-states, world-capitals | wikipedia-adapter |
-| entertainment | rock-music-history, video-games | wikipedia-adapter |
-| technology | artificial-intelligence, apple | wikipedia-adapter |
-| general-knowledge | mahabharata, indian-constitution | wikipedia-adapter |
-| mathematics | calculus, statistics | ncert-adapter |
+Topics are added programmatically using the registry functions:
+
+```typescript
+import { ensureTopic } from './lib/registry';
+
+ensureTopic({
+  category: 'tv-shows',
+  subcategory: 'sitcoms',
+  slug: 'friends',
+  name: 'Friends',
+  depth: 'immense'
+});
+```
+
+---
+
+## Notes
+
+- **No external API keys needed** for browsing/viewing
+- **Transcripts** are stored in `generation/transcripts/`
+- **Old scripts** are archived in `/garbage/`

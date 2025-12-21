@@ -1,52 +1,66 @@
-# TV Show Quiz Generator
+# Quiz Question Generator
 
-Generate quiz questions from TV show episodes using AI.
+Generate quiz questions from TV shows, movies, history, science, and more.
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
-# 1. Install dependencies
+# Install dependencies
 bun install
 
-# 2. Setup configuration
-cp config.example.json config.json
-# Edit config.json and add your Groq API key
+# Start web server
+bun start
 
-# 3. Generate questions for a single episode
-bun index.ts "Friends" 1 1
-
-# 4. Generate questions for entire season
-bun index.ts "Friends" 1
+# Open http://localhost:3000
 ```
 
-## ⚙️ Configuration
+## Architecture
 
-1. Copy `config.example.json` to `config.json`
-2. Add your [Groq API key](https://console.groq.com/)
-3. Adjust settings:
-   - `questions_per_transcript`: 20 (recommended for rate limits)
-   - `model`: "llama-3.3-70b-versatile"
-   - `temperature`: 0.7
-
-## 📂 Output Structure
+**SQLite-only design** - no JSON files for data storage.
 
 ```
-data/tv-shows/{show}/season-{N}/episode-{N}/
-├── transcript.json      # Full transcript
-├── questions.json       # Questions with answers
-└── rawQuestions.json    # Just question text
+data/
+├── registry.db       # Central topic registry (5,214 topics)
+├── tv-shows.db       # TV show questions
+└── [category].db     # Per-category question databases
+
+src/
+├── server.ts         # Web server
+└── lib/
+    ├── registry.ts   # Registry database
+    ├── database.ts   # Question databases
+    ├── tv-scraper.ts # Transcript scraper
+    └── adapters/     # Content adapters
 ```
 
-## 🛠️ Architecture
+## Features
 
-**Functional code - no classes!**
+- **5,214 topics** across 44 categories
+- **Web UI** for browsing and managing questions
+- **REST API** for programmatic access
+- **Functional architecture** - no classes, pure functions
 
-```
-src/lib/
-├── logger.ts
-├── http.ts
-├── tv-scraper.ts
-└── question-generator.ts
-```
+## Commands
 
-Simple, clean, easy to understand! 🎉
+| Command | Description |
+|---------|-------------|
+| `bun start` | Start web server on port 3000 |
+| `bun run kill` | Kill process on port 3000 |
+
+## API Endpoints
+
+- `GET /api/categories` - List categories
+- `GET /api/topics/:category` - List topics
+- `GET /api/questions/:category/:topic` - Get questions
+- `POST /api/stats/regenerate` - Refresh statistics
+
+## Documentation
+
+- [CLAUDE.md](./CLAUDE.md) - Project conventions and architecture
+- [HOWTO.md](./HOWTO.md) - Usage guide
+
+## Tech Stack
+
+- **Runtime:** Bun
+- **Database:** SQLite
+- **Scraping:** Cheerio + Axios
