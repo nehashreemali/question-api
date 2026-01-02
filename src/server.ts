@@ -171,6 +171,15 @@ Bun.serve({
       return new Response(html, { headers: { 'Content-Type': 'text/html' } });
     }
 
+    // Serve images from images/ folder
+    if (path.startsWith('/images/')) {
+      const imagePath = join(process.cwd(), path);
+      if (existsSync(imagePath)) {
+        const file = Bun.file(imagePath);
+        return new Response(file);
+      }
+    }
+
     // Try to serve from public folder
     const publicPath = join(process.cwd(), 'public', path);
     if (existsSync(publicPath)) {

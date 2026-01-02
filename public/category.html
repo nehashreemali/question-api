@@ -8,9 +8,7 @@
   <style>
     body { background: #0f172a; }
     .card { background: #1e293b; border: 1px solid #334155; }
-    .tab { transition: all 0.2s ease; }
-    .tab:hover { background: #334155; }
-    .tab.active { background: #0891b2; color: white; }
+    .subcategory-card { transition: all 0.2s ease; }
     .topic-card { background: #1e293b; border: 1px solid #334155; }
     .topic-card:hover { border-color: #06b6d4; background: #334155; }
   </style>
@@ -39,7 +37,9 @@
 
     <!-- Category Header -->
     <div class="flex items-center gap-4 mb-8">
-      <span id="category-icon" class="text-5xl">📁</span>
+      <div id="category-image" class="w-16 h-16 rounded-lg bg-slate-700 flex items-center justify-center overflow-hidden">
+        <span id="category-icon" class="text-4xl">📁</span>
+      </div>
       <div>
         <h2 id="category-name" class="text-3xl font-bold">Loading...</h2>
         <p id="category-description" class="text-gray-400 mt-1"></p>
@@ -54,10 +54,11 @@
 
     <!-- Content -->
     <div id="content" class="hidden">
-      <!-- Subcategory Tabs -->
-      <div class="mb-6">
-        <div id="subcategory-tabs" class="flex flex-wrap gap-2">
-          <!-- Tabs populated by JS -->
+      <!-- Subcategory Cards -->
+      <div class="mb-8">
+        <h3 class="text-lg font-semibold text-gray-300 mb-4">Subcategories</h3>
+        <div id="subcategory-cards" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+          <!-- Cards populated by JS -->
         </div>
       </div>
 
@@ -123,8 +124,16 @@
         document.getElementById('category-description').textContent = categoryData.description || '';
         document.title = `${categoryData.name} - Registry`;
 
-        // Render subcategory tabs
-        renderTabs();
+        // Try to load category image
+        const imgContainer = document.getElementById('category-image');
+        const img = document.createElement('img');
+        img.src = `/images/${categoryData.slug}.jpg`;
+        img.className = 'w-full h-full object-cover';
+        img.onerror = () => img.remove();
+        imgContainer.insertBefore(img, imgContainer.firstChild);
+
+        // Render subcategory cards
+        renderSubcategoryCards();
 
         // Select first subcategory by default
         if (categoryData.subcategories?.length > 0) {
@@ -142,20 +151,29 @@
       }
     }
 
-    function renderTabs() {
-      const tabsContainer = document.getElementById('subcategory-tabs');
-      tabsContainer.innerHTML = '';
+    function renderSubcategoryCards() {
+      const container = document.getElementById('subcategory-cards');
+      container.innerHTML = '';
 
       categoryData.subcategories?.forEach(sub => {
-        const tab = document.createElement('button');
-        tab.className = 'tab px-4 py-2 rounded-lg text-sm font-medium text-gray-300 border border-slate-600';
-        tab.dataset.slug = sub.slug;
-        tab.innerHTML = `
-          <span>${sub.name}</span>
-          <span class="ml-2 text-xs text-gray-500">(${sub.topics?.length || 0})</span>
+        const imgPath = `/images/${categoryData.slug}-${sub.slug}.jpg`;
+        const topicCount = sub.topics?.length || 0;
+
+        const card = document.createElement('div');
+        card.className = 'subcategory-card rounded-lg overflow-hidden cursor-pointer border border-slate-600 hover:border-cyan-500 transition';
+        card.dataset.slug = sub.slug;
+        card.innerHTML = `
+          <div class="h-24 bg-slate-700 flex items-center justify-center relative overflow-hidden">
+            <img src="${imgPath}" alt="${sub.name}" class="w-full h-full object-cover absolute inset-0" onerror="this.remove();">
+            <span class="text-2xl relative z-10">📂</span>
+          </div>
+          <div class="p-3 bg-slate-800">
+            <h4 class="font-medium text-white text-sm truncate">${sub.name}</h4>
+            <p class="text-xs text-gray-500">${topicCount} topic${topicCount !== 1 ? 's' : ''}</p>
+          </div>
         `;
-        tab.addEventListener('click', () => selectSubcategory(sub.slug));
-        tabsContainer.appendChild(tab);
+        card.addEventListener('click', () => selectSubcategory(sub.slug));
+        container.appendChild(card);
       });
     }
 
@@ -163,14 +181,14 @@
       activeSubcategory = categoryData.subcategories?.find(s => s.slug === slug);
       if (!activeSubcategory) return;
 
-      // Update active tab
-      document.querySelectorAll('#subcategory-tabs .tab').forEach(tab => {
-        if (tab.dataset.slug === slug) {
-          tab.classList.add('active');
-          tab.classList.remove('text-gray-300', 'border-slate-600');
+      // Update active card
+      document.querySelectorAll('#subcategory-cards .subcategory-card').forEach(card => {
+        if (card.dataset.slug === slug) {
+          card.classList.add('border-cyan-500', 'ring-2', 'ring-cyan-500/50');
+          card.classList.remove('border-slate-600');
         } else {
-          tab.classList.remove('active');
-          tab.classList.add('text-gray-300', 'border-slate-600');
+          card.classList.remove('border-cyan-500', 'ring-2', 'ring-cyan-500/50');
+          card.classList.add('border-slate-600');
         }
       });
 
@@ -196,16 +214,27 @@
       }
 
       emptyState.classList.add('hidden');
-      container.innerHTML = topics.map(topic => `
-        <div class="topic-card rounded-lg p-4 cursor-pointer" onclick="viewTopic('${topic.slug}')">
-          <h4 class="font-medium text-white mb-1">${topic.name}</h4>
-          ${topic.description ? `<p class="text-gray-500 text-sm mb-2">${topic.description}</p>` : ''}
-          <div class="flex items-center gap-4 text-xs text-gray-500">
-            ${topic.total_parts ? `<span>${topic.total_parts} parts</span>` : ''}
-            ${topic.source_type ? `<span class="bg-slate-700 px-2 py-0.5 rounded">${topic.source_type}</span>` : ''}
+      const categorySlug = categoryData.slug;
+      const subcategorySlug = activeSubcategory.slug;
+      container.innerHTML = topics.map(topic => {
+        const imgPath = `/images/${categorySlug}-${subcategorySlug}-${topic.slug}.jpg`;
+        return `
+          <div class="topic-card rounded-lg overflow-hidden cursor-pointer" onclick="viewTopic('${topic.slug}')">
+            <div class="h-32 bg-slate-700 flex items-center justify-center relative">
+              <img src="${imgPath}" alt="${topic.name}" class="w-full h-full object-cover absolute inset-0" onerror="this.remove();">
+              <span class="text-4xl">🎬</span>
+            </div>
+            <div class="p-4">
+              <h4 class="font-medium text-white mb-1">${topic.name}</h4>
+              ${topic.description ? `<p class="text-gray-500 text-sm mb-2">${topic.description}</p>` : ''}
+              <div class="flex items-center gap-4 text-xs text-gray-500">
+                ${topic.total_parts ? `<span>${topic.total_parts} parts</span>` : ''}
+                ${topic.source_type ? `<span class="bg-slate-700 px-2 py-0.5 rounded">${topic.source_type}</span>` : ''}
+              </div>
+            </div>
           </div>
-        </div>
-      `).join('');
+        `;
+      }).join('');
     }
 
     function viewTopic(slug) {
