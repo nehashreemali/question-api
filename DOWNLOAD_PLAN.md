@@ -4,231 +4,170 @@ Master plan for downloading all content before question generation begins.
 
 ---
 
-## Current Content (Already Downloaded) ✓
+## Already Downloaded ✅
 
-| Category           | Items        | Details                                   |
-| ------------------ | ------------ | ----------------------------------------- |
-| TV Shows           | 14 shows     | 2,057 episodes                            |
-| Movies             | 171 films    | Full scripts                              |
-| Classic Books      | 103 books    | Project Gutenberg                         |
-| Epics              | 5 texts      | Bible, Quran, Gita, Mahabharata, Ramayana |
-| Harry Potter Books | 7 novels     | Full text                                 |
-| Harry Potter Wiki  | 296 articles | Characters, spells, creatures, etc.       |
-
----
-
-## Phase 1: Fantasy Wiki Scrapers
-
-**Goal:** Scrape major fantasy franchise wikis
-
-### 1.a: ASOIAF Wiki (Game of Thrones)
-
-| Source | awoiaf.westeros.org |
-| ------ | ------------------- |
-| Content | Characters, houses, locations, events |
-| Est. Articles | 500+ |
-| Script | `src/download-asoiaf-wiki.ts` |
-| Status | ⬜ Pending |
-
-### 1.b: Tolkien Gateway (Lord of the Rings)
-
-| Source | tolkiengateway.net |
-| ------ | ------------------ |
-| Content | LOTR, Hobbit, Silmarillion lore |
-| Est. Articles | 500+ |
-| Script | `src/download-tolkien-wiki.ts` |
-| Status | ⬜ Pending |
-
-### 1.c: Wookieepedia (Star Wars)
-
-| Source | starwars.fandom.com |
-| ------ | ------------------- |
-| Content | Characters, planets, ships, events |
-| Est. Articles | 500+ |
-| Script | `src/download-starwars-wiki.ts` |
-| Status | ⬜ Pending |
+| Category | Items | Details |
+|----------|-------|---------|
+| TV Shows | 14 shows | 2,057 episodes |
+| Movies | 171 films | Full scripts |
+| Classic Books | 103 books | Project Gutenberg |
+| Epics | 5 texts | Bible, Quran, Gita, Mahabharata, Ramayana |
+| Harry Potter | 7 novels + 296 wiki articles | Books + wiki |
+| ASOIAF | 5 novels + 149 wiki articles | Books (1.78M words) + wiki |
 
 ---
 
-## Phase 2: Mythology Scrapers
+## Claude's Work (Web Scraping)
 
-**Goal:** Scrape mythology sources from dedicated sites
+### Mythology (No books available - must scrape)
 
-### 2.a: Greek Mythology
+| # | Source | Content | Est. Pages | Script | Status |
+|---|--------|---------|------------|--------|--------|
+| 1 | theoi.com | Greek gods, heroes, creatures, myths | 300+ | `src/download-greek-mythology.ts` | ⬜ |
+| 2 | sacred-texts.com/neu | Norse Eddas, sagas, gods | 100+ | `src/download-norse-mythology.ts` | ⬜ |
+| 3 | sacred-texts.com/egy | Egyptian gods, Book of the Dead | 100+ | `src/download-egyptian-mythology.ts` | ⬜ |
 
-| Source | theoi.com |
-| ------ | --------- |
-| Content | Gods, heroes, creatures, myths |
-| Est. Pages | 300+ |
-| Script | `src/download-greek-mythology.ts` |
-| Status | ⬜ Pending |
+### Movie/TV Franchise Wikis (Source is film, not books)
 
-### 2.b: Norse Mythology
+| # | Source | Content | Est. Articles | Script | Status |
+|---|--------|---------|---------------|--------|--------|
+| 4 | starwars.fandom.com | Star Wars characters, planets, ships | 500+ | `src/download-starwars-wiki.ts` | ⬜ |
+| 5 | marvel.fandom.com | MCU characters, movies, events | 500+ | `src/download-marvel-wiki.ts` | ⬜ |
+| 6 | dc.fandom.com | DC characters, movies, comics | 500+ | `src/download-dc-wiki.ts` | ⬜ |
+| 7 | tardis.fandom.com | Doctor Who characters, episodes, aliens | 300+ | `src/download-doctorwho-wiki.ts` | ⬜ |
 
-| Source | sacred-texts.com/neu |
-| ------ | -------------------- |
-| Content | Eddas, sagas, Norse gods |
-| Est. Pages | 100+ |
-| Script | `src/download-norse-mythology.ts` |
-| Status | ⬜ Pending |
+### Claude's Task List
 
-### 2.c: Egyptian Mythology
-
-| Source | sacred-texts.com/egy |
-| ------ | -------------------- |
-| Content | Egyptian gods, Book of the Dead, myths |
-| Est. Pages | 100+ |
-| Script | `src/download-egyptian-mythology.ts` |
-| Status | ⬜ Pending |
+```
+[ ] 1. Greek Mythology (theoi.com)
+[ ] 2. Norse Mythology (sacred-texts.com)
+[ ] 3. Egyptian Mythology (sacred-texts.com)
+[ ] 4. Star Wars Wiki (Wookieepedia)
+[ ] 5. Marvel MCU Wiki
+[ ] 6. DC Wiki
+[ ] 7. Doctor Who Wiki
+```
 
 ---
 
-## Phase 3: User-Provided Books (Copyrighted)
-
-**Goal:** User downloads, converts to .txt, adds to `generation/books/`
+## Russell's Work (Books)
 
 **Instructions:**
-1. Purchase EPUBs from DRM-free store (Google Play, Kobo) or strip DRM with Calibre
+1. Search term below, download EPUB
 2. Convert EPUB → TXT using Calibre
 3. Add to `generation/books/[folder-name]/`
-4. Name files: `01-book-title.txt`, `02-book-title.txt`, etc.
 
-### 3.a: Fantasy Epics
+### Copy-Paste Search List (Priority Order)
 
-| #   | Series                 | Author          | Books | Folder             | Status  |
-| --- | ---------------------- | --------------- | ----- | ------------------ | ------- |
-| 1   | A Song of Ice and Fire | G.R.R. Martin   | 5     | `game-of-thrones/` | ⬜ Pending |
-| 2   | The Witcher            | Andrzej Sapkowski | 8   | `the-witcher/`     | ⬜ Pending |
-| 3   | The Wheel of Time      | Robert Jordan   | 14    | `wheel-of-time/`   | ⬜ Pending |
-| 4   | The Stormlight Archive | Brandon Sanderson | 4   | `stormlight/`      | ⬜ Pending |
-| 5   | Mistborn (Era 1)       | Brandon Sanderson | 3   | `mistborn/`        | ⬜ Pending |
-| 6   | The Name of the Wind   | Patrick Rothfuss | 2    | `kingkiller/`      | ⬜ Pending |
+```
+# TIER 1 - HIGH PRIORITY
 
-### 3.b: YA Dystopian/Adventure
+Lord of the Rings Fellowship of the Ring epub
+Lord of the Rings Two Towers epub
+Lord of the Rings Return of the King epub
+The Hobbit Tolkien epub
+Hunger Games Suzanne Collins epub
+Catching Fire Suzanne Collins epub
+Mockingjay Suzanne Collins epub
+Ballad of Songbirds and Snakes epub
+Percy Jackson Lightning Thief epub
+Percy Jackson Sea of Monsters epub
+Percy Jackson Titan's Curse epub
+Percy Jackson Battle of the Labyrinth epub
+Percy Jackson Last Olympian epub
+The Witcher Last Wish epub
+The Witcher Sword of Destiny epub
+The Witcher Blood of Elves epub
+The Witcher Time of Contempt epub
+The Witcher Baptism of Fire epub
+The Witcher Tower of Swallows epub
+The Witcher Lady of the Lake epub
+The Witcher Season of Storms epub
+Angels and Demons Dan Brown epub
+The Da Vinci Code Dan Brown epub
+The Lost Symbol Dan Brown epub
+Inferno Dan Brown epub
+Origin Dan Brown epub
 
-| #   | Series                        | Author          | Books | Folder           | Status  |
-| --- | ----------------------------- | --------------- | ----- | ---------------- | ------- |
-| 1   | The Hunger Games              | Suzanne Collins | 4     | `hunger-games/`  | ⬜ Pending |
-| 2   | Percy Jackson & the Olympians | Rick Riordan    | 5     | `percy-jackson/` | ⬜ Pending |
-| 3   | The Maze Runner               | James Dashner   | 3     | `maze-runner/`   | ⬜ Pending |
-| 4   | Divergent                     | Veronica Roth   | 3     | `divergent/`     | ⬜ Pending |
-| 5   | Ender's Game                  | Orson Scott Card | 1    | `sci-fi/`        | ⬜ Pending |
+# TIER 2 - MYSTERY/THRILLER
 
-### 3.c: Thrillers & Literary Fiction
+Murder on the Orient Express epub
+And Then There Were None epub
+Death on the Nile epub
+The ABC Murders epub
+Gone Girl Gillian Flynn epub
 
-| #   | Series                | Author          | Books | Folder       | Status  |
-| --- | --------------------- | --------------- | ----- | ------------ | ------- |
-| 1   | The Da Vinci Code     | Dan Brown       | 1     | `thrillers/` | ⬜ Pending |
-| 2   | Gone Girl             | Gillian Flynn   | 1     | `thrillers/` | ⬜ Pending |
-| 3   | The Girl on the Train | Paula Hawkins   | 1     | `thrillers/` | ⬜ Pending |
-| 4   | The Kite Runner       | Khaled Hosseini | 1     | `literary/`  | ⬜ Pending |
-| 5   | Life of Pi            | Yann Martel     | 1     | `literary/`  | ⬜ Pending |
-| 6   | The Book Thief        | Markus Zusak    | 1     | `literary/`  | ⬜ Pending |
+# TIER 3 - SCI-FI/DYSTOPIAN
+
+Ender's Game Orson Scott Card epub
+Divergent Veronica Roth epub
+Insurgent Veronica Roth epub
+Allegiant Veronica Roth epub
+Maze Runner James Dashner epub
+Scorch Trials James Dashner epub
+Death Cure James Dashner epub
+
+# TIER 4 - DEEP FANTASY
+
+The Silmarillion Tolkien epub
+Mistborn Final Empire epub
+Mistborn Well of Ascension epub
+Mistborn Hero of Ages epub
+Stormlight Archive Way of Kings epub
+Stormlight Words of Radiance epub
+Stormlight Oathbringer epub
+Stormlight Rhythm of War epub
+Name of the Wind Patrick Rothfuss epub
+Wise Man's Fear Patrick Rothfuss epub
+
+# TIER 5 - LITERARY/OPTIONAL
+
+The Kite Runner epub
+Life of Pi epub
+The Book Thief epub
+Girl on the Train epub
+
+# TIER 6 - MORE AGATHA CHRISTIE
+
+Poirot Murder of Roger Ackroyd epub
+Poirot Five Little Pigs epub
+Miss Marple A Murder is Announced epub
+Miss Marple The Body in the Library epub
+```
+
+### Russell's Status Tracking
+
+| # | Series | Books | Folder | Status |
+|---|--------|-------|--------|--------|
+| 1 | A Song of Ice and Fire | 5 | `a-song-of-ice-and-fire/` | ✅ Done |
+| 2 | Harry Potter | 7 | `harry-potter/` | ✅ Done |
+| 3 | Lord of the Rings + Hobbit | 4 | `tolkien/` | ⬜ |
+| 4 | Hunger Games | 4 | `hunger-games/` | ⬜ |
+| 5 | Percy Jackson | 5 | `percy-jackson/` | ⬜ |
+| 6 | The Witcher | 8 | `witcher/` | ⬜ |
+| 7 | Robert Langdon (Dan Brown) | 5 | `dan-brown/` | ⬜ |
+| 8 | Agatha Christie | 6+ | `agatha-christie/` | ⬜ |
+| 9 | Divergent | 3 | `divergent/` | ⬜ |
+| 10 | Maze Runner | 3 | `maze-runner/` | ⬜ |
+| 11 | Ender's Game | 1 | `sci-fi/` | ⬜ |
+| 12 | The Silmarillion | 1 | `tolkien/` | ⬜ |
+| 13 | Mistborn | 3 | `mistborn/` | ⬜ |
+| 14 | Stormlight Archive | 4 | `stormlight/` | ⬜ |
+| 15 | Kingkiller Chronicle | 2 | `kingkiller/` | ⬜ |
+| 16 | Literary Fiction | 4 | `literary/` | ⬜ |
+
+**Total: ~56 books**
 
 ---
 
-## Phase 4: Additional Wiki Scrapers
+## Summary
 
-**Goal:** More franchise wikis for popular media
-
-### 4.a: Marvel Wiki (MCU)
-
-| Source | marvel.fandom.com |
-| ------ | ----------------- |
-| Content | MCU characters, movies, events |
-| Est. Articles | 500+ |
-| Script | `src/download-marvel-wiki.ts` |
-| Status | ⬜ Pending |
-
-### 4.b: DC Wiki (DCEU)
-
-| Source | dc.fandom.com |
-| ------ | ------------- |
-| Content | DC characters, movies, comics |
-| Est. Articles | 500+ |
-| Script | `src/download-dc-wiki.ts` |
-| Status | ⬜ Pending |
-
-### 4.c: Doctor Who Wiki
-
-| Source | tardis.fandom.com |
-| ------ | ----------------- |
-| Content | Characters, episodes, aliens, planets |
-| Est. Articles | 300+ |
-| Script | `src/download-doctorwho-wiki.ts` |
-| Status | ⬜ Pending |
-
-### 4.d: Agatha Christie Wiki
-
-| Source | agathachristie.fandom.com |
-| ------ | ------------------------- |
-| Content | Detectives, books, cases, characters |
-| Est. Articles | 200+ |
-| Script | `src/download-agathachristie-wiki.ts` |
-| Status | ⬜ Pending |
-
----
-
-## Phase Execution Summary
-
-| Phase | Sub-phases | Owner  | Dependencies |
-| ----- | ---------- | ------ | ------------ |
-| 1     | 1.a, 1.b, 1.c | Claude | None |
-| 2     | 2.a, 2.b, 2.c | Claude | None |
-| 3     | 3.a, 3.b, 3.c | User   | None |
-| 4     | 4.a, 4.b, 4.c, 4.d | Claude | Optional |
-
-**Recommended Order:**
-1. Phase 1.a → 1.b → 1.c (Fantasy wikis)
-2. Phase 2.a → 2.b → 2.c (Mythology) - can run parallel with Phase 3
-3. Phase 3.a → 3.b → 3.c (User downloads books async)
-4. Phase 4.a → 4.b → 4.c → 4.d (Additional wikis if time permits)
-
----
-
-## Progress Tracking
-
-### Phase 1: Fantasy Wikis
-- [ ] 1.a: ASOIAF Wiki (Game of Thrones)
-- [ ] 1.b: Tolkien Gateway (LOTR)
-- [ ] 1.c: Wookieepedia (Star Wars)
-
-### Phase 2: Mythology
-- [ ] 2.a: Greek Mythology (Theoi.com)
-- [ ] 2.b: Norse Mythology (sacred-texts)
-- [ ] 2.c: Egyptian Mythology (sacred-texts)
-
-### Phase 3: User Books
-- [ ] 3.a: Fantasy Epics (ASOIAF, Witcher, WoT, Stormlight, Mistborn, Kingkiller)
-- [ ] 3.b: YA Dystopian (Hunger Games, Percy Jackson, Maze Runner, Divergent, Ender's Game)
-- [ ] 3.c: Thrillers & Literary (Da Vinci Code, Gone Girl, Kite Runner, etc.)
-
-### Phase 4: Additional Wikis
-- [ ] 4.a: Marvel Wiki
-- [ ] 4.b: DC Wiki
-- [ ] 4.c: Doctor Who Wiki
-- [ ] 4.d: Agatha Christie Wiki
+| Owner | Task Type | Items |
+|-------|-----------|-------|
+| Claude | Mythology scraping | 3 sources (~500 pages) |
+| Claude | Movie/TV wikis | 4 wikis (~1,800 articles) |
+| Russell | Books (EPUB → TXT) | ~56 books |
 
 ---
 
 _Last updated: January 2026_
-
-<!-- ⏺ | #   | Book/Series                   | Author             | Books |
-  |-----|-------------------------------|--------------------|-------|
-  | 1   | A Song of Ice and Fire        | George R.R. Martin | 5     |
-  | 2   | The Hunger Games              | Suzanne Collins    | 4     |
-  | 3   | Percy Jackson & the Olympians | Rick Riordan       | 5     |
-  | 4   | The Da Vinci Code             | Dan Brown          | 1     |
-  | 5   | Gone Girl                     | Gillian Flynn      | 1     |
-  | 6   | The Witcher                   | Andrzej Sapkowski  | 8     |
-  | 7   | Mistborn (Era 1)              | Brandon Sanderson  | 3     |
-  | 8   | Ender's Game                  | Orson Scott Card   | 1     |
-  | 9   | The Maze Runner               | James Dashner      | 3     |
-  | 10  | Divergent                     | Veronica Roth      | 3     |
-  | 11  | The Kite Runner               | Khaled Hosseini    | 1     |
-  | 12  | The Girl on the Train         | Paula Hawkins      | 1     |
-  | 13  | The Name of the Wind          | Patrick Rothfuss   | 2     |
-  | 14  | Life of Pi                    | Yann Martel        | 1     |
-  | 15  | The Book Thief                | Markus Zusak       | 1     |
-  | 16  | The Stormlight Archive        | Brandon Sanderson  | 4     |
-  | 17  | The Wheel of Time             | Robert Jordan      | 14    | -->
