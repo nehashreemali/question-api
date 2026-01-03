@@ -1,0 +1,66 @@
+{
+  "number": 105,
+  "name": "سُورَةُ الفِيلِ",
+  "englishName": "Al-Fil",
+  "englishNameTranslation": "The Elephant",
+  "revelationType": "Meccan",
+  "ayahs": [
+    {
+      "number": 6189,
+      "text": "ART THOU NOT aware of how thy Sustainer dealt with the Army of the Elephant?",
+      "numberInSurah": 1,
+      "juz": 30,
+      "manzil": 7,
+      "page": 601,
+      "ruku": 547,
+      "hizbQuarter": 240,
+      "sajda": false
+    },
+    {
+      "number": 6190,
+      "text": "Did He not utterly confound their artful planning?",
+      "numberInSurah": 2,
+      "juz": 30,
+      "manzil": 7,
+      "page": 601,
+      "ruku": 547,
+      "hizbQuarter": 240,
+      "sajda": false
+    },
+    {
+      "number": 6191,
+      "text": "Thus, He let loose upon them great swarms of flying creatures",
+      "numberInSurah": 3,
+      "juz": 30,
+      "manzil": 7,
+      "page": 601,
+      "ruku": 547,
+      "hizbQuarter": 240,
+      "sajda": false
+    },
+    {
+      "number": 6192,
+      "text": "which smote them with stone-hard blows of chastisement pre-ordained,",
+      "numberInSurah": 4,
+      "juz": 30,
+      "manzil": 7,
+      "page": 601,
+      "ruku": 547,
+      "hizbQuarter": 240,
+      "sajda": false
+    },
+    {
+      "number": 6193,
+      "text": "and caused them to become like a field of grain that has been eaten down to stubble",
+      "numberInSurah": 5,
+      "juz": 30,
+      "manzil": 7,
+      "page": 601,
+      "ruku": 547,
+      "hizbQuarter": 240,
+      "sajda": false
+    }
+  ],
+  "source": "alquran.cloud",
+  "scrapedAt": "2026-01-03T07:05:44.369Z"
+}

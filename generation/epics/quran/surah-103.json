@@ -1,0 +1,44 @@
+{
+  "number": 103,
+  "name": "سُورَةُ العَصۡرِ",
+  "englishName": "Al-Asr",
+  "englishNameTranslation": "The Declining Day, Epoch",
+  "revelationType": "Meccan",
+  "ayahs": [
+    {
+      "number": 6177,
+      "text": "CONSIDER the flight of time!",
+      "numberInSurah": 1,
+      "juz": 30,
+      "manzil": 7,
+      "page": 601,
+      "ruku": 545,
+      "hizbQuarter": 240,
+      "sajda": false
+    },
+    {
+      "number": 6178,
+      "text": "Verily, man is bound to lose himself",
+      "numberInSurah": 2,
+      "juz": 30,
+      "manzil": 7,
+      "page": 601,
+      "ruku": 545,
+      "hizbQuarter": 240,
+      "sajda": false
+    },
+    {
+      "number": 6179,
+      "text": "unless he be of those who attain to faith, and do good works, and enjoin upon one another the keeping to truth, and enjoin upon one another patience in adversity.",
+      "numberInSurah": 3,
+      "juz": 30,
+      "manzil": 7,
+      "page": 601,
+      "ruku": 545,
+      "hizbQuarter": 240,
+      "sajda": false
+    }
+  ],
+  "source": "alquran.cloud",
+  "scrapedAt": "2026-01-03T07:05:43.614Z"
+}

@@ -1,0 +1,55 @@
+{
+  "number": 112,
+  "name": "سُورَةُ الإِخۡلَاصِ",
+  "englishName": "Al-Ikhlaas",
+  "englishNameTranslation": "Sincerity",
+  "revelationType": "Meccan",
+  "ayahs": [
+    {
+      "number": 6222,
+      "text": "SAY: \"He is the One God:",
+      "numberInSurah": 1,
+      "juz": 30,
+      "manzil": 7,
+      "page": 604,
+      "ruku": 554,
+      "hizbQuarter": 240,
+      "sajda": false
+    },
+    {
+      "number": 6223,
+      "text": "\"God the Eternal, the Uncaused Cause of All Being.",
+      "numberInSurah": 2,
+      "juz": 30,
+      "manzil": 7,
+      "page": 604,
+      "ruku": 554,
+      "hizbQuarter": 240,
+      "sajda": false
+    },
+    {
+      "number": 6224,
+      "text": "\"He begets not, and neither is He begotten;",
+      "numberInSurah": 3,
+      "juz": 30,
+      "manzil": 7,
+      "page": 604,
+      "ruku": 554,
+      "hizbQuarter": 240,
+      "sajda": false
+    },
+    {
+      "number": 6225,
+      "text": "\"and there is nothing that could be compared with Him.",
+      "numberInSurah": 4,
+      "juz": 30,
+      "manzil": 7,
+      "page": 604,
+      "ruku": 554,
+      "hizbQuarter": 240,
+      "sajda": false
+    }
+  ],
+  "source": "alquran.cloud",
+  "scrapedAt": "2026-01-03T07:05:47.012Z"
+}

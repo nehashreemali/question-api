@@ -1,0 +1,55 @@
+{
+  "number": 106,
+  "name": "سُورَةُ قُرَيۡشٍ",
+  "englishName": "Quraish",
+  "englishNameTranslation": "Quraysh",
+  "revelationType": "Meccan",
+  "ayahs": [
+    {
+      "number": 6194,
+      "text": "SO THAT the Quraysh might remain secure,",
+      "numberInSurah": 1,
+      "juz": 30,
+      "manzil": 7,
+      "page": 602,
+      "ruku": 548,
+      "hizbQuarter": 240,
+      "sajda": false
+    },
+    {
+      "number": 6195,
+      "text": "secure in their winter and summer journeys,",
+      "numberInSurah": 2,
+      "juz": 30,
+      "manzil": 7,
+      "page": 602,
+      "ruku": 548,
+      "hizbQuarter": 240,
+      "sajda": false
+    },
+    {
+      "number": 6196,
+      "text": "Let them, therefore, worship the Sustainer of this Temple;",
+      "numberInSurah": 3,
+      "juz": 30,
+      "manzil": 7,
+      "page": 602,
+      "ruku": 548,
+      "hizbQuarter": 240,
+      "sajda": false
+    },
+    {
+      "number": 6197,
+      "text": "who has given them food against hunger, and made them safe from danger.",
+      "numberInSurah": 4,
+      "juz": 30,
+      "manzil": 7,
+      "page": 602,
+      "ruku": 548,
+      "hizbQuarter": 240,
+      "sajda": false
+    }
+  ],
+  "source": "alquran.cloud",
+  "scrapedAt": "2026-01-03T07:05:44.746Z"
+}

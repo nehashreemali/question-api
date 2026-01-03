@@ -1,0 +1,44 @@
+{
+  "number": 108,
+  "name": "سُورَةُ الكَوۡثَرِ",
+  "englishName": "Al-Kawthar",
+  "englishNameTranslation": "Abundance",
+  "revelationType": "Meccan",
+  "ayahs": [
+    {
+      "number": 6205,
+      "text": "BEHOLD, We have bestowed upon thee good in abundance:",
+      "numberInSurah": 1,
+      "juz": 30,
+      "manzil": 7,
+      "page": 602,
+      "ruku": 550,
+      "hizbQuarter": 240,
+      "sajda": false
+    },
+    {
+      "number": 6206,
+      "text": "hence, pray unto thy Sustainer [alone], and sacrifice [unto Him alone].",
+      "numberInSurah": 2,
+      "juz": 30,
+      "manzil": 7,
+      "page": 602,
+      "ruku": 550,
+      "hizbQuarter": 240,
+      "sajda": false
+    },
+    {
+      "number": 6207,
+      "text": "Verily, he that hates thee has indeed been cut off [from all that is good]!",
+      "numberInSurah": 3,
+      "juz": 30,
+      "manzil": 7,
+      "page": 602,
+      "ruku": 550,
+      "hizbQuarter": 240,
+      "sajda": false
+    }
+  ],
+  "source": "alquran.cloud",
+  "scrapedAt": "2026-01-03T07:05:45.501Z"
+}

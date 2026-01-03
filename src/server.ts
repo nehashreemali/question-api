@@ -20,6 +20,13 @@ import {
   getTopics as getRegistryTopics,
   getFullHierarchy,
 } from './lib/registry';
+import {
+  syncPipeline,
+  getPipelineSummary,
+  getPipelineByTopic,
+  getPendingItems,
+  getFailedItems,
+} from './lib/pipeline';
 
 const PORT = process.env.PORT || 3000;
 
@@ -144,6 +151,41 @@ Bun.serve({
       }, { headers: corsHeaders });
     }
 
+    // ========== Pipeline API ==========
+
+    // Get pipeline summary
+    if (path === '/api/pipeline') {
+      const summary = getPipelineSummary();
+      return Response.json(summary, { headers: corsHeaders });
+    }
+
+    // Get pipeline by topic
+    if (path === '/api/pipeline/topics') {
+      const category = url.searchParams.get('category') || undefined;
+      const topics = getPipelineByTopic(category);
+      return Response.json(topics, { headers: corsHeaders });
+    }
+
+    // Get pending items
+    if (path === '/api/pipeline/pending') {
+      const limit = parseInt(url.searchParams.get('limit') || '50');
+      const pending = getPendingItems(limit);
+      return Response.json(pending, { headers: corsHeaders });
+    }
+
+    // Get failed items
+    if (path === '/api/pipeline/failed') {
+      const failed = getFailedItems();
+      return Response.json(failed, { headers: corsHeaders });
+    }
+
+    // Sync pipeline (trigger refresh)
+    if (path === '/api/pipeline/sync' && req.method === 'POST') {
+      const result = syncPipeline();
+      const summary = getPipelineSummary();
+      return Response.json({ synced: result, summary }, { headers: corsHeaders });
+    }
+
     // Serve static files
     if (path === '/' || path === '/index.html') {
       const html = readFileSync(join(process.cwd(), 'public', 'index.html'), 'utf8');
@@ -162,6 +204,11 @@ Bun.serve({
 
     if (path === '/registry' || path === '/registry.html') {
       const html = readFileSync(join(process.cwd(), 'public', 'registry.html'), 'utf8');
+      return new Response(html, { headers: { 'Content-Type': 'text/html' } });
+    }
+
+    if (path === '/pipeline' || path === '/pipeline.html') {
+      const html = readFileSync(join(process.cwd(), 'public', 'pipeline.html'), 'utf8');
       return new Response(html, { headers: { 'Content-Type': 'text/html' } });
     }
 
@@ -203,24 +250,18 @@ console.log(`
 ║   • /stats      - Statistics Dashboard                         ║
 ║   • /questions  - Question Browser                             ║
 ║   • /registry   - Category/Subcategory Browser                 ║
+║   • /pipeline   - Content Pipeline Status                      ║
 ║                                                                ║
-║   Registry API:                                                ║
-║   • GET /api/categories     - List all categories              ║
-║   • GET /api/subcategories  - List subcategories               ║
-║   • GET /api/hierarchy      - Full category tree               ║
+║   Pipeline API:                                                ║
+║   • GET  /api/pipeline        - Pipeline summary               ║
+║   • GET  /api/pipeline/topics - Status by topic                ║
+║   • GET  /api/pipeline/pending- Pending items                  ║
+║   • POST /api/pipeline/sync   - Sync/refresh pipeline          ║
 ║                                                                ║
 ║   Question API:                                                ║
 ║   • GET /api/stats          - Aggregated statistics            ║
 ║   • GET /api/questions      - List questions (with filters)    ║
 ║   • GET /api/topics         - List topics from questions       ║
-║   • POST /api/import        - Import from JSON files           ║
-║                                                                ║
-║   Databases:                                                   ║
-║   • data/registry.db        - Categories, subcategories        ║
-║   • data/{category}.db      - Per-category questions           ║
-║                                                                ║
-║   To generate questions, use Claude Code CLI:                  ║
-║   > power up friends s1e10                                     ║
 ║                                                                ║
 ╚════════════════════════════════════════════════════════════════╝
 `);

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Pipeline</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: #0f172a; }
+    .card { background: #1e293b; border: 1px solid #334155; }
+    .stat-card { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+    .progress-bar { transition: width 0.5s ease; }
+  </style>
+</head>
+<body class="min-h-screen text-gray-100">
+  <!-- Navigation -->
+  <nav class="bg-slate-800 border-b border-slate-700 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <h1 class="text-xl font-bold text-white">Question API</h1>
+      <div class="flex gap-4">
+        <a href="/" class="text-gray-400 hover:text-white transition">Home</a>
+        <a href="/stats" class="text-gray-400 hover:text-white transition">Stats</a>
+        <a href="/questions" class="text-gray-400 hover:text-white transition">Questions</a>
+        <a href="/registry" class="text-gray-400 hover:text-white transition">Registry</a>
+        <a href="/pipeline" class="text-purple-400 font-medium">Pipeline</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-6 py-8">
+    <div class="flex items-center justify-between mb-8">
+      <div>
+        <h2 class="text-3xl font-bold">Content Pipeline</h2>
+        <p class="text-gray-400 mt-1">Track downloaded content and question generation progress</p>
+      </div>
+      <button id="sync-btn" class="bg-purple-600 hover:bg-purple-500 text-white font-medium py-2 px-4 rounded-lg transition flex items-center gap-2">
+        <span id="sync-icon">🔄</span>
+        <span id="sync-text">Sync Pipeline</span>
+      </button>
+    </div>
+
+    <!-- Sync Result -->
+    <div id="sync-result" class="hidden card rounded-lg p-4 mb-6 border-purple-500"></div>
+
+    <!-- Loading State -->
+    <div id="loading" class="text-center py-12">
+      <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-400 mx-auto"></div>
+      <p class="mt-4 text-gray-400">Loading pipeline status...</p>
+    </div>
+
+    <!-- Pipeline Content -->
+    <div id="pipeline-content" class="hidden">
+      <!-- Overview Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+        <div class="stat-card card rounded-xl p-6">
+          <p class="text-gray-400 text-sm uppercase tracking-wide">Total Content</p>
+          <p id="total-content" class="text-4xl font-bold text-white mt-2">0</p>
+          <p class="text-gray-500 text-sm mt-1">units downloaded</p>
+        </div>
+        <div class="stat-card card rounded-xl p-6">
+          <p class="text-gray-400 text-sm uppercase tracking-wide">Completed</p>
+          <p id="completed-count" class="text-4xl font-bold text-emerald-400 mt-2">0</p>
+          <p class="text-gray-500 text-sm mt-1">questions generated</p>
+        </div>
+        <div class="stat-card card rounded-xl p-6">
+          <p class="text-gray-400 text-sm uppercase tracking-wide">Pending</p>
+          <p id="pending-count" class="text-4xl font-bold text-yellow-400 mt-2">0</p>
+          <p class="text-gray-500 text-sm mt-1">awaiting generation</p>
+        </div>
+        <div class="stat-card card rounded-xl p-6">
+          <p class="text-gray-400 text-sm uppercase tracking-wide">Questions</p>
+          <p id="questions-count" class="text-4xl font-bold text-purple-400 mt-2">0</p>
+          <p class="text-gray-500 text-sm mt-1">total generated</p>
+        </div>
+      </div>
+
+      <!-- Overall Progress -->
+      <div class="card rounded-xl p-6 mb-8">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-xl font-semibold">Overall Progress</h3>
+          <span id="progress-pct" class="text-2xl font-bold text-purple-400">0%</span>
+        </div>
+        <div class="h-4 bg-slate-700 rounded-full overflow-hidden">
+          <div id="progress-bar" class="h-full bg-gradient-to-r from-purple-500 to-emerald-500 progress-bar" style="width: 0%"></div>
+        </div>
+        <p id="progress-text" class="text-gray-400 text-sm mt-2"></p>
+      </div>
+
+      <!-- By Category -->
+      <div class="card rounded-xl p-6 mb-8">
+        <h3 class="text-xl font-semibold mb-4">Progress by Category</h3>
+        <div id="categories-list" class="space-y-4">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- By Topic -->
+      <div class="card rounded-xl p-6">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-xl font-semibold">Progress by Topic</h3>
+          <select id="category-filter" class="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-sm">
+            <option value="">All Categories</option>
+          </select>
+        </div>
+        <div id="topics-list" class="space-y-3 max-h-96 overflow-y-auto">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let pipelineData = null;
+    let topicsData = null;
+
+    async function loadPipeline() {
+      try {
+        const [summaryRes, topicsRes] = await Promise.all([
+          fetch('/api/pipeline'),
+          fetch('/api/pipeline/topics')
+        ]);
+
+        pipelineData = await summaryRes.json();
+        topicsData = await topicsRes.json();
+
+        renderPipeline();
+      } catch (error) {
+        console.error('Failed to load pipeline:', error);
+        document.getElementById('loading').innerHTML = `
+          <p class="text-red-400">Failed to load pipeline status.</p>
+          <p class="text-gray-500 text-sm mt-2">Make sure the server is running and pipeline.db exists.</p>
+        `;
+      }
+    }
+
+    function renderPipeline() {
+      const { categories, totals } = pipelineData;
+
+      // Update totals
+      document.getElementById('total-content').textContent = totals.total.toLocaleString();
+      document.getElementById('completed-count').textContent = totals.completed.toLocaleString();
+      document.getElementById('pending-count').textContent = totals.pending.toLocaleString();
+      document.getElementById('questions-count').textContent = totals.questions.toLocaleString();
+
+      // Progress bar
+      const pct = totals.total > 0 ? (totals.completed / totals.total) * 100 : 0;
+      document.getElementById('progress-pct').textContent = pct.toFixed(1) + '%';
+      document.getElementById('progress-bar').style.width = pct + '%';
+      document.getElementById('progress-text').textContent =
+        `${totals.completed.toLocaleString()} of ${totals.total.toLocaleString()} content units processed`;
+
+      // Categories list
+      const categoriesList = document.getElementById('categories-list');
+      categoriesList.innerHTML = '';
+
+      const categoryFilter = document.getElementById('category-filter');
+      categoryFilter.innerHTML = '<option value="">All Categories</option>';
+
+      for (const cat of categories) {
+        const catPct = cat.total > 0 ? (cat.completed / cat.total) * 100 : 0;
+        const displayName = cat.category.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+
+        // Add to filter dropdown
+        const option = document.createElement('option');
+        option.value = cat.category;
+        option.textContent = displayName;
+        categoryFilter.appendChild(option);
+
+        // Category card
+        const catEl = document.createElement('div');
+        catEl.className = 'bg-slate-800 rounded-lg p-4';
+        catEl.innerHTML = `
+          <div class="flex items-center justify-between mb-2">
+            <h4 class="font-semibold text-lg">${displayName}</h4>
+            <div class="text-right">
+              <span class="text-xl font-bold text-purple-400">${cat.questions.toLocaleString()}</span>
+              <span class="text-gray-400 text-sm ml-1">questions</span>
+            </div>
+          </div>
+          <div class="flex gap-4 text-sm text-gray-400 mb-3">
+            <span class="text-emerald-400">${cat.completed} completed</span>
+            <span class="text-yellow-400">${cat.pending} pending</span>
+            ${cat.failed > 0 ? `<span class="text-red-400">${cat.failed} failed</span>` : ''}
+          </div>
+          <div class="h-2 bg-slate-700 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-purple-500 to-emerald-500 progress-bar"
+                 style="width: ${catPct}%"></div>
+          </div>
+          <p class="text-gray-500 text-xs mt-2">${catPct.toFixed(1)}% complete</p>
+        `;
+        categoriesList.appendChild(catEl);
+      }
+
+      // Topics list
+      renderTopics('');
+
+      // Show content
+      document.getElementById('loading').classList.add('hidden');
+      document.getElementById('pipeline-content').classList.remove('hidden');
+    }
+
+    function renderTopics(categoryFilter) {
+      const topicsList = document.getElementById('topics-list');
+      topicsList.innerHTML = '';
+
+      let filteredTopics = topicsData;
+      if (categoryFilter) {
+        filteredTopics = topicsData.filter(t => t.category === categoryFilter);
+      }
+
+      // Sort by pending count (most work to do first)
+      filteredTopics.sort((a, b) => b.pending - a.pending);
+
+      for (const topic of filteredTopics) {
+        const pct = topic.totalUnits > 0 ? (topic.completed / topic.totalUnits) * 100 : 0;
+        const displayName = topic.topic.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+
+        const topicEl = document.createElement('div');
+        topicEl.className = 'bg-slate-800 rounded-lg p-3';
+
+        let statusBadge = '';
+        if (pct === 100) {
+          statusBadge = '<span class="bg-emerald-900 text-emerald-400 text-xs px-2 py-1 rounded">Complete</span>';
+        } else if (pct > 0) {
+          statusBadge = '<span class="bg-yellow-900 text-yellow-400 text-xs px-2 py-1 rounded">In Progress</span>';
+        } else {
+          statusBadge = '<span class="bg-slate-700 text-gray-400 text-xs px-2 py-1 rounded">Pending</span>';
+        }
+
+        topicEl.innerHTML = `
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center gap-2">
+              <h4 class="font-medium">${displayName}</h4>
+              ${statusBadge}
+            </div>
+            <span class="text-purple-400 font-semibold">${topic.questions.toLocaleString()} q</span>
+          </div>
+          <div class="flex gap-3 text-xs text-gray-400 mb-2">
+            <span>${topic.totalUnits} units</span>
+            <span class="text-emerald-400">${topic.completed} done</span>
+            <span class="text-yellow-400">${topic.pending} pending</span>
+          </div>
+          <div class="h-1.5 bg-slate-700 rounded-full overflow-hidden">
+            <div class="h-full bg-purple-500 progress-bar" style="width: ${pct}%"></div>
+          </div>
+        `;
+        topicsList.appendChild(topicEl);
+      }
+
+      if (filteredTopics.length === 0) {
+        topicsList.innerHTML = '<p class="text-gray-500 text-center py-4">No topics found</p>';
+      }
+    }
+
+    async function syncPipeline() {
+      const btn = document.getElementById('sync-btn');
+      const icon = document.getElementById('sync-icon');
+      const text = document.getElementById('sync-text');
+      const resultDiv = document.getElementById('sync-result');
+
+      btn.disabled = true;
+      icon.textContent = '⏳';
+      icon.classList.add('animate-spin');
+      text.textContent = 'Syncing...';
+      resultDiv.classList.add('hidden');
+
+      try {
+        const response = await fetch('/api/pipeline/sync', { method: 'POST' });
+        const result = await response.json();
+
+        resultDiv.classList.remove('hidden');
+        resultDiv.className = 'card rounded-lg p-4 mb-6 border border-purple-500 bg-purple-900/20';
+        resultDiv.innerHTML = `
+          <p class="text-purple-400 font-medium">Pipeline synced!</p>
+          <p class="text-gray-300 text-sm mt-1">
+            TV: ${result.synced.tvShows} episodes |
+            Movies: ${result.synced.movies} |
+            Epics: ${result.synced.epics.mahabharata + result.synced.epics.ramayana + result.synced.epics.gita + result.synced.epics.bible + result.synced.epics.quran} files
+          </p>
+        `;
+
+        // Reload data
+        pipelineData = result.summary;
+        const topicsRes = await fetch('/api/pipeline/topics');
+        topicsData = await topicsRes.json();
+        renderPipeline();
+
+      } catch (error) {
+        console.error('Failed to sync:', error);
+        resultDiv.classList.remove('hidden');
+        resultDiv.className = 'card rounded-lg p-4 mb-6 border border-red-500 bg-red-900/20';
+        resultDiv.innerHTML = `<p class="text-red-400">Failed to sync pipeline.</p>`;
+      } finally {
+        btn.disabled = false;
+        icon.textContent = '🔄';
+        icon.classList.remove('animate-spin');
+        text.textContent = 'Sync Pipeline';
+      }
+    }
+
+    // Event listeners
+    document.getElementById('sync-btn').addEventListener('click', syncPipeline);
+    document.getElementById('category-filter').addEventListener('change', (e) => {
+      renderTopics(e.target.value);
+    });
+
+    // Initial load
+    loadPipeline();
+  </script>
+</body>
+</html>

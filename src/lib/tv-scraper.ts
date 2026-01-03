@@ -75,6 +75,78 @@ async function scrapeFriendsTranscript(episode: TVEpisode): Promise<TranscriptRe
 }
 
 /**
+ * Springfield! Springfield! show slug mapping
+ */
+const SPRINGFIELD_SLUGS: Record<string, string> = {
+  'the-office-us': 'the-office-us',
+  'the-office': 'the-office-us',
+  'the-big-bang-theory': 'big-bang-theory',
+  'seinfeld': 'seinfeld',
+  'parks-and-recreation': 'parks-and-recreation',
+  'brooklyn-nine-nine': 'brooklyn-nine-nine',
+  'how-i-met-your-mother': 'how-i-met-your-mother',
+  'friends': 'friends',
+  'community': 'community',
+  'modern-family': 'modern-family',
+  'arrested-development': 'arrested-development',
+  'scrubs': 'scrubs',
+  'frasier': 'frasier',
+  '30-rock': '30-rock',
+  'new-girl': 'new-girl',
+  'the-good-place': 'the-good-place',
+  'schitts-creek': 'schitts-creek',
+  'curb-your-enthusiasm': 'curb-your-enthusiasm',
+};
+
+/**
+ * Scrape from Springfield! Springfield!
+ */
+async function scrapeSpringfield(episode: TVEpisode): Promise<TranscriptResult | null> {
+  const { show, season, episode: ep } = episode;
+
+  // Get the Springfield slug for this show
+  const showSlug = show.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
+  const springfieldSlug = SPRINGFIELD_SLUGS[showSlug] || showSlug;
+
+  const episodeCode = `s${season.toString().padStart(2, '0')}e${ep.toString().padStart(2, '0')}`;
+  const url = `https://www.springfieldspringfield.co.uk/view_episode_scripts.php?tv-show=${springfieldSlug}&episode=${episodeCode}`;
+
+  logger.info(`Trying Springfield: ${url}`);
+
+  try {
+    const html = await fetchWithRetry(url);
+    const $ = cheerio.load(html);
+
+    // Get episode title from the page
+    const breadcrumb = $('.breadcrumb-item').last().text().trim();
+    const title = breadcrumb || `${show} S${season}E${ep}`;
+
+    // Get transcript from the scrolling container
+    const transcript = $('.scrolling-script-container').text().trim();
+
+    if (!transcript || transcript.length < 100) {
+      throw new Error('No transcript content found');
+    }
+
+    return {
+      show,
+      season,
+      episode: ep,
+      title,
+      transcript,
+      source: 'Springfield! Springfield!',
+      sourceUrl: url,
+      scrapedAt: new Date().toISOString(),
+      wordCount: transcript.split(/\s+/).length,
+      hasCharacterNames: false,
+    };
+  } catch (error: any) {
+    logger.warn(`Springfield failed: ${error.message}`);
+    return null;
+  }
+}
+
+/**
  * Scrape from Subslikescript
  */
 async function scrapeSubslikescript(episode: TVEpisode): Promise<TranscriptResult | null> {
@@ -130,6 +202,7 @@ export async function scrapeEpisode(episode: TVEpisode): Promise<TranscriptResul
   // Try sources in priority order
   const scrapers = [
     scrapeFriendsTranscript,
+    scrapeSpringfield,
     scrapeSubslikescript,
   ];
 

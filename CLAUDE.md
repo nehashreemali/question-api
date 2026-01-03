@@ -22,20 +22,24 @@ A **universal quiz question generator** that creates multiple-choice questions f
 
 ```
 data/
-├── registry.db              # Central catalog (5,214 topics)
-│   ├── categories           # 44 categories
-│   ├── subcategories        # Subcategories per category
-│   └── topics               # Topics with metadata
-│
+├── registry.db              # Central catalog (categories, topics)
+├── pipeline.db              # Content tracking (dev only - tracks downloads & generation progress)
 ├── tv-shows.db              # Questions for TV shows
 ├── movies.db                # Questions for movies (when generated)
-├── sports.db                # Questions for sports (when generated)
+├── epics.db                 # Questions for epics (when generated)
 └── ...                      # Per-category question databases
 
-generation/                  # Source material (transcripts, etc.)
-└── transcripts/
-    └── {show}/
-        └── s{nn}e{nn}.json  # Episode transcript
+generation/                  # Source material (transcripts, scripts, texts)
+├── transcripts/             # TV show transcripts
+│   └── {show}/s{nn}e{nn}.json
+├── movies/                  # Movie scripts
+│   └── {movie-slug}.json
+└── epics/                   # Religious & epic texts
+    ├── mahabharata/parva-{nn}-{name}/section-{nnn}.json
+    ├── ramayana/page-{nnn}.json
+    ├── bhagavad-gita/chapter-{nn}.json
+    ├── bible/{book}.json
+    └── quran/surah-{nnn}.json
 ```
 
 ### Why SQLite?
@@ -119,24 +123,32 @@ CREATE TABLE questions (
 | `src/server.ts` | Web server with API endpoints |
 | `src/lib/registry.ts` | SQLite registry management |
 | `src/lib/database.ts` | Per-category question databases |
+| `src/lib/pipeline.ts` | Pipeline tracking (downloads & generation status) |
 | `src/lib/tv-scraper.ts` | Scrapes TV transcripts |
-| `src/lib/adapters/` | Content adapters (Wikipedia, etc.) |
 | `src/lib/http.ts` | HTTP utilities with retry logic |
-| `src/lib/logger.ts` | Colored console logging |
+| `src/download-transcripts.ts` | Batch download TV transcripts |
+| `src/download-movies.ts` | Batch download movie scripts |
+| `src/download-epics.ts` | Download religious/epic texts |
+| `src/sync-pipeline.ts` | Sync pipeline.db with files & questions |
 
 ---
 
 ## CLI Commands
 
 ```bash
-# Start web server
+# Start web server (visit http://localhost:3000)
 bun start
 
 # Kill anything on port 3000
 bun run kill
 
-# Test content adapters
-bun src/fetch-content.ts
+# Sync pipeline database (scan files & update tracking)
+bun src/sync-pipeline.ts
+
+# Download content
+bun src/download-transcripts.ts    # TV shows (edit file for waves)
+bun src/download-movies.ts         # Movies
+bun src/download-epics.ts [source] # gita|bible|quran|ramayana|mahabharata
 ```
 
 ---
@@ -241,6 +253,131 @@ getTopic(category, subcategory, slug)
 
 1. **No JSON manifests** - Everything is in SQLite databases
 2. **Organic growth** - Topics are created on-demand using `ensure*` functions
-3. **Transcripts stay as files** - Large text content in `generation/transcripts/`
+3. **Transcripts stay as files** - Large text content in `generation/`
 4. **Stats cached in memory** - Regenerate via API when needed
 5. **Garbage folder** - Old/unused scripts archived in `/garbage/`
+
+---
+
+## Pipeline Tracking System
+
+The `pipeline.db` database tracks all downloaded content and question generation progress.
+
+### Check Status
+1. **Web UI**: http://localhost:3000/pipeline (click "Sync Pipeline" to refresh)
+2. **CLI**: `bun src/sync-pipeline.ts`
+3. **SQL**: `sqlite3 data/pipeline.db "SELECT * FROM content_tracking WHERE generation_status='pending' LIMIT 10;"`
+
+### Pipeline API
+- `GET /api/pipeline` - Summary stats by category
+- `GET /api/pipeline/topics` - Per-topic breakdown
+- `GET /api/pipeline/pending` - Items awaiting question generation
+- `POST /api/pipeline/sync` - Refresh tracking from files
+
+### Workflow
+1. Download content → files saved to `generation/`
+2. Run `sync-pipeline.ts` or click "Sync Pipeline" → updates `pipeline.db`
+3. Generate questions → saved to category DB (e.g., `tv-shows.db`)
+4. Sync again → marks items as "completed" in pipeline
+
+---
+
+## Current Status (Updated: Jan 2026)
+
+### Downloaded Content
+| Category | Content | Units | Source |
+|----------|---------|-------|--------|
+| TV Shows | 10 shows | 1,584 episodes | Springfield! Springfield! |
+| Movies | 81 films | 81 scripts | Springfield! Springfield! |
+| Mahabharata | 18 parvas | 2,093 sections | sacred-texts.com |
+| Ramayana | - | 504 pages | sacred-texts.com |
+| Bhagavad Gita | 18 chapters | 18 files | bhagavadgitaapi.in |
+| Bible | 66 books | 66 files | bible-api.com |
+| Quran | 114 surahs | 114 files | alquran.cloud |
+
+### Questions Generated
+| Topic | Questions |
+|-------|-----------|
+| Friends | 5,552 |
+| Game of Thrones | 250 |
+| Big Bang Theory | 28 |
+| **Total** | **5,830** |
+
+### What's Next
+1. **Generate questions** for remaining TV shows (The Office, Seinfeld, etc.)
+2. **Generate questions** for movies and epics
+3. **Download more content**: Greek mythology, Norse mythology, Books (Harry Potter, LOTR)
+4. See `V1_LAUNCH_PLAN.md` for full roadmap
+
+---
+
+## Content Sources (Where to Download More)
+
+### TV Shows & Movies
+| Source | URL | Content |
+|--------|-----|---------|
+| Springfield! Springfield! | springfieldspringfield.co.uk | 8,629 TV shows, 40,000 movies |
+
+**Scripts:** `src/download-transcripts.ts`, `src/download-movies.ts`
+
+### Religious & Epic Texts
+| Source | URL | Content |
+|--------|-----|---------|
+| sacred-texts.com | sacred-texts.com/hin/ | Mahabharata, Ramayana, Puranas, Vedas |
+| Bhagavad Gita API | bhagavadgitaapi.in | All 18 chapters with translations |
+| Bible API | bible-api.com | All 66 books (KJV, ASV, etc.) |
+| Al-Quran Cloud | alquran.cloud | All 114 surahs with translations |
+
+**Script:** `src/download-epics.ts`
+
+### Mythology (Not Yet Downloaded)
+| Source | URL | Content |
+|--------|-----|---------|
+| Theoi.com | theoi.com | Greek mythology (~300 pages) |
+| sacred-texts.com | sacred-texts.com/neu/poe/ | Norse Eddas |
+
+**To add:** Create `src/download-mythology.ts`
+
+### Books & Fiction (Not Yet Downloaded)
+| Source | URL | Content |
+|--------|-----|---------|
+| Harry Potter Wiki | harrypotter.fandom.com | 24,000+ articles |
+| Tolkien Gateway | tolkiengateway.net | 13,000+ LOTR articles |
+| ASOIAF Wiki | awoiaf.westeros.org | Game of Thrones lore |
+| Agatha Christie Wiki | agathachristie.fandom.com | Mystery novels |
+| Project Gutenberg | gutenberg.org | Public domain classics |
+
+**To add:** Create `src/download-books.ts` (scrape Fandom wikis)
+
+### STEM (Not Yet Downloaded)
+| Source | URL | Content |
+|--------|-----|---------|
+| Wikipedia | en.wikipedia.org/wiki/Portal:Science | Physics, Chemistry, Biology, Math |
+| OpenStax | openstax.org | Free textbooks (Physics, Chemistry, Biology, etc.) |
+| Simple Wikipedia | simple.wikipedia.org | Easier explanations for question generation |
+
+**Approach:**
+- Scrape Wikipedia category pages (e.g., `/wiki/Category:Physics`)
+- Or use Wikipedia API to get articles by topic
+- OpenStax PDFs can be parsed for structured content
+
+### History & Current Affairs (Not Yet Downloaded)
+| Source | URL | Content |
+|--------|-----|---------|
+| Wikipedia | en.wikipedia.org/wiki/Portal:History | All historical periods |
+| Wikipedia Current Events | en.wikipedia.org/wiki/Portal:Current_events | Daily news archive |
+| This Day in History | Various | Historical events by date |
+
+**Approach:**
+- Scrape Wikipedia history portals by era (Ancient, Medieval, Modern)
+- For current affairs: scrape news archives or use news APIs
+
+### Sports (Not Yet Downloaded)
+| Source | URL | Content |
+|--------|-----|---------|
+| ESPN Cricinfo | espncricinfo.com | Cricket stats, records, players |
+| Wikipedia Sports | en.wikipedia.org/wiki/Portal:Sports | All sports |
+| Transfermarkt | transfermarkt.com | Football/soccer stats |
+| Basketball Reference | basketball-reference.com | NBA stats |
+
+**To add:** Create adapters in `src/lib/adapters/`
