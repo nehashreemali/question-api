@@ -14,6 +14,13 @@ Master plan for downloading all content before question generation begins.
 | Epics | 5 texts | Bible, Quran, Gita, Mahabharata, Ramayana |
 | Harry Potter | 7 novels + 296 wiki articles | Books + wiki |
 | ASOIAF | 5 novels + 149 wiki articles | Books (1.78M words) + wiki |
+| Greek Mythology | 958 pages | theoi.com (22 categories) |
+| Norse Mythology | 185 pages | sacred-texts.com (Eddas, sagas, retellings) |
+| Egyptian Mythology | 312 pages | sacred-texts.com (Book of Dead, Pyramid Texts, etc.) |
+| Star Wars Wiki | 200 pages | Wookieepedia (characters, planets, ships, events) |
+| Marvel MCU Wiki | 199 pages | MCU Wiki (heroes, villains, films, items) |
+| DC Wiki | 115 pages | DCEU Wiki (heroes, villains, films) |
+| Doctor Who Wiki | 152 pages | Tardis Wiki (Doctors, companions, episodes, villains) |
 
 ---
 
@@ -23,29 +30,29 @@ Master plan for downloading all content before question generation begins.
 
 | # | Source | Content | Est. Pages | Script | Status |
 |---|--------|---------|------------|--------|--------|
-| 1 | theoi.com | Greek gods, heroes, creatures, myths | 300+ | `src/download-greek-mythology.ts` | ⬜ |
-| 2 | sacred-texts.com/neu | Norse Eddas, sagas, gods | 100+ | `src/download-norse-mythology.ts` | ⬜ |
-| 3 | sacred-texts.com/egy | Egyptian gods, Book of the Dead | 100+ | `src/download-egyptian-mythology.ts` | ⬜ |
+| 1 | theoi.com | Greek gods, heroes, creatures, myths | 958 | `src/download-greek-mythology.ts` | ✅ |
+| 2 | sacred-texts.com/neu | Norse Eddas, sagas, gods | 185 | `src/download-norse-mythology.ts` | ✅ |
+| 3 | sacred-texts.com/egy | Egyptian gods, Book of the Dead | 312 | `src/download-egyptian-mythology.ts` | ✅ |
 
 ### Movie/TV Franchise Wikis (Source is film, not books)
 
 | # | Source | Content | Est. Articles | Script | Status |
 |---|--------|---------|---------------|--------|--------|
-| 4 | starwars.fandom.com | Star Wars characters, planets, ships | 500+ | `src/download-starwars-wiki.ts` | ⬜ |
-| 5 | marvel.fandom.com | MCU characters, movies, events | 500+ | `src/download-marvel-wiki.ts` | ⬜ |
-| 6 | dc.fandom.com | DC characters, movies, comics | 500+ | `src/download-dc-wiki.ts` | ⬜ |
-| 7 | tardis.fandom.com | Doctor Who characters, episodes, aliens | 300+ | `src/download-doctorwho-wiki.ts` | ⬜ |
+| 4 | starwars.fandom.com | Star Wars characters, planets, ships | 200 | `src/download-starwars-wiki.ts` | ✅ |
+| 5 | marvel.fandom.com | MCU characters, movies, events | 199 | `src/download-marvel-wiki.ts` | ✅ |
+| 6 | dc.fandom.com | DC characters, movies, comics | 115 | `src/download-dc-wiki.ts` | ✅ |
+| 7 | tardis.fandom.com | Doctor Who characters, episodes, aliens | 152 | `src/download-doctorwho-wiki.ts` | ✅ |
 
 ### Claude's Task List
 
 ```
-[ ] 1. Greek Mythology (theoi.com)
-[ ] 2. Norse Mythology (sacred-texts.com)
-[ ] 3. Egyptian Mythology (sacred-texts.com)
-[ ] 4. Star Wars Wiki (Wookieepedia)
-[ ] 5. Marvel MCU Wiki
-[ ] 6. DC Wiki
-[ ] 7. Doctor Who Wiki
+[x] 1. Greek Mythology (theoi.com) - 958 pages
+[x] 2. Norse Mythology (sacred-texts.com) - 185 pages
+[x] 3. Egyptian Mythology (sacred-texts.com) - 312 pages
+[x] 4. Star Wars Wiki (Wookieepedia) - 200 pages
+[x] 5. Marvel MCU Wiki - 199 pages
+[x] 6. DC Wiki - 115 pages
+[x] 7. Doctor Who Wiki - 152 pages
 ```
 
 ---
@@ -75,14 +82,14 @@ Percy Jackson Sea of Monsters epub
 Percy Jackson Titan's Curse epub
 Percy Jackson Battle of the Labyrinth epub
 Percy Jackson Last Olympian epub
-The Witcher Last Wish epub
-The Witcher Sword of Destiny epub
-The Witcher Blood of Elves epub
-The Witcher Time of Contempt epub
-The Witcher Baptism of Fire epub
-The Witcher Tower of Swallows epub
-The Witcher Lady of the Lake epub
-The Witcher Season of Storms epub
+The Witcher - The Last Wish epub
+The Witcher - Sword of Destiny epub
+The Witcher - Blood of Elves epub
+The Witcher - Time of Contempt epub
+The Witcher - Baptism of Fire epub
+The Witcher - The Tower of the Swallow epub
+The Witcher - The Lady of the Lake epub
+The Witcher - Season of Storms epub
 Angels and Demons Dan Brown epub
 The Da Vinci Code Dan Brown epub
 The Lost Symbol Dan Brown epub
@@ -144,7 +151,14 @@ Miss Marple The Body in the Library epub
 | 3 | Lord of the Rings + Hobbit | 4 | `tolkien/` | ⬜ |
 | 4 | Hunger Games | 4 | `hunger-games/` | ⬜ |
 | 5 | Percy Jackson | 5 | `percy-jackson/` | ⬜ |
-| 6 | The Witcher | 8 | `witcher/` | ⬜ |
+| 6a | The Witcher - The Last Wish | 1 | `witcher/` | ⬜ |
+| 6b | The Witcher - Sword of Destiny | 1 | `witcher/` | ⬜ |
+| 6c | The Witcher - Blood of Elves | 1 | `witcher/` | ⬜ |
+| 6d | The Witcher - Time of Contempt | 1 | `witcher/` | ⬜ |
+| 6e | The Witcher - Baptism of Fire | 1 | `witcher/` | ⬜ |
+| 6f | The Witcher - The Tower of the Swallow | 1 | `witcher/` | ⬜ |
+| 6g | The Witcher - The Lady of the Lake | 1 | `witcher/` | ⬜ |
+| 6h | The Witcher - Season of Storms | 1 | `witcher/` | ⬜ |
 | 7 | Robert Langdon (Dan Brown) | 5 | `dan-brown/` | ⬜ |
 | 8 | Agatha Christie | 6+ | `agatha-christie/` | ⬜ |
 | 9 | Divergent | 3 | `divergent/` | ⬜ |
