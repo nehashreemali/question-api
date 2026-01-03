@@ -1,0 +1,26 @@
+{
+  "title": "Locking Spell",
+  "slug": "Locking_Spell",
+  "url": "https://harrypotter.fandom.com/wiki/Locking_Spell",
+  "summary": "",
+  "content": "The Locking Spell,[2] also known as the Locking Charm,[3] (Colloportus) was a charm that closed and locked doors, making it so that they could not be opened manually.[1] This charm was featured in The Standard Book of Spells, Grade 1[2] and its counter-charm was the Unlocking Charm (Alohomora).\n\nDuring the 1987–1988 school year at at Hogwarts School of Witchcraft and Wizardry, Professor Filius Flitwick taught his fourth-years how to cast this particular charm in Charms class.[4]\n\nThe Locking Spell would shut and lock a door, preventing manual entry. The doors key might have been ineffective, but the door could be unlocked with the use of the Unlocking Charm.[3]\n\nColloportus is composed of the prefix \"collo—\" deriving from Latin colligo meaning to bind together or possibly Greek κολλάω, κολλώ (collo) which means \"to glue, stick\" and Latin portus meaning door.",
+  "infobox": {
+    "IncantationTypeHand movementLightEffect": "Colloportus[1](cull-low-PORE-tus)Charm[2]None[1]Locks doors[1]",
+    "Incantation": "Colloportus[1](cull-low-PORE-tus)",
+    "Type": "Charm[2]",
+    "Light": "None[1]",
+    "Effect": "Locks doors[1]",
+    "name": "Locking Spell",
+    "incantation": "Colloportus[1](cull-low-PORE-tus)",
+    "type": "Charm[2]",
+    "hand": "Hand movement",
+    "light": "None[1]",
+    "effect": "Locks doors[1]"
+  },
+  "categories": [
+    "Battle of the Department of Mysteries",
+    "Charms",
+    "Spells of known incantation"
+  ],
+  "scrapedAt": "2026-01-03T11:43:56.416Z"
+}

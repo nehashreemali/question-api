@@ -50,6 +50,58 @@ power up The Big Bang Theory season 2 episode 5
 
 ---
 
+## CRITICAL: Local Files Only Policy
+
+**Power Up MUST only use local files. Never search the internet by default.**
+
+### Rules
+
+1. **LOCAL ONLY:** Only read files from `generation/` folder
+2. **NO WEB SEARCH:** Do not use WebSearch or WebFetch during generation
+3. **NO INTERNET:** Do not access any external URLs or APIs
+4. **ASK PERMISSION:** If local data is insufficient, STOP and ask the user:
+   ```
+   "I don't have enough local data for [topic].
+   Local file not found: generation/[path]
+
+   Would you like me to search the internet for additional content?"
+   ```
+5. **WAIT FOR APPROVAL:** Only proceed with internet search if user explicitly approves
+
+### Why This Matters
+
+- **Decoupled phases:** Downloading and generation are separate activities
+- **Reproducible:** Same local files = same results
+- **Controlled:** User decides when internet is accessed
+- **Debuggable:** Easy to trace issues to specific local files
+
+### Valid Data Sources (Local Only)
+
+| Content Type | Local Path |
+|--------------|------------|
+| TV Shows | `generation/transcripts/{show}/s{nn}e{nn}.json` |
+| Movies | `generation/movies/{movie-slug}.json` |
+| Books | `generation/books/{category}/{book}.json` or `.txt` |
+| Epics | `generation/epics/{epic}/...` |
+| Wiki Content | `generation/harry-potter/`, `generation/asoiaf/`, etc. |
+
+### If File Not Found
+
+```
+User: power up stranger-things s1e1
+
+Claude:
+❌ Local file not found: generation/transcripts/stranger-things/s01e01.json
+
+This content has not been downloaded yet. Options:
+1. Download the content first (separate session)
+2. Grant permission to search the internet now
+
+What would you like to do?
+```
+
+---
+
 ## Power Up Workflow
 
 When you hear "power up [topic] [part] [chapter]", follow this exact workflow:
@@ -79,7 +131,9 @@ console.log(`Found ${existing.length} existing questions for this episode`);
 // Use these to avoid generating duplicates
 ```
 
-### Step 3: Read Source Material
+### Step 3: Read Source Material (LOCAL ONLY)
+
+**IMPORTANT: Only read from local files. Never search the internet.**
 
 For TV shows, read the transcript:
 ```
@@ -88,7 +142,14 @@ generation/transcripts/{show-slug}/s{nn}e{nn}.json
 
 Example: `generation/transcripts/friends/s01e10.json`
 
-For epics/mythology, read the source content or use web search.
+For epics/mythology/books, read the local source content:
+```
+generation/epics/{epic}/...
+generation/books/{category}/{book}.json
+generation/harry-potter/{category}/{article}.json
+```
+
+**If the file doesn't exist, STOP and ask user for permission before searching online.**
 
 ### Step 4: Generate NEW Questions
 

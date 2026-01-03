@@ -1,0 +1,31 @@
+{
+  "title": "Impediment Jinx",
+  "slug": "Impediment_Jinx",
+  "url": "https://harrypotter.fandom.com/wiki/Impediment_Jinx",
+  "summary": "",
+  "content": "The Impediment Jinx[5] (Impedimenta),[1] also known as the Impediment Hex,[4] was a jinx that hindered the movement of the target, slowing it down or stopping it in its tracks.[1]\n\nIt was a common spell used in duelling,[5] and since it only caused minimal damage, it was commonly taught in schools, including in Hogwarts' Duelling Club.[6]\n\nThe Impediment Jinx stopped or slowed down people or creatures, temporarily immobilising an attacker and offering the caster a chance to escape.[6] It was even capable of freezing a wasp in mid-air.[1]\n\nHowever, the effect was only temporary,[1] lasting only for a few seconds on average.[7] Additionally, even though it was effective against most animals and people, it was ineffective against armoured creatures, such as Acromantulas and Blast-Ended Skrewts. Unless the caster managed to hit them on their underbellies, which have no protective armour.[1] It was also useless against enemies that had no physical corporeal form, such as lethifolds.[4][6]\n\nWhile the jinx would usually simply immobilise a target,[1] it could also be used to push or throw a target backward,[3] or simply decrease the velocity of the victim's movement.[5]\n\nDuring the 1988–1989 school year at Hogwarts School of Witchcraft and Wizardry, Professor Patricia Rakepick taught fifth-year students in Defence Against the Dark Arts how to perform this jinx.[8]\n\nThe incantation \"Impedimenta\" is derived from the Latin word \"impedimentum\", meaning \"a hindrance\".",
+  "infobox": {
+    "IncantationTypeHand movementLightEffect": "Impedimenta[1](im-PED-i-MEN-ta)[2]Jinx,[1][3] Hex[4]Turquoise[5]Hindered movement of target[1]",
+    "Incantation": "Impedimenta[1](im-PED-i-MEN-ta)[2]",
+    "Type": "Jinx,[1][3] Hex[4]",
+    "Light": "Turquoise[5]",
+    "Effect": "Hindered movement of target[1]",
+    "name": "Impediment Jinx",
+    "incantation": "Impedimenta[1](im-PED-i-MEN-ta)[2]",
+    "type": "Jinx,[1][3] Hex[4]",
+    "hand": "Hand movement",
+    "light": "Turquoise[5]",
+    "effect": "Hindered movement of target[1]"
+  },
+  "categories": [
+    "Defence Against the Dark Arts",
+    "Hexes",
+    "Jinxes",
+    "4 more",
+    "Spells with a light",
+    "Spells with incantations of Latin origin",
+    "The Cave",
+    "Triwizard Tournament"
+  ],
+  "scrapedAt": "2026-01-03T11:44:23.236Z"
+}

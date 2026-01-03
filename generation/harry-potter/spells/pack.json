@@ -1,0 +1,26 @@
+{
+  "title": "Pack Charm",
+  "slug": "Pack",
+  "url": "https://harrypotter.fandom.com/wiki/Pack",
+  "summary": "",
+  "content": "The Pack Charm[2] (Pack)[1] was a charm[2] used to make items pack themselves into a trunk.[1][2]\n\nDuring the 1988–1989 school year at Hogwarts School of Witchcraft and Wizardry, this charm was taught to fifth-year students in Charms class by Professor Filius Flitwick, in preparation for their Ordinary Wizarding Levels that year.[2]\n\nRemus Lupin used this charm to nonverbally to pack his belongings while leaving Hogwarts in 1994.[3]\n\nNymphadora Tonks used the spell to help Harry Potter pack his school trunk when leaving 4 Privet Drive, though she told him she was not very good with household charms. She also told him that her mother Andromeda Tonks mastered highly this charm, getting stuff to fit itself in neatly and even getting socks to fold themselves, with just a kind of flick of wand.[1]",
+  "infobox": {
+    "IncantationTypeHand movementLightEffect": "Pack[1][2]Charm[1][2]None[2]Packed luggage into trunk[1][2]",
+    "Incantation": "Pack[1][2]",
+    "Type": "Charm[1][2]",
+    "Light": "None[2]",
+    "Effect": "Packed luggage into trunk[1][2]",
+    "name": "Pack Charm",
+    "incantation": "Pack[1][2]",
+    "type": "Charm[1][2]",
+    "hand": "Hand movement",
+    "light": "None[2]",
+    "effect": "Packed luggage into trunk[1][2]"
+  },
+  "categories": [
+    "Charms",
+    "Levitation",
+    "Spells of known incantation"
+  ],
+  "scrapedAt": "2026-01-03T11:45:52.388Z"
+}

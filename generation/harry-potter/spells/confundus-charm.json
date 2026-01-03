@@ -1,0 +1,27 @@
+{
+  "title": "Confundus Charm",
+  "slug": "Confundus_Charm",
+  "url": "https://harrypotter.fandom.com/wiki/Confundus_Charm",
+  "summary": "",
+  "content": "The Confundus Charm[5] (Confundo)[1] was a charm which confused and misdirected the target.[1] It worked on living and inanimate things, as long as the target had a mind to be confused.[5]\n\nThere were varying degrees of confusion that could be caused by the spell, ranging from becoming unaware of the current situation, forgetting important information, or becoming particularly impressionable.[2]\n\nDuring the 1989–1990 school year at Hogwarts School of Witchcraft and Wizardry, Professor Filius Flitwick taught this charm to fifth-year students in Charms class, in preparation for their upcoming Ordinary Wizarding Levels.[6]\n\nIn 1994, after the encounter at the Shrieking Shack in Hogsmeade, Severus Snape expressed his belief that Sirius Black had used the charm to bewitch Harry Potter, Ronald Weasley, and Hermione Granger after the three of them attacked Snape with the Disarming Charm in the shack. As such, he refused to believe their pleas that Sirius Black was in fact an innocent man in the Hospital Wing.[7]\n\nSomeone who had been affected by this charm was said to have been \"Confunded\". Immediately after the spell had been cast; the Confunded person would shudder when the spell hit them. It would cause any of varying degrees of confusion, from a simple trick[8] to making a person believe that they had come up with a complex plan when said plan was given to them by the caster.[9]\n\nNot only did the spell work on living creatures, but it also was able to affect sentient objects, as demonstrated when Barty Crouch Junior Confunded the Goblet of Fire, though this was noted to be a difficult task, as the Goblet itself was a powerful magical artefact.[5]\n\nThe spell took a degree of skill to cast, and became increasingly difficult the more complicated the misdirection was. For instance, when Newt Scamander and Harry Potter used it to bypass wizarding security officers (though both of whom were notably skilled with charms), be it in order to pass by unnoticed or by making them think they had already gone through the security check, it was typically a simple matter of quickly pointing their wands at the target and cast it quickly and discreetly.[1][10]\n\nWhen, however, Severus Snape sought to imprint an elaborate plan onto Mundungus Fletcher and trick him into thinking that not only was the plan of his making, but to give him the idea of proposing it to the Order of the Phoenix, he had to give such considerable focus to the task that he had to \"frown in concentration\".[9]\n\nConfundus, as well as the incantation Confundo, are derived from the Latin verb cōnfundere (cōnfundō - cōnfundere - cōnfūdī - cōnfūsum), meaning \"to confuse, to perplex\".",
+  "infobox": {
+    "IncantationTypeHand movementLightEffect": "Confundo[1](con-FUN-doe)Charm[2]Pink[3][4]Confused the target[2]",
+    "Incantation": "Confundo[1](con-FUN-doe)",
+    "Type": "Charm[2]",
+    "Light": "Pink[3][4]",
+    "Effect": "Confused the target[2]",
+    "name": "Confundus Charm",
+    "incantation": "Confundo[1](con-FUN-doe)",
+    "type": "Charm[2]",
+    "hand": "Hand movement",
+    "light": "Pink[3][4]",
+    "effect": "Confused the target[2]"
+  },
+  "categories": [
+    "Charms",
+    "Mental spells",
+    "Spells with a light",
+    "Spells with incantations of Latin origin"
+  ],
+  "scrapedAt": "2026-01-03T11:44:21.078Z"
+}

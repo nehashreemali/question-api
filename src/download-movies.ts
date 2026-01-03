@@ -20,7 +20,7 @@ interface MovieConfig {
 // Top 200 movies for V1
 const MOVIES: MovieConfig[] = [
   // Action/Adventure
-  { title: 'The Dark Knight', slug: 'dark-knight-the', year: 2008 },
+  { title: 'The Dark Knight', slug: 'dark-knight-the-batman-the-dark-knight', year: 2008 },
   { title: 'Inception', slug: 'inception', year: 2010 },
   { title: 'Gladiator', slug: 'gladiator', year: 2000 },
   { title: 'Mad Max: Fury Road', slug: 'mad-max-fury-road', year: 2015 },
@@ -81,15 +81,15 @@ const MOVIES: MovieConfig[] = [
 
   // Horror/Thriller
   { title: 'The Silence of the Lambs', slug: 'silence-of-the-lambs-the', year: 1991 },
-  { title: 'Se7en', slug: 'se7en', year: 1995 },
+  { title: 'Se7en', slug: 'se7en-seven', year: 1995 },
   { title: 'Get Out', slug: 'get-out', year: 2017 },
   { title: 'The Shining', slug: 'shining-the', year: 1980 },
   { title: 'Jaws', slug: 'jaws', year: 1975 },
   { title: 'Scream', slug: 'scream', year: 1996 },
-  { title: 'A Quiet Place', slug: 'quiet-place-a', year: 2018 },
+  { title: 'A Quiet Place', slug: 'a-quiet-place', year: 2018 },
   { title: 'The Sixth Sense', slug: 'sixth-sense-the', year: 1999 },
   { title: 'Psycho', slug: 'psycho', year: 1960 },
-  { title: 'It', slug: 'it-2017', year: 2017 },
+  { title: 'It', slug: 'it', year: 2017 },
 
   // Animation
   { title: 'Toy Story', slug: 'toy-story', year: 1995 },
@@ -101,7 +101,7 @@ const MOVIES: MovieConfig[] = [
   { title: 'Coco', slug: 'coco', year: 2017 },
   { title: 'The Incredibles', slug: 'incredibles-the', year: 2004 },
   { title: 'Monsters Inc', slug: 'monsters-inc', year: 2001 },
-  { title: 'Inside Out', slug: 'inside-out-2015', year: 2015 },
+  { title: 'Inside Out', slug: 'inside-out', year: 2015 },
 
   // LOTR/Fantasy
   { title: 'LOTR Fellowship', slug: 'lord-of-the-rings-the-fellowship-of-the-ring-the', year: 2001 },
@@ -122,6 +122,110 @@ const MOVIES: MovieConfig[] = [
   { title: 'Braveheart', slug: 'braveheart', year: 1995 },
   { title: 'The Prestige', slug: 'prestige-the', year: 2006 },
   { title: 'Django Unchained', slug: 'django-unchained', year: 2012 },
+
+  // Wave 2 - More popular films
+  // More Marvel/DC
+  { title: 'The Dark Knight Rises', slug: 'dark-knight-rises-the', year: 2012 },
+  { title: 'Batman Begins', slug: 'batman-begins', year: 2005 },
+  { title: 'Wonder Woman', slug: 'wonder-woman-2017', year: 2017 },
+  { title: 'Deadpool', slug: 'deadpool', year: 2016 },
+  { title: 'Logan', slug: 'logan', year: 2017 },
+  { title: 'Spider-Man No Way Home', slug: 'spider-man-no-way-home', year: 2021 },
+  { title: 'Doctor Strange', slug: 'doctor-strange-2016', year: 2016 },
+  { title: 'Ant-Man', slug: 'ant-man', year: 2015 },
+  { title: 'Captain Marvel', slug: 'captain-marvel', year: 2019 },
+  { title: 'Shazam', slug: 'shazam', year: 2019 },
+
+  // More Sci-Fi
+  { title: 'Arrival', slug: 'arrival', year: 2016 },
+  { title: 'The Martian', slug: 'the-martian', year: 2015 },
+  { title: 'Dune', slug: 'dune-part-one', year: 2021 },
+  { title: 'Gravity', slug: 'gravity', year: 2013 },
+  { title: 'District 9', slug: 'district-9', year: 2009 },
+  { title: 'Edge of Tomorrow', slug: 'edge-of-tomorrow', year: 2014 },
+  { title: 'Ex Machina', slug: 'ex-machina', year: 2015 },
+  { title: 'Blade Runner 2049', slug: 'blade-runner-2049', year: 2017 },
+  { title: 'Avatar', slug: 'avatar', year: 2009 },
+  { title: 'The Fifth Element', slug: 'fifth-element-the', year: 1997 },
+
+  // More Comedy
+  { title: 'The 40-Year-Old Virgin', slug: '40-year-old-virgin-the', year: 2005 },
+  { title: 'Tropic Thunder', slug: 'tropic-thunder', year: 2008 },
+  { title: 'Knocked Up', slug: 'knocked-up', year: 2007 },
+  { title: 'Elf', slug: 'elf', year: 2003 },
+  { title: 'Dumb and Dumber', slug: 'dumb-dumber', year: 1994 },
+  { title: 'Napoleon Dynamite', slug: 'napoleon-dynamite', year: 2004 },
+  { title: 'Office Space', slug: 'office-space', year: 1999 },
+  { title: 'Zoolander', slug: 'zoolander', year: 2001 },
+  { title: 'Borat', slug: 'borat-cultural-learnings-of-america-for-make-benefit-glorious-nation-of-kazakhstan', year: 2006 },
+  { title: 'Wedding Crashers', slug: 'wedding-crashers', year: 2005 },
+
+  // More Drama/Thriller
+  { title: 'Gone Girl', slug: 'gone-girl', year: 2014 },
+  { title: 'Zodiac', slug: 'zodiac', year: 2007 },
+  { title: 'Prisoners', slug: 'prisoners', year: 2013 },
+  { title: 'Nightcrawler', slug: 'nightcrawler', year: 2014 },
+  { title: 'The Wolf of Wall Street', slug: 'the-wolf-of-wall-street', year: 2013 },
+  { title: 'American Psycho', slug: 'american-psycho', year: 2000 },
+  { title: 'Memento', slug: 'memento', year: 2000 },
+  { title: 'Shutter Island', slug: 'shutter-island', year: 2010 },
+  { title: 'The Usual Suspects', slug: 'usual-suspects-the', year: 1995 },
+  { title: 'Heat', slug: 'heat', year: 1995 },
+
+  // More Horror
+  { title: 'Hereditary', slug: 'hereditary', year: 2018 },
+  { title: 'Us', slug: 'us', year: 2019 },
+  { title: 'The Conjuring', slug: 'the-conjuring', year: 2013 },
+  { title: 'A Nightmare on Elm Street', slug: 'nightmare-on-elm-street-a', year: 1984 },
+  { title: 'Halloween', slug: 'halloween', year: 1978 },
+  { title: 'The Exorcist', slug: 'exorcist-the', year: 1973 },
+  { title: 'Midsommar', slug: 'midsommar', year: 2019 },
+  { title: 'The Babadook', slug: 'the-babadook', year: 2014 },
+  { title: 'It Follows', slug: 'it-follows', year: 2015 },
+  { title: '28 Days Later', slug: '28-days-later', year: 2002 },
+
+  // More Animation
+  { title: 'Ratatouille', slug: 'ratatouille', year: 2007 },
+  { title: 'Frozen', slug: 'frozen-2013', year: 2013 },
+  { title: 'Moana', slug: 'moana', year: 2016 },
+  { title: 'Zootopia', slug: 'zootopia', year: 2016 },
+  { title: 'How to Train Your Dragon', slug: 'how-to-train-your-dragon', year: 2010 },
+  { title: 'Spider-Man Into the Spider-Verse', slug: 'spider-man-into-the-spider-verse', year: 2018 },
+  { title: 'Toy Story 3', slug: 'toy-story-3', year: 2010 },
+  { title: 'Finding Dory', slug: 'finding-dory', year: 2016 },
+  { title: 'The Lego Movie', slug: 'the-lego-movie', year: 2014 },
+  { title: 'Despicable Me', slug: 'despicable-me', year: 2010 },
+
+  // More Harry Potter
+  { title: 'Harry Potter Goblet of Fire', slug: 'harry-potter-and-the-goblet-of-fire', year: 2005 },
+  { title: 'Harry Potter Order of Phoenix', slug: 'harry-potter-and-the-order-of-the-phoenix', year: 2007 },
+  { title: 'Harry Potter Half-Blood Prince', slug: 'harry-potter-and-the-half-blood-prince', year: 2009 },
+  { title: 'Harry Potter Deathly Hallows 1', slug: 'harry-potter-and-deathly-hallows-part-1', year: 2010 },
+  { title: 'Harry Potter Deathly Hallows 2', slug: 'harry-potter-and-deathly-hallows-part-2', year: 2011 },
+
+  // Classic Films
+  { title: '12 Angry Men', slug: '12-angry-men', year: 1957 },
+  { title: 'Casablanca', slug: 'casablanca', year: 1942 },
+  { title: 'Citizen Kane', slug: 'citizen-kane', year: 1941 },
+  { title: 'One Flew Over the Cuckoos Nest', slug: 'one-flew-over-the-cuckoos-nest', year: 1975 },
+  { title: 'Taxi Driver', slug: 'taxi-driver', year: 1976 },
+  { title: 'Goodfellas', slug: 'goodfellas', year: 1990 },
+  { title: 'Scarface', slug: 'scarface-1983', year: 1983 },
+  { title: 'The Breakfast Club', slug: 'breakfast-club-the', year: 1985 },
+  { title: 'Dirty Dancing', slug: 'dirty-dancing', year: 1987 },
+  { title: 'Pretty Woman', slug: 'pretty-woman', year: 1990 },
+
+  // Recent hits
+  { title: 'Parasite', slug: 'parasite-2019', year: 2019 },
+  { title: 'Knives Out', slug: 'knives-out', year: 2019 },
+  { title: 'Once Upon a Time in Hollywood', slug: 'once-upon-a-time-in-hollywood', year: 2019 },
+  { title: '1917', slug: '1917', year: 2019 },
+  { title: 'Jojo Rabbit', slug: 'jojo-rabbit', year: 2019 },
+  { title: 'The Irishman', slug: 'the-irishman', year: 2019 },
+  { title: 'Ford v Ferrari', slug: 'ford-v-ferrari', year: 2019 },
+  { title: 'Marriage Story', slug: 'marriage-story', year: 2019 },
+  { title: 'Oppenheimer', slug: 'oppenheimer', year: 2023 },
+  { title: 'Barbie', slug: 'barbie', year: 2023 },
 ];
 
 const rateLimiter = createRateLimiter(0.5);

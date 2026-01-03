@@ -1,0 +1,29 @@
+{
+  "title": "Wand-Extinguishing Charm",
+  "slug": "Nox",
+  "url": "https://harrypotter.fandom.com/wiki/Nox",
+  "summary": "",
+  "content": "The Wand-Extinguishing Charm (Nox) was a charm[1] that caused the light at the end of the caster's wand to be extinguished, thus acting as the counter-charm to the Wand-Lighting Charm (Lumos).[3]\n\nThe Wand-Extinguishing Charm was invented by the same witch who invented the Wand-Lighting Charm, Levina Monkstanley. She invented the Wand-Lighting charm in the 18th century and invented the Wand-Extinguishing Charm around that time too, otherwise her wand would remain lighted indefinitely.[3]\n\nThis spell was taught to first-year students in Charms class at Hogwarts School of Witchcraft and Wizardry in the 1984–1985 school year by Professor Filius Flitwick.[4] It was also detailed in The Dark Forces: A Guide to Self-Protection[1] and Book of Spells.[3]\n\nIn Latin, \"nox\" means \"night\". Nox is also the name of the Roman Goddess of night derived from Nyx (Greek goddess of darkness and night).",
+  "infobox": {
+    "IncantationTypeHand movementEffectCreator": "Nox[1](NOKSS)[2]Charm[1]Extinguished the Wand-Lighting Charm[1]Levina Monkstanley (1772)[3]",
+    "Incantation": "Nox[1](NOKSS)[2]",
+    "Type": "Charm[1]",
+    "Effect": "Extinguished the Wand-Lighting Charm[1]",
+    "Creator": "Levina Monkstanley (1772)[3]",
+    "name": "Wand-Extinguishing Charm",
+    "incantation": "Nox[1](NOKSS)[2]",
+    "type": "Charm[1]",
+    "hand": "Hand movement",
+    "effect": "Extinguished the Wand-Lighting Charm[1]",
+    "creator": "Levina Monkstanley (1772)[3]"
+  },
+  "categories": [
+    "Charms",
+    "Counter-charms",
+    "Defence Against the Dark Arts",
+    "2 more",
+    "Light-based magic",
+    "Spells with incantations of Latin origin"
+  ],
+  "scrapedAt": "2026-01-03T11:44:02.416Z"
+}

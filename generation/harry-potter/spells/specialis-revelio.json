@@ -1,0 +1,27 @@
+{
+  "title": "Specialis Revelio",
+  "slug": "Specialis_Revelio",
+  "url": "https://harrypotter.fandom.com/wiki/Specialis_Revelio",
+  "summary": "",
+  "content": "Specialis Revelio was the incantation of a charm that revealed any spells performed on objects or potions. It was a variation of the Revelio Charm.[3]\n\nPossibly used nonverbally by Dumbledore when he poked his wand into the purple armchair at Horace Slughorn's house to reveal that the wizard had transfigured himself into the armchair.[4]\n\nLatin specialis, \"particular; individual\" and revelare (present tense revelo), \"unveil\". Altogether the incantation may read as \"[to] reveal the particulars [of]\".",
+  "infobox": {
+    "IncantationTypeHand movementLightEffect": "Specialis Revelio[1](spe-see-AL-is reh-VEL-ee-oh)Charm[2]Rap smartly[1]None[1]Revealed spells cast on objects or potions[3]",
+    "Incantation": "Specialis Revelio[1](spe-see-AL-is reh-VEL-ee-oh)",
+    "Type": "Charm[2]",
+    "Hand movement": "Rap smartly[1]",
+    "Light": "None[1]",
+    "Effect": "Revealed spells cast on objects or potions[3]",
+    "name": "Specialis Revelio",
+    "incantation": "Specialis Revelio[1](spe-see-AL-is reh-VEL-ee-oh)",
+    "type": "Charm[2]",
+    "hand": "Rap smartly[1]",
+    "light": "None[1]",
+    "effect": "Revealed spells cast on objects or potions[3]"
+  },
+  "categories": [
+    "Charms",
+    "Spells with incantations of Latin origin",
+    "Spells with modifiers"
+  ],
+  "scrapedAt": "2026-01-03T11:45:50.048Z"
+}

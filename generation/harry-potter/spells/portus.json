@@ -1,0 +1,28 @@
+{
+  "title": "Portkey Spell",
+  "slug": "Portus",
+  "url": "https://harrypotter.fandom.com/wiki/Portus",
+  "summary": "",
+  "content": "The Portkey Spell[4] (Portus)[1] was a charm[2][3] used to turn an ordinary object into a Portkey.[1] Since creating Portkeys were restricted by the Ministry of Magic, the usage of this spell was, by extension, restricted as well. This was the subject of a question of the Theory of Charms O.W.L. in 1996[3]\n\nImmediately after casting, the target would glow bright blue, as the Portkey did when it was ready, but after a few seconds, it would return to its normal colour.[1] The time when the Portkey would disappear was set by the caster after casting the spell.[5]\n\nPortus comes from the Latin word \"portare\" which means \"to carry\".",
+  "infobox": {
+    "IncantationTypeLightEffect": "Portus[1](POR-tus)[1]Charm[2][3]Blue[1]Turns object into Portkey[1]",
+    "Incantation": "Portus[1](POR-tus)[1]",
+    "Type": "Charm[2][3]",
+    "Light": "Blue[1]",
+    "Effect": "Turns object into Portkey[1]",
+    "name": "Portkey Spell",
+    "incantation": "Portus[1](POR-tus)[1]",
+    "type": "Charm[2][3]",
+    "light": "Blue[1]",
+    "effect": "Turns object into Portkey[1]"
+  },
+  "categories": [
+    "Charms",
+    "Portkeys",
+    "Spells with a light",
+    "2 more",
+    "Spells with incantations of Latin origin",
+    "Triwizard Tournament"
+  ],
+  "scrapedAt": "2026-01-03T11:55:13.276Z"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Four-Point Spell",
+  "slug": "Point_Me",
+  "url": "https://harrypotter.fandom.com/wiki/Point_Me",
+  "summary": "",
+  "content": "The Four-Point Spell (Point Me) was a charm that caused the caster's wand to behave as if it were a compass and point north.[1]\n\nThis spell was found by Hermione Granger for use by Harry Potter (whether she invented it or merely found it through research is unclear). Harry used this spell on a number of occasions, however mostly during the third task of the Triwizard Tournament, which involved finding his way through a dangerous hedge maze, without getting lost on his way.[1]",
+  "infobox": {
+    "IncantationTypeHand movementLightEffect": "Point Me[1]Charm[1]Hold wand flat in hand[1]None[1]Wand pointed due north[1]",
+    "Incantation": "Point Me[1]",
+    "Type": "Charm[1]",
+    "Hand movement": "Hold wand flat in hand[1]",
+    "Light": "None[1]",
+    "Effect": "Wand pointed due north[1]",
+    "name": "Four-Point Spell",
+    "incantation": "Point Me[1]",
+    "type": "Charm[1]",
+    "hand": "Hold wand flat in hand[1]",
+    "light": "None[1]",
+    "effect": "Wand pointed due north[1]"
+  },
+  "categories": [
+    "Charms",
+    "Spells of known incantation"
+  ],
+  "scrapedAt": "2026-01-03T11:45:54.521Z"
+}
