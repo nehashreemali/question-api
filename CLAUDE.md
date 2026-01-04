@@ -97,19 +97,50 @@ POWER_UP review_questions
 #### Purpose
 Evaluate existing questions and mark them approved or rejected.
 
+#### Execution
+```bash
+# List pending questions
+bun scripts/review-questions.ts --category=tv-shows --list
+
+# Review with decisions via stdin
+echo '[{"id":1,"status":"approved","quality_score":0.85}]' | bun scripts/review-questions.ts --category=tv-shows
+```
+
 #### Allowed Actions
-- Read questions from SQLite
-- Update review fields only:
+- Read questions from SQLite where `peer_reviewed = 0 AND review_status = 'pending'`
+- Update ONLY these fields:
+  - `peer_reviewed` → 1
   - `review_status` → 'approved' or 'rejected'
+  - `quality_score` → 0.0 to 1.0
   - `review_notes` → reason for decision
   - `reviewed_at` → timestamp
-  - `peer_reviewed` → 1
-  - `quality_score` → 0.0 to 1.0
 
-#### Forbidden Actions
-- No question generation
-- No new insertions
-- No deletion of questions
+#### Approval Criteria
+- Approval requires `quality_score >= 0.7`
+- Question must be factually accurate
+- Question must have exactly 4 distinct options
+- Only one answer should be clearly correct
+
+#### Rejection Rules (CRITICAL)
+- **Rejected questions MUST have `review_notes` explaining why**
+- The script will refuse to reject without notes
+- Common rejection reasons:
+  - Factually incorrect
+  - Ambiguous wording
+  - Multiple valid answers
+  - Too obscure / unfair
+  - Duplicate of another question
+
+#### Forbidden Actions (NEVER)
+- **NEVER generate new questions**
+- **NEVER insert new questions**
+- **NEVER delete questions**
+- **NEVER modify question content** (question, options, correct_answer, difficulty)
+- **NEVER modify topic metadata** (topic, part, chapter, title, subcategory)
+
+#### Idempotency
+- Default: Skip questions where `peer_reviewed = 1`
+- `--force` flag to re-review previously reviewed questions
 
 ---
 
@@ -369,6 +400,7 @@ Backups are stored in `backups/` as timestamped `.tar.gz` archives.
 | `src/download-epics.ts` | Download religious/epic texts |
 | `src/sync-pipeline.ts` | Sync pipeline.db with files & questions |
 | `scripts/generate-questions.ts` | **THE ONLY** authorized question generation path |
+| `scripts/review-questions.ts` | **THE ONLY** authorized question review path |
 | `scripts/export-prod-db.ts` | Export approved questions to prod DB |
 | `scripts/backup-databases.sh` | Backup all SQLite databases |
 | `scripts/restore-databases.sh` | Restore from backup |
@@ -497,7 +529,7 @@ getTopic(category, subcategory, slug)
 2. **Organic growth** - Topics are created on-demand using `ensure*` functions
 3. **Transcripts stay as files** - Large text content in `generation/`
 4. **Stats cached in memory** - Regenerate via API when needed
-5. **Garbage folder** - Old/unused scripts archived in `/garbage/`
+5. **No legacy code** - Deprecated scripts have been removed entirely
 
 ---
 
