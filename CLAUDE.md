@@ -16,28 +16,30 @@ A **universal quiz question generator** that creates multiple-choice questions f
 
 ---
 
-## Question Generation Skill (CRITICAL)
+## Claude Operating Rules (CRITICAL)
 
-### Safety Rules (NON-NEGOTIABLE)
+### Execution Safety Model
 
-Question generation may **ONLY** occur after the exact arming phrase:
+| Mode | Trigger | Effect |
+|------|---------|--------|
+| Chat | Normal conversation | Discussion only, NO state mutation |
+| Armed | `POWER_UP <skill>` phrase | Execution authorized |
 
+**No state mutation without explicit arming phrase.**
+
+---
+
+### Skill: generate_questions
+
+#### Arming Phrase
 ```
 POWER_UP generate_questions
 ```
 
-| Rule | Description |
-|------|-------------|
-| Arming phrase required | `POWER_UP generate_questions` must precede any generation |
-| No phrase = No generation | Without the arming phrase, DO NOT generate or modify DB |
-| Ambiguous intent | Ask for clarification before executing |
-| Execution path | All generation via `scripts/generate-questions.ts` |
+#### Purpose
+Generate quiz questions from local source content and insert them into SQLite.
 
-**This is a hard safety boundary. Casual or conversational requests must NOT trigger generation.**
-
-### Invocation Format
-
-After the arming phrase, provide natural language intent:
+#### Invocation
 ```
 POWER_UP generate_questions
 Generate questions for Breaking Bad season 1 episode 1
@@ -48,40 +50,91 @@ Or structured:
 POWER_UP generate_questions tv-shows breaking-bad --part=1 --chapter=1
 ```
 
-### Generation Rules
+#### Allowed Inputs
+- `generation/` directory only
+- `registry.db`, `pipeline.db` for lookups
 
-1. **Source**: ONLY use content from local `generation/` directory
-2. **No external knowledge**: Do not use internet or general knowledge
-3. **Skip ambiguous facts**: If unclear, skip it
-4. **Validation**: Exactly 4 options, 1 correct, no duplicates
+#### Forbidden Actions
+- No web access
+- No hallucination (only facts from source files)
+- No review or approval (all questions start as `pending`)
+- No deletion or modification of existing questions
 
-### Question Caps
-
-| Content Type | Max Questions |
-|--------------|---------------|
+#### Question Caps
+| Content Type | Max |
+|--------------|-----|
 | TV episode | 25 |
 | Chapter/article | 30 |
 | Long section | 50 |
 
-### Difficulty Guidelines
+#### Validation Rules
+- Exactly 4 options
+- One correct answer (must be in options)
+- No duplicate options
+- Difficulty: easy, medium, or hard
+- Deduplication via hash
 
-| Level | Description |
-|-------|-------------|
-| easy | Direct facts explicitly stated |
-| medium | Requires recall or light inference |
-| hard | Deeper understanding, still grounded in text |
+#### Insert Defaults
+```sql
+peer_reviewed = 0
+review_status = 'pending'
+quality_score = NULL
+```
 
-### Database Insert Rules
+#### Idempotency
+- Default: Skip if questions exist for source unit
+- `--force` flag to regenerate
 
-All inserted questions must have:
-- `peer_reviewed = 0`
-- `review_status = 'pending'`
-- `quality_score = NULL`
+---
 
-### Idempotency
+### Skill: review_questions
 
-- Default: Skip if questions already exist for source unit
-- Use `--force` flag to regenerate
+#### Arming Phrase
+```
+POWER_UP review_questions
+```
+
+#### Purpose
+Evaluate existing questions and mark them approved or rejected.
+
+#### Allowed Actions
+- Read questions from SQLite
+- Update review fields only:
+  - `review_status` → 'approved' or 'rejected'
+  - `review_notes` → reason for decision
+  - `reviewed_at` → timestamp
+  - `peer_reviewed` → 1
+  - `quality_score` → 0.0 to 1.0
+
+#### Forbidden Actions
+- No question generation
+- No new insertions
+- No deletion of questions
+
+---
+
+### Skill: export_prod_db
+
+#### Arming Phrase
+```
+POWER_UP export_prod_db
+```
+
+#### Purpose
+Export approved questions into a read-only production SQLite database.
+
+#### Execution
+```bash
+bun scripts/export-prod-db.ts
+```
+
+#### Behavior
+- Reads from all `data/*.db` files
+- Filters: `review_status = 'approved'` only
+- Outputs: `prod/questions.db`
+- Converts difficulty to integer (1/2/3)
+- Sorts answers alphabetically
+- Generates tags from metadata
 
 ---
 
