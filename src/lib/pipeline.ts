@@ -12,9 +12,26 @@ const GENERATION_DIR = join(process.cwd(), 'generation');
 
 let db: Database | null = null;
 
+/**
+ * Configure database with safety PRAGMAs.
+ * Called once per connection to ensure durability and performance.
+ */
+function configureDatabase(database: Database): void {
+  // WAL mode for better concurrency and crash recovery
+  database.run('PRAGMA journal_mode = WAL');
+
+  // FULL sync ensures data reaches disk before commit completes
+  database.run('PRAGMA synchronous = FULL');
+
+  // Wait up to 30 seconds if database is locked
+  database.run('PRAGMA busy_timeout = 30000');
+}
+
 function getDb(): Database {
   if (!db) {
     db = new Database(join(DATA_DIR, 'pipeline.db'));
+    // Apply hardening PRAGMAs (WAL, synchronous=FULL, busy_timeout)
+    configureDatabase(db);
   }
   return db;
 }

@@ -14,6 +14,21 @@ const REGISTRY_PATH = join(DATA_DIR, 'registry.db');
 
 let db: Database | null = null;
 
+/**
+ * Configure database with safety PRAGMAs.
+ * Called once per connection to ensure durability and performance.
+ */
+function configureDatabase(database: Database): void {
+  // WAL mode for better concurrency and crash recovery
+  database.run('PRAGMA journal_mode = WAL');
+
+  // FULL sync ensures data reaches disk before commit completes
+  database.run('PRAGMA synchronous = FULL');
+
+  // Wait up to 30 seconds if database is locked
+  database.run('PRAGMA busy_timeout = 30000');
+}
+
 // ============================================================================
 // Initialization
 // ============================================================================
@@ -26,6 +41,9 @@ export function initRegistry(): Database {
   }
 
   db = new Database(REGISTRY_PATH);
+
+  // Apply hardening PRAGMAs (WAL, synchronous=FULL, busy_timeout)
+  configureDatabase(db);
 
   // Categories table
   db.run(`

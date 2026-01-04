@@ -12,6 +12,52 @@ import { join } from 'path';
 
 const DATA_DIR = join(import.meta.dir, '..', '..', 'data');
 
+// ============================================================================
+// Database Configuration (Hardening)
+// ============================================================================
+
+/**
+ * Configure database with safety PRAGMAs.
+ * Called once per connection to ensure durability and performance.
+ *
+ * - WAL mode: Better concurrency, faster writes, crash-safe
+ * - synchronous=FULL: Guarantees data is on disk before commit returns
+ * - busy_timeout: Wait up to 30s if database is locked (avoids immediate SQLITE_BUSY)
+ */
+function configureDatabase(db: Database): void {
+  // WAL mode for better concurrency and crash recovery
+  db.run('PRAGMA journal_mode = WAL');
+
+  // FULL sync ensures data reaches disk before commit completes
+  // Prevents data loss on power failure (critical for batch writes)
+  db.run('PRAGMA synchronous = FULL');
+
+  // Wait up to 30 seconds if another process holds the lock
+  db.run('PRAGMA busy_timeout = 30000');
+}
+
+/**
+ * Execute a function within an explicit transaction.
+ * Ensures atomicity for batch operations.
+ *
+ * Usage:
+ *   withTransaction(db, () => {
+ *     db.run('INSERT ...');
+ *     db.run('INSERT ...');
+ *   });
+ */
+export function withTransaction<T>(db: Database, fn: () => T): T {
+  db.run('BEGIN IMMEDIATE');
+  try {
+    const result = fn();
+    db.run('COMMIT');
+    return result;
+  } catch (error) {
+    db.run('ROLLBACK');
+    throw error;
+  }
+}
+
 // Cache of open database connections per category
 const dbCache: Map<string, Database> = new Map();
 
@@ -35,6 +81,9 @@ export function getCategoryDatabase(category: string): Database {
   const dbPath = join(DATA_DIR, `${category}.db`);
   const database = new Database(dbPath);
 
+  // Apply hardening PRAGMAs (WAL, synchronous=FULL, busy_timeout)
+  configureDatabase(database);
+
   // Create table with subcategory field
   database.run(`
     CREATE TABLE IF NOT EXISTS questions (
@@ -55,6 +104,17 @@ export function getCategoryDatabase(category: string): Database {
       explanation TEXT,
 
       synced_to_mongo INTEGER NOT NULL DEFAULT 0,
+
+      -- Review workflow columns
+      peer_reviewed INTEGER NOT NULL DEFAULT 0,
+      review_status TEXT NOT NULL DEFAULT 'pending',
+      quality_score REAL DEFAULT NULL,
+      review_notes TEXT DEFAULT NULL,
+      reviewed_at TEXT DEFAULT NULL,
+
+      -- Current affairs lifecycle columns
+      is_current_affairs INTEGER NOT NULL DEFAULT 0,
+      current_affairs_until TEXT DEFAULT NULL,
 
       created_at TEXT DEFAULT (datetime('now'))
     )
@@ -87,6 +147,29 @@ export function getCategoryDatabase(category: string): Database {
   } catch (e) {
     // Column might not exist in edge cases
   }
+
+  // Migration: Add review workflow columns if they don't exist
+  const existingColumns = new Set(tableInfo.map((col: any) => col.name));
+
+  if (!existingColumns.has('peer_reviewed')) {
+    database.run(`ALTER TABLE questions ADD COLUMN peer_reviewed INTEGER NOT NULL DEFAULT 0`);
+    database.run(`ALTER TABLE questions ADD COLUMN review_status TEXT NOT NULL DEFAULT 'pending'`);
+    database.run(`ALTER TABLE questions ADD COLUMN quality_score REAL DEFAULT NULL`);
+    database.run(`ALTER TABLE questions ADD COLUMN review_notes TEXT DEFAULT NULL`);
+    database.run(`ALTER TABLE questions ADD COLUMN reviewed_at TEXT DEFAULT NULL`);
+    console.log(`Added review workflow columns to ${category}.db`);
+  }
+
+  // Migration: Add current affairs lifecycle columns if they don't exist
+  if (!existingColumns.has('is_current_affairs')) {
+    database.run(`ALTER TABLE questions ADD COLUMN is_current_affairs INTEGER NOT NULL DEFAULT 0`);
+    database.run(`ALTER TABLE questions ADD COLUMN current_affairs_until TEXT DEFAULT NULL`);
+    console.log(`Added current affairs columns to ${category}.db`);
+  }
+
+  // Create indexes for new columns
+  database.run(`CREATE INDEX IF NOT EXISTS idx_review_status ON questions(review_status)`);
+  database.run(`CREATE INDEX IF NOT EXISTS idx_current_affairs ON questions(is_current_affairs, current_affairs_until)`);
 
   dbCache.set(category, database);
   return database;
@@ -213,7 +296,19 @@ export interface Question {
   correct_answer: string;
   difficulty: 'easy' | 'medium' | 'hard';
   explanation?: string | null;
-  synced_to_mongo?: boolean; // Whether this question has been synced to MongoDB
+  synced_to_mongo?: boolean;
+
+  // Review workflow
+  peer_reviewed?: boolean;
+  review_status?: 'pending' | 'approved' | 'rejected';
+  quality_score?: number | null;
+  review_notes?: string | null;
+  reviewed_at?: string | null;
+
+  // Current affairs lifecycle
+  is_current_affairs?: boolean;
+  current_affairs_until?: string | null;
+
   created_at?: string;
 }
 
@@ -697,6 +792,7 @@ export default {
   initDatabase,
   closeDatabase,
   closeCategoryDatabase,
+  withTransaction,
   computeHash,
   insertQuestion,
   questionExists,
