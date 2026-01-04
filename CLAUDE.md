@@ -16,6 +16,75 @@ A **universal quiz question generator** that creates multiple-choice questions f
 
 ---
 
+## Question Generation Skill (CRITICAL)
+
+### Safety Rules (NON-NEGOTIABLE)
+
+Question generation may **ONLY** occur after the exact arming phrase:
+
+```
+POWER_UP generate_questions
+```
+
+| Rule | Description |
+|------|-------------|
+| Arming phrase required | `POWER_UP generate_questions` must precede any generation |
+| No phrase = No generation | Without the arming phrase, DO NOT generate or modify DB |
+| Ambiguous intent | Ask for clarification before executing |
+| Execution path | All generation via `scripts/generate-questions.ts` |
+
+**This is a hard safety boundary. Casual or conversational requests must NOT trigger generation.**
+
+### Invocation Format
+
+After the arming phrase, provide natural language intent:
+```
+POWER_UP generate_questions
+Generate questions for Breaking Bad season 1 episode 1
+```
+
+Or structured:
+```
+POWER_UP generate_questions tv-shows breaking-bad --part=1 --chapter=1
+```
+
+### Generation Rules
+
+1. **Source**: ONLY use content from local `generation/` directory
+2. **No external knowledge**: Do not use internet or general knowledge
+3. **Skip ambiguous facts**: If unclear, skip it
+4. **Validation**: Exactly 4 options, 1 correct, no duplicates
+
+### Question Caps
+
+| Content Type | Max Questions |
+|--------------|---------------|
+| TV episode | 25 |
+| Chapter/article | 30 |
+| Long section | 50 |
+
+### Difficulty Guidelines
+
+| Level | Description |
+|-------|-------------|
+| easy | Direct facts explicitly stated |
+| medium | Requires recall or light inference |
+| hard | Deeper understanding, still grounded in text |
+
+### Database Insert Rules
+
+All inserted questions must have:
+- `peer_reviewed = 0`
+- `review_status = 'pending'`
+- `quality_score = NULL`
+
+### Idempotency
+
+- Default: Skip if questions already exist for source unit
+- Use `--force` flag to regenerate
+
+---
+
 ## Current Architecture (SQLite-Only)
 
 ### Database Structure
@@ -246,6 +315,7 @@ Backups are stored in `backups/` as timestamped `.tar.gz` archives.
 | `src/download-movies.ts` | Batch download movie scripts |
 | `src/download-epics.ts` | Download religious/epic texts |
 | `src/sync-pipeline.ts` | Sync pipeline.db with files & questions |
+| `scripts/generate-questions.ts` | **THE ONLY** authorized question generation path |
 | `scripts/export-prod-db.ts` | Export approved questions to prod DB |
 | `scripts/backup-databases.sh` | Backup all SQLite databases |
 | `scripts/restore-databases.sh` | Restore from backup |
