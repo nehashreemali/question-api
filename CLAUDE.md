@@ -29,6 +29,31 @@ A **universal quiz question generator** that creates multiple-choice questions f
 
 ---
 
+### Git Commit/Push Ritual
+
+Before committing or pushing code, Claude MUST:
+
+1. **Ask the user for the secret code**
+2. **Wait for the correct response**
+3. **Only proceed if the code matches**
+
+#### Workflow
+```
+Claude: "Ready to commit and push. Please provide the secret code."
+User: [enters code]
+Claude: [if correct] Proceeds with commit and push
+Claude: [if incorrect] "Incorrect code. Please enter the correct code to proceed."
+```
+
+#### Rules
+- **NEVER** commit or push without asking for the code first
+- **NEVER** guess or assume the code
+- Code must match exactly (case-sensitive)
+- One code authorizes both commit AND push in a single action
+- If user declines or provides wrong code, do NOT proceed
+
+---
+
 ### Skill: generate_questions
 
 #### Arming Phrase
@@ -152,20 +177,65 @@ POWER_UP export_prod_db
 ```
 
 #### Purpose
-Export approved questions into a read-only production SQLite database.
+Export approved questions into a production-ready SQLite database.
 
 #### Execution
 ```bash
+# Export all approved questions
 bun scripts/export-prod-db.ts
+
+# Export with filters
+bun scripts/export-prod-db.ts --category=tv-shows
+bun scripts/export-prod-db.ts --topic=friends --limit=100
+bun scripts/export-prod-db.ts --difficulty=hard
+
+# Preview without creating database
+bun scripts/export-prod-db.ts --dry-run
 ```
 
 #### Behavior
-- Reads from all `data/*.db` files
+- Reads from all `data/*.db` files (read-only)
 - Filters: `review_status = 'approved'` only
-- Outputs: `prod/questions.db`
-- Converts difficulty to integer (1/2/3)
-- Sorts answers alphabetically
+- Excludes: expired current affairs questions
+- Outputs: `dist/prod-questions.db`
+- Converts difficulty to integer (1=easy, 2=medium, 3=hard)
+- Sorts answers alphabetically for deterministic storage
 - Generates tags from metadata
+- **Fails if zero approved questions found**
+
+#### Safety Rules (CRITICAL)
+- **Source databases are read-only** - NEVER modifies generator DBs
+- **No mutation of review fields** - only reads, never writes to source
+- **Only approved questions** - pending/rejected are excluded
+- **No network access** - purely local file operations
+- **No S3 upload** - export only, distribution handled separately
+
+#### Filters
+| Flag | Description |
+|------|-------------|
+| `--category` | Filter to specific category (e.g., tv-shows) |
+| `--topic` | Filter to specific topic (e.g., friends) |
+| `--difficulty` | Filter by difficulty (easy, medium, hard) |
+| `--limit` | Maximum number of questions to export |
+| `--dry-run` | Preview only, don't create database |
+
+#### Production Schema
+```sql
+CREATE TABLE questions (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  category TEXT NOT NULL,
+  subcategory TEXT NOT NULL,
+  topic TEXT NOT NULL,
+  difficulty INTEGER NOT NULL,        -- 1=easy, 2=medium, 3=hard
+  question TEXT NOT NULL,
+  answers TEXT NOT NULL,              -- JSON: [{text, index}]
+  correct_answer_index INTEGER NOT NULL,
+  explanation TEXT,
+  is_current_affairs INTEGER NOT NULL,
+  current_affairs_until TEXT,
+  tags TEXT                           -- JSON: [category, subcategory, topic, difficulty]
+);
+```
 
 ---
 
@@ -278,7 +348,7 @@ CREATE TABLE questions (
 );
 ```
 
-### Production Database (`prod/questions.db`)
+### Production Database (`dist/prod-questions.db`)
 
 Read-only database for gameplay. Created by exporting approved questions.
 
@@ -295,7 +365,7 @@ CREATE TABLE questions (
   question TEXT NOT NULL,
 
   answers TEXT NOT NULL,         -- JSON: [{"text":"...", "index":1}, ...]
-  correct_index INTEGER NOT NULL, -- 1-4 (matches answer index)
+  correct_answer_index INTEGER NOT NULL, -- 1-4 (matches answer index)
 
   explanation TEXT,
 
@@ -348,7 +418,7 @@ bun scripts/export-prod-db.ts --dry-run
 # Run the export
 bun scripts/export-prod-db.ts
 
-# Output: prod/questions.db
+# Output: dist/prod-questions.db
 ```
 
 The export:
@@ -357,7 +427,7 @@ The export:
 3. Converts difficulty to integer (easy=1, medium=2, hard=3)
 4. Converts options to `[{text, index}]` format, sorted alphabetically
 5. Generates tags from category/subcategory/topic/difficulty
-6. Writes to `prod/questions.db`
+6. Writes to `dist/prod-questions.db`
 
 ---
 
