@@ -109,10 +109,126 @@ CREATE TABLE questions (
   difficulty TEXT,               -- 'easy', 'medium', 'hard'
   explanation TEXT,
 
+  -- Review workflow
+  peer_reviewed INTEGER DEFAULT 0,
+  review_status TEXT DEFAULT 'pending',  -- 'pending', 'approved', 'rejected'
+  quality_score REAL,
+  review_notes TEXT,
+  reviewed_at TEXT,
+
+  -- Current affairs lifecycle
+  is_current_affairs INTEGER DEFAULT 0,
+  current_affairs_until TEXT,
+
   synced_to_mongo INTEGER DEFAULT 0,
   created_at TEXT
 );
 ```
+
+### Production Database (`prod/questions.db`)
+
+Read-only database for gameplay. Created by exporting approved questions.
+
+```sql
+CREATE TABLE questions (
+  id INTEGER PRIMARY KEY,
+
+  category TEXT NOT NULL,        -- e.g., 'tv-shows'
+  subcategory TEXT NOT NULL,     -- e.g., 'sitcoms'
+  topic TEXT NOT NULL,           -- e.g., 'friends'
+
+  difficulty INTEGER NOT NULL,   -- 1=easy, 2=medium, 3=hard
+
+  question TEXT NOT NULL,
+
+  answers TEXT NOT NULL,         -- JSON: [{"text":"...", "index":1}, ...]
+  correct_index INTEGER NOT NULL, -- 1-4 (matches answer index)
+
+  explanation TEXT,
+
+  is_current_affairs INTEGER DEFAULT 0,
+  current_affairs_until TEXT,
+
+  tags TEXT                      -- JSON: ["tv-shows", "sitcoms", "friends", "medium"]
+);
+```
+
+**Note:** Answers are sorted alphabetically in storage. Client randomizes at runtime.
+
+---
+
+## Question Review Workflow
+
+Questions go through a review process before appearing in production.
+
+### Review States
+| Status | Meaning |
+|--------|---------|
+| `pending` | Awaiting review (default for new questions) |
+| `approved` | Ready for production export |
+| `rejected` | Not suitable, will not be exported |
+
+### How to Review Questions
+
+```bash
+# View pending questions
+sqlite3 data/tv-shows.db "SELECT id, question FROM questions WHERE review_status='pending' LIMIT 10;"
+
+# Approve a question
+sqlite3 data/tv-shows.db "UPDATE questions SET review_status='approved', reviewed_at=datetime('now') WHERE id=123;"
+
+# Reject a question with notes
+sqlite3 data/tv-shows.db "UPDATE questions SET review_status='rejected', review_notes='Too obscure' WHERE id=456;"
+
+# Bulk approve all questions for a topic
+sqlite3 data/tv-shows.db "UPDATE questions SET review_status='approved', reviewed_at=datetime('now') WHERE topic='friends';"
+```
+
+### Export to Production
+
+Only approved questions are exported to the production database:
+
+```bash
+# Preview what would be exported
+bun scripts/export-prod-db.ts --dry-run
+
+# Run the export
+bun scripts/export-prod-db.ts
+
+# Output: prod/questions.db
+```
+
+The export:
+1. Reads all `data/*.db` files
+2. Filters by `review_status = 'approved'`
+3. Converts difficulty to integer (easy=1, medium=2, hard=3)
+4. Converts options to `[{text, index}]` format, sorted alphabetically
+5. Generates tags from category/subcategory/topic/difficulty
+6. Writes to `prod/questions.db`
+
+---
+
+## Backup & Restore
+
+### Create Backup
+```bash
+./scripts/backup-databases.sh           # Full backup with integrity check
+./scripts/backup-databases.sh --dry-run # Preview only
+```
+
+Backups are stored in `backups/` as timestamped `.tar.gz` archives.
+
+### Restore from Backup
+```bash
+./scripts/restore-databases.sh --list   # List available backups
+./scripts/restore-databases.sh          # Restore from latest
+./scripts/restore-databases.sh 2026-01-04_121911  # Restore specific backup
+```
+
+### What Gets Backed Up
+- All `data/*.db` files (registry, pipeline, tv-shows, etc.)
+- Integrity checked before and after backup
+- Last 7 days retained automatically
 
 ---
 
@@ -130,6 +246,9 @@ CREATE TABLE questions (
 | `src/download-movies.ts` | Batch download movie scripts |
 | `src/download-epics.ts` | Download religious/epic texts |
 | `src/sync-pipeline.ts` | Sync pipeline.db with files & questions |
+| `scripts/export-prod-db.ts` | Export approved questions to prod DB |
+| `scripts/backup-databases.sh` | Backup all SQLite databases |
+| `scripts/restore-databases.sh` | Restore from backup |
 
 ---
 
