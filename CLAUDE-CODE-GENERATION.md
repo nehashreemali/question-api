@@ -1,6 +1,16 @@
-# Claude Code Question Generation
+# ❌ DEPRECATED DOCUMENTATION
 
-This document describes the workflow for generating quiz questions via Claude Code CLI.
+> **This document is DEPRECATED. See `CLAUDE.md` for current documentation.**
+>
+> The new arming phrase is: `POWER_UP generate_questions`
+>
+> All generation must go through: `scripts/generate-questions.ts`
+
+---
+
+# Claude Code Question Generation (ARCHIVED)
+
+This document describes the OLD workflow for generating quiz questions via Claude Code CLI.
 
 ---
 

@@ -1,6 +1,15 @@
 #!/usr/bin/env bun
 
 /**
+ * ❌ DEPRECATED – DO NOT USE
+ *
+ * This script is deprecated and will throw an error if executed.
+ * All question generation must go through: scripts/generate-questions.ts
+ * Requires arming phrase: POWER_UP generate_questions
+ */
+throw new Error('DEPRECATED: Use scripts/generate-questions.ts with POWER_UP arming phrase');
+
+/**
  * Universal Question Generator
  *
  * Fetches content using adapters and generates questions using AI.

@@ -1,3 +1,11 @@
+/**
+ * ❌ DEPRECATED – DO NOT USE
+ *
+ * This script is deprecated. Use scripts/export-prod-db.ts instead.
+ * That script exports approved questions to prod/questions.db with the correct schema.
+ */
+throw new Error('DEPRECATED: Use scripts/export-prod-db.ts instead');
+
 import { Database } from "bun:sqlite";
 import { readdirSync, unlinkSync, existsSync } from "fs";
 import { join } from "path";

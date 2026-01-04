@@ -321,6 +321,12 @@ export interface InsertResult {
 
 /**
  * Insert a question into the appropriate category database.
+ *
+ * ⚠️  WARNING: LOW-LEVEL FUNCTION - DO NOT CALL DIRECTLY
+ *
+ * All question generation MUST go through: scripts/generate-questions.ts
+ * This function should ONLY be called from that script.
+ * Direct calls from other code paths are prohibited.
  */
 export function insertQuestion(q: Question): InsertResult {
   const database = getCategoryDatabase(q.category);
