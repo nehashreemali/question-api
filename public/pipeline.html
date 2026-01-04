@@ -50,27 +50,51 @@
 
     <!-- Pipeline Content -->
     <div id="pipeline-content" class="hidden">
-      <!-- Overview Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+      <!-- Overview Cards - Row 1: Content Pipeline -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-4">
         <div class="stat-card card rounded-xl p-6">
-          <p class="text-gray-400 text-sm uppercase tracking-wide">Total Content</p>
+          <p class="text-gray-400 text-sm uppercase tracking-wide">📥 Downloaded</p>
           <p id="total-content" class="text-4xl font-bold text-white mt-2">0</p>
-          <p class="text-gray-500 text-sm mt-1">units downloaded</p>
+          <p class="text-gray-500 text-sm mt-1">content units</p>
         </div>
         <div class="stat-card card rounded-xl p-6">
-          <p class="text-gray-400 text-sm uppercase tracking-wide">Completed</p>
-          <p id="completed-count" class="text-4xl font-bold text-emerald-400 mt-2">0</p>
-          <p class="text-gray-500 text-sm mt-1">questions generated</p>
+          <p class="text-gray-400 text-sm uppercase tracking-wide">📝 Generated</p>
+          <p id="completed-count" class="text-4xl font-bold text-blue-400 mt-2">0</p>
+          <p class="text-gray-500 text-sm mt-1">units processed</p>
         </div>
         <div class="stat-card card rounded-xl p-6">
-          <p class="text-gray-400 text-sm uppercase tracking-wide">Pending</p>
+          <p class="text-gray-400 text-sm uppercase tracking-wide">⏳ Pending Gen</p>
           <p id="pending-count" class="text-4xl font-bold text-yellow-400 mt-2">0</p>
           <p class="text-gray-500 text-sm mt-1">awaiting generation</p>
         </div>
         <div class="stat-card card rounded-xl p-6">
-          <p class="text-gray-400 text-sm uppercase tracking-wide">Questions</p>
+          <p class="text-gray-400 text-sm uppercase tracking-wide">📊 Questions</p>
           <p id="questions-count" class="text-4xl font-bold text-purple-400 mt-2">0</p>
           <p class="text-gray-500 text-sm mt-1">total generated</p>
+        </div>
+      </div>
+
+      <!-- Overview Cards - Row 2: Review Status -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+        <div class="stat-card card rounded-xl p-6">
+          <p class="text-gray-400 text-sm uppercase tracking-wide">✅ Approved</p>
+          <p id="approved-count" class="text-4xl font-bold text-emerald-400 mt-2">0</p>
+          <p class="text-gray-500 text-sm mt-1">ready for production</p>
+        </div>
+        <div class="stat-card card rounded-xl p-6">
+          <p class="text-gray-400 text-sm uppercase tracking-wide">❌ Rejected</p>
+          <p id="rejected-count" class="text-4xl font-bold text-red-400 mt-2">0</p>
+          <p class="text-gray-500 text-sm mt-1">quality issues</p>
+        </div>
+        <div class="stat-card card rounded-xl p-6">
+          <p class="text-gray-400 text-sm uppercase tracking-wide">🔍 Pending Review</p>
+          <p id="pending-review-count" class="text-4xl font-bold text-orange-400 mt-2">0</p>
+          <p class="text-gray-500 text-sm mt-1">awaiting review</p>
+        </div>
+        <div class="stat-card card rounded-xl p-6">
+          <p class="text-gray-400 text-sm uppercase tracking-wide">⭐ Avg Score</p>
+          <p id="avg-score" class="text-4xl font-bold text-amber-400 mt-2">-</p>
+          <p class="text-gray-500 text-sm mt-1">quality score</p>
         </div>
       </div>
 
@@ -136,11 +160,17 @@
     function renderPipeline() {
       const { categories, totals } = pipelineData;
 
-      // Update totals
+      // Update content pipeline totals
       document.getElementById('total-content').textContent = totals.total.toLocaleString();
       document.getElementById('completed-count').textContent = totals.completed.toLocaleString();
       document.getElementById('pending-count').textContent = totals.pending.toLocaleString();
       document.getElementById('questions-count').textContent = totals.questions.toLocaleString();
+
+      // Update review status totals
+      document.getElementById('approved-count').textContent = (totals.approved || 0).toLocaleString();
+      document.getElementById('rejected-count').textContent = (totals.rejected || 0).toLocaleString();
+      document.getElementById('pending-review-count').textContent = (totals.pendingReview || 0).toLocaleString();
+      document.getElementById('avg-score').textContent = totals.avgScore ? (totals.avgScore * 100).toFixed(0) + '%' : '-';
 
       // Progress bar
       const pct = totals.total > 0 ? (totals.completed / totals.total) * 100 : 0;
@@ -177,16 +207,21 @@
               <span class="text-gray-400 text-sm ml-1">questions</span>
             </div>
           </div>
-          <div class="flex gap-4 text-sm text-gray-400 mb-3">
-            <span class="text-emerald-400">${cat.completed} completed</span>
+          <div class="flex gap-4 text-sm text-gray-400 mb-2">
+            <span class="text-blue-400">${cat.completed} generated</span>
             <span class="text-yellow-400">${cat.pending} pending</span>
             ${cat.failed > 0 ? `<span class="text-red-400">${cat.failed} failed</span>` : ''}
+          </div>
+          <div class="flex gap-4 text-sm text-gray-400 mb-3">
+            <span class="text-emerald-400">✅ ${cat.approved || 0} approved</span>
+            <span class="text-red-400">❌ ${cat.rejected || 0} rejected</span>
+            <span class="text-orange-400">🔍 ${cat.pendingReview || 0} pending</span>
           </div>
           <div class="h-2 bg-slate-700 rounded-full overflow-hidden">
             <div class="h-full bg-gradient-to-r from-purple-500 to-emerald-500 progress-bar"
                  style="width: ${catPct}%"></div>
           </div>
-          <p class="text-gray-500 text-xs mt-2">${catPct.toFixed(1)}% complete</p>
+          <p class="text-gray-500 text-xs mt-2">${catPct.toFixed(1)}% generated</p>
         `;
         categoriesList.appendChild(catEl);
       }

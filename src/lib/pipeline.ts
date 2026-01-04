@@ -375,6 +375,74 @@ export function syncPipeline(): {
   };
 }
 
+// Get review stats from question databases
+function getReviewStats(): {
+  byCategory: Record<string, { approved: number; rejected: number; pendingReview: number; avgScore: number }>;
+  totals: { approved: number; rejected: number; pendingReview: number; avgScore: number };
+} {
+  const byCategory: Record<string, { approved: number; rejected: number; pendingReview: number; avgScore: number }> = {};
+  let totalApproved = 0, totalRejected = 0, totalPending = 0;
+  let totalScoreSum = 0, totalScoreCount = 0;
+
+  // Get all category database files
+  const dbFiles = readdirSync(DATA_DIR).filter(f =>
+    f.endsWith('.db') &&
+    !f.startsWith('_') &&
+    f !== 'registry.db' &&
+    f !== 'pipeline.db' &&
+    f !== 'questions.db'
+  );
+
+  for (const dbFile of dbFiles) {
+    const category = dbFile.replace('.db', '');
+    const dbPath = join(DATA_DIR, dbFile);
+
+    if (!existsSync(dbPath)) continue;
+
+    try {
+      const catDb = new Database(dbPath, { readonly: true });
+
+      const stats = catDb.query(`
+        SELECT
+          SUM(CASE WHEN review_status = 'approved' THEN 1 ELSE 0 END) as approved,
+          SUM(CASE WHEN review_status = 'rejected' THEN 1 ELSE 0 END) as rejected,
+          SUM(CASE WHEN review_status = 'pending' THEN 1 ELSE 0 END) as pendingReview,
+          AVG(CASE WHEN quality_score IS NOT NULL THEN quality_score END) as avgScore,
+          COUNT(CASE WHEN quality_score IS NOT NULL THEN 1 END) as scoreCount,
+          SUM(CASE WHEN quality_score IS NOT NULL THEN quality_score ELSE 0 END) as scoreSum
+        FROM questions
+      `).get() as any;
+
+      catDb.close();
+
+      byCategory[category] = {
+        approved: stats.approved || 0,
+        rejected: stats.rejected || 0,
+        pendingReview: stats.pendingReview || 0,
+        avgScore: stats.avgScore || 0,
+      };
+
+      totalApproved += stats.approved || 0;
+      totalRejected += stats.rejected || 0;
+      totalPending += stats.pendingReview || 0;
+      totalScoreSum += stats.scoreSum || 0;
+      totalScoreCount += stats.scoreCount || 0;
+    } catch (e) {
+      // Skip if table doesn't exist
+    }
+  }
+
+  return {
+    byCategory,
+    totals: {
+      approved: totalApproved,
+      rejected: totalRejected,
+      pendingReview: totalPending,
+      avgScore: totalScoreCount > 0 ? totalScoreSum / totalScoreCount : 0,
+    },
+  };
+}
+
 // Get pipeline summary
 export function getPipelineSummary(): {
   categories: Array<{
@@ -385,6 +453,10 @@ export function getPipelineSummary(): {
     pending: number;
     failed: number;
     questions: number;
+    approved: number;
+    rejected: number;
+    pendingReview: number;
+    avgScore: number;
   }>;
   totals: {
     total: number;
@@ -392,9 +464,14 @@ export function getPipelineSummary(): {
     completed: number;
     pending: number;
     questions: number;
+    approved: number;
+    rejected: number;
+    pendingReview: number;
+    avgScore: number;
   };
 } {
   const pipelineDb = getDb();
+  const reviewStats = getReviewStats();
 
   const categories = pipelineDb.query(`
     SELECT
@@ -410,6 +487,15 @@ export function getPipelineSummary(): {
     ORDER BY category
   `).all() as any[];
 
+  // Merge with review stats
+  const enrichedCategories = categories.map(cat => ({
+    ...cat,
+    approved: reviewStats.byCategory[cat.category]?.approved || 0,
+    rejected: reviewStats.byCategory[cat.category]?.rejected || 0,
+    pendingReview: reviewStats.byCategory[cat.category]?.pendingReview || 0,
+    avgScore: reviewStats.byCategory[cat.category]?.avgScore || 0,
+  }));
+
   const totals = pipelineDb.query(`
     SELECT
       COUNT(*) as total,
@@ -420,7 +506,16 @@ export function getPipelineSummary(): {
     FROM content_tracking
   `).get() as any;
 
-  return { categories, totals };
+  return {
+    categories: enrichedCategories,
+    totals: {
+      ...totals,
+      approved: reviewStats.totals.approved,
+      rejected: reviewStats.totals.rejected,
+      pendingReview: reviewStats.totals.pendingReview,
+      avgScore: reviewStats.totals.avgScore,
+    },
+  };
 }
 
 // Get detailed status by topic
