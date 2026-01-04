@@ -61,6 +61,12 @@ Claude: [if incorrect] "Incorrect code. Please enter the correct code to proceed
 POWER_UP generate_questions
 ```
 
+#### Execution Safety Boundary (NON-NEGOTIABLE)
+- Questions are ONLY generated when the exact arming phrase is used
+- Casual requests like "make some questions" or "can you generate questions" MUST NOT trigger generation
+- If invoked without arming phrase, respond: "To generate questions, use: `POWER_UP generate_questions`"
+- This is a hard boundary with no exceptions
+
 #### Purpose
 Generate quiz questions from local source content and insert them into SQLite.
 
@@ -79,11 +85,34 @@ POWER_UP generate_questions tv-shows breaking-bad --part=1 --chapter=1
 - `generation/` directory only
 - `registry.db`, `pipeline.db` for lookups
 
+#### Non-Hallucination Guarantee (CRITICAL)
+- ALL questions MUST be derived strictly from local source files in `generation/`
+- Internet knowledge, assumptions, or inferred facts are FORBIDDEN
+- If source material is insufficient for quality questions, STOP and report
+- When in doubt, do not generate
+
 #### Forbidden Actions
-- No web access
-- No hallucination (only facts from source files)
-- No review or approval (all questions start as `pending`)
+- No web access during generation
+- No auto-approval (all questions start as `pending`)
 - No deletion or modification of existing questions
+
+#### Question Quality Guidelines
+- Prefer conceptual understanding over pure memorization
+- Avoid reliance on exact dates/numbers UNLESS:
+  - The source explicitly emphasizes them, OR
+  - The fact is central to understanding the topic
+- Questions must be clear, unambiguous, and single-focus
+- Avoid trick questions or misleading wording
+- Each question should have exactly one defensible correct answer
+
+#### Difficulty Intent
+| Level | Meaning |
+|-------|---------|
+| easy | Widely recognizable facts or concepts |
+| medium | Requires contextual understanding or recall |
+| hard | Less common but still fair, non-trick knowledge |
+
+Difficulty must NOT be inflated artificially. Hard ≠ obscure or unfair.
 
 #### Question Caps
 | Content Type | Max |
