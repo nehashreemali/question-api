@@ -338,6 +338,270 @@ function syncEpics() {
   }
 }
 
+// Sync Wikipedia articles
+function syncWikipedia() {
+  console.log('\n📚 Syncing Wikipedia...');
+  const wikiDir = join(GENERATION_DIR, 'wikipedia');
+  if (!existsSync(wikiDir)) return;
+
+  const questionCounts = getQuestionCounts('wikipedia.db');
+  let totalCount = 0;
+
+  // Recursively scan all subdirectories
+  function scanDir(dir: string, subcategory: string) {
+    const entries = readdirSync(dir);
+    let count = 0;
+
+    for (const entry of entries) {
+      const fullPath = join(dir, entry);
+      const stat = statSync(fullPath);
+
+      if (stat.isDirectory()) {
+        // Recurse into subdirectory
+        const newSubcat = subcategory ? `${subcategory}/${entry}` : entry;
+        count += scanDir(fullPath, newSubcat);
+      } else if (entry.endsWith('.json')) {
+        const slug = entry.replace('.json', '');
+        let title = slug;
+        let wordCount = 0;
+
+        try {
+          const data = JSON.parse(readFileSync(fullPath, 'utf-8'));
+          title = data.title || slug;
+          wordCount = (data.extract || data.content || '').split(/\s+/).length;
+        } catch (e) {}
+
+        const key = `${slug}|null|null`;
+        const qc = questionCounts.get(key) || { total: 0, easy: 0, medium: 0, hard: 0 };
+        const status = qc.total > 0 ? 'completed' : 'pending';
+
+        const relativePath = fullPath.replace(process.cwd() + '/', '');
+        upsertContent.run(
+          'wikipedia', subcategory || 'general', slug, null, null, null, title,
+          'wikipedia', relativePath, 1, new Date().toISOString(), wordCount,
+          status, qc.total, qc.easy, qc.medium, qc.hard
+        );
+        count++;
+      }
+    }
+    return count;
+  }
+
+  totalCount = scanDir(wikiDir, '');
+  console.log(`   ✅ ${totalCount} Wikipedia articles synced`);
+}
+
+// Sync Mythology content (theoi.com, norse, egyptian)
+function syncMythology() {
+  console.log('\n🏛️ Syncing Mythology...');
+  const questionCounts = getQuestionCounts('mythology.db');
+  let totalCount = 0;
+
+  // Greek mythology from theoi.com
+  const greekDir = join(GENERATION_DIR, 'greek-mythology');
+  if (existsSync(greekDir)) {
+    function scanGreek(dir: string, subcategory: string): number {
+      const entries = readdirSync(dir);
+      let count = 0;
+
+      for (const entry of entries) {
+        const fullPath = join(dir, entry);
+        const stat = statSync(fullPath);
+
+        if (stat.isDirectory()) {
+          count += scanGreek(fullPath, subcategory ? `${subcategory}/${entry}` : entry);
+        } else if (entry.endsWith('.json')) {
+          const slug = entry.replace('.json', '');
+          let title = slug;
+          let wordCount = 0;
+
+          try {
+            const data = JSON.parse(readFileSync(fullPath, 'utf-8'));
+            title = data.title || slug;
+            wordCount = (data.content || '').split(/\s+/).length;
+          } catch (e) {}
+
+          const key = `${slug}|null|null`;
+          const qc = questionCounts.get(key) || { total: 0, easy: 0, medium: 0, hard: 0 };
+          const status = qc.total > 0 ? 'completed' : 'pending';
+
+          const relativePath = fullPath.replace(process.cwd() + '/', '');
+          upsertContent.run(
+            'mythology', `greek/${subcategory || 'general'}`, slug, null, null, null, title,
+            'theoi', relativePath, 1, new Date().toISOString(), wordCount,
+            status, qc.total, qc.easy, qc.medium, qc.hard
+          );
+          count++;
+        }
+      }
+      return count;
+    }
+    const greekCount = scanGreek(greekDir, '');
+    console.log(`   ✅ Greek (theoi.com): ${greekCount} articles`);
+    totalCount += greekCount;
+  }
+
+  // Norse mythology (recursive scan)
+  const norseDir = join(GENERATION_DIR, 'norse-mythology');
+  if (existsSync(norseDir)) {
+    function scanNorse(dir: string, subcategory: string): number {
+      const entries = readdirSync(dir);
+      let count = 0;
+
+      for (const entry of entries) {
+        const fullPath = join(dir, entry);
+        const stat = statSync(fullPath);
+
+        if (stat.isDirectory()) {
+          count += scanNorse(fullPath, subcategory ? `${subcategory}/${entry}` : entry);
+        } else if (entry.endsWith('.json')) {
+          const slug = entry.replace('.json', '');
+          let title = slug;
+          let wordCount = 0;
+
+          try {
+            const data = JSON.parse(readFileSync(fullPath, 'utf-8'));
+            title = data.title || slug;
+            wordCount = (data.content || '').split(/\s+/).length;
+          } catch (e) {}
+
+          const key = `${slug}|null|null`;
+          const qc = questionCounts.get(key) || { total: 0, easy: 0, medium: 0, hard: 0 };
+          const status = qc.total > 0 ? 'completed' : 'pending';
+
+          const relativePath = fullPath.replace(process.cwd() + '/', '');
+          upsertContent.run(
+            'mythology', `norse/${subcategory || 'general'}`, slug, null, null, null, title,
+            'sacred-texts', relativePath, 1, new Date().toISOString(), wordCount,
+            status, qc.total, qc.easy, qc.medium, qc.hard
+          );
+          count++;
+        }
+      }
+      return count;
+    }
+    const norseCount = scanNorse(norseDir, '');
+    console.log(`   ✅ Norse: ${norseCount} articles`);
+    totalCount += norseCount;
+  }
+
+  // Egyptian mythology (recursive scan)
+  const egyptDir = join(GENERATION_DIR, 'egyptian-mythology');
+  if (existsSync(egyptDir)) {
+    function scanEgyptian(dir: string, subcategory: string): number {
+      const entries = readdirSync(dir);
+      let count = 0;
+
+      for (const entry of entries) {
+        const fullPath = join(dir, entry);
+        const stat = statSync(fullPath);
+
+        if (stat.isDirectory()) {
+          count += scanEgyptian(fullPath, subcategory ? `${subcategory}/${entry}` : entry);
+        } else if (entry.endsWith('.json')) {
+          const slug = entry.replace('.json', '');
+          let title = slug;
+          let wordCount = 0;
+
+          try {
+            const data = JSON.parse(readFileSync(fullPath, 'utf-8'));
+            title = data.title || slug;
+            wordCount = (data.content || '').split(/\s+/).length;
+          } catch (e) {}
+
+          const key = `${slug}|null|null`;
+          const qc = questionCounts.get(key) || { total: 0, easy: 0, medium: 0, hard: 0 };
+          const status = qc.total > 0 ? 'completed' : 'pending';
+
+          const relativePath = fullPath.replace(process.cwd() + '/', '');
+          upsertContent.run(
+            'mythology', `egyptian/${subcategory || 'general'}`, slug, null, null, null, title,
+            'sacred-texts', relativePath, 1, new Date().toISOString(), wordCount,
+            status, qc.total, qc.easy, qc.medium, qc.hard
+          );
+          count++;
+        }
+      }
+      return count;
+    }
+    const egyptCount = scanEgyptian(egyptDir, '');
+    console.log(`   ✅ Egyptian: ${egyptCount} articles`);
+    totalCount += egyptCount;
+  }
+
+  console.log(`   📊 Total mythology: ${totalCount} articles`);
+}
+
+// Sync Books (recursive)
+function syncBooks() {
+  console.log('\n📖 Syncing Books...');
+  const booksDir = join(GENERATION_DIR, 'books');
+  if (!existsSync(booksDir)) return;
+
+  const questionCounts = getQuestionCounts('books.db');
+  let totalCount = 0;
+
+  // Recursively scan book directories
+  function scanBooks(dir: string, collection: string, subPath: string): number {
+    const entries = readdirSync(dir);
+    let count = 0;
+
+    for (const entry of entries) {
+      const fullPath = join(dir, entry);
+      const stat = statSync(fullPath);
+
+      if (stat.isDirectory()) {
+        // Recurse into subdirectory
+        const newSubPath = subPath ? `${subPath}/${entry}` : entry;
+        count += scanBooks(fullPath, collection, newSubPath);
+      } else if (entry.endsWith('.json')) {
+        const slug = entry.replace('.json', '');
+        let title = slug;
+        let wordCount = 0;
+        let chapterNum: number | null = null;
+
+        try {
+          const data = JSON.parse(readFileSync(fullPath, 'utf-8'));
+          title = data.title || data.chapter || slug;
+          wordCount = (data.content || data.text || '').split(/\s+/).length;
+          // Try to extract chapter number from filename
+          const numMatch = slug.match(/(\d+)/);
+          if (numMatch) chapterNum = parseInt(numMatch[1]);
+        } catch (e) {}
+
+        const key = `${collection}|null|${chapterNum || slug}`;
+        const qc = questionCounts.get(key) || { total: 0, easy: 0, medium: 0, hard: 0 };
+        const status = qc.total > 0 ? 'completed' : 'pending';
+
+        const relativePath = fullPath.replace(process.cwd() + '/', '');
+        const subcategory = subPath || collection;
+        upsertContent.run(
+          'books', subcategory, collection, null, null, chapterNum, title,
+          'gutenberg', relativePath, 1, new Date().toISOString(), wordCount,
+          status, qc.total, qc.easy, qc.medium, qc.hard
+        );
+        count++;
+      }
+    }
+    return count;
+  }
+
+  // Scan each top-level collection directory
+  const collections = readdirSync(booksDir).filter(f =>
+    statSync(join(booksDir, f)).isDirectory()
+  );
+
+  for (const collection of collections) {
+    const collectionDir = join(booksDir, collection);
+    const count = scanBooks(collectionDir, collection, '');
+    if (count > 0) {
+      console.log(`   ✅ ${collection}: ${count} chapters`);
+    }
+    totalCount += count;
+  }
+  console.log(`   📊 Total books: ${totalCount} chapters`);
+}
+
 // Print summary
 function printSummary() {
   console.log('\n📊 Pipeline Summary:');
@@ -381,6 +645,9 @@ console.log('🔄 Syncing pipeline database...');
 syncTVShows();
 syncMovies();
 syncEpics();
+syncWikipedia();
+syncMythology();
+syncBooks();
 printSummary();
 pipelineDb.close();
 console.log('\n✅ Pipeline sync complete!');
