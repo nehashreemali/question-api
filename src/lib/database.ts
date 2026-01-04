@@ -116,6 +116,9 @@ export function getCategoryDatabase(category: string): Database {
       is_current_affairs INTEGER NOT NULL DEFAULT 0,
       current_affairs_until TEXT DEFAULT NULL,
 
+      -- Repair tracking (for rejected questions only)
+      repair_attempts INTEGER NOT NULL DEFAULT 0,
+
       created_at TEXT DEFAULT (datetime('now'))
     )
   `);
@@ -165,6 +168,12 @@ export function getCategoryDatabase(category: string): Database {
     database.run(`ALTER TABLE questions ADD COLUMN is_current_affairs INTEGER NOT NULL DEFAULT 0`);
     database.run(`ALTER TABLE questions ADD COLUMN current_affairs_until TEXT DEFAULT NULL`);
     console.log(`Added current affairs columns to ${category}.db`);
+  }
+
+  // Migration: Add repair_attempts column if it doesn't exist
+  if (!existingColumns.has('repair_attempts')) {
+    database.run(`ALTER TABLE questions ADD COLUMN repair_attempts INTEGER NOT NULL DEFAULT 0`);
+    console.log(`Added repair_attempts column to ${category}.db`);
   }
 
   // Create indexes for new columns
@@ -308,6 +317,9 @@ export interface Question {
   // Current affairs lifecycle
   is_current_affairs?: boolean;
   current_affairs_until?: string | null;
+
+  // Repair tracking
+  repair_attempts?: number;
 
   created_at?: string;
 }

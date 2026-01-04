@@ -7,3 +7,7 @@ logs/
 cache/
 backups/
 prod/
+
+# SQLite temporary files (WAL mode)
+*.db-wal
+*.db-shm

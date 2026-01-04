@@ -169,6 +169,74 @@ echo '[{"id":1,"status":"approved","quality_score":0.85}]' | bun scripts/review-
 
 ---
 
+### Skill: repair_questions
+
+#### Arming Phrase
+```
+POWER_UP repair_questions
+```
+
+#### Purpose
+Fix rejected questions by generating improved versions based on review_notes.
+
+#### Execution
+```bash
+# List questions eligible for repair
+bun scripts/repair-questions.ts --category=tv-shows --list
+
+# Submit repaired questions via stdin
+echo '[{"original_id":5,"question":"...","options":[...],"correct_answer":"...","difficulty":"medium"}]' | bun scripts/repair-questions.ts --category=tv-shows
+```
+
+#### Eligibility Criteria
+Questions are eligible for repair when ALL of:
+- `review_status = 'rejected'`
+- `peer_reviewed = 1`
+- `repair_attempts < 1` (max 1 attempt)
+- `review_notes IS NOT NULL`
+
+#### Input Format
+```json
+[{
+  "original_id": 123,
+  "question": "Improved question text",
+  "options": ["A", "B", "C", "D"],
+  "correct_answer": "A",
+  "difficulty": "easy|medium|hard",
+  "explanation": "Optional explanation"
+}]
+```
+
+#### CRITICAL RULES (NON-NEGOTIABLE)
+- **NEVER modify the original rejected question**
+- **NEVER delete rejected questions**
+- **NEVER auto-approve repaired questions**
+- Each repair creates a **NEW row** in the database
+- Repaired questions start as `peer_reviewed=0, review_status='pending'`
+- Repaired questions must go through normal review process
+
+#### Repair Guidelines
+- Fix ONLY the issues described in `review_notes`
+- Do NOT invent new facts
+- Do NOT expand scope
+- Maintain same category, subcategory, topic, part, chapter
+- Ensure correct answer is in options
+- Keep clean, neutral tone
+
+#### Validation Rules
+- Exactly 4 options
+- Exactly 1 correct answer in options
+- No duplicate options
+- Valid difficulty (easy/medium/hard)
+- No profanity or NSFW content
+
+#### Tracking
+- After successful repair insert, `repair_attempts` increments on ORIGINAL
+- Max 1 repair attempt per rejected question
+- This prevents infinite repair loops
+
+---
+
 ### Skill: export_prod_db
 
 #### Arming Phrase
@@ -471,6 +539,7 @@ Backups are stored in `backups/` as timestamped `.tar.gz` archives.
 | `src/sync-pipeline.ts` | Sync pipeline.db with files & questions |
 | `scripts/generate-questions.ts` | **THE ONLY** authorized question generation path |
 | `scripts/review-questions.ts` | **THE ONLY** authorized question review path |
+| `scripts/repair-questions.ts` | **THE ONLY** authorized question repair path |
 | `scripts/export-prod-db.ts` | Export approved questions to prod DB |
 | `scripts/backup-databases.sh` | Backup all SQLite databases |
 | `scripts/restore-databases.sh` | Restore from backup |
