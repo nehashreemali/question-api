@@ -1,24 +1,11 @@
-# Project Conventions - Quiz Question Generator
+# Claude Operating Rules
 
-## Project Overview
-
-A **universal quiz question generator** that creates multiple-choice questions from various content sources:
-- **Media content** (TV shows, movies, books) - from scraped transcripts
-- **Knowledge content** (physics, history, etc.) - from Wikipedia, OpenStax, Khan Academy
-- **Sports content** (cricket, football, WWE) - from stats APIs + Wikipedia
-
-## Technology Stack
-
-- **Runtime:** Bun (TypeScript)
-- **Database:** SQLite (registry + per-category question databases)
-- **Web Scraping:** Cheerio + Axios
-- **Architecture:** Functional programming (no classes, pure functions)
+This document defines Claude's execution boundaries and skill definitions.
+For architecture, schemas, and workflows, see `ARCHITECTURE.md`.
 
 ---
 
-## Claude Operating Rules (CRITICAL)
-
-### Execution Safety Model
+## Execution Safety Model
 
 | Mode | Trigger | Effect |
 |------|---------|--------|
@@ -29,83 +16,65 @@ A **universal quiz question generator** that creates multiple-choice questions f
 
 ---
 
-### Git Commit/Push Ritual
+## Git Commit/Push Ritual
 
-Before committing or pushing code, Claude MUST:
+When **asked by the user** to prepare a commit or push, Claude MUST:
 
-1. **Ask the user for the secret code**
-2. **Wait for the correct response**
-3. **Only proceed if the code matches**
+1. Ask for the secret code
+2. Wait for the correct response
+3. Only proceed if the code matches exactly
 
-#### Workflow
-```
-Claude: "Ready to commit and push. Please provide the secret code."
-User: [enters code]
-Claude: [if correct] Proceeds with commit and push
-Claude: [if incorrect] "Incorrect code. Please enter the correct code to proceed."
-```
+**Clarification:** Claude does NOT autonomously execute git commands. This ritual applies only when the user explicitly requests commit/push operations.
 
 #### Rules
-- **NEVER** commit or push without asking for the code first
-- **NEVER** guess or assume the code
+- NEVER commit or push without asking for the code first
+- NEVER guess or assume the code
 - Code must match exactly (case-sensitive)
-- One code authorizes both commit AND push in a single action
 - If user declines or provides wrong code, do NOT proceed
 
 ---
 
-### Skill: generate_questions
+## Ownership Boundaries
 
-#### Arming Phrase
+**Current affairs expiry and lifecycle enforcement is the responsibility of the game server.** Generator and export pipelines do not mutate expiry fields; they only read and preserve them.
+
+---
+
+## Skill: generate_questions
+
+### Arming Phrase
 ```
 POWER_UP generate_questions
 ```
 
-#### Execution Safety Boundary (NON-NEGOTIABLE)
+### Execution Safety Boundary (NON-NEGOTIABLE)
 - Questions are ONLY generated when the exact arming phrase is used
-- Casual requests like "make some questions" or "can you generate questions" MUST NOT trigger generation
+- Casual requests MUST NOT trigger generation
 - If invoked without arming phrase, respond: "To generate questions, use: `POWER_UP generate_questions`"
 - This is a hard boundary with no exceptions
 
-#### Purpose
-Generate quiz questions from local source content and insert them into SQLite.
+### Purpose
+Generate quiz questions from local source content and insert into SQLite.
 
-#### Invocation
-```
-POWER_UP generate_questions
-Generate questions for Breaking Bad season 1 episode 1
-```
-
-Or structured:
-```
-POWER_UP generate_questions tv-shows breaking-bad --part=1 --chapter=1
-```
-
-#### Allowed Inputs
-- `generation/` directory only
-- `registry.db`, `pipeline.db` for lookups
-
-#### Non-Hallucination Guarantee (CRITICAL)
+### Non-Hallucination Guarantee (CRITICAL)
 - ALL questions MUST be derived strictly from local source files in `generation/`
 - Internet knowledge, assumptions, or inferred facts are FORBIDDEN
-- If source material is insufficient for quality questions, STOP and report
+- If source material is insufficient, STOP and report
 - When in doubt, do not generate
 
-#### Forbidden Actions
+### Forbidden Actions
 - No web access during generation
 - No auto-approval (all questions start as `pending`)
 - No deletion or modification of existing questions
 
-#### Question Quality Guidelines
+### Question Quality Guidelines
 - Prefer conceptual understanding over pure memorization
-- Avoid reliance on exact dates/numbers UNLESS:
-  - The source explicitly emphasizes them, OR
-  - The fact is central to understanding the topic
+- Avoid reliance on exact dates/numbers UNLESS the source emphasizes them
 - Questions must be clear, unambiguous, and single-focus
 - Avoid trick questions or misleading wording
-- Each question should have exactly one defensible correct answer
+- Each question must have exactly one defensible correct answer
 
-#### Difficulty Intent
+### Difficulty Intent
 | Level | Meaning |
 |-------|---------|
 | easy | Widely recognizable facts or concepts |
@@ -114,54 +83,45 @@ POWER_UP generate_questions tv-shows breaking-bad --part=1 --chapter=1
 
 Difficulty must NOT be inflated artificially. Hard ≠ obscure or unfair.
 
-#### Question Caps
+### Question Caps
 | Content Type | Max |
 |--------------|-----|
 | TV episode | 25 |
 | Chapter/article | 30 |
 | Long section | 50 |
 
-#### Validation Rules
+### Validation Rules
 - Exactly 4 options
 - One correct answer (must be in options)
 - No duplicate options
 - Difficulty: easy, medium, or hard
 - Deduplication via hash
 
-#### Insert Defaults
+### Insert Defaults
 ```sql
 peer_reviewed = 0
 review_status = 'pending'
 quality_score = NULL
 ```
 
-#### Idempotency
+### Idempotency
 - Default: Skip if questions exist for source unit
 - `--force` flag to regenerate
 
 ---
 
-### Skill: review_questions
+## Skill: review_questions
 
-#### Arming Phrase
+### Arming Phrase
 ```
 POWER_UP review_questions
 ```
 
-#### Purpose
+### Purpose
 Evaluate existing questions and mark them approved or rejected.
 
-#### Execution
-```bash
-# List pending questions
-bun scripts/review-questions.ts --category=tv-shows --list
-
-# Review with decisions via stdin
-echo '[{"id":1,"status":"approved","quality_score":0.85}]' | bun scripts/review-questions.ts --category=tv-shows
-```
-
-#### Allowed Actions
-- Read questions from SQLite where `peer_reviewed = 0 AND review_status = 'pending'`
+### Allowed Actions
+- Read questions where `peer_reviewed = 0 AND review_status = 'pending'`
 - Update ONLY these fields:
   - `peer_reviewed` → 1
   - `review_status` → 'approved' or 'rejected'
@@ -169,13 +129,13 @@ echo '[{"id":1,"status":"approved","quality_score":0.85}]' | bun scripts/review-
   - `review_notes` → reason for decision
   - `reviewed_at` → timestamp
 
-#### Approval Criteria
-- Approval requires `quality_score >= 0.7`
+### Decision Guidelines
+- `quality_score` is an advisory signal; approval is an explicit reviewer decision
 - Question must be factually accurate
 - Question must have exactly 4 distinct options
 - Only one answer should be clearly correct
 
-#### Rejection Rules (CRITICAL)
+### Rejection Rules (CRITICAL)
 - **Rejected questions MUST have `review_notes` explaining why**
 - The script will refuse to reject without notes
 - Common rejection reasons:
@@ -183,60 +143,38 @@ echo '[{"id":1,"status":"approved","quality_score":0.85}]' | bun scripts/review-
   - Ambiguous wording
   - Multiple valid answers
   - Too obscure / unfair
-  - Duplicate of another question
 
-#### Forbidden Actions (NEVER)
-- **NEVER generate new questions**
-- **NEVER insert new questions**
-- **NEVER delete questions**
-- **NEVER modify question content** (question, options, correct_answer, difficulty)
-- **NEVER modify topic metadata** (topic, part, chapter, title, subcategory)
+### Forbidden Actions (NEVER)
+- NEVER generate new questions
+- NEVER insert new questions
+- NEVER delete questions
+- NEVER modify question content (question, options, correct_answer, difficulty)
+- NEVER modify topic metadata (topic, part, chapter, title, subcategory)
 
-#### Idempotency
+### Idempotency
 - Default: Skip questions where `peer_reviewed = 1`
 - `--force` flag to re-review previously reviewed questions
 
 ---
 
-### Skill: repair_questions
+## Skill: repair_questions
 
-#### Arming Phrase
+### Arming Phrase
 ```
 POWER_UP repair_questions
 ```
 
-#### Purpose
+### Purpose
 Fix rejected questions by generating improved versions based on review_notes.
 
-#### Execution
-```bash
-# List questions eligible for repair
-bun scripts/repair-questions.ts --category=tv-shows --list
-
-# Submit repaired questions via stdin
-echo '[{"original_id":5,"question":"...","options":[...],"correct_answer":"...","difficulty":"medium"}]' | bun scripts/repair-questions.ts --category=tv-shows
-```
-
-#### Eligibility Criteria
+### Eligibility Criteria
 Questions are eligible for repair when ALL of:
 - `review_status = 'rejected'`
 - `peer_reviewed = 1`
 - `repair_attempts < 1` (max 1 attempt)
 - `review_notes IS NOT NULL`
 
-#### Input Format
-```json
-[{
-  "original_id": 123,
-  "question": "Improved question text",
-  "options": ["A", "B", "C", "D"],
-  "correct_answer": "A",
-  "difficulty": "easy|medium|hard",
-  "explanation": "Optional explanation"
-}]
-```
-
-#### CRITICAL RULES (NON-NEGOTIABLE)
+### CRITICAL RULES (NON-NEGOTIABLE)
 - **NEVER modify the original rejected question**
 - **NEVER delete rejected questions**
 - **NEVER auto-approve repaired questions**
@@ -244,582 +182,81 @@ Questions are eligible for repair when ALL of:
 - Repaired questions start as `peer_reviewed=0, review_status='pending'`
 - Repaired questions must go through normal review process
 
-#### Repair Guidelines
+### Repair Guidelines
 - Fix ONLY the issues described in `review_notes`
 - Do NOT invent new facts
 - Do NOT expand scope
 - Maintain same category, subcategory, topic, part, chapter
 - Ensure correct answer is in options
-- Keep clean, neutral tone
 
-#### Validation Rules
+### Validation Rules
 - Exactly 4 options
 - Exactly 1 correct answer in options
 - No duplicate options
 - Valid difficulty (easy/medium/hard)
 - No profanity or NSFW content
 
-#### Tracking
-- After successful repair insert, `repair_attempts` increments on ORIGINAL
+### Tracking
+- After successful insert, `repair_attempts` increments on ORIGINAL
 - Max 1 repair attempt per rejected question
-- This prevents infinite repair loops
 
 ---
 
-### Skill: export_prod_db
+## Skill: export_prod_db
 
-#### Arming Phrase
+### Arming Phrase
 ```
 POWER_UP export_prod_db
 ```
 
-#### Purpose
+### Purpose
 Export approved questions into a production-ready SQLite database.
 
-#### Execution
-```bash
-# Export all approved questions
-bun scripts/export-prod-db.ts
-
-# Export with filters
-bun scripts/export-prod-db.ts --category=tv-shows
-bun scripts/export-prod-db.ts --topic=friends --limit=100
-bun scripts/export-prod-db.ts --difficulty=hard
-
-# Preview without creating database
-bun scripts/export-prod-db.ts --dry-run
-```
-
-#### Behavior
+### Behavior
 - Reads from all `data/*.db` files (read-only)
 - Filters: `review_status = 'approved'` only
 - Excludes: expired current affairs questions
 - Outputs: `dist/prod-questions.db`
 - Converts difficulty to integer (1=easy, 2=medium, 3=hard)
-- Sorts answers alphabetically for deterministic storage
 - Generates tags from metadata
 - **Fails if zero approved questions found**
 
-#### Safety Rules (CRITICAL)
+### Answer Ordering (CRITICAL)
+- Answer ordering MUST be preserved exactly as stored in source
+- No semantic modification of answer content or indices
+- Determinism relies on stored indices, NOT alphabetical sorting
+- The `correct_answer_index` corresponds to the stored answer position
+
+### Safety Rules (CRITICAL)
 - **Source databases are read-only** - NEVER modifies generator DBs
 - **No mutation of review fields** - only reads, never writes to source
 - **Only approved questions** - pending/rejected are excluded
 - **No network access** - purely local file operations
 - **No S3 upload** - export only, distribution handled separately
 
-#### Filters
+### Filters
 | Flag | Description |
 |------|-------------|
-| `--category` | Filter to specific category (e.g., tv-shows) |
-| `--topic` | Filter to specific topic (e.g., friends) |
-| `--difficulty` | Filter by difficulty (easy, medium, hard) |
-| `--limit` | Maximum number of questions to export |
-| `--dry-run` | Preview only, don't create database |
+| `--category` | Filter to specific category |
+| `--topic` | Filter to specific topic |
+| `--difficulty` | Filter by difficulty |
+| `--limit` | Maximum questions to export |
+| `--dry-run` | Preview only |
 
-#### Production Schema
+### Production Schema
 ```sql
 CREATE TABLE questions (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   category TEXT NOT NULL,
   subcategory TEXT NOT NULL,
   topic TEXT NOT NULL,
-  difficulty INTEGER NOT NULL,        -- 1=easy, 2=medium, 3=hard
+  difficulty INTEGER NOT NULL,
   question TEXT NOT NULL,
   answers TEXT NOT NULL,              -- JSON: [{text, index}]
   correct_answer_index INTEGER NOT NULL,
   explanation TEXT,
   is_current_affairs INTEGER NOT NULL,
   current_affairs_until TEXT,
-  tags TEXT                           -- JSON: [category, subcategory, topic, difficulty]
+  tags TEXT
 );
 ```
-
----
-
-## Current Architecture (SQLite-Only)
-
-### Database Structure
-
-```
-data/
-├── registry.db              # Central catalog (categories, topics)
-├── pipeline.db              # Content tracking (dev only - tracks downloads & generation progress)
-├── tv-shows.db              # Questions for TV shows
-├── movies.db                # Questions for movies (when generated)
-├── epics.db                 # Questions for epics (when generated)
-└── ...                      # Per-category question databases
-
-generation/                  # Source material (transcripts, scripts, texts)
-├── transcripts/             # TV show transcripts
-│   └── {show}/s{nn}e{nn}.json
-├── movies/                  # Movie scripts
-│   └── {movie-slug}.json
-└── epics/                   # Religious & epic texts
-    ├── mahabharata/parva-{nn}-{name}/section-{nnn}.json
-    ├── ramayana/page-{nnn}.json
-    ├── bhagavad-gita/chapter-{nn}.json
-    ├── bible/{book}.json
-    └── quran/surah-{nnn}.json
-```
-
-### Why SQLite?
-
-- **No git conflicts** - Multiple people can work simultaneously
-- **Fast queries** - Instant lookups by category/topic
-- **Organic growth** - Topics created on-demand via `ensure*` functions
-- **Simple structure** - One registry, one DB per category
-
----
-
-## Database Schema
-
-### Registry Database (`registry.db`)
-
-```sql
--- Categories table
-CREATE TABLE categories (
-  slug TEXT PRIMARY KEY,
-  name TEXT NOT NULL,
-  description TEXT,
-  adapter TEXT,
-  topic_count INTEGER DEFAULT 0
-);
-
--- Subcategories table
-CREATE TABLE subcategories (
-  id INTEGER PRIMARY KEY,
-  category TEXT NOT NULL,
-  slug TEXT NOT NULL,
-  name TEXT NOT NULL,
-  topic_count INTEGER DEFAULT 0,
-  UNIQUE(category, slug)
-);
-
--- Topics table
-CREATE TABLE topics (
-  id INTEGER PRIMARY KEY,
-  category TEXT NOT NULL,
-  subcategory TEXT NOT NULL,
-  slug TEXT NOT NULL,
-  name TEXT NOT NULL,
-  depth TEXT,
-  description TEXT,
-  question_count INTEGER DEFAULT 0,
-  UNIQUE(category, subcategory, slug)
-);
-```
-
-### Questions Database (per-category, e.g., `tv-shows.db`)
-
-```sql
-CREATE TABLE questions (
-  id INTEGER PRIMARY KEY,
-  hash TEXT UNIQUE NOT NULL,     -- For deduplication
-
-  subcategory TEXT NOT NULL,     -- e.g., 'sitcoms', 'drama'
-  topic TEXT NOT NULL,           -- e.g., 'friends', 'breaking-bad'
-
-  part INTEGER,                  -- Season, Parva, Book (nullable)
-  chapter INTEGER,               -- Episode, Chapter (nullable)
-  title TEXT,                    -- Episode/chapter title
-
-  question TEXT NOT NULL,
-  options TEXT NOT NULL,         -- JSON array of 4 options
-  correct_answer TEXT NOT NULL,
-  difficulty TEXT,               -- 'easy', 'medium', 'hard'
-  explanation TEXT,
-
-  -- Review workflow
-  peer_reviewed INTEGER DEFAULT 0,
-  review_status TEXT DEFAULT 'pending',  -- 'pending', 'approved', 'rejected'
-  quality_score REAL,
-  review_notes TEXT,
-  reviewed_at TEXT,
-
-  -- Current affairs lifecycle
-  is_current_affairs INTEGER DEFAULT 0,
-  current_affairs_until TEXT,
-
-  synced_to_mongo INTEGER DEFAULT 0,
-  created_at TEXT
-);
-```
-
-### Production Database (`dist/prod-questions.db`)
-
-Read-only database for gameplay. Created by exporting approved questions.
-
-```sql
-CREATE TABLE questions (
-  id INTEGER PRIMARY KEY,
-
-  category TEXT NOT NULL,        -- e.g., 'tv-shows'
-  subcategory TEXT NOT NULL,     -- e.g., 'sitcoms'
-  topic TEXT NOT NULL,           -- e.g., 'friends'
-
-  difficulty INTEGER NOT NULL,   -- 1=easy, 2=medium, 3=hard
-
-  question TEXT NOT NULL,
-
-  answers TEXT NOT NULL,         -- JSON: [{"text":"...", "index":1}, ...]
-  correct_answer_index INTEGER NOT NULL, -- 1-4 (matches answer index)
-
-  explanation TEXT,
-
-  is_current_affairs INTEGER DEFAULT 0,
-  current_affairs_until TEXT,
-
-  tags TEXT                      -- JSON: ["tv-shows", "sitcoms", "friends", "medium"]
-);
-```
-
-**Note:** Answers are sorted alphabetically in storage. Client randomizes at runtime.
-
----
-
-## Question Review Workflow
-
-Questions go through a review process before appearing in production.
-
-### Review States
-| Status | Meaning |
-|--------|---------|
-| `pending` | Awaiting review (default for new questions) |
-| `approved` | Ready for production export |
-| `rejected` | Not suitable, will not be exported |
-
-### How to Review Questions
-
-```bash
-# View pending questions
-sqlite3 data/tv-shows.db "SELECT id, question FROM questions WHERE review_status='pending' LIMIT 10;"
-
-# Approve a question
-sqlite3 data/tv-shows.db "UPDATE questions SET review_status='approved', reviewed_at=datetime('now') WHERE id=123;"
-
-# Reject a question with notes
-sqlite3 data/tv-shows.db "UPDATE questions SET review_status='rejected', review_notes='Too obscure' WHERE id=456;"
-
-# Bulk approve all questions for a topic
-sqlite3 data/tv-shows.db "UPDATE questions SET review_status='approved', reviewed_at=datetime('now') WHERE topic='friends';"
-```
-
-### Export to Production
-
-Only approved questions are exported to the production database:
-
-```bash
-# Preview what would be exported
-bun scripts/export-prod-db.ts --dry-run
-
-# Run the export
-bun scripts/export-prod-db.ts
-
-# Output: dist/prod-questions.db
-```
-
-The export:
-1. Reads all `data/*.db` files
-2. Filters by `review_status = 'approved'`
-3. Converts difficulty to integer (easy=1, medium=2, hard=3)
-4. Converts options to `[{text, index}]` format, sorted alphabetically
-5. Generates tags from category/subcategory/topic/difficulty
-6. Writes to `dist/prod-questions.db`
-
----
-
-## Backup & Restore
-
-### Create Backup
-```bash
-./scripts/backup-databases.sh           # Full backup with integrity check
-./scripts/backup-databases.sh --dry-run # Preview only
-```
-
-Backups are stored in `backups/` as timestamped `.tar.gz` archives.
-
-### Restore from Backup
-```bash
-./scripts/restore-databases.sh --list   # List available backups
-./scripts/restore-databases.sh          # Restore from latest
-./scripts/restore-databases.sh 2026-01-04_121911  # Restore specific backup
-```
-
-### What Gets Backed Up
-- All `data/*.db` files (registry, pipeline, tv-shows, etc.)
-- Integrity checked before and after backup
-- Last 7 days retained automatically
-
----
-
-## Key Source Files
-
-| File | Purpose |
-|------|---------|
-| `src/server.ts` | Web server with API endpoints |
-| `src/lib/registry.ts` | SQLite registry management |
-| `src/lib/database.ts` | Per-category question databases |
-| `src/lib/pipeline.ts` | Pipeline tracking (downloads & generation status) |
-| `src/lib/tv-scraper.ts` | Scrapes TV transcripts |
-| `src/lib/http.ts` | HTTP utilities with retry logic |
-| `src/download-transcripts.ts` | Batch download TV transcripts |
-| `src/download-movies.ts` | Batch download movie scripts |
-| `src/download-epics.ts` | Download religious/epic texts |
-| `src/sync-pipeline.ts` | Sync pipeline.db with files & questions |
-| `scripts/generate-questions.ts` | **THE ONLY** authorized question generation path |
-| `scripts/review-questions.ts` | **THE ONLY** authorized question review path |
-| `scripts/repair-questions.ts` | **THE ONLY** authorized question repair path |
-| `scripts/export-prod-db.ts` | Export approved questions to prod DB |
-| `scripts/backup-databases.sh` | Backup all SQLite databases |
-| `scripts/restore-databases.sh` | Restore from backup |
-
----
-
-## CLI Commands
-
-```bash
-# Start web server (visit http://localhost:3000)
-bun start
-
-# Kill anything on port 3000
-bun run kill
-
-# Sync pipeline database (scan files & update tracking)
-bun src/sync-pipeline.ts
-
-# Download content
-bun src/download-transcripts.ts    # TV shows (edit file for waves)
-bun src/download-movies.ts         # Movies
-bun src/download-epics.ts [source] # gita|bible|quran|ramayana|mahabharata
-```
-
----
-
-## Web Server API
-
-The server at `http://localhost:3000` provides:
-
-- **GET /api/categories** - List all categories with stats
-- **GET /api/categories/:category** - Get category details
-- **GET /api/topics/:category** - List topics in category
-- **GET /api/questions/:category/:topic** - Get questions for topic
-- **POST /api/stats/regenerate** - Regenerate statistics
-
----
-
-## Question Quality Standards
-
-### Good Questions
-- Test memorable moments, plot points, character traits
-- Reference specific dialogue or events
-- Answerable by someone who watched attentively
-- Have one clearly correct answer
-
-### Bad Questions (Avoid)
-- Colors of clothing or background objects
-- Exact counts ("How many times did X happen?")
-- Minor background details
-- Anything requiring freeze-frame analysis
-- Trick questions
-
-### Difficulty Distribution Target
-- **Easy (40%):** Basic plot points, main events
-- **Medium (40%):** Specific dialogue, character motivations
-- **Hard (20%):** Subtle details, callbacks (still fair, not obscure)
-
----
-
-## Code Conventions
-
-### Exports
-- **Always use `export default`** - one export per file
-- **One file per export** - don't combine multiple exports in one file
-- Index files can re-export: `export { default as Foo } from './foo'`
-
-### Example
-```typescript
-// src/lib/config.ts
-const Config = {
-  DATA_DIR: 'data',
-  GENERATION_DIR: 'generation',
-} as const;
-
-export default Config;
-```
-
----
-
-## Naming Conventions
-
-### Slugs
-- Lowercase, hyphenated: `the-big-bang-theory`, `friends`
-- No special characters: `friends` not `Friend's`
-- Spaces become hyphens: `breaking bad` → `breaking-bad`
-
-### File Names
-- Always lowercase
-- JSON extension for data files
-- SQLite databases use `.db` extension
-
----
-
-## Registry Functions
-
-The registry (`src/lib/registry.ts`) provides:
-
-```typescript
-// Ensure functions (create if not exists)
-ensureCategory({ slug, name, adapter?, description? })
-ensureSubcategory({ category, slug, name })
-ensureTopic({ category, subcategory, slug, name, depth?, description? })
-
-// Query functions
-getCategories()
-getCategory(slug)
-getSubcategories(category)
-getTopics(category, subcategory?)
-getTopic(category, subcategory, slug)
-```
-
----
-
-## Current Stats
-
-- **Total Topics:** 5,214
-- **Categories:** 44
-- **Questions Database:** `tv-shows.db` (active)
-
----
-
-## Important Notes
-
-1. **No JSON manifests** - Everything is in SQLite databases
-2. **Organic growth** - Topics are created on-demand using `ensure*` functions
-3. **Transcripts stay as files** - Large text content in `generation/`
-4. **Stats cached in memory** - Regenerate via API when needed
-5. **No legacy code** - Deprecated scripts have been removed entirely
-
----
-
-## Pipeline Tracking System
-
-The `pipeline.db` database tracks all downloaded content and question generation progress.
-
-### Check Status
-1. **Web UI**: http://localhost:3000/pipeline (click "Sync Pipeline" to refresh)
-2. **CLI**: `bun src/sync-pipeline.ts`
-3. **SQL**: `sqlite3 data/pipeline.db "SELECT * FROM content_tracking WHERE generation_status='pending' LIMIT 10;"`
-
-### Pipeline API
-- `GET /api/pipeline` - Summary stats by category
-- `GET /api/pipeline/topics` - Per-topic breakdown
-- `GET /api/pipeline/pending` - Items awaiting question generation
-- `POST /api/pipeline/sync` - Refresh tracking from files
-
-### Workflow
-1. Download content → files saved to `generation/`
-2. Run `sync-pipeline.ts` or click "Sync Pipeline" → updates `pipeline.db`
-3. Generate questions → saved to category DB (e.g., `tv-shows.db`)
-4. Sync again → marks items as "completed" in pipeline
-
----
-
-## Current Status (Updated: Jan 2026)
-
-### Downloaded Content
-| Category | Content | Units | Source |
-|----------|---------|-------|--------|
-| TV Shows | 10 shows | 1,584 episodes | Springfield! Springfield! |
-| Movies | 81 films | 81 scripts | Springfield! Springfield! |
-| Mahabharata | 18 parvas | 2,093 sections | sacred-texts.com |
-| Ramayana | - | 504 pages | sacred-texts.com |
-| Bhagavad Gita | 18 chapters | 18 files | bhagavadgitaapi.in |
-| Bible | 66 books | 66 files | bible-api.com |
-| Quran | 114 surahs | 114 files | alquran.cloud |
-
-### Questions Generated
-| Topic | Questions |
-|-------|-----------|
-| Friends | 5,552 |
-| Game of Thrones | 250 |
-| Big Bang Theory | 28 |
-| **Total** | **5,830** |
-
-### What's Next
-1. **Generate questions** for remaining TV shows (The Office, Seinfeld, etc.)
-2. **Generate questions** for movies and epics
-3. **Download more content**: Greek mythology, Norse mythology, Books (Harry Potter, LOTR)
-4. See `V1_LAUNCH_PLAN.md` for full roadmap
-
----
-
-## Content Sources (Where to Download More)
-
-### TV Shows & Movies
-| Source | URL | Content |
-|--------|-----|---------|
-| Springfield! Springfield! | springfieldspringfield.co.uk | 8,629 TV shows, 40,000 movies |
-
-**Scripts:** `src/download-transcripts.ts`, `src/download-movies.ts`
-
-### Religious & Epic Texts
-| Source | URL | Content |
-|--------|-----|---------|
-| sacred-texts.com | sacred-texts.com/hin/ | Mahabharata, Ramayana, Puranas, Vedas |
-| Bhagavad Gita API | bhagavadgitaapi.in | All 18 chapters with translations |
-| Bible API | bible-api.com | All 66 books (KJV, ASV, etc.) |
-| Al-Quran Cloud | alquran.cloud | All 114 surahs with translations |
-
-**Script:** `src/download-epics.ts`
-
-### Mythology (Not Yet Downloaded)
-| Source | URL | Content |
-|--------|-----|---------|
-| Theoi.com | theoi.com | Greek mythology (~300 pages) |
-| sacred-texts.com | sacred-texts.com/neu/poe/ | Norse Eddas |
-
-**To add:** Create `src/download-mythology.ts`
-
-### Books & Fiction (Not Yet Downloaded)
-| Source | URL | Content |
-|--------|-----|---------|
-| Harry Potter Wiki | harrypotter.fandom.com | 24,000+ articles |
-| Tolkien Gateway | tolkiengateway.net | 13,000+ LOTR articles |
-| ASOIAF Wiki | awoiaf.westeros.org | Game of Thrones lore |
-| Agatha Christie Wiki | agathachristie.fandom.com | Mystery novels |
-| Project Gutenberg | gutenberg.org | Public domain classics |
-
-**To add:** Create `src/download-books.ts` (scrape Fandom wikis)
-
-### STEM (Not Yet Downloaded)
-| Source | URL | Content |
-|--------|-----|---------|
-| Wikipedia | en.wikipedia.org/wiki/Portal:Science | Physics, Chemistry, Biology, Math |
-| OpenStax | openstax.org | Free textbooks (Physics, Chemistry, Biology, etc.) |
-| Simple Wikipedia | simple.wikipedia.org | Easier explanations for question generation |
-
-**Approach:**
-- Scrape Wikipedia category pages (e.g., `/wiki/Category:Physics`)
-- Or use Wikipedia API to get articles by topic
-- OpenStax PDFs can be parsed for structured content
-
-### History & Current Affairs (Not Yet Downloaded)
-| Source | URL | Content |
-|--------|-----|---------|
-| Wikipedia | en.wikipedia.org/wiki/Portal:History | All historical periods |
-| Wikipedia Current Events | en.wikipedia.org/wiki/Portal:Current_events | Daily news archive |
-| This Day in History | Various | Historical events by date |
-
-**Approach:**
-- Scrape Wikipedia history portals by era (Ancient, Medieval, Modern)
-- For current affairs: scrape news archives or use news APIs
-
-### Sports (Not Yet Downloaded)
-| Source | URL | Content |
-|--------|-----|---------|
-| ESPN Cricinfo | espncricinfo.com | Cricket stats, records, players |
-| Wikipedia Sports | en.wikipedia.org/wiki/Portal:Sports | All sports |
-| Transfermarkt | transfermarkt.com | Football/soccer stats |
-| Basketball Reference | basketball-reference.com | NBA stats |
-
-**To add:** Create adapters in `src/lib/adapters/`
